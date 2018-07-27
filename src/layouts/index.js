@@ -3,7 +3,14 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
-import './index.css'
+// import './index.css'
+import styled from 'styled-components';
+
+const Content = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+`
 
 const Layout = ({ children, data }) => (
   <div>
@@ -15,9 +22,9 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />
-    <div>
+    <Content>
       {children()}
-    </div>
+    </Content>
   </div>
 )
 
