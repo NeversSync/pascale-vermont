@@ -15,7 +15,7 @@ const Container = styled.nav`
 
 const NavContainer = styled.ul`
   display: grid;
-  grid-column: 2 / 4;
+  grid-column: 2 / 3;
   grid-template-columns: repeat(5, 1fr); 
   margin: 0;
   padding: 0;
@@ -40,6 +40,12 @@ const Nav = () => (
       </NavItem>
       <NavItem>
         <Link to="/perinatal-loss">Perinatal Loss</Link>
+      </NavItem>
+      <NavItem>
+        <Link to="/grief-counseling">Grief Counseling</Link>
+      </NavItem>
+      <NavItem>
+        <Link to="/ngo-crisis-counseling">NGO Crisis Counseling</Link>
       </NavItem>
     </NavContainer >
   </Container >
