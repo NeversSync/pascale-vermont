@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import 'reset-css';
+import "./boss.css";
+import styled from 'styled-components';
 
 import Header from '../components/Header'
 // import './index.css'
-import styled from 'styled-components';
 
 const Content = styled.div`
   display: grid;
