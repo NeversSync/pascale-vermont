@@ -53,9 +53,6 @@ a:active,
 a:hover {
   outline: 0;
 }
-h1 {
-  font-size: 2em;
-}
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -192,7 +189,7 @@ body {
 h1 {
   /* font-family: 'blanchcaps_inline', sans-serif; */
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 1.3em;
   margin: 0;
 }
 h2,

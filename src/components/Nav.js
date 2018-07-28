@@ -26,7 +26,7 @@ const NavContainer = styled.ul`
 const NavItem = styled.li`
   display: grid;
   justify-content: center;
-  font-size: .7em;
+  font-size: .6em;
   align-content: center;
   list-style-type: none;
   font-weight: bold;
