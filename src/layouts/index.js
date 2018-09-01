@@ -5,7 +5,6 @@ import 'reset-css';
 import "./boss.css";
 import styled from 'styled-components';
 
-import Header from '../components/Header'
 // import './index.css'
 
 const Content = styled.div`
@@ -23,7 +22,6 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
     <Content>
       {children()}
     </Content>
