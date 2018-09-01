@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react'
+import React from 'react'
 import Link from 'gatsby-link'
 import styled from '../../node_modules/styled-components';
 
@@ -60,7 +60,7 @@ const About = styled.div`
 `
 
 const IndexPage = () => (
-  <Fragment>
+  <div>
     <HeroContainer>
       <Nav /> 
       <HeroImg src={'http://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,f_auto,h_711,q_100/v1535768654/joshua-ness-107133-unsplash.jpg'} width="100%" height="auto"/>
@@ -70,7 +70,7 @@ const IndexPage = () => (
       </Heading>
     </HeroContainer>
     <About></About>
-  </Fragment>
+  </div>
 )
 
 const Nav = () => (
