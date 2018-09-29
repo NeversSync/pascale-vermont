@@ -3,11 +3,15 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import 'reset-css';
 import "./boss.css";
+// import './index.css'
 import styled from 'styled-components';
 
-// import './index.css'
+import 'typeface-fira-sans';
+
 
 const Content = styled.div`
+  font-family: fira sans, sans-serif;
+  font-weight: 400;
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
