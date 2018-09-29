@@ -3,12 +3,15 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import 'reset-css';
 import "./boss.css";
+// import './index.css'
 import styled from 'styled-components';
 
-import Header from '../components/Header'
-// import './index.css'
+import 'typeface-fira-sans';
+
 
 const Content = styled.div`
+  font-family: fira sans, sans-serif;
+  font-weight: 400;
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
@@ -23,7 +26,6 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: 'sample, something' },
       ]}
     />
-    <Header siteTitle={data.site.siteMetadata.title} />
     <Content>
       {children()}
     </Content>

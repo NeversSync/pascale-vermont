@@ -12,6 +12,8 @@
   font-weight: normal;
   font-style: normal;
 } */
+
+
 article,
 aside,
 details,
@@ -38,7 +40,6 @@ audio:not([controls]) {
   display: none;
 }
 html {
-  font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
 }
