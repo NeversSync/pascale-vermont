@@ -1,7 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import styled from '../../node_modules/styled-components';
-// import
+
+import About from './about';
+import { Title, SubTitle } from '../components/Helpers';
 
 // import Header from '../components/Header'
 // import heroImgSrc from '../../public/assets/img/stock/sprout-shadow.jpg';
@@ -62,22 +64,11 @@ const Heading = styled.div`
   color: white;
   text-transform: uppercase;
 `
-const Title = styled.h1`
-  font-size: 52px;
-  letter-spacing: 4px;
-  font-weight: 300;
-`
 
-const SubTitle = styled.h3`
-  font-size: 42px;
-  letter-spacing: 20px;
-  font-weight: 200;
-`
-
-const About = styled.div`
-  background-color: white;
-  height: 500px;
-`
+// const AboutContainer = styled.div`
+//   background-color: white;
+//   height: 500px;
+// `
 
 const IndexPage = () => (
   <div>
@@ -89,7 +80,9 @@ const IndexPage = () => (
         <SubTitle>Grief Counselor</SubTitle>
       </Heading>
     </HeroContainer>
-    <About></About>
+    {/* <AboutContainer>
+    </AboutContainer> */}
+    <About/>
   </div>
 )
 
