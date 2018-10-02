@@ -34,6 +34,14 @@ const NavItem = styled.li`
   letter-spacing: 3px;
   line-height: 23px;
   list-style-type: none;
+  border-bottom: 5px solid transparent;
+  padding: 2px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+
+  :hover, :active {
+    border-bottom: 5px solid white;
+  }
 `
 
 const HeroContainer = styled.div`
