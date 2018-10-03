@@ -4,6 +4,7 @@ import styled from '../../node_modules/styled-components';
 
 import About from './about';
 import Nav from '../components/Nav';
+import Perinatal from './perinatal-loss'; 
 import { Title, SubTitle } from '../components/Helpers';
 
 const HeroContainer = styled.div`
@@ -34,10 +35,9 @@ const Heading = styled.div`
   text-transform: uppercase;
 `
 
-// const AboutContainer = styled.div`
-//   background-color: white;
-//   height: 500px;
-// `
+const LandingSubtitle = SubTitle.extend`
+  margin-left: 12px;
+`;
 
 const IndexPage = () => (
   <div>
@@ -46,12 +46,11 @@ const IndexPage = () => (
       <HeroImg src={'http://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,f_auto,h_711,q_100/v1535768654/joshua-ness-107133-unsplash.jpg'} width="100%" height="auto"/>
       <Heading>
         <Title>Pascale Vermont, PhD</Title>
-        <SubTitle>Grief Counselor</SubTitle>
+        <LandingSubtitle>Grief Counselor</LandingSubtitle>
       </Heading>
     </HeroContainer>
-    {/* <AboutContainer>
-    </AboutContainer> */}
     <About/>
+    <Perinatal/>
   </div>
 )
 
