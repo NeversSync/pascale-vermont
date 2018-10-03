@@ -23,11 +23,10 @@ const SubTitle = styled.h3`
 `
 
 const Copy = styled.p`
-  font-size: 22px;
+  font-size: 20px;
   line-height: 32px;
   letter-spacing: 1.75px;
   font-weight: 300;
-  /* color:  */
 `;
 
 export default { Wrapper, Title, SubTitle, Copy };
