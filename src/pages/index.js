@@ -3,12 +3,11 @@ import Link from 'gatsby-link'
 import styled from '../../node_modules/styled-components';
 import { Image, Transformation } from 'cloudinary-react';
 
-import About from './about';
 import Nav from '../components/Nav';
-import Perinatal from './perinatal-loss'; 
-import { Title, SubTitle, CTAButton } from '../components/Helpers';
+import { Title, SubTitle, CTAButton, SVGArrowRight, SVGArrowLeft, ImageWrapper, Spacer } from '../components/Helpers';
 import { HeroContainer, HeroImg, Heading, LandingSubtitle } from '../styles/landing-styles';
-import { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, AboutCopy, SoundcloudWrapper, ImageWrapper, Spacer, AboutCTA, AboutTestimonial } from '../styles/about-styles';
+import { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, AboutCopy, SoundcloudWrapper, AboutCTA, AboutTestimonial } from '../styles/about-styles';
+import { PerinatalWrapper, PerinatalTitleWrapper, PerinatalTitle, PerinatalSvg, PerinatalLine, PerinatalCopy, PerinatalCopyLanding, PerinatalTestimonial } from '../styles/perinatal-styles';
 
 // TODO: 
 // add drop shadow to nav line
@@ -20,7 +19,14 @@ import { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, About
 
 const IndexPage = () => (
   <div>
-    <HeroContainer>
+    <Landing/>
+    <AboutSummary/>
+    <PerinatalSummary/>
+  </div>
+)
+
+const Landing = () => (
+  <HeroContainer>
       <Nav /> 
       <HeroImg src={'http://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,f_auto,h_711,q_100/v1535768654/joshua-ness-107133-unsplash.jpg'} width="100%" height="auto"/>
       <Heading>
@@ -28,10 +34,7 @@ const IndexPage = () => (
         <LandingSubtitle>Grief Counselor</LandingSubtitle>
       </Heading>
     </HeroContainer>
-    <AboutSummary/>
-    <Perinatal/>
-  </div>
-)
+);
 
 const AboutSummary = () => (
   <AboutWrapper>
@@ -41,15 +44,8 @@ const AboutSummary = () => (
       <AboutLine x1="85" y1="3" x2="195" y2="3" stroke="rgb(166, 76, 224)" strokeWidth="6"/>
     </AboutSvg>
     <Link to="/about/" style={{display: 'grid', gridColumn: '4 / 5', gridRow: '3 / 4', alignSelf: 'center', justifySelf: 'center', alignContent: 'center'}}>
-      <CTAButton className="arrow"><p style={{ gridColumn: '2 / 3', gridRow: ' 1 / 2 ', color: 'white' }}>LEARN MORE</p>
-        <svg style={{ gridColumn: '1 / 2', gridRow: ' 1 / 2 ' }}xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270" transform='rotate(180) scale(.5)'>
-        <g id="Layer_2" data-name="Layer 2">
-          <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round"/>
-          <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z"/>
-        </g>
-      </svg> 
-    </CTAButton>
-  </Link>
+      <SVGArrowLeft/>
+    </Link>
   </AboutTitleWrapper>
   <AboutCopy>
     Pascale Vermont is a licensed clinical psychologist based in San Francisco, CA. She is passionate about providing support to people in times of intense pain and grief. Her main professional occupation centers around grief counseling and disaster mental health.
@@ -70,4 +66,25 @@ const AboutSummary = () => (
   </AboutWrapper>
 )
 
-export default IndexPage
+const PerinatalSummary = () => (
+  <PerinatalWrapper>
+    <PerinatalTitleWrapper>
+      <PerinatalTitle>PERINATAL LOSS</PerinatalTitle>
+      <PerinatalSvg>
+        <PerinatalLine x1="5" y1="5" x2="175" y2="5" stroke="rgb(229, 69, 117)" strokeWidth="6"/>
+      </PerinatalSvg>
+      <Link to="/perinatal-loss/" style={{display: 'grid', gridColumn: '2 / 3', gridRow: '3 / 4', alignSelf: 'center', justifySelf: 'start', alignContent: 'center'}}>
+      <SVGArrowRight/>
+    </Link>
+    </PerinatalTitleWrapper>
+    <PerinatalCopyLanding>
+      Pascale offers bereavement counseling to parents who lose a child during pregnancy, at birth or in early infancy.
+      At a time of great pain and loneliness, she provides emotional support in the home, as well as education about the grief process and how to handle the many consequences of the loss. 
+      She meets with parents and other family members as long as support is needed, and at other times when the grief is triggered by anniversaries or subsequent pregnancies.
+    </PerinatalCopyLanding>
+    <PerinatalTestimonial>"We feel incredibly grateful for Pascale's expertise, compassion, and professionalism during our time of grieving and our healing process following the death of our baby girl." - L and L
+    </PerinatalTestimonial>
+  </PerinatalWrapper>
+);
+
+export default IndexPage;

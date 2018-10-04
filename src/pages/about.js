@@ -3,7 +3,9 @@ import Link from 'gatsby-link'
 import styled from 'styled-components';
 import { Image, Transformation } from 'cloudinary-react';
 
-import { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, AboutCopy, SoundcloudWrapper, ImageWrapper, Spacer, AboutCTA, AboutTestimonial } from '../styles/about-styles';
+import { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, AboutCopy, SoundcloudWrapper, AboutTestimonial } from '../styles/about-styles';
+import { HomeButton, Spacer, ImageWrapper } from '../components/Helpers';
+
 
 const IndexPage = () => (
   <AboutWrapper>
@@ -12,9 +14,9 @@ const IndexPage = () => (
       <AboutSvg>
         <AboutLine x1="70" y1="5" x2="175" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6"/>
       </AboutSvg>
-      <Link to="/" style={{display: 'grid', gridColumn: '3 / 4', gridRow: '2 / 3', alignSelf: 'center', justifySelf: 'center', alignContent: 'center'}}>
-        <AboutCTA>HOME</AboutCTA>
-    </Link>
+      <Link to="/" style={{display: 'grid', gridColumn: '4 / 5', gridRow: '3 / 4', alignSelf: 'center', justifySelf: 'center', alignContent: 'center'}}>HOME
+        <HomeButton/>
+      </Link>
     </AboutTitleWrapper>
     <AboutCopy>
       Pascale Vermont is a licensed clinical psychologist based in San Francisco, CA. She is passionate about providing support to people in times of intense pain and grief. Her main professional occupation centers around grief counseling and disaster mental health.

@@ -1,13 +1,10 @@
 import React from 'react'
 import styled from 'styled-components';
+import Link from 'gatsby-link'
 
 const Wrapper = styled.div`
   display: grid;
-  /* height: 400px; */
   background: white;
-  /* grid-template-columns: repeat(8, 1fr); */
-  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
-  /* grid-template-rows: 100px 100px 100px 100px 100px 100px; */
 `;
 
 const Card = styled.div`
@@ -33,35 +30,6 @@ const Copy = styled.p`
   letter-spacing: 1.75px;
   font-weight: 300;
 `;
-
-// const CTAButton = styled.button`
-//   height: 100px;
-//   width: 100px;
-//   transition: .2s ease;
-//   border-radius: 50%;
-//   /* font-size: 16px; */
-//   /* line-height: 27px; */
-//   /* text-align: center; */
-//   /* margin: 10px; */
-//   /* padding: 6px 13px;*/
-//   background: linear-gradient(to left, hsla(348, 86%, 59%, .9), hsla(39, 100%, 63%, 0.9));
-//   border: 1px solid black;
-//   border: none;
-//   box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
-
-//   &:hover {
-//     background: linear-gradient(to left, hsla(348, 96%, 69%, .9), hsla(39, 100%, 63%, 0.9));
-//     box-shadow: 0px 4px 3px -2px rgba(0, 0, 0, 0.3);
-//   }
-  
-//   &:active {
-//     background: linear-gradient(to left, hsla(348, 86%, 49%, .9), hsla(39, 90%, 43%, 0.9));
-//     -webkit-transform: translate(0px, 2px);
-//     transform: translate(0px, 2px);
-//     border: none;
-//     box-shadow: none;
-//   }
-// `;
 
 const CTAButton = styled.button`
   margin-top: 30px;
@@ -96,6 +64,14 @@ const CTAButton = styled.button`
   }
 `
 
+const CTAHomeButtonVariant = CTAButton.extend`
+ grid-template-columns: 95px 50px auto;
+`;
+
+const CTAButtonRightArrow = CTAButton.extend`
+  grid-template-columns: 135px auto 0px;
+`;
+
 const Testimonial = styled.p`
 font-style: italic;
 font-size: 22px;
@@ -104,4 +80,50 @@ line-height: 28px;
 letter-spacing: 1.55px;
 `;
 
-export default { Wrapper, Title, SubTitle, Copy, Card, CTAButton, Testimonial };
+const ImageWrapper = Card.extend`
+  height: 400px;
+`;
+
+const Spacer = styled.div`
+  grid-column: 1 / -1;
+  width: 100%;
+  margin: 2%;
+`;
+
+
+// HELPER COMPONENTS
+
+const SVGArrowLeft = () => (
+  <CTAButton className="arrow"><p style={{ gridColumn: '2 / 3', gridRow: ' 1 / 2 ', color: 'white' }}>LEARN MORE</p>
+    <svg style={{ gridColumn: '1 / 2', gridRow: ' 1 / 2 ' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270" transform='rotate(180) scale(.5)'>
+      <g id="Layer_2" data-name="Layer 2">
+        <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
+        <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
+      </g>
+    </svg>
+  </CTAButton>
+);
+
+const SVGArrowRight = () => (
+  <CTAButtonRightArrow className="arrow"><p style={{ gridColumn: '1 / 2', gridRow: ' 1 / 2 ', color: 'white' }}>LEARN MORE</p>
+    <svg style={{ gridColumn: '2 / 3', gridRow: ' 1 / 2 ' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270" transform='scale(.5)'>
+      <g id="Layer_2" data-name="Layer 2">
+        <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
+        <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
+      </g>
+    </svg>
+  </CTAButtonRightArrow>
+);
+
+const HomeButton = () => (
+  <CTAHomeButtonVariant className="arrow"><p style={{ gridColumn: '2 / 3', gridRow: ' 1 / 2 ', color: 'white' }}>HOME</p> 
+    <svg style={{ gridColumn: '1 / 2', gridRow: ' 1 / 2 ' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270" transform='rotate(180) scale(.3)'>
+      <g id="Layer_2" data-name="Layer 2">
+        <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
+        <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
+      </g>
+    </svg> 
+  </CTAHomeButtonVariant>
+);
+
+export default { Wrapper, Title, SubTitle, Copy, Card, CTAButton, Testimonial, SVGArrowRight, SVGArrowLeft, HomeButton, ImageWrapper, Spacer };

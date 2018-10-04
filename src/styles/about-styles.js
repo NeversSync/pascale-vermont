@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Wrapper, Title, Copy, Card, CTAButton, Testimonial } from '../components/Helpers';
-import { ok } from 'assert';
 
 const AboutWrapper = Wrapper.extend`
   grid-template-columns: 1fr 1fr;
@@ -51,16 +50,6 @@ const SoundcloudWrapper = Card.extend`
   height: 400px;
 `;
 
-const ImageWrapper = Card.extend`
-  height: 400px;
-`;
-
-const Spacer = styled.div`
-  grid-column: 1 / -1;
-  width: 100%;
-  margin: 2%;
-`;
-
 const AboutCTA = CTAButton.extend`
   display: grid;
   grid-column: 3 / 4;
@@ -82,4 +71,4 @@ const AboutTestimonial = Testimonial.extend`
   justify-self: center;
 `;
 
-export default { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, AboutCopy, SoundcloudWrapper, ImageWrapper, Spacer, AboutCTA, AboutTestimonial };
+export default { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, AboutCopy, SoundcloudWrapper, AboutCTA, AboutTestimonial };
