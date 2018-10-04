@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Wrapper, Title, Copy, Card, CTAButton, Testimonial } from '../components/Helpers';
+import { ok } from 'assert';
 
 const AboutWrapper = Wrapper.extend`
   grid-template-columns: 1fr 1fr;
@@ -11,25 +12,23 @@ const AboutWrapper = Wrapper.extend`
 const AboutTitleWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px auto 1fr 1fr;
+  grid-template-rows: 100px auto auto 1fr;
   grid-column: 1 / 2;
 `;
 
 const AboutTitle = Title.extend`
   grid-column: 4 / 5;
   grid-row: 2 / 3;
+  justify-self: end;
   font-weight: 500;
-  padding-bottom: 10px;
   align-self: center;
 `
 
 const AboutSvg = styled.svg`
   display: grid;
-  height: 10px;
+  height: 17px;
   grid-column: 4 / 5;
-  grid-row: 2 / 3;
-  align-self: end;
-  margin-bottom: 10px;
+  grid-row: 3 / 4;
 `;
 
 const AboutLine = styled.line`

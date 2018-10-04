@@ -6,13 +6,16 @@ import { Image, Transformation } from 'cloudinary-react';
 import About from './about';
 import Nav from '../components/Nav';
 import Perinatal from './perinatal-loss'; 
-import { Title, SubTitle } from '../components/Helpers';
+import { Title, SubTitle, CTAButton } from '../components/Helpers';
 import { HeroContainer, HeroImg, Heading, LandingSubtitle } from '../styles/landing-styles';
 import { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, AboutCopy, SoundcloudWrapper, ImageWrapper, Spacer, AboutCTA, AboutTestimonial } from '../styles/about-styles';
 
 // TODO: 
 // add drop shadow to nav line
 // Add animations
+// Animate arrows in learn more btn 
+// Borrow animations and scroll library from portfolio
+// Borrow responsive text and styles from portfolio
 
 
 const IndexPage = () => (
@@ -35,21 +38,21 @@ const AboutSummary = () => (
   <AboutTitleWrapper>
     <AboutTitle>ABOUT</AboutTitle>
     <AboutSvg>
-      <AboutLine x1="70" y1="5" x2="175" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6"/>
+      <AboutLine x1="85" y1="3" x2="195" y2="3" stroke="rgb(166, 76, 224)" strokeWidth="6"/>
     </AboutSvg>
-    <Link to="/about/" style={{display: 'grid', gridColumn: '3 / 4', gridRow: '2 / 3', alignSelf: 'center', justifySelf: 'center', alignContent: 'center'}}>
-      <AboutCTA className="arrow"><p style={{ gridColumn: '2 / 3', gridRow: ' 1 / 2 ' }}>LEARN MORE</p>
-        <svg style={{ gridColumn: '1 / 2', gridRow: ' 1 / 2 ' }}xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270" transform='rotate(180) scale(.3)'>
+    <Link to="/about/" style={{display: 'grid', gridColumn: '4 / 5', gridRow: '3 / 4', alignSelf: 'center', justifySelf: 'center', alignContent: 'center'}}>
+      <CTAButton className="arrow"><p style={{ gridColumn: '2 / 3', gridRow: ' 1 / 2 ', color: 'white' }}>LEARN MORE</p>
+        <svg style={{ gridColumn: '1 / 2', gridRow: ' 1 / 2 ' }}xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270" transform='rotate(180) scale(.5)'>
         <g id="Layer_2" data-name="Layer 2">
           <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round"/>
           <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z"/>
         </g>
       </svg> 
-    </AboutCTA>
+    </CTAButton>
   </Link>
   </AboutTitleWrapper>
   <AboutCopy>
-    Pascale Vermont is a licensed clinical sychologist based in San Francisco, CA. She is passionate about providing support to people in times of intense pain and grief. Her main professional occupation centers around grief counseling and disaster mental health.
+    Pascale Vermont is a licensed clinical psychologist based in San Francisco, CA. She is passionate about providing support to people in times of intense pain and grief. Her main professional occupation centers around grief counseling and disaster mental health.
     <br/><br/>
     She provides emotional support in various settings, such as in a private grief counseling practice, in-home counseling to bereaved parents, in large scale disasters, and to expatriate staff of an international disaster organization.
   </AboutCopy>

@@ -17,7 +17,7 @@ const IndexPage = () => (
     </Link>
     </AboutTitleWrapper>
     <AboutCopy>
-      Pascale Vermont is a licensed clinical Psychologist based in San Francisco, CA. She is passionate about providing support to people in times of intense pain and grief. Her main professional occupation centers around grief counseling and disaster mental health.
+      Pascale Vermont is a licensed clinical psychologist based in San Francisco, CA. She is passionate about providing support to people in times of intense pain and grief. Her main professional occupation centers around grief counseling and disaster mental health.
       <br/><br/>
       She provides emotional support in various settings, such as in a private grief counseling practice, in-home counseling to bereaved parents, in large scale disasters, and to expatriate staff of an international disaster organization.
     </AboutCopy>

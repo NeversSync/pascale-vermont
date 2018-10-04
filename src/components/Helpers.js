@@ -34,41 +34,74 @@ const Copy = styled.p`
   font-weight: 300;
 `;
 
-const CTAButton = styled.button`
-  height: 100px;
-  width: 100px;
-  transition: .2s ease;
-  border-radius: 50%;
-  /* font-size: 16px; */
-  /* line-height: 27px; */
-  /* text-align: center; */
-  /* margin: 10px; */
-  /* padding: 6px 13px;*/
-  background: linear-gradient(to left, hsla(348, 86%, 59%, .9), hsla(39, 100%, 63%, 0.9));
-  border: 1px solid black;
-  border: none;
-  box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
+// const CTAButton = styled.button`
+//   height: 100px;
+//   width: 100px;
+//   transition: .2s ease;
+//   border-radius: 50%;
+//   /* font-size: 16px; */
+//   /* line-height: 27px; */
+//   /* text-align: center; */
+//   /* margin: 10px; */
+//   /* padding: 6px 13px;*/
+//   background: linear-gradient(to left, hsla(348, 86%, 59%, .9), hsla(39, 100%, 63%, 0.9));
+//   border: 1px solid black;
+//   border: none;
+//   box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
 
-  &:hover {
-    background: linear-gradient(to left, hsla(348, 96%, 69%, .9), hsla(39, 100%, 63%, 0.9));
-    box-shadow: 0px 4px 3px -2px rgba(0, 0, 0, 0.3);
-  }
+//   &:hover {
+//     background: linear-gradient(to left, hsla(348, 96%, 69%, .9), hsla(39, 100%, 63%, 0.9));
+//     box-shadow: 0px 4px 3px -2px rgba(0, 0, 0, 0.3);
+//   }
   
-  &:active {
-    background: linear-gradient(to left, hsla(348, 86%, 49%, .9), hsla(39, 90%, 43%, 0.9));
-    -webkit-transform: translate(0px, 2px);
-    transform: translate(0px, 2px);
-    border: none;
-    box-shadow: none;
+//   &:active {
+//     background: linear-gradient(to left, hsla(348, 86%, 49%, .9), hsla(39, 90%, 43%, 0.9));
+//     -webkit-transform: translate(0px, 2px);
+//     transform: translate(0px, 2px);
+//     border: none;
+//     box-shadow: none;
+//   }
+// `;
+
+const CTAButton = styled.button`
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: auto auto 17px;
+  align-items: center; 
+  width: 200px;
+  height: 55px;
+  background: linear-gradient(to left, hsla(348, 86%, 59%, .9), hsla(39, 100%, 63%, 0.9));
+  border: none;
+  border-radius: 7px;
+  border-bottom: 3px solid hsla(348, 2%, 10%, .5);
+  box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
+  transition: .3s ease;
+  letter-spacing: 1.8px;
+  cursor: pointer;
+
+  @media(min-width: 768px) {
+    font-size: 16px;
+
+    &:hover {
+      background: linear-gradient(to left, hsla(348, 96%, 69%, .9), hsla(39, 100%, 63%, 0.9));
+      box-shadow: 0 4px 4px rgba(0,0,0,.25);
+    }
+    &:active {
+      background: linear-gradient(to left, hsla(348, 86%, 49%, .9), hsla(39, 90%, 43%, 0.9));
+      -webkit-transform: translate(0px, 2px);
+      transform: translate(0px, 2px);
+      border-bottom: none;
+      box-shadow: none;
+    }
   }
-`;
+`
 
 const Testimonial = styled.p`
-  font-style: italic;
-  font-size: 22px;
-  font-weight: 200;
-  line-height: 28px;
-  letter-spacing: 1.55px;
+font-style: italic;
+font-size: 22px;
+font-weight: 200;
+line-height: 28px;
+letter-spacing: 1.55px;
 `;
 
 export default { Wrapper, Title, SubTitle, Copy, Card, CTAButton, Testimonial };
