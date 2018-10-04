@@ -65,7 +65,8 @@ const CTAButton = styled.button`
 `
 
 const CTAHomeButtonVariant = CTAButton.extend`
- grid-template-columns: 95px 50px auto;
+  grid-template-columns: 95px 50px auto;
+  margin-top: 20px;
 `;
 
 const CTAButtonRightArrow = CTAButton.extend`
