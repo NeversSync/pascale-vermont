@@ -9,6 +9,8 @@ const PerinatalWrapper = Wrapper.extend`
   grid-template-columns: 1fr 1fr;
   padding-top: 100px;
   padding-bottom: 100px;
+  border-top: 1px solid rgba(100, 100, 100, .1);
+  border-bottom: 1px solid rgba(100, 100, 100, .1);
 `;
 
 const PerinatalTitleWrapper = styled.div`
@@ -50,7 +52,7 @@ const PerinatalLoss = () => (
     <PerinatalTitleWrapper>
       <PerinatalTitle>PERINATAL LOSS</PerinatalTitle>
       <PerinatalSvg>
-        <PerinatalLine x1="70" y1="5" x2="175" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6"/>
+        <PerinatalLine x1="5" y1="5" x2="175" y2="5" stroke="rgb(229, 69, 117)" strokeWidth="6"/>
       </PerinatalSvg>
     </PerinatalTitleWrapper>
     <PerinatalCopy>
@@ -58,6 +60,7 @@ const PerinatalLoss = () => (
       At a time of great pain and loneliness, she provides emotional support in the home, as well as education about the grief process and how to handle the many consequences of the loss. 
       She meets with parents and other family members as long as support is needed, and at other times when the grief is triggered by anniversaries or subsequent pregnancies.
     </PerinatalCopy>
+    <PerinatalCopy>Testimonials</PerinatalCopy>
 
     {/* <Link to="/">Go back to the homepage</Link> */}
   </PerinatalWrapper>

@@ -27,6 +27,7 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   color: #221C26;
+    overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -192,4 +193,23 @@ h2 {
 }
 h3 {
   font-size: 2rem;
+}
+
+.arrow #arrow-head{
+	transform-origin: right;
+	transform: scale(1, 1);
+	transition: all 200ms ease;
+}
+.arrow:hover #arrow-head{
+	transform: scale(1, 0.9);
+	transition: all 200ms ease;
+}
+.arrow #arrow-body{
+	transform-origin: right;
+	transform: scale(0.9, 1);
+	transition: all 200ms ease;
+}
+.arrow:hover #arrow-body{
+	transform: scale(1, 1);
+	transition: all 200ms ease;
 }

@@ -5,7 +5,6 @@ import 'reset-css';
 import "./boss.css";
 // import './index.css'
 import styled from 'styled-components';
-
 import 'typeface-fira-sans';
 
 
