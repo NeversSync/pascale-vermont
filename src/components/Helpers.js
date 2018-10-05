@@ -31,10 +31,15 @@ const Copy = styled.p`
   font-weight: 300;
 `;
 
+const CTAButtonText = styled.p`
+  color: white;
+`;
+
 const CTAButton = styled.button`
+  font-size: 16px;
   margin-top: 30px;
-  display: grid;
-  grid-template-columns: auto auto 17px;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center; 
   width: 200px;
   height: 55px;
@@ -62,15 +67,6 @@ const CTAButton = styled.button`
       box-shadow: none;
     }
   }
-`
-
-const CTAHomeButtonVariant = CTAButton.extend`
-  grid-template-columns: 95px 50px auto;
-  margin-top: 20px;
-`;
-
-const CTAButtonRightArrow = CTAButton.extend`
-  grid-template-columns: 135px auto 0px;
 `;
 
 const Testimonial = styled.p`
@@ -95,8 +91,20 @@ const Spacer = styled.div`
 // HELPER COMPONENTS
 
 const SVGArrowLeft = () => (
-  <CTAButton className="arrow"><p style={{ gridColumn: '2 / 3', gridRow: ' 1 / 2 ', color: 'white' }}>LEARN MORE</p>
-    <svg style={{ gridColumn: '1 / 2', gridRow: ' 1 / 2 ' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270" transform='rotate(180) scale(.5)'>
+  <CTAButton className="arrow">
+    <svg style={{width: '30', height: '30'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270" transform='rotate(180)'>
+      <g id="Layer_2" data-name="Layer 2">
+        <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
+        <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
+      </g>
+    </svg>
+    <CTAButtonText>LEARN MORE</CTAButtonText>
+  </CTAButton>
+);
+
+const SVGArrowRight = () => (
+  <CTAButton className="arrow"><CTAButtonText>LEARN MORE</CTAButtonText>
+    <svg style={{ width: '30', height: '30' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
       <g id="Layer_2" data-name="Layer 2">
         <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
         <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
@@ -105,26 +113,16 @@ const SVGArrowLeft = () => (
   </CTAButton>
 );
 
-const SVGArrowRight = () => (
-  <CTAButtonRightArrow className="arrow"><p style={{ gridColumn: '1 / 2', gridRow: ' 1 / 2 ', color: 'white' }}>LEARN MORE</p>
-    <svg style={{ gridColumn: '2 / 3', gridRow: ' 1 / 2 ' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270" transform='scale(.5)'>
-      <g id="Layer_2" data-name="Layer 2">
-        <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
-        <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
-      </g>
-    </svg>
-  </CTAButtonRightArrow>
-);
-
 const HomeButton = () => (
-  <CTAHomeButtonVariant className="arrow"><p style={{ gridColumn: '2 / 3', gridRow: ' 1 / 2 ', color: 'white' }}>HOME</p> 
-    <svg style={{ gridColumn: '1 / 2', gridRow: ' 1 / 2 ' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270" transform='rotate(180) scale(.3)'>
+  <CTAButton className="arrow"> 
+  <CTAButtonText>HOME</CTAButtonText>
+    <svg style={{ width: '30', height: '30' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
       <g id="Layer_2" data-name="Layer 2">
         <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
         <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
       </g>
     </svg> 
-  </CTAHomeButtonVariant>
+  </CTAButton>
 );
 
 export default { Wrapper, Title, SubTitle, Copy, Card, CTAButton, Testimonial, SVGArrowRight, SVGArrowLeft, HomeButton, ImageWrapper, Spacer };

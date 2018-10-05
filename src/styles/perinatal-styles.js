@@ -64,6 +64,8 @@ const PerinatalImageWrapper = ImageWrapper.extend`
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   margin-left: 10%;
+  height: fit-content;
+  max-height: 400px;
 `;
 
 

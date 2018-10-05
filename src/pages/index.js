@@ -28,7 +28,7 @@ const IndexPage = () => (
 const Landing = () => (
   <HeroContainer>
       <Nav /> 
-      <HeroImg src={'http://res.cloudinary.com/nicky-cloudinary/image/upload/c_scale,f_auto,h_711,q_100/v1535768654/joshua-ness-107133-unsplash.jpg'} width="100%" height="auto"/>
+      <HeroImg src={'https://res.cloudinary.com/nicky-cloudinary/image/upload/s--KVcKSXUy--/f_auto,q_jpegmini/v1535768654/PASCALE-VERMONT/joshua-ness-107133-unsplash.jpg'} width="100%" height="auto"/>
       <Heading>
         <Title>Pascale Vermont, PhD</Title>
         <LandingSubtitle>Grief Counselor</LandingSubtitle>
