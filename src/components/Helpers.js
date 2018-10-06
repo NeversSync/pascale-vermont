@@ -92,7 +92,7 @@ const Spacer = styled.div`
 
 const SVGArrowLeft = () => (
   <CTAButton className="arrow">
-    <svg style={{width: '30', height: '30'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270" transform='rotate(180)'>
+    <svg style={{width: '30px', height: '30px'}} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270" transform='rotate(180)'>
       <g id="Layer_2" data-name="Layer 2">
         <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
         <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
@@ -104,7 +104,7 @@ const SVGArrowLeft = () => (
 
 const SVGArrowRight = () => (
   <CTAButton className="arrow"><CTAButtonText>LEARN MORE</CTAButtonText>
-    <svg style={{ width: '30', height: '30' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
+    <svg style={{ width: '30px', height: '30px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
       <g id="Layer_2" data-name="Layer 2">
         <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
         <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
