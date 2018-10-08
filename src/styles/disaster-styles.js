@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import { Wrapper, Title, Copy, Card, CTAButton, Testimonial, ImageWrapper } from '../components/Helpers';
 
-const GriefWrapper = Wrapper.extend`
+const DisasterWrapper = Wrapper.extend`
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   padding: 3% 2% 6% 2%;
   border-bottom: 1px solid rgba(100, 100, 100, .1);
 `
 
-const GriefTitle = Title.extend`
+const DisasterTitle = Title.extend`
   grid-column: 4 / 5;
   grid-row: 2 / 3;
   justify-self: end;
@@ -18,7 +18,7 @@ const GriefTitle = Title.extend`
   padding-bottom: 10px;
 `
 
-const GriefSvg = styled.svg`
+const DisasterSvg = styled.svg`
   display: grid;
   height: 10px;
   width: 100%;
@@ -27,12 +27,12 @@ const GriefSvg = styled.svg`
   align-self: end;
 `;
 
-const GriefLine = styled.line`
+const DisasterLine = styled.line`
   stroke-linecap: round;
   opacity: .9;
 `;
 
-const GriefCTA = CTAButton.extend`
+const DisasterCTA = CTAButton.extend`
   display: grid;
   grid-column: 3 / 4;
   grid-row: 2 / 3;
@@ -46,11 +46,11 @@ const GriefCTA = CTAButton.extend`
   font-size: 16px;
 `;
 
-const GriefTestimonial = Testimonial.extend`
+const DisasterTestimonial = Testimonial.extend`
   grid-column: 1 / -1;
   max-width: 50%;
-  margin: 1% 2% 0% 2%;
+  margin: 0% 2% 0% 2%;
   justify-self: center;
 `;
 
-export default { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefCTA, GriefTestimonial };
+export default { DisasterWrapper, DisasterTitle, DisasterSvg, DisasterLine, DisasterCTA, DisasterTestimonial };

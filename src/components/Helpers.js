@@ -7,8 +7,42 @@ const Wrapper = styled.div`
   background: white;
 `;
 
+const LandingSummaryWrapper = Wrapper.extend`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px auto auto 100px;
+  grid-column: 1 / 2;
+`;
+
+const RightLandingSummaryWrapper = LandingSummaryWrapper.extend`
+  grid-column: 2 / 3;
+  background: initial;
+`
+;
+const Copy = styled.p`
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 1.75px;
+  font-weight: 300;
+`;
+
+const LandingSummaryCopy = Copy.extend`
+  align-self: center;
+  grid-column: 2 / 3;
+  margin-right: 10%;
+`
+
+const RightLandingSummaryCopy = LandingSummaryCopy.extend`
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  width: 90%;
+  margin-left: 15%;
+  justify-self: start;
+`;
+
 const Card = styled.div`
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  background: white;
   /* border-radius: 4px; */
 `;
 
@@ -23,13 +57,6 @@ const SubTitle = styled.h3`
   letter-spacing: 20px;
   font-weight: 200;
 `
-
-const Copy = styled.p`
-  font-size: 20px;
-  line-height: 32px;
-  letter-spacing: 1.75px;
-  font-weight: 300;
-`;
 
 const CTAButtonText = styled.p`
   color: white;
@@ -84,7 +111,7 @@ const ImageWrapper = Card.extend`
 const Spacer = styled.div`
   grid-column: 1 / -1;
   width: 100%;
-  margin: 2%;
+  margin: 1%;
 `;
 
 
@@ -125,4 +152,4 @@ const HomeButton = () => (
   </CTAButton>
 );
 
-export default { Wrapper, Title, SubTitle, Copy, Card, CTAButton, Testimonial, SVGArrowRight, SVGArrowLeft, HomeButton, ImageWrapper, Spacer };
+export default { Wrapper, LandingSummaryWrapper, Title, SubTitle, Copy, LandingSummaryCopy, Card, CTAButton, Testimonial, SVGArrowRight, SVGArrowLeft, HomeButton, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy };

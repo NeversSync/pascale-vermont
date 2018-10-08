@@ -27,9 +27,6 @@ const PerinatalLoss = () => (
       At a time of great pain and loneliness, she provides emotional support in the home, as well as education about the grief process and how to handle the many consequences of the loss.
       She meets with parents and other family members as long as support is needed, and at other times when the grief is triggered by anniversaries or subsequent pregnancies.
     </PerinatalCopy>
-
-
-
   </PerinatalWrapper>
 )
 

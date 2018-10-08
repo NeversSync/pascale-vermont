@@ -4,8 +4,9 @@ import { Wrapper, Title, Copy, Card, CTAButton, Testimonial } from '../component
 const AboutWrapper = Wrapper.extend`
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  padding: 50px;
-  padding-bottom: 75px;
+  padding: 3% 2% 6% 2%;
+  border-top: 1px solid rgba(100, 100, 100, .1);
+  border-bottom: 1px solid rgba(100, 100, 100, .1);
 `
 
 const AboutTitleWrapper = styled.div`
@@ -21,19 +22,21 @@ const AboutTitle = Title.extend`
   justify-self: end;
   font-weight: 500;
   align-self: center;
+  padding-bottom: 3px;
 `
 
 const AboutSvg = styled.svg`
   display: grid;
-  height: 17px;
+  height: 8px;
+  width: 100%;
   grid-column: 4 / 5;
-  grid-row: 3 / 4;
+  grid-row: 2 / 3;
+  align-self: end;
 `;
 
 const AboutLine = styled.line`
   stroke-linecap: round;
   opacity: .9;
-  align-self: end;
 `;
 
 const AboutCopy = Copy.extend`
