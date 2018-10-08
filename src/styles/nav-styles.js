@@ -37,7 +37,7 @@ const NavItem = styled.li`
     display: block;
     height: 13px;
     width: 80px;
-    padding: 2px 5px;
+    padding: 2px 0px;
     opacity: 0;
     transition: opacity 200ms ease;
 

@@ -11,42 +11,42 @@ const Nav = () => (
       <NavItem>
         <Link to="/">HOME
           <NavSvg>
-            <NavLine x1="0" y1="5" x2="70" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round"/>
+            <NavLine x1="4" y1="5" x2="74" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round"/>
           </NavSvg>
         </Link>
       </NavItem>
       <NavItem>
         <Link to="/about">ABOUT
           <NavSvg>
-            <NavLine x1="0" y1="5" x2="70" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round"/>
+            <NavLine x1="4" y1="5" x2="74" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round"/>
           </NavSvg>
         </Link>
       </NavItem>
       <NavItem>
         <Link to="/perinatal-loss">PERINATAL<br/> LOSS
           <LongNavSvg>
-            <NavLine x1="0" y1="5" x2="130" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round"/>
+            <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round"/>
           </LongNavSvg>
         </Link>
       </NavItem>
       <NavItem>
         <Link to="/grief-counseling">GRIEF<br/> COUNSELING
           <LongNavSvg>
-            <NavLine x1="0" y1="5" x2="130" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round"/>
+            <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round"/>
           </LongNavSvg>
         </Link>
       </NavItem>
       <NavItem>
         <Link to="/ngo-crisis-counseling">NGO CRISIS<br/> COUNSELING
           <LongNavSvg>
-            <NavLine x1="0" y1="5" x2="130" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round"/>
+            <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round"/>
           </LongNavSvg>
         </Link>
       </NavItem>
       <NavItem>
         <Link to="/contact">CONTACT
-        <NavSvg>
-          <NavLine x1="7" y1="5" x2="95" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round"/>
+        <NavSvg style={{width: '110px'}}>
+          <NavLine x1="4" y1="5" x2="104" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round"/>
         </NavSvg>
         </Link>
       </NavItem>
