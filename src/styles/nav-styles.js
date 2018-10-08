@@ -34,7 +34,10 @@ const NavItem = styled.li`
   `
 
   const NavSvg = styled.svg`
-    height: 10px;
+    display: block;
+    height: 13px;
+    width: 80px;
+    padding: 2px 5px;
     opacity: 0;
     transition: opacity 200ms ease;
 
@@ -43,9 +46,13 @@ const NavItem = styled.li`
     }
   `;
 
+  const LongNavSvg = NavSvg.extend`
+    width: 140px;
+  `;
+
   const NavLine = styled.line`
     stroke-linecap: round;
     opacity: .9;
   `;
 
-  export default { NavLine, NavSvg, NavItem, NavContainer, NavWrapper };
+  export default { NavLine, NavSvg, LongNavSvg, NavItem, NavContainer, NavWrapper };
