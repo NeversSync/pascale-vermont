@@ -13,9 +13,9 @@ import { NGOWrapper, NGOTitle, NGOSvg, NGOLine, NGOTestimonial } from '../styles
 import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefTestimonial } from '../styles/grief-styles';
 import { DisasterWrapper, DisasterTitle, DisasterSvg, DisasterLine, DisasterTestimonial } from '../styles/disaster-styles';
 import { PalliativeWrapper, PalliativeTitle, PalliativeSvg, PalliativeLine, PalliativeTestimonial } from '../styles/palliative-styles';
+import { ContactWrapper, ContactTitle, ContactSvg, ContactLine, ContactCTA } from '../styles/contact-styles';
 
 // TODO: 
-// fix nav line
 // add drop shadow to nav line
 // Animate arrows in learn more btn 
 // Borrow animations and scroll library from portfolio
@@ -52,6 +52,7 @@ const IndexPage = () => (
     <NGOSummary />
     <DisasterSummary />
     <PalliativeSummary />
+    <Contact/>
   </div>
 )
 
@@ -196,6 +197,24 @@ const PalliativeSummary = () => (
     <PalliativeTestimonial>"Acute grief is a thunderstorm, a monsoonal downpour, a sudden flood that submerges almost everything in its path." - Steven Levine
     </PalliativeTestimonial>
   </PalliativeWrapper>
+);
+
+const Contact = () => (
+  <ContactWrapper>
+    {/* <RightLandingSummaryWrapper> */}
+      <ContactTitle>CONTACT</ContactTitle>
+      <ContactSvg>
+        <ContactLine x1="5" y1="5" x2="190" y2="5" stroke="rgb(255, 189, 66)" strokeWidth="6" />
+      </ContactSvg>
+      <Link to="/contact/" style={{ display: 'grid', gridColumn: '2 / 3', gridRow: '3 / 4', alignSelf: 'center', justifySelf: 'start', alignContent: 'center' }}>
+        <SVGArrowRight />
+      </Link>
+    {/* </RightLandingSummaryWrapper> */}
+    {/* <RightLandingSummaryCopy>
+      Pascale offers crisis counseling to expatriate staff of Relief International based in 22 countries over Skype when they experience a traumatic experience while in the field or suffer a personal crisis.  She was also deployed to Haiti after the 2010 earthquake to provide grief counseling to civilians and hospital staff who had lost many family members and friends.
+        Article on Haiti earthquake…
+    </RightLandingSummaryCopy> */}
+  </ContactWrapper>
 );
 
 export default IndexPage;
