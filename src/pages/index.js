@@ -17,10 +17,13 @@ import { ContactWrapper, ContactTitle, ContactSvg, ContactLine, ContactCTA } fro
 
 // TODO: 
 // add drop shadow to nav line
+// Create media query grid layouts
+// populate pages with content/images
+// Add quote to home page
+// Add images to summary sections? Paralax?
 // Animate arrows in learn more btn 
 // Borrow animations and scroll library from portfolio
 // Borrow responsive text and styles from portfolio
-
 
 const IndexPage = () => (
   <div>
@@ -52,7 +55,7 @@ const IndexPage = () => (
     <NGOSummary />
     <DisasterSummary />
     <PalliativeSummary />
-    <Contact/>
+    {/* <Contact/> */}
   </div>
 )
 
