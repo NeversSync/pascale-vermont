@@ -11,7 +11,7 @@ const NavWrapper = styled.div`
 const NavContainer = styled.ul`
   display: grid;
   row-gap: 0px;
-  column-gap: 15px;
+  column-gap: 25px;
   grid-column: 2 / 3;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: auto auto;

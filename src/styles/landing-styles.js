@@ -18,7 +18,7 @@ const HeroImg = styled.img`
 
 const Heading = styled.div`
   display: grid;
-  grid-column: 3 / 7;
+  grid-column: 4 / 10;
   grid-row: 2 / 6;
   justify-content: center;
   align-content: center;
