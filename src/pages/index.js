@@ -16,7 +16,6 @@ import { PalliativeWrapper, PalliativeTitle, PalliativeSvg, PalliativeLine, Pall
 import { ContactWrapper, ContactTitle, ContactSvg, ContactLine, ContactCTA } from '../styles/contact-styles';
 
 // TODO: 
-// add drop shadow to nav line
 // Create media query grid layouts
 // populate pages with content/images
 // Add quote to home page
@@ -28,27 +27,6 @@ import { ContactWrapper, ContactTitle, ContactSvg, ContactLine, ContactCTA } fro
 const IndexPage = () => (
   <div>
     <Landing />
-    {/* <Card>
-      <Copy style={{width: '50%', textAlign: 'center', margin: '0 auto', padding: '5%'}}>
-      Those first days, sorrow's pain
-      was tangible:
-      an amputation, a dismemberment,
-      the gap so great, no sobs,
-      children, friends
-      would fill its space:
-      a broken heart is body's pain indeed.
-      Days pass, and nights, flowing into weeks;
-      milk no longer spills
-      with my tears.
-      Hours once spent weeping
-      now weave into patterns,
-      our words of grief and love
-      now reach for friendship's clasp,
-      now look ahead....
-      -Lois Lake Church
-      From Quarto, written for Emily
-      </Copy>
-    </Card> */}
     <AboutSummary />
     <PerinatalSummary />
     <GriefSummary />
@@ -77,7 +55,7 @@ const AboutSummary = () => (
       <AboutSvg>
         <AboutLine x1="85" y1="5" x2="195" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6" />
       </AboutSvg>
-      <Link to="/about/" style={{ display: 'grid', gridColumn: '4 / 5', gridRow: '3 / 4', alignSelf: 'center', justifySelf: 'end', alignContent: 'center' }}>
+      <Link to="/about/" style={{ display: 'grid', gridColumn: '4 / 5', gridRow: '2 / 3', alignSelf: 'center', justifySelf: 'end', alignContent: 'center', height: '10px' }}>
         <SVGArrowLeft />
       </Link>
     </LandingSummaryWrapper>
@@ -95,7 +73,24 @@ const AboutSummary = () => (
     <SoundcloudWrapper>
       <iframe style={{ borderRadius: '4px' }} width="100%" height="400" scrolling="no" frameBorder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
     </SoundcloudWrapper>
-    <AboutTestimonial>"The compassion, sympathy, and assurance she gave my husband and I helped us to move through the stages of our grief and realize that we were going to be ok. Her heartfelt questions and warm nature made it easy to open up and share our tragedy, our fears of trying again, our relationship struggles, our guilty thoughts, our happy moments, and so much more." - Anonymous Client
+    {/* <AboutTestimonial>"The compassion, sympathy, and assurance she gave my husband and I helped us to move through the stages of our grief and realize that we were going to be ok. Her heartfelt questions and warm nature made it easy to open up and share our tragedy, our fears of trying again, our relationship struggles, our guilty thoughts, our happy moments, and so much more." - Anonymous Client
+  </AboutTestimonial> */}
+    <AboutTestimonial>Those first days, sorrow's pain<br/>
+      was tangible:<br/>
+      an amputation, a dismemberment,<br/>
+      the gap so great, no sobs,<br/>
+      children, friends<br/>
+      would fill its space:<br/>
+      a broken heart is body's pain indeed.<br/>
+      Days pass, and nights, flowing into weeks;<br/>
+      milk no longer spills<br/>
+      with my tears.<br/>
+      Hours once spent weeping<br/>
+      now weave into patterns,<br/>
+      our words of grief and love<br/>
+      now reach for friendship's clasp,<br/>
+      now look ahead...<br/>
+      -Lois Lake Church
   </AboutTestimonial>
   </AboutWrapper>
 )

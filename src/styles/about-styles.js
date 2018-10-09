@@ -4,7 +4,7 @@ import { Wrapper, Title, Copy, Card, CTAButton, Testimonial } from '../component
 const AboutWrapper = Wrapper.extend`
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  padding: 3% 2% 6% 2%;
+  padding: 1.5% 2% 6% 2%;
   border-top: 1px solid rgba(100, 100, 100, .1);
   border-bottom: 1px solid rgba(100, 100, 100, .1);
 `
@@ -18,11 +18,11 @@ const AboutTitleWrapper = styled.div`
 
 const AboutTitle = Title.extend`
   grid-column: 4 / 5;
-  grid-row: 2 / 3;
+  grid-row: 1 / 2;
   justify-self: end;
   font-weight: 500;
-  align-self: center;
-  padding-bottom: 3px;
+  align-self: end;
+  padding-bottom: 6px;
 `
 
 const AboutSvg = styled.svg`
@@ -30,7 +30,7 @@ const AboutSvg = styled.svg`
   height: 8px;
   width: 100%;
   grid-column: 4 / 5;
-  grid-row: 2 / 3;
+  grid-row: 1 / 2;
   align-self: end;
 `;
 
@@ -72,6 +72,7 @@ const AboutTestimonial = Testimonial.extend`
   max-width: 50%;
   margin: 4% 2% 0% 2%;
   justify-self: center;
+  text-align: center;
 `;
 
 export default { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, AboutCopy, SoundcloudWrapper, AboutCTA, AboutTestimonial };

@@ -34,6 +34,7 @@ const NavItem = styled.li`
   `
 
   const NavSvg = styled.svg`
+    filter: drop-shadow(0 1px 5px rgba(47, 47, 47, 0.1));
     display: block;
     height: 13px;
     width: 80px;
