@@ -4,7 +4,7 @@ import { Title, SubTitle } from '../components/Helpers';
 const HeroContainer = styled.div`
   display: grid;
   height: 650px;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 100px 100px 100px 100px 100px 100px;
   background: linear-gradient(to right, rgba(72, 33, 97, .4) 0%, rgba(189, 68, 92, 0.4) 50%, rgba(204, 133, 0, 0.4) 100%);
 `
