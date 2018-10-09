@@ -5,7 +5,11 @@ const NavWrapper = styled.div`
   height: 100px;
   grid-column: 3 / 12;
   grid-row: 1 / 2;
-  grid-template-columns: 2fr 5fr 1fr;
+
+  @media(max-width: 1325px) {
+    /* opacity: .5;  */
+    grid-column: 11 / -1; 
+  }
 `;
 
 const NavContainer = styled.ul`
@@ -18,6 +22,13 @@ const NavContainer = styled.ul`
   color: white;
   text-shadow: 0 1px 5px rgba(47, 47, 47, 0.25);
   padding-top: 20px;
+
+  @media(max-width: 1325px) {
+    display: block;
+    /* grid-column:  */
+    /* grid-template-columns: 150px fit-content(100px); */
+    /* grid-template-rows: repeat(8, 1fr); */
+  }
 `;
 
 const NavItem = styled.li`
@@ -34,6 +45,10 @@ const NavItem = styled.li`
   border-bottom: 5px solid transparent;
   padding: 2px;
   padding-bottom: 5px;
+
+  @media(max-width: 1325px) {
+    display: block;
+  }
 `;
 
 const NavSvg = styled.svg`
@@ -62,6 +77,10 @@ const NavDropDown = styled.ul`
   grid-column: 6 / 7;
   transition: opacity 200ms ease;
   /* opacity: 0; */
+
+  @media(max-width: 1325px) {
+    display: none;
+  }
 `;
 
 const NavDropDownItem = styled.li`

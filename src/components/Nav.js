@@ -98,7 +98,8 @@ class Nav extends Component {
                 </Link>
             </NavDropDownItem>
           </NavDropDown>
-          <NavItem style={{ width: '90px' }}>
+          <NavItem>
+          {/* style={{ width: '90px' }} */}
             <Link to="/contact">CONTACT
         <NavSvg style={{ width: '110px' }}>
                 <NavLine x1="4" y1="5" x2="104" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
