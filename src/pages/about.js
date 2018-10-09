@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styled from 'styled-components';
 import { Image, Transformation } from 'cloudinary-react';
 
 import { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, AboutCopy, SoundcloudWrapper, AboutTestimonial } from '../styles/about-styles';

@@ -47,10 +47,23 @@ const DisasterCTA = CTAButton.extend`
 `;
 
 const DisasterTestimonial = Testimonial.extend`
-  grid-column: 1 / -1;
-  max-width: 50%;
-  margin: 0% 2% 0% 2%;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  max-width: 65%;
+  /* margin: 1% 2% 0% 2%; */
   justify-self: center;
+  align-self: center;
 `;
 
-export default { DisasterWrapper, DisasterTitle, DisasterSvg, DisasterLine, DisasterCTA, DisasterTestimonial };
+const DisasterImg = styled.img`
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  align-self: center;
+  justify-self: center;
+  /* margin: 6% 2% 0% 2%; */
+  max-width: 70%;
+  border-radius: 5px;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+`;
+
+export default { DisasterWrapper, DisasterTitle, DisasterSvg, DisasterLine, DisasterCTA, DisasterTestimonial, DisasterImg };

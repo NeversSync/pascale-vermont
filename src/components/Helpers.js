@@ -41,9 +41,9 @@ const RightLandingSummaryCopy = LandingSummaryCopy.extend`
 `;
 
 const Card = styled.div`
-  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 5px 15px rgba(50, 50, 93, 0.1), 0 3px 8px rgba(0, 0, 0, 0.07);
   background: white;
-  /* border-radius: 4px; */
+  border-radius: 4px;
 `;
 
 const Title = styled.h1`
@@ -100,8 +100,9 @@ const Testimonial = styled.p`
 font-style: italic;
 font-size: 22px;
 font-weight: 200;
-line-height: 28px;
+line-height: 32px;
 letter-spacing: 1.55px;
+text-align: center;
 `;
 
 const ImageWrapper = Card.extend`

@@ -70,9 +70,8 @@ const AboutCTA = CTAButton.extend`
 const AboutTestimonial = Testimonial.extend`
   grid-column: 1 / -1;
   max-width: 50%;
-  margin: 4% 2% 0% 2%;
+  margin: 6% 2% 0% 2%;
   justify-self: center;
-  text-align: center;
 `;
 
 export default { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, AboutCopy, SoundcloudWrapper, AboutCTA, AboutTestimonial };
