@@ -15,19 +15,20 @@ const NavWrapper = styled.div`
   }
 `;
 
-const MenuIcon = styled.span`
-  width: 100%;
-  height: 45px;
+const MenuIcon = styled.div`
+  display: none;
+  width: 30px;
+  height: 30px;
   color: white;
   cursor: pointer;
-  display: none;
-  /* justify-self: end; */
-  /* padding: 10px; */
+  position: relative;
+  /* margin: 50px auto; */
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
 
    @media(max-width: 1325px) {
-    display: block;
+    display: grid;
     padding: 0;
-    display: block;
   }
 `;
 
