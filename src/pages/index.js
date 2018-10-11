@@ -16,7 +16,7 @@ import { PalliativeWrapper, PalliativeTitle, PalliativeSvg, PalliativeLine, Pall
 import { ContactWrapper, ContactTitle, ContactSvg, ContactLine, ContactCTA } from '../styles/contact-styles';
 
 // TODO: 
-// Create media query grid layouts
+// Finish Create media query grid layouts *LOOK AT ABOUT SECTION AND HELPERS.JS
 // populate pages with content/images
 // Add quote to home page
 // Add images to summary sections? Paralax?
@@ -55,7 +55,7 @@ const AboutSummary = () => (
       <AboutSvg>
         <AboutLine x1="85" y1="5" x2="195" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6" />
       </AboutSvg>
-      <Link to="/about/" style={{ display: 'grid', gridColumn: '4 / 5', gridRow: '2 / 3', alignSelf: 'center', justifySelf: 'end', alignContent: 'center', height: '10px' }}>
+      <Link to="/about/" className='left-button first-button'>
         <SVGArrowLeft />
       </Link>
     </LandingSummaryWrapper>
@@ -97,12 +97,12 @@ const AboutSummary = () => (
 
 const PerinatalSummary = () => (
   <PerinatalWrapper>
-    <RightLandingSummaryWrapper style={{ gridColumn: '2 / 3', background: '' }}>
+    <RightLandingSummaryWrapper>
       <PerinatalTitle>PERINATAL LOSS</PerinatalTitle>
       <PerinatalSvg>
         <PerinatalLine x1="5" y1="5" x2="175" y2="5" stroke="rgb(229, 69, 117)" strokeWidth="6" />
       </PerinatalSvg>
-      <Link to="/perinatal-loss/" style={{ display: 'grid', gridColumn: '2 / 3', gridRow: '3 / 4', alignSelf: 'center', justifySelf: 'start', alignContent: 'center' }}>
+      <Link to="/perinatal-loss/" className='right-button'>
         <SVGArrowRight />
       </Link>
     </RightLandingSummaryWrapper >
@@ -112,9 +112,8 @@ const PerinatalSummary = () => (
       She meets with parents and other family members as long as support is needed, and at other times when the grief is triggered by anniversaries or subsequent pregnancies.
     </RightLandingSummaryCopy>
     <PerinatalTestimonial>
-    <Card style={{padding: '35px'}}>"The compassion, sympathy, and assurance she gave my husband and I helped us to move through the stages of our grief and realize that we were going to be ok. Her heartfelt questions and warm nature made it easy to open up and share our tragedy, our fears of trying again, our relationship struggles, our guilty thoughts, our happy moments, and so much more."<br/> - Anonymous client
-
-    </Card>
+      <Card style={{padding: '35px'}}>"The compassion, sympathy, and assurance she gave my husband and I helped us to move through the stages of our grief and realize that we were going to be ok. Her heartfelt questions and warm nature made it easy to open up and share our tragedy, our fears of trying again, our relationship struggles, our guilty thoughts, our happy moments, and so much more."<br/> - Anonymous client
+      </Card>
     </PerinatalTestimonial>
     {/* <PerinatalTestimonial>
     <Card style={{padding: '35px'}}>"We feel incredibly grateful for Pascale's expertise, compassion, and professionalism during our time of grieving and our healing process following the death of our baby girl."<br/> - L and L
@@ -130,7 +129,7 @@ const GriefSummary = () => (
       <GriefSvg>
         <GriefLine x1="115" y1="5" x2="335" y2="5" stroke="rgb(255, 189, 66)" strokeWidth="6" />
       </GriefSvg>
-      <Link to="/grief-counseling/" style={{ display: 'grid', gridColumn: '4 / 5', gridRow: '3 / 4', alignSelf: 'center', justifySelf: 'end', alignContent: 'center' }}>
+      <Link to="/grief-counseling/" className='left-button'>
         <SVGArrowLeft />
       </Link>
     </LandingSummaryWrapper>
@@ -141,8 +140,8 @@ const GriefSummary = () => (
       Pascale meets clients in her home office in San Francisco and has worked over Skype with people as far away as India, Pakistan and South Sudan.
     </LandingSummaryCopy>
     <GriefTestimonial>
-    <Card style={{padding: '35px'}}>"Pascale showed me how to look outside of my troubles, and see within to realize my strength and good qualities without being so hard on myself. She's very good to point out good things that counter whatever negative issue I'm talking about, and helps me to reconnect with my own potential and strength."<br/> - Following the end of an intimate relationship
-    </Card>
+      <Card style={{padding: '35px'}}>"Pascale showed me how to look outside of my troubles, and see within to realize my strength and good qualities without being so hard on myself. She's very good to point out good things that counter whatever negative issue I'm talking about, and helps me to reconnect with my own potential and strength."<br/> - Following the end of an intimate relationship
+      </Card>
     </GriefTestimonial>
     <GriefImg src={'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607993/PASCALE-VERMONT/ravi-roshan-383162-unsplash.jpg'} width="100%" height="auto" />
   </GriefWrapper>
@@ -155,7 +154,7 @@ const NGOSummary = () => (
       <NGOSvg>
         <NGOLine x1="5" y1="5" x2="225" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6" />
       </NGOSvg>
-      <Link to="/ngo-crisis-counseling/" style={{ display: 'grid', gridColumn: '2 / 3', gridRow: '3 / 4', alignSelf: 'center', justifySelf: 'start', alignContent: 'center' }}>
+      <Link to="/ngo-crisis-counseling/" className='right-button'>
         <SVGArrowRight />
       </Link>
     </RightLandingSummaryWrapper>
@@ -172,12 +171,12 @@ const NGOSummary = () => (
 
 const DisasterSummary = () => (
   <DisasterWrapper>
-    <LandingSummaryWrapper>
+    <LandingSummaryWrapper className='tall-title'>
       <DisasterTitle>DISASTER MENTAL HEALTH</DisasterTitle>
       <DisasterSvg>
         <DisasterLine x1="100" y1="5" x2="248" y2="5" stroke="rgb(229, 69, 117)" strokeWidth="6" />
       </DisasterSvg>
-      <Link to="/disaster-mental-health/" style={{ display: 'grid', gridColumn: '4 / 5', gridRow: '3 / 4', alignSelf: 'center', justifySelf: 'end', alignContent: 'center' }}>
+      <Link to="/disaster-mental-health/" className='left-button'>
         <SVGArrowLeft />
       </Link>
     </LandingSummaryWrapper>
@@ -195,12 +194,12 @@ const DisasterSummary = () => (
 
 const PalliativeSummary = () => (
   <PalliativeWrapper>
-    <RightLandingSummaryWrapper>
+    <RightLandingSummaryWrapper className='tall-title'>
       <PalliativeTitle>PALLIATIVE CARE SUPPORT</PalliativeTitle>
       <PalliativeSvg>
         <PalliativeLine x1="5" y1="5" x2="190" y2="5" stroke="rgb(255, 189, 66)" strokeWidth="6" />
       </PalliativeSvg>
-      <Link to="/palliative-care-support/" style={{ display: 'grid', gridColumn: '2 / 3', gridRow: '3 / 4', alignSelf: 'center', justifySelf: 'start', alignContent: 'center' }}>
+      <Link to="/palliative-care-support/" className='right-button'>
         <SVGArrowRight />
       </Link>
     </RightLandingSummaryWrapper>
@@ -222,7 +221,7 @@ const Contact = () => (
       <ContactSvg>
         <ContactLine x1="5" y1="5" x2="190" y2="5" stroke="rgb(255, 189, 66)" strokeWidth="6" />
       </ContactSvg>
-      <Link to="/contact/" style={{ display: 'grid', gridColumn: '2 / 3', gridRow: '3 / 4', alignSelf: 'center', justifySelf: 'start', alignContent: 'center' }}>
+      <Link to="/contact/" className='right-button'>
         <SVGArrowRight />
       </Link>
     {/* </RightLandingSummaryWrapper> */}

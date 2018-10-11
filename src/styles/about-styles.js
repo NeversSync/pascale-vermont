@@ -7,6 +7,11 @@ const AboutWrapper = Wrapper.extend`
   padding: 1.5% 2% 6% 2%;
   border-top: 1px solid rgba(100, 100, 100, .1);
   border-bottom: 1px solid rgba(100, 100, 100, .1);
+  
+  @media(max-width: 900px) {
+    grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  }
 `
 
 const AboutTitleWrapper = styled.div`
@@ -14,6 +19,13 @@ const AboutTitleWrapper = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px auto auto 1fr;
   grid-column: 1 / 2;
+
+   /* @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+  } */
 `;
 
 const AboutTitle = Title.extend`
@@ -23,6 +35,14 @@ const AboutTitle = Title.extend`
   font-weight: 500;
   align-self: end;
   padding-bottom: 6px;
+
+  @media(max-width: 900px) {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: end;
+    text-align: center;
+  }
 `
 
 const AboutSvg = styled.svg`
@@ -32,6 +52,13 @@ const AboutSvg = styled.svg`
   grid-column: 4 / 5;
   grid-row: 1 / 2;
   align-self: end;
+
+ @media(max-width: 900px) {
+    grid-column: 2 / 4;
+    width: 286px;
+    grid-row: 1 / 2;
+    justify-self: center;
+  }
 `;
 
 const AboutLine = styled.line`
@@ -42,6 +69,11 @@ const AboutLine = styled.line`
 const AboutCopy = Copy.extend`
   grid-column: 2 / 3;
   margin-right: 10%;
+
+   @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
 `
 
 const SoundcloudWrapper = Card.extend`
@@ -51,6 +83,10 @@ const SoundcloudWrapper = Card.extend`
   align-self: center;
   width: 400px;
   height: 400px;
+
+   @media(max-width: 900px) {
+    grid-column: 1 / -1;
+  }
 `;
 
 const AboutCTA = CTAButton.extend`
@@ -72,6 +108,12 @@ const AboutTestimonial = Testimonial.extend`
   max-width: 50%;
   margin: 6% 2% 0% 2%;
   justify-self: center;
+
+   @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    margin: 40px 0;
+    max-width: 80%;
+  }
 `;
 
 export default { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, AboutCopy, SoundcloudWrapper, AboutCTA, AboutTestimonial };

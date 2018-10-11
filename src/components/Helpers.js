@@ -12,11 +12,23 @@ const LandingSummaryWrapper = Wrapper.extend`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px auto auto 100px;
   grid-column: 1 / 2;
+  
+  @media(max-width: 900px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    grid-template-rows: 80px 80px;
+  }
 `;
 
 const RightLandingSummaryWrapper = LandingSummaryWrapper.extend`
   grid-column: 2 / 3;
   background: initial;
+
+@media(max-width: 900px) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
 `
 ;
 const Copy = styled.p`
@@ -24,12 +36,23 @@ const Copy = styled.p`
   line-height: 32px;
   letter-spacing: 1.75px;
   font-weight: 300;
+
+  @media (max-width: 1100px) {
+    font-size: 16px;
+  }
 `;
 
 const LandingSummaryCopy = Copy.extend`
   align-self: center;
   grid-column: 2 / 3;
   margin-right: 10%;
+
+    @media(max-width: 900px) {
+      grid-column: 1 / -1;
+      margin: 0;
+      margin-top: 4%;
+      width: 85%;
+    }
 `
 
 const RightLandingSummaryCopy = LandingSummaryCopy.extend`
@@ -38,6 +61,15 @@ const RightLandingSummaryCopy = LandingSummaryCopy.extend`
   width: 90%;
   margin-left: 15%;
   justify-self: start;
+
+  @media(max-width: 900px) {
+    justify-self: center;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    margin: 0;
+    margin-top: 4%;
+    width: 85%;
+  }
 `;
 
 const Card = styled.div`
@@ -50,12 +82,20 @@ const Title = styled.h1`
   font-size: 52px;
   letter-spacing: 4px;
   font-weight: 300;
+
+  @media (max-width: 1100px) {
+    font-size: 30px;
+  }
 `
 
 const SubTitle = styled.h3`
   font-size: 42px;
   letter-spacing: 20px;
   font-weight: 200;
+
+  @media (max-width: 1100px) {
+    font-size: 20px;
+  }
 `
 
 const CTAButtonText = styled.p`
@@ -79,8 +119,8 @@ const CTAButton = styled.button`
   letter-spacing: 1.8px;
   cursor: pointer;
 
-  @media(min-width: 768px) {
-    font-size: 16px;
+  @media(max-width: 900px) {
+    margin: 0;
 
     &:hover {
       background: linear-gradient(to left, hsla(348, 96%, 69%, .9), hsla(39, 100%, 63%, 0.9));
@@ -103,16 +143,29 @@ font-weight: 200;
 line-height: 32px;
 letter-spacing: 1.55px;
 text-align: center;
+
+@media (max-width: 1100px) {
+    font-size: 18px;
+  }
 `;
 
 const ImageWrapper = Card.extend`
   height: 400px;
+
+   @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    margin: 40px 0;
+  }
 `;
 
 const Spacer = styled.div`
   grid-column: 1 / -1;
   width: 100%;
   margin: 1%;
+
+   @media(max-width: 900px) {
+     display: none;
+  }
 `;
 
 
