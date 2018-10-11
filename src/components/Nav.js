@@ -4,13 +4,15 @@ import { EntypoChevronSmallDown } from 'react-entypo';
 
 import { NavLine, NavSvg, NavItem, NavContainer, LongNavSvg, NavDropDown, NavDropDownItem, NavItemDropContainer, MenuIcon } from '../styles/nav-styles';
 
+const windowGlobal = typeof window !== 'undefined' && window;
+console.log(windowGlobal, 'window')
 
 class Nav extends Component {
   constructor(props) {
     super(props);
     this.state = {
       height: '0px',
-      width: window.innerWidth,
+      width: windowGlobal.innerWidth,
       dropOpacity: '0',
       svgOpacity: '0',
       svgOpacityTwo: '0',
