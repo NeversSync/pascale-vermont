@@ -7,6 +7,11 @@ const AboutWrapper = Wrapper.extend`
   padding: 1.5% 2% 6% 2%;
   border-top: 1px solid rgba(100, 100, 100, .1);
   border-bottom: 1px solid rgba(100, 100, 100, .1);
+  
+  @media(max-width: 900px) {
+    grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto;
+  }
 `
 
 const AboutTitleWrapper = styled.div`
@@ -14,6 +19,13 @@ const AboutTitleWrapper = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px auto auto 1fr;
   grid-column: 1 / 2;
+
+   /* @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 100px;
+  } */
 `;
 
 const AboutTitle = Title.extend`
@@ -42,6 +54,11 @@ const AboutLine = styled.line`
 const AboutCopy = Copy.extend`
   grid-column: 2 / 3;
   margin-right: 10%;
+
+   /* @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  } */
 `
 
 const SoundcloudWrapper = Card.extend`

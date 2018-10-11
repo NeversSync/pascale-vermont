@@ -5,6 +5,7 @@ const NavContainer = styled.ul`
   height: 100px;
   grid-column: 3 / 12;
   grid-row: 1 / 2;
+  z-index: 1;
   row-gap: 0px;
   column-gap: 25px;
   grid-template-columns: repeat(10, 1fr);
@@ -20,6 +21,14 @@ const NavContainer = styled.ul`
     height: fit-content;
     background: rgba(215, 212, 217, 0);
     border-radius: 5px;
+  }
+
+  @media(max-width: 1100px) {
+    grid-column: 4 / -1;
+  }
+
+   @media(max-width: 900px) {
+    grid-column: 1 / -1;
   }
 `;
 

@@ -12,6 +12,13 @@ const LandingSummaryWrapper = Wrapper.extend`
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px auto auto 100px;
   grid-column: 1 / 2;
+
+  @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px 100px;
+  }
 `;
 
 const RightLandingSummaryWrapper = LandingSummaryWrapper.extend`
@@ -24,12 +31,21 @@ const Copy = styled.p`
   line-height: 32px;
   letter-spacing: 1.75px;
   font-weight: 300;
+
+  @media (max-width: 1100px) {
+    font-size: 16px;
+  }
 `;
 
 const LandingSummaryCopy = Copy.extend`
   align-self: center;
   grid-column: 2 / 3;
   margin-right: 10%;
+
+    @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
 `
 
 const RightLandingSummaryCopy = LandingSummaryCopy.extend`
@@ -50,12 +66,20 @@ const Title = styled.h1`
   font-size: 52px;
   letter-spacing: 4px;
   font-weight: 300;
+
+  @media (max-width: 1100px) {
+    font-size: 30px;
+  }
 `
 
 const SubTitle = styled.h3`
   font-size: 42px;
   letter-spacing: 20px;
   font-weight: 200;
+
+  @media (max-width: 1100px) {
+    font-size: 20px;
+  }
 `
 
 const CTAButtonText = styled.p`
@@ -103,6 +127,10 @@ font-weight: 200;
 line-height: 32px;
 letter-spacing: 1.55px;
 text-align: center;
+
+@media (max-width: 1100px) {
+    font-size: 18px;
+  }
 `;
 
 const ImageWrapper = Card.extend`
