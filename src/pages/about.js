@@ -3,17 +3,18 @@ import Link from 'gatsby-link'
 import { Image, Transformation } from 'cloudinary-react';
 
 import { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, AboutCopy, SoundcloudWrapper, AboutTestimonial } from '../styles/about-styles';
-import { HomeButton, Spacer, ImageWrapper } from '../components/Helpers';
+import { HomeButton, Spacer, ImageWrapper, Card } from '../components/Helpers';
 
 
 const IndexPage = () => (
   <AboutWrapper>
     <AboutTitleWrapper>
       <AboutTitle>ABOUT</AboutTitle>
-      <AboutSvg>
-        <AboutLine x1="70" y1="5" x2="175" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6"/>
+      <AboutSvg className="about-page-svg">
+        <AboutLine x1="70" y1="5" x2="180" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6"/>
+        {/* TODO */}
       </AboutSvg>
-      <Link to="/" style={{display: 'grid', gridColumn: '4 / 5', gridRow: '3 / 4', alignSelf: 'center', justifySelf: 'center', alignContent: 'center'}}>HOME
+      <Link to="/" className='home-button'>HOME
         <HomeButton/>
       </Link>
     </AboutTitleWrapper>
@@ -31,7 +32,9 @@ const IndexPage = () => (
     <SoundcloudWrapper>
       <iframe style={{borderRadius: '4px'}}width="100%" height="400" scrolling="no" frameBorder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
     </SoundcloudWrapper>
-    <AboutTestimonial>"The compassion, sympathy, and assurance she gave my husband and I helped us to move through the stages of our grief and realize that we were going to be ok. Her heartfelt questions and warm nature made it easy to open up and share our tragedy, our fears of trying again, our relationship struggles, our guilty thoughts, our happy moments, and so much more." - Anonymous Client
+    <AboutTestimonial>
+    <Card style={{padding: '35px'}}>"The compassion, sympathy, and assurance she gave my husband and I helped us to move through the stages of our grief and realize that we were going to be ok. Her heartfelt questions and warm nature made it easy to open up and share our tragedy, our fears of trying again, our relationship struggles, our guilty thoughts, our happy moments, and so much more."<br/> - Anonymous Client
+    </Card>
     </AboutTestimonial>
   </AboutWrapper>
 )

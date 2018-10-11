@@ -291,7 +291,6 @@ h3 {
   justify-self: end; 
   align-content: center;
 }
-
 .first-button {
  grid-row: 2 / span 1;
 }
@@ -299,7 +298,6 @@ h3 {
 .first-button > button {
  margin-top: 0;
 }
-
 
 .right-button {
   display: grid; 
@@ -310,15 +308,29 @@ h3 {
   align-content: center
 }
 
-@media (max-width: 900px) {
-  .left-button, .right-button {
-  grid-column: 2 / 4;
-  grid-row: 2 / span 1;
-  justify-self: center;
-  }
+.home-button {
+  display: grid; 
+  grid-column: 4 / 5; 
+  grid-row: 3 / span 1;
+  align-self: center; 
+  justify-self: center; 
+  align-content: center
+}
 
+
+@media (max-width: 900px) {
+  .left-button, .right-button, .home-button {
+    grid-column: 2 / 4;
+    grid-row: 2 / span 1;
+    justify-self: center;
+  }
+  
   .tall-title {
     grid-template-rows: 110px 80px;
+  }
+  
+  .about-page-svg {
+    width: 252px;
   }
 }
 

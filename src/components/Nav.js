@@ -5,7 +5,6 @@ import { EntypoChevronSmallDown } from 'react-entypo';
 import { NavLine, NavSvg, NavItem, NavContainer, LongNavSvg, NavDropDown, NavDropDownItem, NavItemDropContainer, MenuIcon } from '../styles/nav-styles';
 
 const windowGlobal = typeof window !== 'undefined' && window;
-console.log(windowGlobal, 'window')
 
 class Nav extends Component {
   constructor(props) {

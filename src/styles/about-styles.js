@@ -20,12 +20,12 @@ const AboutTitleWrapper = styled.div`
   grid-template-rows: 100px auto auto 1fr;
   grid-column: 1 / 2;
 
-   /* @media(max-width: 900px) {
+    @media(max-width: 900px) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 100px;
-  } */
+    grid-template-rows: 80px 80px;
+  }
 `;
 
 const AboutTitle = Title.extend`
@@ -71,9 +71,11 @@ const AboutCopy = Copy.extend`
   margin-right: 10%;
 
    @media(max-width: 900px) {
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
-  }
+      grid-column: 1 / -1;
+      margin: 0;
+      margin-top: 4%;
+      width: 85%;
+    }
 `
 
 const SoundcloudWrapper = Card.extend`

@@ -15,7 +15,6 @@ import { PalliativeWrapper, PalliativeTitle, PalliativeSvg, PalliativeLine, Pall
 import { ContactWrapper, ContactTitle, ContactSvg, ContactLine, ContactCTA } from '../styles/contact-styles';
 
 // TODO: 
-// Finish Create media query grid layouts *LOOK AT ABOUT SECTION AND HELPERS.JS
 // populate pages with content/images
 // Add quote to home page
 // Add images to summary sections? Paralax?
