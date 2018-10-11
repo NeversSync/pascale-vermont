@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import styled from '../../node_modules/styled-components';
 import { Image, Transformation } from 'cloudinary-react';
 
 import Nav from '../components/Nav';
