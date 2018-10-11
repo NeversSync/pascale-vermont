@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-  // background: rgba(215, 212, 217, .8);
-
 const NavContainer = styled.ul`
   display: grid;
   height: 100px;
@@ -21,8 +19,9 @@ const NavContainer = styled.ul`
     grid-column: 11 / 13;
     height: fit-content;
     background: rgba(215, 212, 217, 0);
+    border-radius: 5px;
   }
-  `;
+`;
 
 const MenuIcon = styled.div`
   display: none;
