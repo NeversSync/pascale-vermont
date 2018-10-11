@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
-import styled from 'styled-components'
-import { EntypoChevronSmallDown, EntypoMenu } from 'react-entypo';
+import { EntypoChevronSmallDown } from 'react-entypo';
 
-import { NavLine, NavSvg, NavItem, NavContainer, NavWrapper, LongNavSvg, NavDropDown, NavDropDownItem, NavItemDropContainer, MenuIcon } from '../styles/nav-styles';
+import { NavLine, NavSvg, NavItem, NavContainer, LongNavSvg, NavDropDown, NavDropDownItem, NavItemDropContainer, MenuIcon } from '../styles/nav-styles';
 
 
 class Nav extends Component {
@@ -11,13 +10,15 @@ class Nav extends Component {
     super(props);
     this.state = {
       height: '0px',
-      mobileNav: false,
-      subMenuOffScreen: 'translatex(175px)',
+      width: window.innerWidth,
       dropOpacity: '0',
       svgOpacity: '0',
       svgOpacityTwo: '0',
       svgOpacityThree: '0',
-      showHideSidenav: 'closed'
+      showHideSidenav: 'closed',
+      navBackgroundVisible: 'rgba(215, 212, 217, 0)',
+      navItemVisibility: 'hidden',
+      navItemOpacity: '0'
     };
 
     this.hoverToggle = this.hoverToggle.bind(this);
@@ -25,16 +26,20 @@ class Nav extends Component {
     this.hoverSvgToggleTwo = this.hoverSvgToggleTwo.bind(this);
     this.hoverSvgToggleThree = this.hoverSvgToggleThree.bind(this);
     this.subMenuToggle = this.subMenuToggle.bind(this);
-    this.mobileNavToggle = this.mobileNavToggle.bind(this);
     this.toggleSidenav = this.toggleSidenav.bind(this);
+    this.handleWindowSizeChange = this.handleWindowSizeChange.bind(this);
   };
 
-  mobileNavToggle() {
+  componentDidMount() {
+    window.addEventListener('resize', this.handleWindowSizeChange);
+  }
 
+  handleWindowSizeChange = () => {
+    this.setState({ width: window.innerWidth });
   }
 
   subMenuToggle() {
-    this.state.height === '0px' ? this.setState({ height: '150px', subMenuOffScreen: 'translatex(0px', dropOpacity: '1' }) : this.setState({ height: '0px', subMenuOffScreen: 'translatex(175px', dropOpacity: '0' });
+    this.state.height === '0px' ? this.setState({ height: '150px', dropOpacity: '1' }) : this.setState({ height: '0px', dropOpacity: '0' });
   }
 
   hoverToggle() {
@@ -55,144 +60,209 @@ class Nav extends Component {
 
   toggleSidenav() {
     this.state.showHideSidenav === 'open' ? this.setState({ 'showHideSidenav': 'closed' }) : this.setState({ 'showHideSidenav': 'open' });
+    this.state.navBackgroundVisible === 'rgba(215, 212, 217, 0)' ? this.setState({ 'navBackgroundVisible': 'rgba(215, 212, 217, 1)' }) : this.setState({ 'navBackgroundVisible': 'rgba(215, 212, 217, 0)' });
+    this.state.navItemVisibility === 'hidden' ? this.setState({ 'navItemVisibility': 'visible' }) : this.setState({ 'navItemVisibility': 'hidden' });
+    this.state.navItemOpacity === '0' ? this.setState({ navItemOpacity: '1' }) : this.setState({ navItemOpacity: '0' });
   }
 
   render() {
+    const methods = {
+      hoverToggle: this.hoverToggle, 
+      hoverSvgToggle: this.hoverSvgToggle, 
+      hoverSvgToggleTwo: this.hoverSvgToggleTwo, 
+      hoverSvgToggleThree: this.hoverSvgToggleThree, 
+      subMenuToggle: this.subMenuToggle, 
+      mobileNavToggle: this.mobileNavToggle,
+      toggleSidenav: this.toggleSidenav 
+  };
 
     return (
-      <NavWrapper>
-
-        <NavContainer>
-          {/* <MenuIcon>
-            <EntypoMenu style={{'width': '1.75em', 'height': '1.75em'}}/>
-          </MenuIcon> */}
-
-          <MenuIcon id="nav-icon3" onClick={this.toggleSidenav} className={this.state.showHideSidenav}>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </MenuIcon>
-
-          <NavItem>
-            <Link to="/">HOME
-            {this.state.width >= 1325 ?
-                <NavSvg>
-                  <NavLine x1="4" y1="5" x2="74" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
-                </NavSvg>
-                :
-                <NavSvg style={{ width: '120px' }}>
-                  <NavLine x1="32" y1="5" x2="100" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
-                </NavSvg>
-              }
-            </Link>
-          </NavItem>
-          <NavItem>
-            <Link to="/about">ABOUT
-          {this.state.width >= 1325 ?
-                <NavSvg>
-                  <NavLine x1="4" y1="5" x2="74" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
-                </NavSvg>
-                :
-                <NavSvg style={{ width: '120px' }}>
-                  <NavLine x1="32" y1="5" x2="100" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
-                </NavSvg>
-              }
-            </Link>
-          </NavItem>
-          <NavItem>
-            <Link to="/perinatal-loss">PERINATAL<br /> LOSS
-          <LongNavSvg>
-                <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
-              </LongNavSvg>
-            </Link>
-          </NavItem>
-          <NavItem>
-            <Link to="/grief-counseling">GRIEF<br /> COUNSELING
-          <LongNavSvg>
-                <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
-              </LongNavSvg>
-            </Link>
-          </NavItem>
-          <NavItem>
-            <Link to="/ngo-crisis-counseling">NGO CRISIS<br /> COUNSELING
-          <LongNavSvg>
-                <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
-              </LongNavSvg>
-            </Link>
-          </NavItem>
-          <NavItemDropContainer onClick={this.subMenuToggle} onMouseEnter={this.hoverSvgToggle} onMouseLeave={this.hoverSvgToggle}>
-            <p>PAST WORK</p>
-            <span><EntypoChevronSmallDown /></span>
-
-            {this.state.width >= 1325 ?
-              <NavSvg style={{ opacity: this.state.svgOpacity }}>
-                <NavLine x1="2" y1="5" x2="70" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
-              </NavSvg>
-              :
-              <NavSvg style={{ opacity: this.state.svgOpacity, width: '150px' }}>
-                <NavLine x1="8" y1="0" x2="126" y2="0" stroke="white" strokeWidth="4" strokeLinecap="round" />
-              </NavSvg>}
-          </NavItemDropContainer>
-
-          {this.state.width >= 1325 ?
-            <NavDropDown style={{ opacity: this.state.dropOpacity }}>
-              <NavDropDownItem onMouseEnter={this.hoverSvgToggleTwo} onMouseLeave={this.hoverSvgToggleTwo}>
-
-                <Link to="/disaster-mental-health">DISASTER MENTAL HEALTH
-                <NavSvg style={{ opacity: this.state.svgOpacityTwo, width: '150px' }}>
-                    <NavLine x1="27" y1="3" x2="112" y2="3" stroke="white" strokeWidth="4" strokeLinecap="round" />
-                  </NavSvg>
-                </Link>
-              </NavDropDownItem>
-              <NavDropDownItem onMouseEnter={this.hoverSvgToggleThree} onMouseLeave={this.hoverSvgToggleThree}>
-                <Link to="/palliative-care">PALLIATIVE CARE
-              <NavSvg style={{ opacity: this.state.svgOpacityThree, width: '150px' }}>
-                    <NavLine x1="27" y1="3" x2="112" y2="3" stroke="white" strokeWidth="4" strokeLinecap="round" />
-                  </NavSvg>
-                </Link>
-              </NavDropDownItem>
-            </NavDropDown>
-            :
-            <NavDropDown style={{ opacity: this.state.dropOpacity, height: this.state.height, transform: this.state.subMenuOffScreen }}>
-              <NavDropDownItem onMouseEnter={this.hoverSvgToggleTwo} onMouseLeave={this.hoverSvgToggleTwo}>
-                <Link to="/disaster-mental-health">DISASTER MENTAL HEALTH
-                <NavSvg style={{ opacity: this.state.svgOpacityTwo, width: '150px' }}>
-                    <NavLine x1="27" y1="3" x2="112" y2="3" stroke="white" strokeWidth="4" strokeLinecap="round" />
-                  </NavSvg>
-                </Link>
-              </NavDropDownItem>
-              <NavDropDownItem onMouseEnter={this.hoverSvgToggleThree} onMouseLeave={this.hoverSvgToggleThree}>
-                <Link to="/palliative-care">PALLIATIVE CARE
-              <NavSvg style={{ opacity: this.state.svgOpacityThree, width: '150px' }}>
-                    <NavLine x1="27" y1="3" x2="112" y2="3" stroke="white" strokeWidth="4" strokeLinecap="round" />
-                  </NavSvg>
-                </Link>
-              </NavDropDownItem>
-            </NavDropDown>
-          }
-
-          {this.state.width >= 1325 ?
-            <NavItem style={{ width: '90px' }}>
-              <Link to="/contact">CONTACT
-            <NavSvg style={{ width: '110px' }}>
-                  <NavLine x1="4" y1="5" x2="104" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
-                </NavSvg>
-              </Link>
-            </NavItem>
-            :
-            <NavItem>
-              <Link to="/contact">CONTACT
-            <NavSvg style={{ width: '130px' }}>
-                  <NavLine x1="23" y1="5" x2="111" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
-                </NavSvg>
-              </Link>
-            </NavItem>
-          }
-        </NavContainer>
-      </NavWrapper>
+      this.state.width >= 1325 ? <DesktopNav {...this.state} {...methods} /> : <MobileNav {...this.state} {...methods}/>
     );
   }
 };
+
+const DesktopNav = ({ 
+  dropOpacity,
+  svgOpacity,
+  svgOpacityTwo,
+  svgOpacityThree,
+  showHideSidenav,
+  hoverSvgToggle, 
+  hoverSvgToggleTwo, 
+  hoverSvgToggleThree, 
+  subMenuToggle, 
+  toggleSidenav 
+}) => (
+
+  <NavContainer>
+        <MenuIcon id="nav-icon3" onClick={toggleSidenav} className={showHideSidenav}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </MenuIcon>
+         <NavItem>
+         <Link to="/">HOME
+             <NavSvg>
+               <NavLine x1="4" y1="5" x2="74" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
+             </NavSvg>
+         </Link>
+       </NavItem>
+       <NavItem >
+         <Link to="/about">ABOUT
+             <NavSvg>
+               <NavLine x1="4" y1="5" x2="74" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
+             </NavSvg>
+         </Link>
+       </NavItem>
+       <NavItem>
+         <Link to="/perinatal-loss">PERINATAL<br /> LOSS
+     <LongNavSvg>
+             <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
+           </LongNavSvg>
+         </Link>
+       </NavItem>
+       <NavItem>
+         <Link to="/grief-counseling">GRIEF<br /> COUNSELING
+     <LongNavSvg>
+             <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
+           </LongNavSvg>
+         </Link>
+       </NavItem>
+       <NavItem>
+         <Link to="/ngo-crisis-counseling">NGO CRISIS<br /> COUNSELING
+     <LongNavSvg>
+             <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
+           </LongNavSvg>
+         </Link>
+       </NavItem>
+       <NavItemDropContainer onClick={subMenuToggle} onMouseEnter={hoverSvgToggle} onMouseLeave={hoverSvgToggle}>
+         <p>PAST WORK</p>
+         <span><EntypoChevronSmallDown /></span>
+           <NavSvg style={{ opacity: svgOpacity }}>
+             <NavLine x1="2" y1="5" x2="70" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
+           </NavSvg>
+       </NavItemDropContainer>
+
+         <NavDropDown style={{ opacity: dropOpacity }}>
+           <NavDropDownItem onMouseEnter={hoverSvgToggleTwo} onMouseLeave={hoverSvgToggleTwo} >
+
+             <Link to="/disaster-mental-health">DISASTER MENTAL HEALTH
+           <NavSvg style={{ opacity: svgOpacityTwo, width: '150px' }}>
+                 <NavLine x1="27" y1="3" x2="112" y2="3" stroke="white" strokeWidth="4" strokeLinecap="round" />
+               </NavSvg>
+             </Link>
+           </NavDropDownItem>
+           <NavDropDownItem onMouseEnter={hoverSvgToggleThree} onMouseLeave={hoverSvgToggleThree} >
+             <Link to="/palliative-care">PALLIATIVE CARE
+         <NavSvg style={{ opacity: svgOpacityThree, width: '150px' }}>
+                 <NavLine x1="27" y1="3" x2="112" y2="3" stroke="white" strokeWidth="4" strokeLinecap="round" />
+               </NavSvg>
+             </Link>
+           </NavDropDownItem>
+         </NavDropDown>
+         
+         <NavItem style={{ width: '85px' }}>
+           <Link to="/contact">CONTACT
+       <NavSvg style={{ width: '110px' }}>
+               <NavLine x1="4" y1="5" x2="104" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
+             </NavSvg>
+           </Link>
+         </NavItem>
+     </NavContainer>
+);
+
+
+const MobileNav = ({ 
+  height,
+  dropOpacity,
+  svgOpacity,
+  svgOpacityTwo,
+  svgOpacityThree,
+  showHideSidenav,
+  navBackgroundVisible,
+  navItemVisibility,
+  navItemOpacity,
+  hoverSvgToggle, 
+  hoverSvgToggleTwo, 
+  hoverSvgToggleThree, 
+  subMenuToggle, 
+  toggleSidenav 
+}) => (
+  <NavContainer style={{background: navBackgroundVisible}}>
+        <MenuIcon id="nav-icon3" onClick={toggleSidenav} className={showHideSidenav}>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </MenuIcon>
+        <NavItem style={{visibility: navItemVisibility, opacity: navItemOpacity}}>
+         <Link to="/">HOME
+             <NavSvg style={{ width: '120px' }}>
+               <NavLine x1="32" y1="5" x2="100" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
+             </NavSvg>
+         </Link>
+       </NavItem>
+       <NavItem style={{visibility: navItemVisibility, opacity: navItemOpacity}}>
+         <Link to="/about">ABOUT
+             <NavSvg style={{ width: '120px' }}>
+               <NavLine x1="32" y1="5" x2="100" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
+             </NavSvg>
+         </Link>
+       </NavItem>
+       <NavItem style={{visibility: navItemVisibility, opacity: navItemOpacity}}>
+         <Link to="/perinatal-loss">PERINATAL<br /> LOSS
+     <LongNavSvg>
+             <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
+           </LongNavSvg>
+         </Link>
+       </NavItem>
+       <NavItem style={{visibility: navItemVisibility, opacity: navItemOpacity}}>
+         <Link to="/grief-counseling">GRIEF<br /> COUNSELING
+     <LongNavSvg>
+             <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
+           </LongNavSvg>
+         </Link>
+       </NavItem>
+       <NavItem style={{visibility: navItemVisibility, opacity: navItemOpacity}}>
+         <Link to="/ngo-crisis-counseling">NGO CRISIS<br /> COUNSELING
+     <LongNavSvg>
+             <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
+           </LongNavSvg>
+         </Link>
+       </NavItem>
+       <NavItemDropContainer onClick={subMenuToggle} onMouseEnter={hoverSvgToggle} onMouseLeave={hoverSvgToggle} style={{visibility: navItemVisibility, opacity: navItemOpacity}}>
+         <p>PAST WORK</p>
+         <span><EntypoChevronSmallDown /></span>
+           <NavSvg style={{ opacity: svgOpacity, width: '150px' }}>
+             <NavLine x1="8" y1="0" x2="126" y2="0" stroke="white" strokeWidth="4" strokeLinecap="round" />
+           </NavSvg>
+       </NavItemDropContainer>
+         <NavDropDown style={{ opacity: dropOpacity, height: height }}>
+           <NavDropDownItem onMouseEnter={hoverSvgToggleTwo} onMouseLeave={hoverSvgToggleTwo}  style={{visibility: navItemVisibility, opacity: navItemOpacity}}>
+             <Link to="/disaster-mental-health">DISASTER MENTAL HEALTH
+           <NavSvg style={{ opacity: svgOpacityTwo, width: '150px' }}>
+                 <NavLine x1="27" y1="3" x2="112" y2="3" stroke="white" strokeWidth="4" strokeLinecap="round" />
+               </NavSvg>
+             </Link>
+           </NavDropDownItem>
+           <NavDropDownItem onMouseEnter={hoverSvgToggleThree} onMouseLeave={hoverSvgToggleThree}  style={{visibility: navItemVisibility, opacity: navItemOpacity}}>
+             <Link to="/palliative-care">PALLIATIVE CARE
+         <NavSvg style={{ opacity: svgOpacityThree, width: '150px' }}>
+                 <NavLine x1="27" y1="3" x2="112" y2="3" stroke="white" strokeWidth="4" strokeLinecap="round" />
+               </NavSvg>
+             </Link>
+           </NavDropDownItem>
+         </NavDropDown>
+         <NavItem style={{visibility: navItemVisibility, opacity: navItemOpacity}}>
+           <Link to="/contact">CONTACT
+       <NavSvg style={{ width: '130px' }}>
+               <NavLine x1="23" y1="5" x2="111" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
+             </NavSvg>
+           </Link>
+         </NavItem>
+     </NavContainer>
+     );
 
 export default Nav;

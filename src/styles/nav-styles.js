@@ -1,19 +1,28 @@
 import styled from "styled-components";
 
-const NavWrapper = styled.div`
+  // background: rgba(215, 212, 217, .8);
+
+const NavContainer = styled.ul`
   display: grid;
   height: 100px;
   grid-column: 3 / 12;
   grid-row: 1 / 2;
+  row-gap: 0px;
+  column-gap: 25px;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto auto;
+  color: white;
+  text-shadow: 0 1px 5px rgba(47, 47, 47, 0.25);
+  padding-top: 20px;
+  transition: background .5s ease-in-out;
 
   @media(max-width: 1325px) {
-    /* opacity: .5;  */
-    height: 500px;
-    padding: 20px;
-    background: rgba(215, 212, 217, .8);
-    grid-column: 11 / -1; 
+    display: block;
+    grid-column: 11 / 13;
+    height: fit-content;
+    background: rgba(215, 212, 217, 0);
   }
-`;
+  `;
 
 const MenuIcon = styled.div`
   display: none;
@@ -21,31 +30,14 @@ const MenuIcon = styled.div`
   height: 30px;
   color: white;
   cursor: pointer;
-  position: relative;
-  /* margin: 50px auto; */
   transform: rotate(0deg);
   transition: .5s ease-in-out;
 
    @media(max-width: 1325px) {
-    display: grid;
-    padding: 0;
-  }
-`;
-
-const NavContainer = styled.ul`
-  display: grid;
-  row-gap: 0px;
-  column-gap: 25px;
-  grid-column: 2 / 3;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: auto auto;
-  color: white;
-  text-shadow: 0 1px 5px rgba(47, 47, 47, 0.25);
-  padding-top: 20px;
-
-  @media(max-width: 1325px) {
     display: block;
-    padding: 0;
+    margin-left: 75%;
+    margin-bottom: 10px;
+    opacity: 1;
   }
 `;
 
@@ -63,9 +55,15 @@ const NavItem = styled.li`
   border-bottom: 5px solid transparent;
   padding: 2px;
   padding-bottom: 5px;
+  transition: visibility .5s ease-in-out, opacity .5s ease-in-out;
+  cursor: pointer;
 
   @media(max-width: 1325px) {
     display: block;
+    margin: 7px auto;
+    padding: 0;
+    opacity: 0;
+    visibility: hidden;
   }
 `;
 
@@ -92,7 +90,7 @@ const NavItemDropContainer = NavItem.extend`
 const NavDropDown = styled.ul`
   grid-row: 2 / 3;
   grid-column: 6 / 7;
-  transition: opacity 400ms ease, height 400ms ease, translatex 400ms ease;
+  transition: opacity .5s ease-in-out, height .5s ease-in-out;
 `;
 
 const NavDropDownItem = styled.li`
@@ -104,6 +102,10 @@ const NavDropDownItem = styled.li`
   justify-content: center;
   line-height: 23px;
   list-style-type: none;
+  margin: 7px auto;
+  transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+  padding: 0;
+  cursor: pointer;
 `;
 
 const LongNavSvg = NavSvg.extend`
@@ -121,7 +123,6 @@ export default {
   LongNavSvg,
   NavItem,
   NavContainer,
-  NavWrapper,
   NavDropDown,
   NavDropDownItem,
   NavItemDropContainer,
