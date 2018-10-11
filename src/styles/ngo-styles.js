@@ -20,6 +20,14 @@ const NGOTitle = Title.extend`
   grid-row: 2 / 3;
   font-weight: 500;
   padding-bottom: 10px;
+  
+  @media(max-width: 900px) {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: end;
+    text-align: center;
+  }
 `
 
 const NGOSvg = styled.svg`
@@ -28,6 +36,13 @@ const NGOSvg = styled.svg`
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   align-self: end;
+  
+  @media(max-width: 900px) {
+    grid-column: 2 / 4;
+    width: 232px;
+    grid-row: 1 / 2;
+    justify-self: center;
+  }
 `;
 
 const NGOLine = styled.line`
@@ -48,6 +63,12 @@ const NGOTestimonial = Testimonial.extend`
   max-width: 45%;
   margin: 1% 2% 0% 2%;
   justify-self: center;
+
+   @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    margin: 40px 0;
+    max-width: 80%;
+  }
 `;
 
 const NGOImageWrapper = ImageWrapper.extend`

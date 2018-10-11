@@ -16,6 +16,15 @@ const DisasterTitle = Title.extend`
   align-self: center;
   text-align: right;
   padding-bottom: 10px;
+
+  @media(max-width: 900px) {
+    margin-top: 40px;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: end;
+    text-align: center;
+  }
 `
 
 const DisasterSvg = styled.svg`
@@ -25,6 +34,13 @@ const DisasterSvg = styled.svg`
   grid-column: 4 / 5;
   grid-row: 2 / 3;
   align-self: end;
+
+  @media(max-width: 900px) {
+    grid-column: 2 / 4;
+    width: 355px;
+    grid-row: 1 / 2;
+    justify-self: center;
+  }
 `;
 
 const DisasterLine = styled.line`
@@ -50,9 +66,15 @@ const DisasterTestimonial = Testimonial.extend`
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   max-width: 65%;
-  /* margin: 1% 2% 0% 2%; */
   justify-self: center;
   align-self: center;
+
+  @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+    margin: 40px 0;
+    max-width: 80%;
+  }
 `;
 
 const DisasterImg = styled.img`
@@ -60,10 +82,17 @@ const DisasterImg = styled.img`
   grid-row: 2 / 3;
   align-self: center;
   justify-self: center;
-  /* margin: 6% 2% 0% 2%; */
   max-width: 70%;
   border-radius: 5px;
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+
+  @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    margin: 0;
+    margin-top: 4%;
+    max-width: 80%;
+  }
 `;
 
 export default { DisasterWrapper, DisasterTitle, DisasterSvg, DisasterLine, DisasterCTA, DisasterTestimonial, DisasterImg };

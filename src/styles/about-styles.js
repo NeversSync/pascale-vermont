@@ -35,6 +35,14 @@ const AboutTitle = Title.extend`
   font-weight: 500;
   align-self: end;
   padding-bottom: 6px;
+
+  @media(max-width: 900px) {
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: end;
+    text-align: center;
+  }
 `
 
 const AboutSvg = styled.svg`
@@ -44,6 +52,13 @@ const AboutSvg = styled.svg`
   grid-column: 4 / 5;
   grid-row: 1 / 2;
   align-self: end;
+
+ @media(max-width: 900px) {
+    grid-column: 2 / 4;
+    width: 286px;
+    grid-row: 1 / 2;
+    justify-self: center;
+  }
 `;
 
 const AboutLine = styled.line`
@@ -55,10 +70,10 @@ const AboutCopy = Copy.extend`
   grid-column: 2 / 3;
   margin-right: 10%;
 
-   /* @media(max-width: 900px) {
+   @media(max-width: 900px) {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-  } */
+  }
 `
 
 const SoundcloudWrapper = Card.extend`
@@ -68,6 +83,10 @@ const SoundcloudWrapper = Card.extend`
   align-self: center;
   width: 400px;
   height: 400px;
+
+   @media(max-width: 900px) {
+    grid-column: 1 / -1;
+  }
 `;
 
 const AboutCTA = CTAButton.extend`
@@ -89,6 +108,12 @@ const AboutTestimonial = Testimonial.extend`
   max-width: 50%;
   margin: 6% 2% 0% 2%;
   justify-self: center;
+
+   @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    margin: 40px 0;
+    max-width: 80%;
+  }
 `;
 
 export default { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, AboutCopy, SoundcloudWrapper, AboutCTA, AboutTestimonial };

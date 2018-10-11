@@ -9,8 +9,21 @@ const HeroContainer = styled.div`
   background: linear-gradient(to right, rgba(72, 33, 97, .4) 0%, rgba(189, 68, 92, 0.4) 50%, rgba(204, 133, 0, 0.4) 100%);
 
   @media (max-width: 1100px) {
-    height: 550px;
+    /* height: 550px; */
+    height: fit-content;
     grid-template-columns: repeat(6, 1fr);
+  }
+  @media (max-width: 900px) {
+    /* max-height: 275px; */
+    height: fit-content;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 100px 100px 100px 100px;
+  }
+  @media (max-width: 700px) {
+    max-height: 275px;
+    height: fit-content;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 75px 75px 75px 75px;
   }
 `
 
@@ -39,6 +52,10 @@ const Heading = styled.div`
 
   @media (max-width: 1100px) {
     grid-column: 2 / 6;
+  }
+  @media (max-width: 900px) {
+    grid-column: 3 / 5;
+    grid-row: 2 / 4;
   }
 `
 

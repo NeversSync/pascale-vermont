@@ -27,7 +27,7 @@ const NavContainer = styled.ul`
     grid-column: 4 / -1;
   }
 
-   @media(max-width: 900px) {
+  @media(max-width: 900px) {
     grid-column: 1 / -1;
   }
 `;
@@ -73,6 +73,13 @@ const NavItem = styled.li`
     opacity: 0;
     visibility: hidden;
   }
+
+  @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 auto;
+  }
 `;
 
 const NavSvg = styled.svg`
@@ -114,6 +121,18 @@ const NavDropDownItem = styled.li`
   transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
   padding: 0;
   cursor: pointer;
+
+   @media(max-width: 1325px) {
+    margin: 7px auto;
+    padding: 0;
+    opacity: 0;
+  }
+
+  @media(max-width: 900px) {
+    line-height: 18px;
+    font-size: 16px;
+    margin: 0 auto;
+  }
 `;
 
 const LongNavSvg = NavSvg.extend`
