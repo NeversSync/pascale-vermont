@@ -149,6 +149,31 @@ text-align: center;
   }
 `;
 
+const SummaryTestimonial = Testimonial.extend`
+  grid-column: 1 / -1;
+  max-width: 45%;
+  margin: 1% 2% 0% 2%;
+  justify-self: center;
+
+  @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    margin: 40px 0;
+    max-width: 80%;
+  }
+`;
+
+const WithImageSummaryTestimonial = SummaryTestimonial.extend`
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  max-width: 65%;
+  align-self: center;
+
+  @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+  }
+`;
+
 const ImageWrapper = Card.extend`
   height: 400px;
 
@@ -206,4 +231,4 @@ const HomeButton = () => (
   </CTAButton>
 );
 
-export default { Wrapper, LandingSummaryWrapper, Title, SubTitle, Copy, LandingSummaryCopy, Card, CTAButton, Testimonial, SVGArrowRight, SVGArrowLeft, HomeButton, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy };
+export default { Wrapper, LandingSummaryWrapper, Title, SubTitle, Copy, LandingSummaryCopy, Card, CTAButton, Testimonial, SVGArrowRight, SVGArrowLeft, HomeButton, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial };

@@ -3,15 +3,15 @@ import Link from 'gatsby-link'
 import { Image, Transformation } from 'cloudinary-react';
 
 import Nav from '../components/Nav';
-import { Card, Copy, LandingSummaryWrapper, Title, SubTitle, CTAButton, SVGArrowRight, SVGArrowLeft, LandingSummaryCopy, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy } from '../components/Helpers';
+import { Card, Copy, LandingSummaryWrapper, Title, SubTitle, CTAButton, SVGArrowRight, SVGArrowLeft, LandingSummaryCopy, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial } from '../components/Helpers';
 
 import { HeroContainer, HeroImg, Heading, LandingSubtitle } from '../styles/landing-styles';
-import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, SoundcloudWrapper, AboutTestimonial } from '../styles/about-styles';
-import { PerinatalWrapper, PerinatalTitle, PerinatalSvg, PerinatalLine, PerinatalTestimonial } from '../styles/perinatal-styles';
-import { NGOWrapper, NGOTitle, NGOSvg, NGOLine, NGOTestimonial } from '../styles/ngo-styles';
-import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefTestimonial, GriefImg } from '../styles/grief-styles';
-import { DisasterWrapper, DisasterTitle, DisasterSvg, DisasterLine, DisasterTestimonial, DisasterImg } from '../styles/disaster-styles';
-import { PalliativeWrapper, PalliativeTitle, PalliativeSvg, PalliativeLine, PalliativeTestimonial } from '../styles/palliative-styles';
+import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, SoundcloudWrapper } from '../styles/about-styles';
+import { PerinatalWrapper, PerinatalTitle, PerinatalSvg, PerinatalLine } from '../styles/perinatal-styles';
+import { NGOWrapper, NGOTitle, NGOSvg, NGOLine } from '../styles/ngo-styles';
+import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefImg } from '../styles/grief-styles';
+import { DisasterWrapper, DisasterTitle, DisasterSvg, DisasterLine, DisasterImg } from '../styles/disaster-styles';
+import { PalliativeWrapper, PalliativeTitle, PalliativeSvg, PalliativeLine } from '../styles/palliative-styles';
 import { ContactWrapper, ContactTitle, ContactSvg, ContactLine, ContactCTA } from '../styles/contact-styles';
 
 // TODO: 
@@ -71,7 +71,7 @@ const AboutSummary = () => (
     <SoundcloudWrapper>
       <iframe style={{ borderRadius: '4px' }} width="100%" height="400" scrolling="no" frameBorder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
     </SoundcloudWrapper>
-    <AboutTestimonial>
+    <SummaryTestimonial style={{marginTop: '4%'}}>
       <Card style={{padding: '35px'}}>Those first days, sorrow's pain<br/>
       was tangible:<br/>
       an amputation, a dismemberment,<br/>
@@ -89,7 +89,7 @@ const AboutSummary = () => (
       now look ahead...<br/>
       -Lois Lake Church
       </Card>
-  </AboutTestimonial>
+  </SummaryTestimonial>
   </AboutWrapper>
 )
 
@@ -109,14 +109,14 @@ const PerinatalSummary = () => (
       At a time of great pain and loneliness, she provides emotional support in the home, as well as education about the grief process and how to handle the many consequences of the loss.
       She meets with parents and other family members as long as support is needed, and at other times when the grief is triggered by anniversaries or subsequent pregnancies.
     </RightLandingSummaryCopy>
-    <PerinatalTestimonial>
+    <SummaryTestimonial>
       <Card style={{padding: '35px'}}>"The compassion, sympathy, and assurance she gave my husband and I helped us to move through the stages of our grief and realize that we were going to be ok. Her heartfelt questions and warm nature made it easy to open up and share our tragedy, our fears of trying again, our relationship struggles, our guilty thoughts, our happy moments, and so much more."<br/> - Anonymous client
       </Card>
-    </PerinatalTestimonial>
-    {/* <PerinatalTestimonial>
+    </SummaryTestimonial>
+    {/* <SummaryTestimonial>
     <Card style={{padding: '35px'}}>"We feel incredibly grateful for Pascale's expertise, compassion, and professionalism during our time of grieving and our healing process following the death of our baby girl."<br/> - L and L
     </Card>
-    </PerinatalTestimonial> */}
+    </SummaryTestimonial> */}
   </PerinatalWrapper>
 );
 
@@ -137,10 +137,10 @@ const GriefSummary = () => (
       Over time small victories build upon each other until they tend to dominate, and the moments of respite between the waves of pain lengthen.
       Pascale meets clients in her home office in San Francisco and has worked over Skype with people as far away as India, Pakistan and South Sudan.
     </LandingSummaryCopy>
-    <GriefTestimonial>
+    <WithImageSummaryTestimonial>
       <Card style={{padding: '35px'}}>"Pascale showed me how to look outside of my troubles, and see within to realize my strength and good qualities without being so hard on myself. She's very good to point out good things that counter whatever negative issue I'm talking about, and helps me to reconnect with my own potential and strength."<br/> - Following the end of an intimate relationship
       </Card>
-    </GriefTestimonial>
+    </WithImageSummaryTestimonial>
     <GriefImg src={'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607993/PASCALE-VERMONT/ravi-roshan-383162-unsplash.jpg'} width="100%" height="auto" />
   </GriefWrapper>
 );
@@ -160,10 +160,10 @@ const NGOSummary = () => (
       Pascale offers crisis counseling to expatriate staff of Relief International based in 22 countries over Skype when they experience a traumatic experience while in the field or suffer a personal crisis.  She was also deployed to Haiti after the 2010 earthquake to provide grief counseling to civilians and hospital staff who had lost many family members and friends.
         Article on Haiti earthquake…
     </RightLandingSummaryCopy>
-    <NGOTestimonial>
+    <SummaryTestimonial>
     <Card style={{padding: '35px'}}>"Acute grief is a thunderstorm, a monsoonal downpour, a sudden flood that submerges almost everything in its path."<br/> - Steven Levine
     </Card>
-    </NGOTestimonial>
+    </SummaryTestimonial>
   </NGOWrapper>
 );
 
@@ -181,10 +181,10 @@ const DisasterSummary = () => (
     <LandingSummaryCopy>
       For 10 years Pascale served as a disaster mental health volunteer and lead of the San Francisco mental health team for the American Red Cross.  She provided crisis and grief counseling to survivors of tornadoes, hurricanes and floods in Alabama, Mississippi, Oklahoma, Arkansas and Texas and to the victims and families of the Asiana Airlines plane crash at San Francisco International Airport.
     </LandingSummaryCopy>
-    <DisasterTestimonial>
-    <Card style={{padding: '35px'}}>"I want to thank you for your amazing emotional support.  What impressed me was not only your professional expertise but, more importantly, your natural care, attention and compassion."<br/> - K
-    </Card>
-    </DisasterTestimonial>
+    <WithImageSummaryTestimonial>
+      <Card style={{padding: '35px'}}>"I want to thank you for your amazing emotional support.  What impressed me was not only your professional expertise but, more importantly, your natural care, attention and compassion."<br/> - K
+      </Card>
+    </WithImageSummaryTestimonial>
     {/* <DisasterImg src={'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607948/PASCALE-VERMONT/m34240199_pascale763.jpg'} width="100%" height="auto" /> */}
     <DisasterImg src={'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607944/PASCALE-VERMONT/Haiti_ertaquake_Bonet008.jpg'} width="100%" height="auto" />
   </DisasterWrapper>
@@ -205,10 +205,10 @@ const PalliativeSummary = () => (
       Pascale offers crisis counseling to expatriate staff of Relief International based in 22 countries over Skype when they experience a traumatic experience while in the field or suffer a personal crisis.  She was also deployed to Haiti after the 2010 earthquake to provide grief counseling to civilians and hospital staff who had lost many family members and friends.
         Article on Haiti earthquake…
     </RightLandingSummaryCopy>
-    <PalliativeTestimonial>
+    <SummaryTestimonial>
     <Card style={{padding: '35px'}}>"Thank you so much for your kindness, input and your time.  We really appreciate the continued support you gave us during this very difficult time."<br/> - R
     </Card>
-    </PalliativeTestimonial>
+    </SummaryTestimonial>
   </PalliativeWrapper>
 );
 
