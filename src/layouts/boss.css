@@ -313,8 +313,12 @@ h3 {
   grid-column: 4 / 5; 
   grid-row: 3 / span 1;
   align-self: center; 
-  justify-self: center; 
+  justify-self: start; 
   align-content: center
+}
+
+.right {
+  grid-column: 2 / 3; 
 }
 
 
@@ -327,10 +331,6 @@ h3 {
   
   .tall-title {
     grid-template-rows: 110px 80px;
-  }
-  
-  .about-page-svg {
-    width: 252px;
   }
 }
 

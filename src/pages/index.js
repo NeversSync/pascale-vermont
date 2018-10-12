@@ -6,7 +6,7 @@ import Nav from '../components/Nav';
 import { Card, Copy, LandingSummaryWrapper, Title, SubTitle, CTAButton, SVGArrowRight, SVGArrowLeft, LandingSummaryCopy, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy } from '../components/Helpers';
 
 import { HeroContainer, HeroImg, Heading, LandingSubtitle } from '../styles/landing-styles';
-import { AboutWrapper, AboutTitle, AboutSvg, AboutLine, SoundcloudWrapper, AboutTestimonial } from '../styles/about-styles';
+import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, SoundcloudWrapper, AboutTestimonial } from '../styles/about-styles';
 import { PerinatalWrapper, PerinatalTitle, PerinatalSvg, PerinatalLine, PerinatalTestimonial } from '../styles/perinatal-styles';
 import { NGOWrapper, NGOTitle, NGOSvg, NGOLine, NGOTestimonial } from '../styles/ngo-styles';
 import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefTestimonial, GriefImg } from '../styles/grief-styles';
@@ -49,10 +49,10 @@ const Landing = () => (
 const AboutSummary = () => (
   <AboutWrapper>
     <LandingSummaryWrapper>
-      <AboutTitle>ABOUT</AboutTitle>
-      <AboutSvg>
+      <AboutSummaryTitle>ABOUT</AboutSummaryTitle>
+      <AboutSummarySvg>
         <AboutLine x1="85" y1="5" x2="195" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6" />
-      </AboutSvg>
+      </AboutSummarySvg>
       <Link to="/about/" className='left-button first-button'>
         <SVGArrowLeft />
       </Link>

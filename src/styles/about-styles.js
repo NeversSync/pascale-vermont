@@ -17,7 +17,7 @@ const AboutWrapper = Wrapper.extend`
 const AboutTitleWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px auto auto 1fr;
+  grid-template-rows: 100px auto 1fr 1fr;
   grid-column: 1 / 2;
 
     @media(max-width: 900px) {
@@ -28,7 +28,7 @@ const AboutTitleWrapper = styled.div`
   }
 `;
 
-const AboutTitle = Title.extend`
+const AboutSummaryTitle = Title.extend`
   grid-column: 4 / 5;
   grid-row: 1 / 2;
   justify-self: end;
@@ -45,7 +45,12 @@ const AboutTitle = Title.extend`
   }
 `
 
-const AboutSvg = styled.svg`
+const AboutTitle = AboutSummaryTitle.extend`
+  grid-row: 2 / 3;
+`;
+
+
+const AboutSummarySvg = styled.svg`
   display: grid;
   height: 8px;
   width: 100%;
@@ -58,6 +63,14 @@ const AboutSvg = styled.svg`
     width: 286px;
     grid-row: 1 / 2;
     justify-self: center;
+  }
+`;
+
+const AboutSvg = AboutSummarySvg.extend`
+  grid-row: 2 / 3;
+
+  @media(max-width: 900px) {
+    width: 269px;
   }
 `;
 
@@ -118,4 +131,4 @@ const AboutTestimonial = Testimonial.extend`
   }
 `;
 
-export default { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, AboutCopy, SoundcloudWrapper, AboutCTA, AboutTestimonial };
+export default { AboutWrapper, AboutTitleWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, AboutCopy, SoundcloudWrapper, AboutCTA, AboutTestimonial, AboutTitle, AboutSvg };

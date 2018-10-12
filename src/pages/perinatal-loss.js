@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import { Image, Transformation } from 'cloudinary-react';
 
 import { PerinatalWrapper, PerinatalTitleWrapper, PerinatalTitle, PerinatalSvg, PerinatalLine, PerinatalCopy, PerinatalTestimonial, PerinatalImageWrapper } from '../styles/perinatal-styles';
-import { HomeButton, ImageWrapper } from '../components/Helpers';
+import { HomeButton, Card } from '../components/Helpers';
 
 
 const PerinatalLoss = () => (
@@ -13,7 +13,7 @@ const PerinatalLoss = () => (
       <PerinatalSvg>
         <PerinatalLine x1="5" y1="5" x2="175" y2="5" stroke="rgb(229, 69, 117)" strokeWidth="6" />
       </PerinatalSvg>
-      <Link to="/" style={{ display: 'grid', gridColumn: '2 / 3', gridRow: '3 / 4', alignSelf: 'center', justifySelf: 'start', alignContent: 'center' }}>
+      <Link to="/" className='home-button right'>
         <HomeButton />
       </Link>
     </PerinatalTitleWrapper>
@@ -27,6 +27,10 @@ const PerinatalLoss = () => (
       At a time of great pain and loneliness, she provides emotional support in the home, as well as education about the grief process and how to handle the many consequences of the loss.
       She meets with parents and other family members as long as support is needed, and at other times when the grief is triggered by anniversaries or subsequent pregnancies.
     </PerinatalCopy>
+    <PerinatalTestimonial>
+      <Card style={{padding: '35px'}}>"The compassion, sympathy, and assurance she gave my husband and I helped us to move through the stages of our grief and realize that we were going to be ok. Her heartfelt questions and warm nature made it easy to open up and share our tragedy, our fears of trying again, our relationship struggles, our guilty thoughts, our happy moments, and so much more."<br/> - Anonymous client
+      </Card>
+    </PerinatalTestimonial>
   </PerinatalWrapper>
 )
 

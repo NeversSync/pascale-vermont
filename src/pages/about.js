@@ -11,10 +11,9 @@ const IndexPage = () => (
     <AboutTitleWrapper>
       <AboutTitle>ABOUT</AboutTitle>
       <AboutSvg className="about-page-svg">
-        <AboutLine x1="70" y1="5" x2="180" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6"/>
-        {/* TODO */}
+        <AboutLine x1="75" y1="5" x2="192" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6"/>
       </AboutSvg>
-      <Link to="/" className='home-button'>HOME
+      <Link to="/" className='home-button'>
         <HomeButton/>
       </Link>
     </AboutTitleWrapper>
