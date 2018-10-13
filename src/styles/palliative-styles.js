@@ -1,11 +1,15 @@
 import styled from 'styled-components';
 import { Wrapper, Title, Copy, Card, CTAButton, Testimonial, ImageWrapper } from '../components/Helpers';
 
-const PalliativeWrapper = Wrapper.extend`
+const PalliativeWrapperSummary = Wrapper.extend`
   background: rgba(215, 212, 217, .3);
   grid-template-columns: 1fr 1fr;
   padding: 3% 2% 6% 2%;
   border-bottom: 1px solid rgba(100, 100, 100, .1);
+`;
+
+const PalliativeWrapper = PalliativeWrapperSummary.extend`
+  background: white;
 `;
 
 const PalliativeTitleWrapper = styled.div`
@@ -80,4 +84,4 @@ const PalliativeImageWrapper = ImageWrapper.extend`
 `;
 
 
-export default { PalliativeWrapper, PalliativeTitleWrapper, PalliativeTitle, PalliativeSvg, PalliativeLine, PalliativeCopy, PalliativeTestimonial, PalliativeImageWrapper };
+export default { PalliativeWrapper, PalliativeWrapperSummary, PalliativeTitleWrapper, PalliativeTitle, PalliativeSvg, PalliativeLine, PalliativeCopy, PalliativeTestimonial, PalliativeImageWrapper };

@@ -8,10 +8,10 @@ import { Card, Copy, LandingSummaryWrapper, Title, SubTitle, CTAButton, SVGArrow
 import { HeroContainer, HeroImg, Heading, LandingSubtitle } from '../styles/landing-styles';
 import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, SoundcloudWrapperSummary } from '../styles/about-styles';
 import { PerinatalWrapper, PerinatalTitle, PerinatalSvg, PerinatalLine, PerinatalSvgSummary } from '../styles/perinatal-styles';
-import { NGOWrapper, NGOTitle, NGOSvg, NGOLine } from '../styles/ngo-styles';
+import { NGOWrapper, NGOSvg, NGOLine } from '../styles/ngo-styles';
 import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefImgSummary } from '../styles/grief-styles';
 import { DisasterWrapper, DisasterTitle, DisasterSvg, DisasterLine, DisasterImg } from '../styles/disaster-styles';
-import { PalliativeWrapper, PalliativeTitle, PalliativeSvg, PalliativeLine } from '../styles/palliative-styles';
+import { PalliativeWrapperSummary, PalliativeTitle, PalliativeSvg, PalliativeLine } from '../styles/palliative-styles';
 import { ContactWrapper, ContactTitle, ContactSvg, ContactLine, ContactCTA } from '../styles/contact-styles';
 
 // TODO: 
@@ -110,13 +110,9 @@ const PerinatalSummary = () => (
       She meets with parents and other family members as long as support is needed, and at other times when the grief is triggered by anniversaries or subsequent pregnancies.
     </RightLandingSummaryCopy>
     <SummaryTestimonial>
-      <Card style={{padding: '35px'}}>"The compassion, sympathy, and assurance she gave my husband and I helped us to move through the stages of our grief and realize that we were going to be ok. Her heartfelt questions and warm nature made it easy to open up and share our tragedy, our fears of trying again, our relationship struggles, our guilty thoughts, our happy moments, and so much more."<br/> - Anonymous client
+       <Card style={{padding: '35px'}}>"Truly our conversations over time scraped me off the emotional depth of despair and helped me start to look up."<br/> - Anonymous client
       </Card>
     </SummaryTestimonial>
-    {/* <SummaryTestimonial>
-    <Card style={{padding: '35px'}}>"We feel incredibly grateful for Pascale's expertise, compassion, and professionalism during our time of grieving and our healing process following the death of our baby girl."<br/> - L and L
-    </Card>
-    </SummaryTestimonial> */}
   </PerinatalWrapper>
 );
 
@@ -191,7 +187,7 @@ const DisasterSummary = () => (
 );
 
 const PalliativeSummary = () => (
-  <PalliativeWrapper>
+  <PalliativeWrapperSummary>
     <RightLandingSummaryWrapper className='tall-title'>
       <PalliativeTitle>PALLIATIVE CARE SUPPORT</PalliativeTitle>
       <PalliativeSvg>
@@ -202,14 +198,16 @@ const PalliativeSummary = () => (
       </Link>
     </RightLandingSummaryWrapper>
     <RightLandingSummaryCopy>
-      Pascale offers crisis counseling to expatriate staff of Relief International based in 22 countries over Skype when they experience a traumatic experience while in the field or suffer a personal crisis.  She was also deployed to Haiti after the 2010 earthquake to provide grief counseling to civilians and hospital staff who had lost many family members and friends.
-        Article on Haiti earthquake…
+      Some highlights of Pascale's work in Palliative Care:
+      <li>Volunteer with No One Dies Alone program at Laguna Honda Rehabilitation Center, San Francisco. Led bereavement groups and sat with actively dying patients.</li>
+      <li>Palliative care counselor at Kaiser Permanente Hospitals in Vallejo and San Francisco.</li>
+      <li>Volunteer and instructor for San Francisco Crisis Care working in partnership with law enforcement officials and providing emotional support and practical assistance to families after a sudden death.</li>
     </RightLandingSummaryCopy>
     <SummaryTestimonial>
-    <Card style={{padding: '35px'}}>"Thank you so much for your kindness, input and your time.  We really appreciate the continued support you gave us during this very difficult time."<br/> - R
+    <Card style={{padding: '35px'}}>"Having my father die so suddenly was a big shock. The volunteer helped me figure out what to do with my dad's body. We had never gone through a death in this country and had no idea about anything. She made sure my kids were OK, that my mom was OK, and that I was OK too. At a time like this, you kind of lose your mind. You need people to support you and guide you. That's what the volunteer for San Francisco Crisis Care gave us."<br/> - A daughter following the death of her father"
     </Card>
     </SummaryTestimonial>
-  </PalliativeWrapper>
+  </PalliativeWrapperSummary>
 );
 
 const Contact = () => (
