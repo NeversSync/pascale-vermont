@@ -15,12 +15,11 @@ import { PalliativeWrapperSummary, PalliativeTitle, PalliativeSvg, PalliativeLin
 import { ContactWrapper, ContactTitle, ContactSvg, ContactLine, ContactCTA } from '../styles/contact-styles';
 
 // TODO: 
-// populate pages with content/images
-// Add quote to home page
-// Add images to summary sections? Paralax?
+// Finsih creating palliative care page
+// Finsih creating NGO page
+// Finsih creating Disaster page
 // Animate arrows in learn more btn 
 // Borrow animations and scroll library from portfolio
-// Borrow responsive text and styles from portfolio
 
 const IndexPage = () => (
   <div>
