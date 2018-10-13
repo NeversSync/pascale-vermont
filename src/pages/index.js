@@ -3,21 +3,21 @@ import Link from 'gatsby-link'
 import { Image, Transformation } from 'cloudinary-react';
 
 import Nav from '../components/Nav';
-import { Card, Copy, LandingSummaryWrapper, Title, SubTitle, CTAButton, SVGArrowRight, SVGArrowLeft, LandingSummaryCopy, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle } from '../components/Helpers';
+import { Card, Copy, LandingSummaryWrapper, Title, SubTitle, CTAButton, SVGArrowRight, SVGArrowLeft, LandingSummaryCopy, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper } from '../components/Helpers';
 
 import { HeroContainer, HeroImg, Heading, LandingSubtitle } from '../styles/landing-styles';
 import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, SoundcloudWrapperSummary } from '../styles/about-styles';
 import { PerinatalWrapper, PerinatalTitle, PerinatalSvg, PerinatalLine, PerinatalSvgSummary } from '../styles/perinatal-styles';
-import { NGOWrapper, NGOSvg, NGOLine } from '../styles/ngo-styles';
+import { NGOWrapperSummary, NGOSvgSummary, NGOLine } from '../styles/ngo-styles';
 import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefImgSummary } from '../styles/grief-styles';
-import { DisasterWrapper, DisasterTitle, DisasterSvg, DisasterLine, DisasterImg } from '../styles/disaster-styles';
+import { DisasterWrapper, DisasterTitle, DisasterSvgSummary, DisasterLine, DisasterImg } from '../styles/disaster-styles';
 import { PalliativeWrapperSummary, PalliativeTitle, PalliativeSvg, PalliativeLine } from '../styles/palliative-styles';
 import { ContactWrapper, ContactTitle, ContactSvg, ContactLine, ContactCTA } from '../styles/contact-styles';
 
 // TODO: 
-// Finsih creating palliative care page
-// Finsih creating NGO page
-// Finsih creating Disaster page
+// Finish creating palliative care page
+// Find red cross articles
+// Fix testimonial bug
 // Animate arrows in learn more btn 
 // Borrow animations and scroll library from portfolio
 
@@ -141,12 +141,12 @@ const GriefSummary = () => (
 );
 
 const NGOSummary = () => (
-  <NGOWrapper>
+  <NGOWrapperSummary>
     <RightLandingSummaryWrapper>
       <RightSummaryTitle>NGO CRISIS COUNSELING</RightSummaryTitle>
-      <NGOSvg>
+      <NGOSvgSummary>
         <NGOLine x1="5" y1="5" x2="225" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6" />
-      </NGOSvg>
+      </NGOSvgSummary>
       <Link to="/ngo-crisis-counseling/" className='right-button'>
         <SVGArrowRight />
       </Link>
@@ -159,35 +159,36 @@ const NGOSummary = () => (
     <Card style={{padding: '35px'}}>"Acute grief is a thunderstorm, a monsoonal downpour, a sudden flood that submerges almost everything in its path."<br/> - Steven Levine
     </Card>
     </SummaryTestimonial>
-  </NGOWrapper>
+  </NGOWrapperSummary>
 );
 
 const DisasterSummary = () => (
   <DisasterWrapper>
-    <LandingSummaryWrapper className='tall-title'>
+    <TallSummaryWrapper>
       <DisasterTitle>DISASTER MENTAL HEALTH</DisasterTitle>
-      <DisasterSvg>
+      <DisasterSvgSummary>
         <DisasterLine x1="100" y1="5" x2="248" y2="5" stroke="rgb(229, 69, 117)" strokeWidth="6" />
-      </DisasterSvg>
+      </DisasterSvgSummary>
       <Link to="/disaster-mental-health/" className='left-button'>
         <SVGArrowLeft />
       </Link>
-    </LandingSummaryWrapper>
+    </TallSummaryWrapper>
     <LandingSummaryCopy>
       For 10 years Pascale served as a disaster mental health volunteer and lead of the San Francisco mental health team for the American Red Cross.  She provided crisis and grief counseling to survivors of tornadoes, hurricanes and floods in Alabama, Mississippi, Oklahoma, Arkansas and Texas and to the victims and families of the Asiana Airlines plane crash at San Francisco International Airport.
+      {/* <li><a className='custom-link' href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048646/" target="_blank">Response to plane crash at SFO</a></li>
+      <li><a className='custom-link' href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048646/" target="_blank">Arkansas tornado response</a></li> */}
     </LandingSummaryCopy>
     <WithImageSummaryTestimonial>
       <Card style={{padding: '35px'}}>"I want to thank you for your amazing emotional support.  What impressed me was not only your professional expertise but, more importantly, your natural care, attention and compassion."<br/> - K
       </Card>
     </WithImageSummaryTestimonial>
-    {/* <DisasterImg src={'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607948/PASCALE-VERMONT/m34240199_pascale763.jpg'} width="100%" height="auto" /> */}
-    <DisasterImg src={'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607944/PASCALE-VERMONT/Haiti_ertaquake_Bonet008.jpg'} width="100%" height="auto" />
+    <DisasterImg src={'https://res.cloudinary.com/nicky-cloudinary/image/upload/c_crop,f_auto,h_260,q_auto:best,w_439,x_169/v1538607948/PASCALE-VERMONT/m34240199_pascale763.jpg'} width="100%" height="auto" />
   </DisasterWrapper>
 );
 
 const PalliativeSummary = () => (
   <PalliativeWrapperSummary>
-    <RightLandingSummaryWrapper className='tall-title'>
+    <RightTallSummaryWrapper>
       <PalliativeTitle>PALLIATIVE CARE SUPPORT</PalliativeTitle>
       <PalliativeSvg>
         <PalliativeLine x1="5" y1="5" x2="190" y2="5" stroke="rgb(255, 189, 66)" strokeWidth="6" />
@@ -195,7 +196,7 @@ const PalliativeSummary = () => (
       <Link to="/palliative-care-support/" className='right-button'>
         <SVGArrowRight />
       </Link>
-    </RightLandingSummaryWrapper>
+    </RightTallSummaryWrapper>
     <RightLandingSummaryCopy>
       Some highlights of Pascale's work in Palliative Care:
       <li>Volunteer with No One Dies Alone program at Laguna Honda Rehabilitation Center, San Francisco. Led bereavement groups and sat with actively dying patients.</li>

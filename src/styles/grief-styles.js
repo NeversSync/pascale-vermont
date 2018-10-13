@@ -80,7 +80,7 @@ const GriefTestimonial = Testimonial.extend`
   grid-column: 1 / 2;
   grid-row: 3 / 4;
   max-width: 80%;
-  margin: 5% 2% 0% 2%;
+  /* margin: 5% 2% 0% 2%; */
   margin: 8% 2% 0% 2%;
   justify-self: center;
 
