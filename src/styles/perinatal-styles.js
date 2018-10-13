@@ -12,7 +12,7 @@ const PerinatalTitleWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px auto 1fr 1fr;
-  grid-column: 2 / 3;
+  grid-column: 1 / 2;
 
    @media(max-width: 900px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -23,7 +23,7 @@ const PerinatalTitleWrapper = styled.div`
 `;
 
 const PerinatalTitle = Title.extend`
-  grid-column: 2 / 3;
+  grid-column: 4 / 5;
   grid-row: 2 / 3;
   font-weight: 500;
   padding-bottom: 10px;
@@ -37,11 +37,11 @@ const PerinatalTitle = Title.extend`
   }
 `
 
-const PerinatalSvg = styled.svg`
+const PerinatalSvgSummary = styled.svg`
   display: grid;
-  height: 10px;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+  height: 10px;
   align-self: end;
 
   @media(max-width: 900px) {
@@ -52,6 +52,18 @@ const PerinatalSvg = styled.svg`
   }
 `;
 
+const PerinatalSvg = PerinatalSvgSummary.extend`
+  grid-column: 4 / 5;
+
+  @media(max-width: 900px) {
+    grid-column: 2 / 4;
+    width: 184px;
+    grid-row: 1 / 2;
+    justify-self: center;
+  }
+`;
+
+
 const PerinatalLine = styled.line`
   stroke-linecap: round;
   opacity: .9;
@@ -60,7 +72,7 @@ const PerinatalLine = styled.line`
 const PerinatalCopy = Copy.extend`
   grid-column: 1 / -1;
   grid-row: 2 / 3;
-  width: 50%;
+  width: 55%;
   justify-self: center;
   margin-top: 5%;
 
@@ -74,32 +86,54 @@ const PerinatalCopy = Copy.extend`
 `
 
 const PerinatalTestimonial = Testimonial.extend`
-  grid-column: 1 / -1;
-  max-width: 45%;
-  margin: 1% 2% 0% 2%;
+  grid-column: 1 / 2;
+  grid-row: 3 / 4;
+  max-width: 80%;
+  margin: 5% 2% 0% 2%;
+  margin: 8% 2% 0% 2%;
   justify-self: center;
 
   @media(max-width: 900px) {
     grid-column: 1 / -1;
-    margin: 40px 0;
+    grid-row: 4 / 5;
+    margin: 20px 0;
+    max-width: 80%;
+  }
+`;
+
+const SecondPerinatalTestimonial = Testimonial.extend`
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  margin: 8% 2% 0% 2%;
+  justify-self: center;
+  max-width: 80%;
+
+  @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+    margin: 20px 0;
     max-width: 80%;
   }
 `;
 
 const PerinatalImageWrapper = ImageWrapper.extend`
-  grid-column: 1 / 2;
+  background: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607950/PASCALE-VERMONT/Parents.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; 
+  grid-column: 2 / 3;
   grid-row: 1 / 2;
-  margin-left: 10%;
-  height: fit-content;
-  max-height: 400px;
+  justify-self: center;
+  align-self: center;
+  width: 80%;
 
    @media(max-width: 900px) {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    width: 60%;
+    width: 70%;
     justify-self: center;
   }
 `;
 
 
-export default { PerinatalWrapper, PerinatalTitleWrapper, PerinatalTitle, PerinatalSvg, PerinatalLine, PerinatalCopy, PerinatalTestimonial, PerinatalImageWrapper };
+export default { PerinatalWrapper, PerinatalTitleWrapper, PerinatalTitle, PerinatalSvg, PerinatalLine, PerinatalCopy, PerinatalTestimonial, PerinatalImageWrapper, SecondPerinatalTestimonial, PerinatalSvgSummary };

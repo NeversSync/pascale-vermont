@@ -3,11 +3,11 @@ import Link from 'gatsby-link'
 import { Image, Transformation } from 'cloudinary-react';
 
 import Nav from '../components/Nav';
-import { Card, Copy, LandingSummaryWrapper, Title, SubTitle, CTAButton, SVGArrowRight, SVGArrowLeft, LandingSummaryCopy, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial } from '../components/Helpers';
+import { Card, Copy, LandingSummaryWrapper, Title, SubTitle, CTAButton, SVGArrowRight, SVGArrowLeft, LandingSummaryCopy, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle } from '../components/Helpers';
 
 import { HeroContainer, HeroImg, Heading, LandingSubtitle } from '../styles/landing-styles';
 import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, SoundcloudWrapper } from '../styles/about-styles';
-import { PerinatalWrapper, PerinatalTitle, PerinatalSvg, PerinatalLine } from '../styles/perinatal-styles';
+import { PerinatalWrapper, PerinatalTitle, PerinatalSvg, PerinatalLine, PerinatalSvgSummary } from '../styles/perinatal-styles';
 import { NGOWrapper, NGOTitle, NGOSvg, NGOLine } from '../styles/ngo-styles';
 import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefImg } from '../styles/grief-styles';
 import { DisasterWrapper, DisasterTitle, DisasterSvg, DisasterLine, DisasterImg } from '../styles/disaster-styles';
@@ -96,10 +96,10 @@ const AboutSummary = () => (
 const PerinatalSummary = () => (
   <PerinatalWrapper>
     <RightLandingSummaryWrapper>
-      <PerinatalTitle>PERINATAL LOSS</PerinatalTitle>
-      <PerinatalSvg>
+      <RightSummaryTitle>PERINATAL LOSS</RightSummaryTitle>
+      <PerinatalSvgSummary>
         <PerinatalLine x1="5" y1="5" x2="175" y2="5" stroke="rgb(229, 69, 117)" strokeWidth="6" />
-      </PerinatalSvg>
+      </PerinatalSvgSummary>
       <Link to="/perinatal-loss/" className='right-button'>
         <SVGArrowRight />
       </Link>
@@ -148,7 +148,7 @@ const GriefSummary = () => (
 const NGOSummary = () => (
   <NGOWrapper>
     <RightLandingSummaryWrapper>
-      <NGOTitle>NGO CRISIS COUNSELING</NGOTitle>
+      <RightSummaryTitle>NGO CRISIS COUNSELING</RightSummaryTitle>
       <NGOSvg>
         <NGOLine x1="5" y1="5" x2="225" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6" />
       </NGOSvg>

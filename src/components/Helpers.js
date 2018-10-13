@@ -88,6 +88,25 @@ const Title = styled.h1`
   }
 `
 
+const RightSummaryTitle = Title.extend`
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  font-weight: 500;
+  padding-bottom: 10px;
+
+  @media(max-width: 900px) {
+    grid-column: 2 / 4;
+    text-align: center;
+    grid-row: 1 / 2;
+    justify-self: center;
+    align-self: end;
+  }
+`
+
+const SummaryTitle = Title.extend`
+
+`;
+
 const SubTitle = styled.h3`
   font-size: 42px;
   letter-spacing: 20px;
@@ -221,14 +240,14 @@ const SVGArrowRight = () => (
 
 const HomeButton = () => (
   <CTAButton className="arrow"> 
-  <CTAButtonText>HOME</CTAButtonText>
-    <svg style={{ width: '30px', height: '30px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
+    <svg style={{ width: '30px', height: '30px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270"  transform='rotate(180)'>
       <g id="Layer_2" data-name="Layer 2">
         <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
         <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
       </g>
     </svg> 
+  <CTAButtonText>HOME</CTAButtonText>
   </CTAButton>
 );
 
-export default { Wrapper, LandingSummaryWrapper, Title, SubTitle, Copy, LandingSummaryCopy, Card, CTAButton, Testimonial, SVGArrowRight, SVGArrowLeft, HomeButton, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial };
+export default { Wrapper, LandingSummaryWrapper, Title, SubTitle, Copy, LandingSummaryCopy, Card, CTAButton, Testimonial, SVGArrowRight, SVGArrowLeft, HomeButton, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle };

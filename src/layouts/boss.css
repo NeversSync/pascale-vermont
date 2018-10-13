@@ -321,6 +321,9 @@ h3 {
   grid-column: 2 / 3; 
 }
 
+.page-image { 
+  border-radius: 4px; 
+}
 
 @media (max-width: 900px) {
   .left-button, .right-button, .home-button {
@@ -332,5 +335,9 @@ h3 {
   .tall-title {
     grid-template-rows: 110px 80px;
   }
-}
 
+  .second-testimonial {
+
+  }
+
+}
