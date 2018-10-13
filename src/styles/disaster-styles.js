@@ -18,7 +18,7 @@ const DisasterTitleWrapper = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    grid-template-rows: 80px 80px;
+    grid-template-rows: 140px 80px;
   }
 `;
 
@@ -87,23 +87,23 @@ const DisasterCTA = CTAButton.extend`
 `;
 
 const DisasterCopy = Copy.extend`
- grid-column: 1 / -1;
+  grid-column: 1 / -1;
   grid-row: 2 / 3;
   width: 55%;
   justify-self: center;
   margin-top: 5%;
 
   @media(max-width: 900px) {
-      grid-column: 1 / -1;
-      margin: 0;
-      grid-row: 3 / 4;
-      margin-top: 4%;
-      width: 85%;
+    grid-column: 1 / -1;
+    margin: 0;
+    grid-row: 3 / 4;
+    margin-top: 4%;
+    width: 85%;
   }
 `
 
 const DisasterTestimonial = Testimonial.extend`
-     grid-column: 1 / -1;
+  grid-column: 1 / -1;
   max-width: 50%;
   margin: 5% 2% 0% 2%;
   justify-self: center;

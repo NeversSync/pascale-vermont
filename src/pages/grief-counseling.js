@@ -27,7 +27,11 @@ const IndexPage = () => (
       <li>A place to explore how to learn basic, practical and financial skills if necessary and to receive support in doing so.</li><br/>
       Over time small victories build upon each other until they tend to dominate, and the moments of respite between the waves of pain lengthen.
       Pascale meets clients in her home office in San Francisco and has worked over Skype with people as far away as India, Pakistan and South Sudan. 
-      <br/><Link to="/contact/" className='custom-link' >Contact her</Link> for more information.
+      <br/>
+      <br/>
+      <a className='custom-link' href="https://blogs.psychcentral.com/nlp/2017/05/blake-fletcher-half-hour-intern-podcast/" target="_blank">Read a summary</a> of highlights from an interview with Pascale by the <a className='custom-link' href="http://www.halfhourintern.com/" target="_blank">Half Hour Intern</a>.
+      <br/><br/>
+      <Copy style={{margin: '0 auto', width: '50%'}}><Link to="/contact/" className='custom-link' >Contact her</Link> for more information.</Copy>
     </GriefCopy>
     <GriefTestimonial>
       <Card style={{ padding: '35px' }}>"Pascale showed me how to look outside of my troubles, and see within to realize my strength and good qualities without being so hard on myself. She's very good to point out good things that counter whatever negative issue I'm talking about, and helps me to reconnect with my own potential and strength."<br /> - Following the end of an intimate relationship

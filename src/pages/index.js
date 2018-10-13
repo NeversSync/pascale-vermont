@@ -11,7 +11,7 @@ import { PerinatalWrapper, PerinatalTitle, PerinatalSvg, PerinatalLine, Perinata
 import { NGOWrapperSummary, NGOSvgSummary, NGOLine } from '../styles/ngo-styles';
 import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefImgSummary } from '../styles/grief-styles';
 import { DisasterWrapper, DisasterTitle, DisasterSvgSummary, DisasterLine, DisasterImg } from '../styles/disaster-styles';
-import { PalliativeWrapperSummary, PalliativeTitle, PalliativeSvg, PalliativeLine } from '../styles/palliative-styles';
+import { PalliativeWrapperSummary, PalliativeTitle, PalliativeSvgSummary, PalliativeLine } from '../styles/palliative-styles';
 import { ContactWrapper, ContactTitle, ContactSvg, ContactLine, ContactCTA } from '../styles/contact-styles';
 
 // TODO: 
@@ -131,6 +131,8 @@ const GriefSummary = () => (
       A safe place to express the multitude of feelings experienced by the bereaved - sadness, doubts, guilt, anger, moodiness... <br /><br />
       Over time small victories build upon each other until they tend to dominate, and the moments of respite between the waves of pain lengthen.
       Pascale meets clients in her home office in San Francisco and has worked over Skype with people as far away as India, Pakistan and South Sudan.
+      <br/>
+      <a className='custom-link' href="https://blogs.psychcentral.com/nlp/2017/05/blake-fletcher-half-hour-intern-podcast/" target="_blank">Read a summary</a> of highlights from an interview with Pascale by the <a className='custom-link' href="http://www.halfhourintern.com/" target="_blank">Half Hour Intern podcast</a>.
     </LandingSummaryCopy>
     <WithImageSummaryTestimonial>
       <Card style={{padding: '35px'}}>"Pascale showed me how to look outside of my troubles, and see within to realize my strength and good qualities without being so hard on myself. She's very good to point out good things that counter whatever negative issue I'm talking about, and helps me to reconnect with my own potential and strength."<br/> - Following the end of an intimate relationship
@@ -189,10 +191,10 @@ const DisasterSummary = () => (
 const PalliativeSummary = () => (
   <PalliativeWrapperSummary>
     <RightTallSummaryWrapper>
-      <PalliativeTitle>PALLIATIVE CARE SUPPORT</PalliativeTitle>
-      <PalliativeSvg>
+      <RightSummaryTitle>PALLIATIVE CARE SUPPORT</RightSummaryTitle>
+      <PalliativeSvgSummary>
         <PalliativeLine x1="5" y1="5" x2="190" y2="5" stroke="rgb(255, 189, 66)" strokeWidth="6" />
-      </PalliativeSvg>
+      </PalliativeSvgSummary>
       <Link to="/palliative-care-support/" className='right-button'>
         <SVGArrowRight />
       </Link>
