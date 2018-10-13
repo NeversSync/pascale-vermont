@@ -10,7 +10,7 @@ const PerinatalLoss = () => (
     <PerinatalTitleWrapper>
       <PerinatalTitle>PERINATAL LOSS</PerinatalTitle>
       <PerinatalSvg>
-        <PerinatalLine x1="5" y1="5" x2="175" y2="5" stroke="rgb(229, 69, 117)" strokeWidth="6" />
+        <PerinatalLine x1="90" y1="5" x2="278" y2="5" stroke="rgb(229, 69, 117)" strokeWidth="6" />
       </PerinatalSvg>
       <Link to="/" className='home-button'>
         <HomeButton />

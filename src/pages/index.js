@@ -9,7 +9,7 @@ import { HeroContainer, HeroImg, Heading, LandingSubtitle } from '../styles/land
 import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, SoundcloudWrapperSummary } from '../styles/about-styles';
 import { PerinatalWrapper, PerinatalTitle, PerinatalSvg, PerinatalLine, PerinatalSvgSummary } from '../styles/perinatal-styles';
 import { NGOWrapper, NGOTitle, NGOSvg, NGOLine } from '../styles/ngo-styles';
-import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefImg } from '../styles/grief-styles';
+import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefImgSummary } from '../styles/grief-styles';
 import { DisasterWrapper, DisasterTitle, DisasterSvg, DisasterLine, DisasterImg } from '../styles/disaster-styles';
 import { PalliativeWrapper, PalliativeTitle, PalliativeSvg, PalliativeLine } from '../styles/palliative-styles';
 import { ContactWrapper, ContactTitle, ContactSvg, ContactLine, ContactCTA } from '../styles/contact-styles';
@@ -141,7 +141,7 @@ const GriefSummary = () => (
       <Card style={{padding: '35px'}}>"Pascale showed me how to look outside of my troubles, and see within to realize my strength and good qualities without being so hard on myself. She's very good to point out good things that counter whatever negative issue I'm talking about, and helps me to reconnect with my own potential and strength."<br/> - Following the end of an intimate relationship
       </Card>
     </WithImageSummaryTestimonial>
-    <GriefImg src={'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607993/PASCALE-VERMONT/ravi-roshan-383162-unsplash.jpg'} width="100%" height="auto" />
+    <GriefImgSummary src={'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607993/PASCALE-VERMONT/ravi-roshan-383162-unsplash.jpg'} width="100%" height="auto" />
   </GriefWrapper>
 );
 

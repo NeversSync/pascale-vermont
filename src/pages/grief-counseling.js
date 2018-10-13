@@ -2,29 +2,43 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { Image, Transformation } from 'cloudinary-react';
 
-import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefTestimonial, GriefImg, GriefTitleWrapper, GriefCopy } from '../styles/grief-styles';
-import { HomeButton, Spacer, ImageWrapper, Copy } from '../components/Helpers';
+import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefTestimonial, GriefImgWrapper, GriefTitleWrapper, GriefCopy, SecondGriefTestimonial } from '../styles/grief-styles';
+import { HomeButton, Spacer, ImageWrapper, Copy, Card } from '../components/Helpers';
 
 const IndexPage = () => (
-  <GriefWrapper style={{borderBottom: 'none'}}>
+  <GriefWrapper style={{ borderBottom: 'none' }}>
     <GriefTitleWrapper>
       <GriefTitle>GRIEF COUNSELING</GriefTitle>
       <GriefSvg>
         <GriefLine x1="115" y1="5" x2="335" y2="5" stroke="rgb(255, 189, 66)" strokeWidth="6" />
       </GriefSvg>
-      <Link to="/" style={{ display: 'grid', gridColumn: '4 / 5', gridRow: '3 / 4', alignSelf: 'center', justifySelf: 'end', alignContent: 'center' }}>
-      <HomeButton/>
+      <Link to="/" className='home-button'>
+        <HomeButton />
       </Link>
     </GriefTitleWrapper>
+    <GriefImgWrapper />
     <GriefCopy>
-      What Pascale provides in her grief counseling practice:
-      A safe place to express the multitude of feelings experienced by the bereaved - sadness, doubts, guilt, anger, moodiness... <br /><br />
+      What Pascale provides in her grief counseling practice:<br/><br/>
+
+      <li>A safe place to express the multitude of feelings experienced by the bereaved - sadness, doubts, guilt, anger, moodiness...</li><br/>
+      <li>A patient, compassionate presence who understands that grief does not progress in a linear fashion but that it goes through many cycles. Family and friends sometimes put pressure on the bereaved to "return to normal". In grief counseling, there is no need to appear strong, rush the process, or to protect family from one's pain. Instead, the grief counselor is someone to talk to whose agenda is to support and respect the bereaved's own timetable without extra pressure.</li><br/>
+      <li>A place to learn about the nature and the varied stages of grief to facilitate the understanding of intense emotions and reactions.</li><br/>
+      <li>A place to be reminded of the bereaved's strengths and to learn how to use them to cope and start to heal.</li><br/>
+      <li>A place to explore how to learn basic, practical and financial skills if necessary and to receive support in doing so.</li><br/>
       Over time small victories build upon each other until they tend to dominate, and the moments of respite between the waves of pain lengthen.
-      Pascale meets clients in her home office in San Francisco and has worked over Skype with people as far away as India, Pakistan and South Sudan.
+      Pascale meets clients in her home office in San Francisco and has worked over Skype with people as far away as India, Pakistan and South Sudan. 
+      <br/><Link to="/contact/" className='custom-link' >Contact her</Link> for more information.
     </GriefCopy>
-    <GriefTestimonial>"Pascale showed me how to look outside of my troubles, and see within to realize my strength and good qualities without being so hard on myself. She's very good to point out good things that counter whatever negative issue I'm talking about, and helps me to reconnect with my own potential and strength."<br/> - Following the end of an intimate relationship
+    <GriefTestimonial>
+      <Card style={{ padding: '35px' }}>"Pascale showed me how to look outside of my troubles, and see within to realize my strength and good qualities without being so hard on myself. She's very good to point out good things that counter whatever negative issue I'm talking about, and helps me to reconnect with my own potential and strength."<br /> - Following the end of an intimate relationship
+      </Card>
     </GriefTestimonial>
-    <GriefImg src={'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607993/PASCALE-VERMONT/ravi-roshan-383162-unsplash.jpg'} width="100%" height="auto" />
+    <SecondGriefTestimonial>
+      <Card style={{ padding: '35px' }}>
+        "I feel immensely grateful for Pascale's professional and gentle guidance. After less than a year of counseling, I stopped my antidepressant medication and slowly came back to life." <br />
+        - Following a father's death
+      </Card>
+    </SecondGriefTestimonial>
   </GriefWrapper>
 );
 

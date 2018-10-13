@@ -313,7 +313,7 @@ h3 {
   grid-column: 4 / 5; 
   grid-row: 3 / span 1;
   align-self: center; 
-  justify-self: start; 
+  justify-self: end; 
   align-content: center
 }
 

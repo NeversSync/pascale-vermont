@@ -25,8 +25,10 @@ const PerinatalTitleWrapper = styled.div`
 const PerinatalTitle = Title.extend`
   grid-column: 4 / 5;
   grid-row: 2 / 3;
+  justify-self: end;
   font-weight: 500;
   padding-bottom: 10px;
+  text-align: right;
 
   @media(max-width: 900px) {
     grid-column: 2 / 4;
@@ -53,16 +55,16 @@ const PerinatalSvgSummary = styled.svg`
 `;
 
 const PerinatalSvg = PerinatalSvgSummary.extend`
+  width: 100%;
   grid-column: 4 / 5;
 
   @media(max-width: 900px) {
     grid-column: 2 / 4;
-    width: 184px;
+    width: 368px;
     grid-row: 1 / 2;
     justify-self: center;
   }
 `;
-
 
 const PerinatalLine = styled.line`
   stroke-linecap: round;
@@ -82,7 +84,7 @@ const PerinatalCopy = Copy.extend`
       grid-row: 3 / 4;
       margin-top: 4%;
       width: 85%;
-    }
+  }
 `
 
 const PerinatalTestimonial = Testimonial.extend`
