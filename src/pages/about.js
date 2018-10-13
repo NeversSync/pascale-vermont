@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { Image, Transformation } from 'cloudinary-react';
 
-import { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, AboutCopy, SoundcloudWrapper, AboutTestimonial } from '../styles/about-styles';
-import { HomeButton, Spacer, ImageWrapper, Card } from '../components/Helpers';
+import { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, AboutCopy, SoundcloudWrapper, AboutTestimonial, AboutImageWrapper } from '../styles/about-styles';
+import { HomeButton, Spacer, Card, Copy } from '../components/Helpers';
 
 
 const IndexPage = () => (
@@ -23,17 +23,14 @@ const IndexPage = () => (
       She provides emotional support in various settings, such as in a private grief counseling practice, in-home counseling to bereaved parents, in large scale disasters, and to expatriate staff of an international disaster organization.
     </AboutCopy>
     <Spacer/>
-    <ImageWrapper>
-      <Image style={{gridColumn: '1 / 2', borderRadius: '4px'}}cloudName="nicky-cloudinary" publicId="PASCALE-VERMONT/Edited_Image_2013-11-24-15_15_22.jpg" width="400">
-        <Transformation quality="jpegmini"/>
-      </Image>
-    </ImageWrapper>
+    <AboutImageWrapper/>
     <SoundcloudWrapper>
-      <iframe style={{borderRadius: '4px'}}width="100%" height="400" scrolling="no" frameBorder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <iframe width="100%" height="200px" scrolling="no" frameBorder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <Copy style={{ width: '80%', justifySelf: 'center', padding: '10px 10px 15px 10px', margin: '0 auto'}}>Learn more about Pascale's grief counseling work through this podcast interview with <a className='custom-link' href="http://www.halfhourintern.com/" target="_blank">The Half Hour Intern</a></Copy>
     </SoundcloudWrapper>
     <AboutTestimonial>
-    <Card style={{padding: '35px'}}>"The compassion, sympathy, and assurance she gave my husband and I helped us to move through the stages of our grief and realize that we were going to be ok. Her heartfelt questions and warm nature made it easy to open up and share our tragedy, our fears of trying again, our relationship struggles, our guilty thoughts, our happy moments, and so much more."<br/> - Anonymous Client
-    </Card>
+      <Card style={{padding: '35px'}}>"The compassion, sympathy, and assurance she gave my husband and I helped us to move through the stages of our grief and realize that we were going to be ok. Her heartfelt questions and warm nature made it easy to open up and share our tragedy, our fears of trying again, our relationship struggles, our guilty thoughts, our happy moments, and so much more."<br/> - Anonymous Client
+      </Card>
     </AboutTestimonial>
   </AboutWrapper>
 )

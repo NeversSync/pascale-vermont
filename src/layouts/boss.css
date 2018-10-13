@@ -335,9 +335,13 @@ h3 {
   .tall-title {
     grid-template-rows: 110px 80px;
   }
+}
 
-  .second-testimonial {
+.custom-link {
+  color: black; 
+  text-decoration: underline;
+}
 
-  }
-
+.custom-link:hover {
+  color: hsl(276, 70%, 59%);
 }

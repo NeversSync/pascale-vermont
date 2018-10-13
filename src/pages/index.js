@@ -6,7 +6,7 @@ import Nav from '../components/Nav';
 import { Card, Copy, LandingSummaryWrapper, Title, SubTitle, CTAButton, SVGArrowRight, SVGArrowLeft, LandingSummaryCopy, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle } from '../components/Helpers';
 
 import { HeroContainer, HeroImg, Heading, LandingSubtitle } from '../styles/landing-styles';
-import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, SoundcloudWrapper } from '../styles/about-styles';
+import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, SoundcloudWrapperSummary } from '../styles/about-styles';
 import { PerinatalWrapper, PerinatalTitle, PerinatalSvg, PerinatalLine, PerinatalSvgSummary } from '../styles/perinatal-styles';
 import { NGOWrapper, NGOTitle, NGOSvg, NGOLine } from '../styles/ngo-styles';
 import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefImg } from '../styles/grief-styles';
@@ -68,9 +68,9 @@ const AboutSummary = () => (
         <Transformation quality="jpegmini" />
       </Image>
     </ImageWrapper>
-    <SoundcloudWrapper>
-      <iframe style={{ borderRadius: '4px' }} width="100%" height="400" scrolling="no" frameBorder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-    </SoundcloudWrapper>
+    <SoundcloudWrapperSummary>
+      <iframe style={{ borderRadius: '4px' }} width="100%" height="400px" scrolling="no" frameBorder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+    </SoundcloudWrapperSummary>
     <SummaryTestimonial style={{marginTop: '4%'}}>
       <Card style={{padding: '35px'}}>Those first days, sorrow's pain<br/>
       was tangible:<br/>
