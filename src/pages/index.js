@@ -15,10 +15,10 @@ import { PalliativeWrapperSummary, PalliativeSvgSummary, PalliativeLine } from '
 import Contact from './contact';
 
 // TODO: 
-// Find red cross articles
 // Fix testimonial bug
+// Find red cross articles
 // Animate arrows in learn more btn 
-// Borrow animations and scroll library from portfolio
+// Add more animations/ page transitions, fade in animations, etc. 
 
 const IndexPage = () => (
   <div>
