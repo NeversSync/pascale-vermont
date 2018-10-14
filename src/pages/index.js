@@ -200,9 +200,11 @@ const PalliativeSummary = () => (
     </RightTallSummaryWrapper>
     <RightLandingSummaryCopy>
       Some highlights of Pascale's work in Palliative Care:
+      <ul>
       <li>Volunteer with No One Dies Alone program at Laguna Honda Rehabilitation Center, San Francisco. Led bereavement groups and sat with actively dying patients.</li>
       <li>Palliative care counselor at Kaiser Permanente Hospitals in Vallejo and San Francisco.</li>
       <li>Volunteer and instructor for San Francisco Crisis Care working in partnership with law enforcement officials and providing emotional support and practical assistance to families after a sudden death.</li>
+      </ul>
     </RightLandingSummaryCopy>
     <SummaryTestimonial style={{marginTop: '4%'}}>
       <Card style={{padding: '35px'}}>"Having my father die so suddenly was a big shock. The volunteer helped me figure out what to do with my dad's body. We had never gone through a death in this country and had no idea about anything. She made sure my kids were OK, that my mom was OK, and that I was OK too. At a time like this, you kind of lose your mind. You need people to support you and guide you. That's what the volunteer for San Francisco Crisis Care gave us."<br/> - A daughter following the death of her father"
