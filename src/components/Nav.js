@@ -156,7 +156,7 @@ const DesktopNav = ({
              </Link>
            </NavDropDownItem>
            <NavDropDownItem onMouseEnter={hoverSvgToggleThree} onMouseLeave={hoverSvgToggleThree} >
-             <Link to="/palliative-care">PALLIATIVE CARE
+             <Link to="/palliative-care-support">PALLIATIVE CARE
          <NavSvg style={{ opacity: svgOpacityThree, width: '150px' }}>
                  <NavLine x1="27" y1="3" x2="112" y2="3" stroke="white" strokeWidth="4" strokeLinecap="round" />
                </NavSvg>

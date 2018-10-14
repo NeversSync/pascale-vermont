@@ -8,6 +8,7 @@ import styled from 'styled-components';
 import 'typeface-fira-sans';
 import SmoothScroll from 'really-smooth-scroll';
 
+const windowGlobal = typeof window !== 'undefined' && window;
 SmoothScroll.shim();
 
 const Content = styled.div`

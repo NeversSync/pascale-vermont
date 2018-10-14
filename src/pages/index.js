@@ -3,15 +3,15 @@ import Link from 'gatsby-link'
 import { Image, Transformation } from 'cloudinary-react';
 
 import Nav from '../components/Nav';
-import { Card, Copy, LandingSummaryWrapper, Title, SubTitle, CTAButton, SVGArrowRight, SVGArrowLeft, LandingSummaryCopy, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper } from '../components/Helpers';
+import { Card, LandingSummaryWrapper, Title, SVGArrowRight, SVGArrowLeft, LandingSummaryCopy, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper } from '../components/Helpers';
 
 import { HeroContainer, HeroImg, Heading, LandingSubtitle } from '../styles/landing-styles';
 import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, SoundcloudWrapperSummary } from '../styles/about-styles';
-import { PerinatalWrapper, PerinatalTitle, PerinatalSvg, PerinatalLine, PerinatalSvgSummary } from '../styles/perinatal-styles';
+import { PerinatalWrapper, PerinatalLine, PerinatalSvgSummary } from '../styles/perinatal-styles';
 import { NGOWrapperSummary, NGOSvgSummary, NGOLine } from '../styles/ngo-styles';
 import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefImgSummary } from '../styles/grief-styles';
 import { DisasterWrapper, DisasterTitle, DisasterSvgSummary, DisasterLine, DisasterImg } from '../styles/disaster-styles';
-import { PalliativeWrapperSummary, PalliativeTitle, PalliativeSvgSummary, PalliativeLine } from '../styles/palliative-styles';
+import { PalliativeWrapperSummary, PalliativeSvgSummary, PalliativeLine } from '../styles/palliative-styles';
 import Contact from './contact';
 
 // TODO: 
@@ -210,27 +210,5 @@ const PalliativeSummary = () => (
     </SummaryTestimonial>
   </PalliativeWrapperSummary>
 );
-
-// const Contact = () => (
-//   <ContactWrapper>
-//     {/* <RightLandingSummaryWrapper> */}
-//       {/* <ContactTitle>CONTACT</ContactTitle>
-//       <ContactSvg>
-//         <ContactLine x1="5" y1="5" x2="190" y2="5" stroke="rgb(255, 189, 66)" strokeWidth="6" />
-//       </ContactSvg> */}
-
-// {/* <form class="cf">
-//   <div class="half left cf">
-//     <input type="text" id="input-name" placeholder="Name"/>
-//     <input type="email" id="input-email" placeholder="Email address"/>
-//     <input type="text" id="input-subject" placeholder="Subject"/>
-//   </div>
-//   <div class="half right cf">
-//     <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
-//   </div>  
-//   <input type="submit" value="Submit" id="input-submit"/>
-// </form> */}
-//   </ContactWrapper>
-// );
 
 export default IndexPage;
