@@ -25,9 +25,10 @@ const IndexPage = () => (
         >
         <LeftHalfInputs>
           <LeftInput name="name" type="text" placeholder="Name" />
-          <LeftInput name="_replyto" type="email" placeholder="Email address" />
-          <LeftInput name="_subject" type="text" placeholder="Subject" />
-          <input type="hidden" name="_next" value="https://site.io/thanks.html" style={{display: 'none'}} />
+          <LeftInput name="email" type="email" placeholder="Email address" />
+          <LeftInput name="subject" type="text" placeholder="Subject" />
+          {/* <input type="hidden" name="_next" value="https://site.io/thanks.html" style={{display: 'none'}} /> */}
+          <input type="hidden" name="_next" value="./thanks" style={{display: 'none'}}/>
         </LeftHalfInputs>
         <RightHalfInputs>
           <RightTextArea name="message" type="text" placeholder="Message"></RightTextArea>
