@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Image, Transformation } from 'cloudinary-react';
 
 import { AboutWrapper, AboutTitleWrapper, AboutTitle, AboutSvg, AboutLine, AboutCopy, SoundcloudWrapper, AboutTestimonial, AboutImageWrapper } from '../styles/about-styles';
 import { HomeButton, Spacer, Card, Copy } from '../components/Helpers';

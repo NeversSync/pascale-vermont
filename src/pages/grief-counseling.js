@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Image, Transformation } from 'cloudinary-react';
 
 import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefTestimonial, GriefImgWrapper, GriefTitleWrapper, GriefCopy, SecondGriefTestimonial } from '../styles/grief-styles';
 import { HomeButton, Spacer, ImageWrapper, Copy, Card } from '../components/Helpers';

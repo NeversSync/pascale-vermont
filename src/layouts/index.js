@@ -6,10 +6,7 @@ import "./boss.css";
 // import './index.css'
 import styled from 'styled-components';
 import 'typeface-fira-sans';
-// import SmoothScroll from 'really-smooth-scroll';
 
-// const windowGlobal = typeof window !== 'undefined' && window;
-// SmoothScroll.shim();
 
 const Content = styled.div`
   font-family: fira sans, sans-serif;
@@ -17,7 +14,7 @@ const Content = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
-`
+  `
 
 const Layout = ({ children, data }) => (
   <div>

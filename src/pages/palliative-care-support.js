@@ -1,9 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Image, Transformation } from 'cloudinary-react';
 
 import { PalliativeWrapper, PalliativeTitleWrapper, PalliativeTitle, PalliativeSvg, PalliativeLine, PalliativeTestimonial, PalliativeImageWrapper, PalliativeCopy } from '../styles/palliative-styles';
-import { HomeButton, Spacer, ImageWrapper, Copy, Card } from '../components/Helpers';
+import { HomeButton, Copy, Card } from '../components/Helpers';
 
 const IndexPage = () => (
   <PalliativeWrapper style={{ borderBottom: 'none' }}>

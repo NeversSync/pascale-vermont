@@ -167,14 +167,13 @@ html {
   font-size: 62.5%;
 }
 body {
-  /* background: #d4d4d4; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Open Sans', sans-serif;
   font-size: 2rem;
+  scroll-behavior: smooth;
 }
 h1 {
-  /* font-family: 'blanchcaps_inline', sans-serif; */
   font-weight: normal;
   font-size: 1.3em;
   margin: 0;
@@ -185,7 +184,6 @@ h4,
 h5,
 h6 {
   font-weight: normal;
-  /* font-family: 'haymakerregular', sans-serif; */
 }
 h2 {
   margin-top: 0;
@@ -240,24 +238,20 @@ h3 {
 
 #nav-icon3 span:nth-child(1) {
   top: 0px;
-  /* left: 130px; */
 }
 
 #nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3) {
   top: 9px;
-  /* left: 130px; */
 }
 
 #nav-icon3 span:nth-child(4) {
   top: 18px;
-  /* left: 130px; */
 }
 
 #nav-icon3.open span:nth-child(1) {
   top: 18px;
   width: 0%;
   left: 50%;
-  /* left: 130px; */
 }
 
 #nav-icon3.open span:nth-child(2) {
@@ -278,7 +272,6 @@ h3 {
   top: 18px;
   width: 0%;
   left: 50%;
-  /* left: 130px; */
 }
 
 /* LANDING PAGE BUTTON STYLES */
