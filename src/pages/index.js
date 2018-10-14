@@ -221,21 +221,18 @@ const Contact = () => (
       </ContactSvg>
     </ContactSummaryTitleWrapper>
     <ContactCard>
-      <ContactForm
-        method="POST"
-        data-netlify="true"
-        netlify="true"
-        data-netlify-honeypot="bot-field"
-        name="contact-form">
-        <LeftHalfInputs class="half left cf">
+    <ContactForm action="https://formspree.io/livelyevers@gmail.com"
+      method="POST">
+        <LeftHalfInputs>
           <LeftInput name="name" type="text" placeholder="Name" />
           <LeftInput name="email" type="email" placeholder="Email address" />
           <LeftInput name="subject" type="text" placeholder="Subject" />
+          <input type="hidden" name="_next" value="./thanks" style={{display: 'none'}}/>
         </LeftHalfInputs>
-        <RightHalfInputs class="half right cf">
+        <RightHalfInputs>
           <RightTextArea name="message" type="text" placeholder="Message"></RightTextArea>
         </RightHalfInputs>
-        <SubmitButton type="submit" value="Submit">SUBMIT</SubmitButton>
+        <SubmitButton type="submit" value="submit">SUBMIT</SubmitButton>
       </ContactForm>
     </ContactCard>
   </ContactWrapper>

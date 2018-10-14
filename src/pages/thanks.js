@@ -1,14 +1,18 @@
 import React from 'react';
 import Link from 'gatsby-link'
-import { HomeButton, Copy, Wrapper } from '../components/Helpers';
+import { HomeButton, Copy } from '../components/Helpers';
+import { ThanksWrapper, ContentWrapper } from '../styles/thanks-styles';
+
 
 const IndexPage = () => (
-  <Wrapper>
-    <Link to="/">
-  <HomeButton>HOME</HomeButton>
-  </Link>
-  <Copy>Thanks!</Copy>
-  </Wrapper>
+  <ThanksWrapper>
+    <ContentWrapper>
+      <Copy>Thank you!</Copy>
+      <Link to="/" >
+        <HomeButton>HOME</HomeButton>
+      </Link>
+    </ContentWrapper>
+  </ThanksWrapper>
 );
 
 export default IndexPage;
