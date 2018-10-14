@@ -221,7 +221,7 @@ const Contact = () => (
       </ContactSvg>
     </ContactSummaryTitleWrapper>
     <ContactCard>
-    <ContactForm action="https://formspree.io/livelyevers@gmail.com"
+    <ContactForm action="https://formspree.io/prema.calou@gmail.com"
       method="POST">
         <LeftHalfInputs>
           <LeftInput name="name" type="text" placeholder="Name" />

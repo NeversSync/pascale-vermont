@@ -15,7 +15,7 @@ const IndexPage = () => (
       </Link>
     </ContactTitleWrapper>
     <ContactCard>
-      <ContactForm action="https://formspree.io/livelyevers@gmail.com"
+      <ContactForm action="https://formspree.io/prema.calou@gmail.com"
       method="POST"
         // method="POST"
         // netlify="true"
