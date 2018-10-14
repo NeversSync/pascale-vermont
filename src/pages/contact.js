@@ -18,7 +18,8 @@ const IndexPage = () => (
   <ContactForm 
     method="post"
     data-netlify="true"
-    data-netlify-honeypot="bot-field">
+    data-netlify-honeypot="bot-field"
+    name="contact">
   <LeftHalfInputs class="half left cf">
     <LeftInput name="name" type="text"  placeholder="Name"/>
     <LeftInput name="email" type="email" placeholder="Email address"/>

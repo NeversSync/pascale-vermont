@@ -6,10 +6,10 @@ import "./boss.css";
 // import './index.css'
 import styled from 'styled-components';
 import 'typeface-fira-sans';
-import SmoothScroll from 'really-smooth-scroll';
+// import SmoothScroll from 'really-smooth-scroll';
 
-const windowGlobal = typeof window !== 'undefined' && window;
-SmoothScroll.shim();
+// const windowGlobal = typeof window !== 'undefined' && window;
+// SmoothScroll.shim();
 
 const Content = styled.div`
   font-family: fira sans, sans-serif;
