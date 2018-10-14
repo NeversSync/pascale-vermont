@@ -14,24 +14,24 @@ const IndexPage = () => (
         <HomeButton />
       </Link>
     </ContactTitleWrapper>
-  <ContactCard>
-  <ContactForm 
-    method="post"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
-    name="contact">
-  <LeftHalfInputs class="half left cf">
-    <LeftInput name="name" type="text"  placeholder="Name"/>
-    <LeftInput name="email" type="email" placeholder="Email address"/>
-    <LeftInput name="subject" type="text"  placeholder="Subject"/>
-  </LeftHalfInputs>
-  <RightHalfInputs class="half right cf">
-    <RightTextArea name="message" type="text"  placeholder="Message"></RightTextArea>
-  </RightHalfInputs>  
-  <SubmitButton type="submit" value="Submit" id="input-submit"/>
-</ContactForm>
-</ContactCard>
-</ContactWrapper>
+    <ContactCard>
+      <ContactForm
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        name="contact">
+        <LeftHalfInputs class="half left cf">
+          <LeftInput name="name" type="text" placeholder="Name" />
+          <LeftInput name="email" type="email" placeholder="Email address" />
+          <LeftInput name="subject" type="text" placeholder="Subject" />
+        </LeftHalfInputs>
+        <RightHalfInputs class="half right cf">
+          <RightTextArea name="message" type="text" placeholder="Message"></RightTextArea>
+        </RightHalfInputs>
+        <SubmitButton type="submit" value="Submit">SUBMIT</SubmitButton>
+      </ContactForm>
+    </ContactCard>
+  </ContactWrapper>
 );
 
 export default IndexPage;

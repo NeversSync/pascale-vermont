@@ -93,7 +93,7 @@ const ContactForm = styled.form`
   }
 `;
 
-const SubmitButton = styled.input`
+const SubmitButton = styled.button`
   display: flex;
   grid-column: 1 / -1;
   height: 55px;

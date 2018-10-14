@@ -15,6 +15,7 @@ import { PalliativeWrapperSummary, PalliativeSvgSummary, PalliativeLine } from '
 import { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, ContactSvg, ContactLine, ContactSummaryTitleWrapper, LeftHalfInputs, RightHalfInputs, RightTextArea, LeftInput } from '../styles/contact-styles';
 
 // TODO: 
+// Fix nav clickable dropdown items
 // Add back to top arrow
 // Find red cross articles
 // Animate arrows in learn more btn 
@@ -29,7 +30,7 @@ const IndexPage = () => (
     <NGOSummary />
     <DisasterSummary />
     <PalliativeSummary />
-    <Contact/>
+    <Contact />
   </div>
 )
 
@@ -69,25 +70,25 @@ const AboutSummary = () => (
     <SoundcloudWrapperSummary>
       <iframe style={{ borderRadius: '4px' }} width="100%" height="400px" scrolling="no" frameBorder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
     </SoundcloudWrapperSummary>
-    <SummaryTestimonial style={{marginTop: '4%'}}>
-      <Card style={{padding: '35px'}}>Those first days, sorrow's pain<br/>
-      was tangible:<br/>
-      an amputation, a dismemberment,<br/>
-      the gap so great, no sobs,<br/>
-      children, friends<br/>
-      would fill its space:<br/>
-      a broken heart is body's pain indeed.<br/>
-      Days pass, and nights, flowing into weeks;<br/>
-      milk no longer spills<br/>
-      with my tears.<br/>
-      Hours once spent weeping<br/>
-      now weave into patterns,<br/>
-      our words of grief and love<br/>
-      now reach for friendship's clasp,<br/>
-      now look ahead...<br/>
-      -Lois Lake Church
+    <SummaryTestimonial style={{ marginTop: '4%' }}>
+      <Card style={{ padding: '35px' }}>Those first days, sorrow's pain<br />
+        was tangible:<br />
+        an amputation, a dismemberment,<br />
+        the gap so great, no sobs,<br />
+        children, friends<br />
+        would fill its space:<br />
+        a broken heart is body's pain indeed.<br />
+        Days pass, and nights, flowing into weeks;<br />
+        milk no longer spills<br />
+        with my tears.<br />
+        Hours once spent weeping<br />
+        now weave into patterns,<br />
+        our words of grief and love<br />
+        now reach for friendship's clasp,<br />
+        now look ahead...<br />
+        -Lois Lake Church
       </Card>
-  </SummaryTestimonial>
+    </SummaryTestimonial>
   </AboutWrapper>
 )
 
@@ -108,7 +109,7 @@ const PerinatalSummary = () => (
       She meets with parents and other family members as long as support is needed, and at other times when the grief is triggered by anniversaries or subsequent pregnancies.
     </RightLandingSummaryCopy>
     <SummaryTestimonial>
-       <Card style={{padding: '35px'}}>"Truly our conversations over time scraped me off the emotional depth of despair and helped me start to look up."<br/> - Anonymous client
+      <Card style={{ padding: '35px' }}>"Truly our conversations over time scraped me off the emotional depth of despair and helped me start to look up."<br /> - Anonymous client
       </Card>
     </SummaryTestimonial>
   </PerinatalWrapper>
@@ -130,11 +131,11 @@ const GriefSummary = () => (
       A safe place to express the multitude of feelings experienced by the bereaved - sadness, doubts, guilt, anger, moodiness... <br /><br />
       Over time small victories build upon each other until they tend to dominate, and the moments of respite between the waves of pain lengthen.
       Pascale meets clients in her home office in San Francisco and has worked over Skype with people as far away as India, Pakistan and South Sudan.
-      <br/>
+      <br />
       <a className='custom-link' href="https://blogs.psychcentral.com/nlp/2017/05/blake-fletcher-half-hour-intern-podcast/" target="_blank">Read a summary</a> of highlights from an interview with Pascale by the <a className='custom-link' href="http://www.halfhourintern.com/" target="_blank">Half Hour Intern podcast</a>.
     </LandingSummaryCopy>
     <WithImageSummaryTestimonial>
-      <Card style={{padding: '35px'}}>"Pascale showed me how to look outside of my troubles, and see within to realize my strength and good qualities without being so hard on myself. She's very good to point out good things that counter whatever negative issue I'm talking about, and helps me to reconnect with my own potential and strength."<br/> - Following the end of an intimate relationship
+      <Card style={{ padding: '35px' }}>"Pascale showed me how to look outside of my troubles, and see within to realize my strength and good qualities without being so hard on myself. She's very good to point out good things that counter whatever negative issue I'm talking about, and helps me to reconnect with my own potential and strength."<br /> - Following the end of an intimate relationship
       </Card>
     </WithImageSummaryTestimonial>
     <GriefImgSummary src={'https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607993/PASCALE-VERMONT/ravi-roshan-383162-unsplash.jpg'} width="100%" height="auto" />
@@ -157,7 +158,7 @@ const NGOSummary = () => (
         Article on Haiti earthquake…
     </RightLandingSummaryCopy>
     <SummaryTestimonial>
-    <Card style={{padding: '35px'}}>"Acute grief is a thunderstorm, a monsoonal downpour, a sudden flood that submerges almost everything in its path."<br/> - Steven Levine
+      <Card style={{ padding: '35px' }}>"Acute grief is a thunderstorm, a monsoonal downpour, a sudden flood that submerges almost everything in its path."<br /> - Steven Levine
     </Card>
     </SummaryTestimonial>
   </NGOWrapperSummary>
@@ -180,7 +181,7 @@ const DisasterSummary = () => (
       <li><a className='custom-link' href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048646/" target="_blank">Arkansas tornado response</a></li> */}
     </LandingSummaryCopy>
     <WithImageSummaryTestimonial>
-      <Card style={{padding: '35px'}}>"I want to thank you for your amazing emotional support.  What impressed me was not only your professional expertise but, more importantly, your natural care, attention and compassion."<br/> - K
+      <Card style={{ padding: '35px' }}>"I want to thank you for your amazing emotional support.  What impressed me was not only your professional expertise but, more importantly, your natural care, attention and compassion."<br /> - K
       </Card>
     </WithImageSummaryTestimonial>
     <DisasterImg src={'https://res.cloudinary.com/nicky-cloudinary/image/upload/c_crop,f_auto,h_260,q_auto:best,w_439,x_169/v1538607948/PASCALE-VERMONT/m34240199_pascale763.jpg'} width="100%" height="auto" />
@@ -199,44 +200,44 @@ const PalliativeSummary = () => (
       </Link>
     </RightTallSummaryWrapper>
     <RightLandingSummaryCopy>
-      Some highlights of Pascale's work in Palliative Care:<br/><br/>
-      - Volunteer with No One Dies Alone program at Laguna Honda Rehabilitation Center, San Francisco. Led bereavement groups and sat with actively dying patients.<br/>
-      - Palliative care counselor at Kaiser Permanente Hospitals in Vallejo and San Francisco.<br/>
+      Some highlights of Pascale's work in Palliative Care:<br /><br />
+      - Volunteer with No One Dies Alone program at Laguna Honda Rehabilitation Center, San Francisco. Led bereavement groups and sat with actively dying patients.<br />
+      - Palliative care counselor at Kaiser Permanente Hospitals in Vallejo and San Francisco.<br />
       - Volunteer and instructor for San Francisco Crisis Care working in partnership with law enforcement officials and providing emotional support and practical assistance to families after a sudden death.
     </RightLandingSummaryCopy>
     <SummaryTestimonial>
-      <Card style={{padding: '35px'}}>"Having my father die so suddenly was a big shock. The volunteer helped me figure out what to do with my dad's body. We had never gone through a death in this country and had no idea about anything. She made sure my kids were OK, that my mom was OK, and that I was OK too. At a time like this, you kind of lose your mind. You need people to support you and guide you. That's what the volunteer for San Francisco Crisis Care gave us."<br/> - A daughter following the death of her father"
+      <Card style={{ padding: '35px' }}>"Having my father die so suddenly was a big shock. The volunteer helped me figure out what to do with my dad's body. We had never gone through a death in this country and had no idea about anything. She made sure my kids were OK, that my mom was OK, and that I was OK too. At a time like this, you kind of lose your mind. You need people to support you and guide you. That's what the volunteer for San Francisco Crisis Care gave us."<br /> - A daughter following the death of her father"
       </Card>
     </SummaryTestimonial>
   </PalliativeWrapperSummary>
 );
 
 const Contact = () => (
-<ContactWrapper>
-<ContactSummaryTitleWrapper>
-  <ContactTitle>CONTACT</ContactTitle>
-  <ContactSvg>
-    <ContactLine x1="7" y1="5" x2="228" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6" />
-  </ContactSvg>
-</ContactSummaryTitleWrapper>
-<ContactCard>
-<ContactForm 
-method="post"
-data-netlify="true"
-data-netlify-honeypot="bot-field"
-name="contact-homepage">
-<LeftHalfInputs class="half left cf">
-<LeftInput name="name" type="text"  placeholder="Name"/>
-<LeftInput name="email" type="email" placeholder="Email address"/>
-<LeftInput name="subject" type="text"  placeholder="Subject"/>
-</LeftHalfInputs>
-<RightHalfInputs class="half right cf">
-<RightTextArea name="message" type="text"  placeholder="Message"></RightTextArea>
-</RightHalfInputs>  
-<SubmitButton type="submit" value="Submit" id="input-submit"/>
-</ContactForm>
-</ContactCard>
-</ContactWrapper>
+  <ContactWrapper>
+    <ContactSummaryTitleWrapper>
+      <ContactTitle>CONTACT</ContactTitle>
+      <ContactSvg>
+        <ContactLine x1="7" y1="5" x2="228" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6" />
+      </ContactSvg>
+    </ContactSummaryTitleWrapper>
+    <ContactCard>
+      <ContactForm
+        method="post"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        name="contact-homepage">
+        <LeftHalfInputs class="half left cf">
+          <LeftInput name="name" type="text" placeholder="Name" />
+          <LeftInput name="email" type="email" placeholder="Email address" />
+          <LeftInput name="subject" type="text" placeholder="Subject" />
+        </LeftHalfInputs>
+        <RightHalfInputs class="half right cf">
+          <RightTextArea name="message" type="text" placeholder="Message"></RightTextArea>
+        </RightHalfInputs>
+        <SubmitButton type="submit" value="Submit">SUBMIT</SubmitButton>
+      </ContactForm>
+    </ContactCard>
+  </ContactWrapper>
 );
 
 export default IndexPage;
