@@ -72,7 +72,8 @@ const RightLandingSummaryCopy = LandingSummaryCopy.extend`
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   width: 90%;
-  margin-left: 15%;
+  margin-left: 10%;
+  margin-right: 0;
   justify-self: start;
 
   @media(max-width: 900px) {
@@ -147,19 +148,24 @@ const CTAButton = styled.button`
   letter-spacing: 1.8px;
   cursor: pointer;
 
+  &:hover {
+    background: linear-gradient(to left, hsla(348, 96%, 69%, .9), hsla(39, 100%, 63%, 0.9));
+    box-shadow: 0 4px 4px rgba(0,0,0,.25);
+  }
+  &:active {
+    background: linear-gradient(to left, hsla(348, 86%, 49%, .9), hsla(39, 90%, 43%, 0.9));
+    -webkit-transform: translate(0px, 2px);
+    transform: translate(0px, 2px);
+    border-bottom: none;
+    box-shadow: none;
+  }
+
   @media(max-width: 900px) {
     margin: 0;
-
+    font-size: 16px;
     &:hover {
-      background: linear-gradient(to left, hsla(348, 96%, 69%, .9), hsla(39, 100%, 63%, 0.9));
-      box-shadow: 0 4px 4px rgba(0,0,0,.25);
-    }
-    &:active {
-      background: linear-gradient(to left, hsla(348, 86%, 49%, .9), hsla(39, 90%, 43%, 0.9));
-      -webkit-transform: translate(0px, 2px);
-      transform: translate(0px, 2px);
-      border-bottom: none;
-      box-shadow: none;
+      background: linear-gradient(to left, hsla(348, 86%, 59%, .9), hsla(39, 100%, 63%, 0.9));
+      box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
     }
   }
 `;

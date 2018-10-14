@@ -12,10 +12,9 @@ import { NGOWrapperSummary, NGOSvgSummary, NGOLine } from '../styles/ngo-styles'
 import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefImgSummary } from '../styles/grief-styles';
 import { DisasterWrapper, DisasterTitle, DisasterSvgSummary, DisasterLine, DisasterImg } from '../styles/disaster-styles';
 import { PalliativeWrapperSummary, PalliativeTitle, PalliativeSvgSummary, PalliativeLine } from '../styles/palliative-styles';
-import { ContactWrapper, ContactTitle, ContactSvg, ContactLine, ContactCTA } from '../styles/contact-styles';
+import Contact from './contact';
 
 // TODO: 
-// Finish creating palliative care page
 // Find red cross articles
 // Fix testimonial bug
 // Animate arrows in learn more btn 
@@ -30,7 +29,7 @@ const IndexPage = () => (
     <NGOSummary />
     <DisasterSummary />
     <PalliativeSummary />
-    {/* <Contact/> */}
+    <Contact/>
   </div>
 )
 
@@ -205,29 +204,33 @@ const PalliativeSummary = () => (
       <li>Palliative care counselor at Kaiser Permanente Hospitals in Vallejo and San Francisco.</li>
       <li>Volunteer and instructor for San Francisco Crisis Care working in partnership with law enforcement officials and providing emotional support and practical assistance to families after a sudden death.</li>
     </RightLandingSummaryCopy>
-    <SummaryTestimonial>
+    <SummaryTestimonial style={{marginTop: '4%'}}>
     <Card style={{padding: '35px'}}>"Having my father die so suddenly was a big shock. The volunteer helped me figure out what to do with my dad's body. We had never gone through a death in this country and had no idea about anything. She made sure my kids were OK, that my mom was OK, and that I was OK too. At a time like this, you kind of lose your mind. You need people to support you and guide you. That's what the volunteer for San Francisco Crisis Care gave us."<br/> - A daughter following the death of her father"
     </Card>
     </SummaryTestimonial>
   </PalliativeWrapperSummary>
 );
 
-const Contact = () => (
-  <ContactWrapper>
-    {/* <RightLandingSummaryWrapper> */}
-      <ContactTitle>CONTACT</ContactTitle>
-      <ContactSvg>
-        <ContactLine x1="5" y1="5" x2="190" y2="5" stroke="rgb(255, 189, 66)" strokeWidth="6" />
-      </ContactSvg>
-      <Link to="/contact/" className='right-button'>
-        <SVGArrowRight />
-      </Link>
-    {/* </RightLandingSummaryWrapper> */}
-    {/* <RightLandingSummaryCopy>
-      Pascale offers crisis counseling to expatriate staff of Relief International based in 22 countries over Skype when they experience a traumatic experience while in the field or suffer a personal crisis.  She was also deployed to Haiti after the 2010 earthquake to provide grief counseling to civilians and hospital staff who had lost many family members and friends.
-        Article on Haiti earthquake…
-    </RightLandingSummaryCopy> */}
-  </ContactWrapper>
-);
+// const Contact = () => (
+//   <ContactWrapper>
+//     {/* <RightLandingSummaryWrapper> */}
+//       {/* <ContactTitle>CONTACT</ContactTitle>
+//       <ContactSvg>
+//         <ContactLine x1="5" y1="5" x2="190" y2="5" stroke="rgb(255, 189, 66)" strokeWidth="6" />
+//       </ContactSvg> */}
+
+// {/* <form class="cf">
+//   <div class="half left cf">
+//     <input type="text" id="input-name" placeholder="Name"/>
+//     <input type="email" id="input-email" placeholder="Email address"/>
+//     <input type="text" id="input-subject" placeholder="Subject"/>
+//   </div>
+//   <div class="half right cf">
+//     <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+//   </div>  
+//   <input type="submit" value="Submit" id="input-submit"/>
+// </form> */}
+//   </ContactWrapper>
+// );
 
 export default IndexPage;
