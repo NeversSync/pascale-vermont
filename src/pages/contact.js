@@ -15,15 +15,15 @@ const IndexPage = () => (
       </Link>
     </ContactTitleWrapper>
     <ContactCard>
-      <ContactForm
-        action="mailto:livelyevers@gmail.com" method="post" enctype="text/plain"
+      <ContactForm action="https://formspree.io/livelyevers@gmail.com"
+      method="POST"
         // method="POST"
         // netlify="true"
         // data-netlify="true"
         // data-netlify-honeypot="bot-field"
         // name="contact-form"
         >
-        <LeftHalfInputs>
+        <LeftHalfInputs class="half left cf">
           <LeftInput name="name" type="text" placeholder="Name" />
           <LeftInput name="email" type="email" placeholder="Email address" />
           <LeftInput name="subject" type="text" placeholder="Subject" />
