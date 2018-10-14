@@ -16,12 +16,14 @@ const IndexPage = () => (
     </ContactTitleWrapper>
     <ContactCard>
       <ContactForm
-        method="POST"
-        netlify="true"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-        name="contact-form">
-        <LeftHalfInputs class="half left cf">
+        action="mailto:livelyevers@gmail.com" method="post" enctype="text/plain"
+        // method="POST"
+        // netlify="true"
+        // data-netlify="true"
+        // data-netlify-honeypot="bot-field"
+        // name="contact-form"
+        >
+        <LeftHalfInputs>
           <LeftInput name="name" type="text" placeholder="Name" />
           <LeftInput name="email" type="email" placeholder="Email address" />
           <LeftInput name="subject" type="text" placeholder="Subject" />
