@@ -15,7 +15,7 @@ import { PalliativeWrapperSummary, PalliativeSvgSummary, PalliativeLine } from '
 import { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, ContactSvg, ContactLine, ContactSummaryTitleWrapper, LeftHalfInputs, RightHalfInputs, RightTextArea, LeftInput } from '../styles/contact-styles';
 
 // TODO: 
-// Fix testimonial bug
+// Add back to top arrow
 // Find red cross articles
 // Animate arrows in learn more btn 
 // Add more animations/ page transitions, fade in animations, etc. 
@@ -224,7 +224,7 @@ const Contact = () => (
 method="post"
 data-netlify="true"
 data-netlify-honeypot="bot-field"
-name="contact">
+name="contact-homepage">
 <LeftHalfInputs class="half left cf">
 <LeftInput name="name" type="text"  placeholder="Name"/>
 <LeftInput name="email" type="email" placeholder="Email address"/>
