@@ -170,7 +170,7 @@ const CTAButton = styled.button`
   }
 `;
 
-const Testimonial = styled.p`
+const Testimonial = styled.div`
 font-style: italic;
 font-size: 22px;
 font-weight: 200;
