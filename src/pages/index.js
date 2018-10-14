@@ -224,6 +224,7 @@ const Contact = () => (
       <ContactForm
         method="post"
         data-netlify="true"
+        netlify="true"
         data-netlify-honeypot="bot-field"
         name="contact-form">
         <LeftHalfInputs class="half left cf">
