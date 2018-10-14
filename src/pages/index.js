@@ -12,7 +12,7 @@ import { NGOWrapperSummary, NGOSvgSummary, NGOLine } from '../styles/ngo-styles'
 import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefImgSummary } from '../styles/grief-styles';
 import { DisasterWrapper, DisasterTitle, DisasterSvgSummary, DisasterLine, DisasterImg } from '../styles/disaster-styles';
 import { PalliativeWrapperSummary, PalliativeSvgSummary, PalliativeLine } from '../styles/palliative-styles';
-import Contact from './contact';
+import { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, ContactSvg, ContactLine, ContactSummaryTitleWrapper, LeftHalfInputs, RightHalfInputs, RightTextArea, LeftInput } from '../styles/contact-styles';
 
 // TODO: 
 // Fix testimonial bug
@@ -209,6 +209,34 @@ const PalliativeSummary = () => (
       </Card>
     </SummaryTestimonial>
   </PalliativeWrapperSummary>
+);
+
+const Contact = () => (
+<ContactWrapper>
+<ContactSummaryTitleWrapper>
+  <ContactTitle>CONTACT</ContactTitle>
+  <ContactSvg>
+    <ContactLine x1="7" y1="5" x2="228" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6" />
+  </ContactSvg>
+</ContactSummaryTitleWrapper>
+<ContactCard>
+<ContactForm 
+method="post"
+data-netlify="true"
+data-netlify-honeypot="bot-field"
+name="contact">
+<LeftHalfInputs class="half left cf">
+<LeftInput name="name" type="text"  placeholder="Name"/>
+<LeftInput name="email" type="email" placeholder="Email address"/>
+<LeftInput name="subject" type="text"  placeholder="Subject"/>
+</LeftHalfInputs>
+<RightHalfInputs class="half right cf">
+<RightTextArea name="message" type="text"  placeholder="Message"></RightTextArea>
+</RightHalfInputs>  
+<SubmitButton type="submit" value="Submit" id="input-submit"/>
+</ContactForm>
+</ContactCard>
+</ContactWrapper>
 );
 
 export default IndexPage;

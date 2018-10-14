@@ -23,6 +23,11 @@ const ContactTitleWrapper = styled.div`
   padding: 20px;
 `;
 
+const ContactSummaryTitleWrapper = ContactTitleWrapper.extend`
+  grid-template-rows: 1fr;
+  padding: 10px 0px 40px 0px;
+`;
+
 const ContactTitle = Title.extend`
   grid-row: 1 / 2;
   grid-column: 2 / 3;
@@ -186,4 +191,4 @@ const RightTextArea = styled.textarea`
   }
 `;
 
-export default { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, ContactSvg, ContactLine, ContactTitleWrapper, LeftHalfInputs, RightHalfInputs, RightTextArea, LeftInput };
+export default { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, ContactSvg, ContactLine, ContactTitleWrapper, LeftHalfInputs, RightHalfInputs, RightTextArea, LeftInput, ContactSummaryTitleWrapper };
