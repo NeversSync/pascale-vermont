@@ -222,7 +222,7 @@ const Contact = () => (
     </ContactSummaryTitleWrapper>
     <ContactCard>
       <ContactForm
-        method="post"
+        method="POST"
         data-netlify="true"
         netlify="true"
         data-netlify-honeypot="bot-field"

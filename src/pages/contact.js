@@ -16,7 +16,7 @@ const IndexPage = () => (
     </ContactTitleWrapper>
     <ContactCard>
       <ContactForm
-        method="post"
+        method="POST"
         netlify="true"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
