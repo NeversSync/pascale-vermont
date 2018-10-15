@@ -5,7 +5,6 @@ import 'reset-css';
 import '../styles/boss.css';
 import styled from 'styled-components';
 import 'typeface-fira-sans';
-import { heartFavicon } from '../../public/assets/favicon/heart.png';
 
 const Content = styled.div`
   font-family: fira sans, sans-serif;
@@ -34,14 +33,6 @@ const Layout = ({ children }) => (
         meta={[
           { name: 'Pascale Vermont', content: 'Grief Counselor' },
           { name: 'keywords', content: 'sample, something' }
-        ]}
-        link={[
-          {
-            rel: 'shortcut icon',
-            type: 'image/png',
-            href: `${heartFavicon}`,
-            sizes: '16x16'
-          }
         ]}
       />     
       <Content>

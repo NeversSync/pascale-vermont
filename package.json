@@ -9,6 +9,7 @@
     "gatsby": "^2.0.23",
     "gatsby-cli": "^2.4.3",
     "gatsby-link": "^2.0.4",
+    "gatsby-plugin-favicon": "^3.1.4",
     "gatsby-plugin-google-analytics": "^2.0.6",
     "gatsby-plugin-react-helmet": "^3.0.0",
     "gatsby-plugin-styled-components": "^3.0.0",
@@ -30,7 +31,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write 'src/**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:css":"stylelint './src/**/*.js'"
+    "lint:css": "stylelint './src/**/*.js'"
   },
   "devDependencies": {
     "prettier": "^1.14.3",
