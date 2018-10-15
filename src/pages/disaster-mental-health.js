@@ -19,8 +19,8 @@ const IndexPage = () => (
       <DisasterImageWrapper />
       <DisasterCopy>
         For 10 years Pascale served as a disaster mental health volunteer and lead of the San Francisco mental health team for the American Red Cross.  She provided crisis and grief counseling to survivors of tornadoes, hurricanes and floods in Alabama, Mississippi, Oklahoma, Arkansas and Texas and to the victims and families of the Asiana Airlines plane crash at San Francisco International Airport.
-        {/* <li><a className='custom-link' href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048646/" target="_blank">Response to plane crash at SFO</a></li>
-      <li><a className='custom-link' href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048646/" target="_blank">Arkansas tornado response</a></li> */}
+        <br/><br/>
+        <Link to='./obama-letter' className='custom-link'>Read</Link> about Pascale's experience helping a young boy during the aftermath of a tornado in Arkansas.
       </DisasterCopy>
       <DisasterTestimonial>
         <Card style={{ padding: '35px' }}>"I want to thank you for your amazing emotional support.  What impressed me was not only your professional expertise but, more importantly, your natural care, attention and compassion".<br /> - K

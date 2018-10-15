@@ -69,7 +69,7 @@ const AboutSummary = () => (
     </LandingSummaryCopy>
     <AboutSummaryImg />
     <SoundcloudWrapperSummary>
-      <iframe style={{ borderRadius: '4px' }} width="100%" height="500px" scrolling="no" frameBorder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <iframe style={{ borderRadius: '4px' }} width="100%" height="500px" scrolling="no" frameBorder="yes" title="soundcloud-home" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
     </SoundcloudWrapperSummary>
     <SummaryTestimonial style={{ marginTop: '4%' }}>
       <Card style={{ padding: '35px' }}>Those first days, sorrow's pain<br />
@@ -177,7 +177,8 @@ const DisasterSummary = () => (
       </Link>
     </TallSummaryWrapper>
     <LandingSummaryCopy>
-      For 10 years Pascale served as a disaster mental health volunteer and lead of the San Francisco mental health team for the American Red Cross.  She provided crisis and grief counseling to survivors of tornadoes, hurricanes and floods in Alabama, Mississippi, Oklahoma, Arkansas and Texas and to the victims and families of the Asiana Airlines plane crash at San Francisco International Airport.
+      For 10 years Pascale served as a disaster mental health volunteer and lead of the San Francisco mental health team for the American Red Cross.  She provided crisis and grief counseling to survivors of tornadoes, hurricanes and floods in Alabama, Mississippi, Oklahoma, Arkansas and Texas and to the victims and families of the Asiana Airlines plane crash at San Francisco International Airport.<br/>
+      <Link to='./obama-letter' className='custom-link'>Read</Link> about Pascale's experience helping a young boy during the aftermath of a tornado in Arkansas.
     </LandingSummaryCopy>
     <WithImageSummaryTestimonial>
       <Card style={{ padding: '35px' }}>"I want to thank you for your amazing emotional support.  What impressed me was not only your professional expertise but, more importantly, your natural care, attention and compassion."<br /> - K

@@ -359,6 +359,17 @@ input:focus, textarea:focus {
   height: 30px;
 }
 
+.obama {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  justify-self: center;
+  align-self: center;
+  margin: 1% 0 2% 0;
+}
+.obama button {
+  margin: 0;
+}
+
 @media (max-width: 900px) {
   .left-button, .right-button, .home-button {
     grid-column: 2 / 4;
