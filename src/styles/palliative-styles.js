@@ -119,7 +119,7 @@ const PalliativeImageWrapper = styled(ImageWrapper)`
    @media(max-width: 900px) {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    width: 70%;
+    width: 85%;
     justify-self: center;
   }
 `;
