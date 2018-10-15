@@ -1,6 +1,7 @@
+import styled from 'styled-components';
 import { Wrapper, Card} from '../components/Helpers';
 
-const ThanksWrapper = Wrapper.extend`
+const ThanksWrapper = styled(Wrapper)`
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   justify-content: center;
@@ -12,7 +13,7 @@ const ThanksWrapper = Wrapper.extend`
   }
 `;
 
-const ContentWrapper = Card.extend`
+const ContentWrapper = styled(Card)`
   grid-column: 2 / 3; 
   grid-row: 2 / 3;
   display: grid;
@@ -28,4 +29,4 @@ const ContentWrapper = Card.extend`
   }
 `;
 
-export default { ThanksWrapper, ContentWrapper };
+export { ThanksWrapper, ContentWrapper };

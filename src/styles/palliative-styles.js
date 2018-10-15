@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import { Wrapper, Title, Copy, Card, CTAButton, Testimonial, ImageWrapper } from '../components/Helpers';
 
-const PalliativeWrapperSummary = Wrapper.extend`
+const PalliativeWrapperSummary = styled(Wrapper)`
   background: rgba(215, 212, 217, .3);
   grid-template-columns: 1fr 1fr;
   padding: 3% 2% 6% 2%;
   border-bottom: 1px solid rgba(100, 100, 100, .1);
 `;
 
-const PalliativeWrapper = PalliativeWrapperSummary.extend`
+const PalliativeWrapper = styled(PalliativeWrapperSummary)`
   background: white;
 `;
 
@@ -26,7 +26,7 @@ const PalliativeTitleWrapper = styled.div`
   }
 `;
 
-const PalliativeTitle = Title.extend`
+const PalliativeTitle = styled(Title)`
   grid-column: 4 / 5;
   grid-row: 2 / 3;
   justify-self: end;
@@ -41,7 +41,7 @@ const PalliativeTitle = Title.extend`
     justify-self: center;
     align-self: end;
   }
-`
+`;
 
 const PalliativeSvgSummary = styled.svg`
   display: grid;
@@ -58,7 +58,7 @@ const PalliativeSvgSummary = styled.svg`
   }
 `;
 
-const PalliativeSvg = PalliativeSvgSummary.extend`
+const PalliativeSvg = styled(PalliativeSvgSummary)`
   width: 100%;
   grid-column: 4 / 5;
 
@@ -75,7 +75,7 @@ const PalliativeLine = styled.line`
   opacity: .9;
 `;
 
-const PalliativeCopy = Copy.extend`
+const PalliativeCopy = styled(Copy)`
    grid-column: 1 / -1;
   grid-row: 2 / 3;
   width: 55%;
@@ -89,9 +89,9 @@ const PalliativeCopy = Copy.extend`
       margin-top: 4%;
       width: 85%;
   }
-`
+`;
 
-const PalliativeTestimonial = Testimonial.extend`
+const PalliativeTestimonial = styled(Testimonial)`
  grid-column: 1 / -1;
   max-width: 50%;
   margin: 5% 2% 0% 2%;
@@ -105,7 +105,7 @@ const PalliativeTestimonial = Testimonial.extend`
   }
 `;
 
-const PalliativeImageWrapper = ImageWrapper.extend`
+const PalliativeImageWrapper = styled(ImageWrapper)`
   background: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607973/PASCALE-VERMONT/aleksandr-ledogorov-310150-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -125,4 +125,4 @@ const PalliativeImageWrapper = ImageWrapper.extend`
 `;
 
 
-export default { PalliativeWrapper, PalliativeWrapperSummary, PalliativeTitleWrapper, PalliativeTitle, PalliativeSvg, PalliativeLine, PalliativeCopy, PalliativeTestimonial, PalliativeImageWrapper, PalliativeSvgSummary };
+export { PalliativeWrapper, PalliativeWrapperSummary, PalliativeTitleWrapper, PalliativeTitle, PalliativeSvg, PalliativeLine, PalliativeCopy, PalliativeTestimonial, PalliativeImageWrapper, PalliativeSvgSummary };

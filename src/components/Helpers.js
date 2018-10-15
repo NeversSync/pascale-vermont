@@ -1,13 +1,13 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
-import Link from 'gatsby-link'
+import Link from 'gatsby-link';
 
 const Wrapper = styled.div`
   display: grid;
   background: white;
 `;
 
-const LandingSummaryWrapper = Wrapper.extend`
+const LandingSummaryWrapper = styled(Wrapper)`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px auto auto 100px;
@@ -21,7 +21,7 @@ const LandingSummaryWrapper = Wrapper.extend`
   }
 `;
 
-const RightLandingSummaryWrapper = LandingSummaryWrapper.extend`
+const RightLandingSummaryWrapper = styled(LandingSummaryWrapper)`
   grid-column: 2 / 3;
   background: initial;
 
@@ -31,13 +31,13 @@ const RightLandingSummaryWrapper = LandingSummaryWrapper.extend`
   }
 `;
 
-const TallSummaryWrapper = LandingSummaryWrapper.extend`
+const TallSummaryWrapper = styled(LandingSummaryWrapper)`
   @media(max-width: 900px) {
     grid-template-rows: 140px 80px;
   }
 `;
 
-const RightTallSummaryWrapper = RightLandingSummaryWrapper.extend`
+const RightTallSummaryWrapper = styled(RightLandingSummaryWrapper)`
   @media(max-width: 900px) {
     grid-template-rows: 140px 80px;
   }
@@ -55,7 +55,7 @@ const Copy = styled.p`
   }
 `;
 
-const LandingSummaryCopy = Copy.extend`
+const LandingSummaryCopy = styled(Copy)`
   align-self: center;
   grid-column: 2 / 3;
   margin-right: 10%;
@@ -66,9 +66,9 @@ const LandingSummaryCopy = Copy.extend`
       margin-top: 4%;
       width: 85%;
     }
-`
+`;
 
-const RightLandingSummaryCopy = LandingSummaryCopy.extend`
+const RightLandingSummaryCopy = styled(LandingSummaryCopy)`
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   width: 90%;
@@ -100,9 +100,9 @@ const Title = styled.h1`
   @media (max-width: 1100px) {
     font-size: 30px;
   }
-`
+`;
 
-const RightSummaryTitle = Title.extend`
+const RightSummaryTitle = styled(Title)`
   grid-column: 2 / 3;
   grid-row: 2 / 3;
   font-weight: 500;
@@ -115,7 +115,7 @@ const RightSummaryTitle = Title.extend`
     justify-self: center;
     align-self: end;
   }
-`
+`;
 
 const SubTitle = styled.h3`
   font-size: 42px;
@@ -125,7 +125,7 @@ const SubTitle = styled.h3`
   @media (max-width: 1100px) {
     font-size: 20px;
   }
-`
+`;
 
 const CTAButtonText = styled.p`
   color: white;
@@ -183,7 +183,7 @@ text-align: center;
   }
 `;
 
-const SummaryTestimonial = Testimonial.extend`
+const SummaryTestimonial = styled(Testimonial)`
   grid-column: 1 / -1;
   max-width: 45%;
   margin: 1% 2% 0% 2%;
@@ -196,7 +196,7 @@ const SummaryTestimonial = Testimonial.extend`
   }
 `;
 
-const WithImageSummaryTestimonial = SummaryTestimonial.extend`
+const WithImageSummaryTestimonial = styled(SummaryTestimonial)`
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   max-width: 65%;
@@ -208,7 +208,7 @@ const WithImageSummaryTestimonial = SummaryTestimonial.extend`
   }
 `;
 
-const ImageWrapper = Card.extend`
+const ImageWrapper = styled(Card)`
   height: 400px;
 
    @media(max-width: 900px) {
@@ -254,15 +254,15 @@ const SVGArrowRight = () => (
 );
 
 const HomeButton = () => (
-  <CTAButton className="arrow"> 
+  <CTAButton className="arrow">
     <svg className="svg-left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
       <g id="Layer_2" data-name="Layer 2">
         <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
         <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
       </g>
-    </svg> 
-  <CTAButtonText>HOME</CTAButtonText>
+    </svg>
+    <CTAButtonText>HOME</CTAButtonText>
   </CTAButton>
 );
 
-export default { Wrapper, LandingSummaryWrapper, Title, SubTitle, Copy, LandingSummaryCopy, Card, CTAButton, Testimonial, SVGArrowRight, SVGArrowLeft, HomeButton, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper };
+export { Wrapper, LandingSummaryWrapper, Title, SubTitle, Copy, LandingSummaryCopy, Card, CTAButton, Testimonial, SVGArrowRight, SVGArrowLeft, HomeButton, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper };

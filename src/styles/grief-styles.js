@@ -1,12 +1,12 @@
 import styled from 'styled-components';
 import { Wrapper, Title, Copy, Card, CTAButton, Testimonial, ImageWrapper } from '../components/Helpers';
 
-const GriefWrapper = Wrapper.extend`
+const GriefWrapper = styled(Wrapper)`
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   padding: 3% 2% 6% 2%;
   border-bottom: 1px solid rgba(100, 100, 100, .1);
-`
+`;
 
 const GriefTitleWrapper = styled.div`
   display: grid;
@@ -22,7 +22,7 @@ const GriefTitleWrapper = styled.div`
   }
 `;
 
-const GriefTitle = Title.extend`
+const GriefTitle = styled(Title)`
   grid-column: 4 / 5;
   grid-row: 2 / 3;
   justify-self: end;
@@ -37,7 +37,7 @@ const GriefTitle = Title.extend`
     justify-self: center;
     align-self: end;
   }
-`
+`;
 
 const GriefSvg = styled.svg`
   display: grid;
@@ -60,7 +60,7 @@ const GriefLine = styled.line`
   opacity: .9;
 `;
 
-const GriefCopy = Copy.extend`
+const GriefCopy = styled(Copy)`
   grid-column: 1 / -1;
   grid-row: 2 / 3;
   width: 55%;
@@ -76,11 +76,10 @@ const GriefCopy = Copy.extend`
   }
 `;
 
-const GriefTestimonial = Testimonial.extend`
+const GriefTestimonial = styled(Testimonial)`
   grid-column: 1 / 2;
   grid-row: 3 / 4;
   max-width: 80%;
-  /* margin: 5% 2% 0% 2%; */
   margin: 8% 2% 0% 2%;
   justify-self: center;
 
@@ -92,7 +91,7 @@ const GriefTestimonial = Testimonial.extend`
   }
 `;
 
-const SecondGriefTestimonial = Testimonial.extend`
+const SecondGriefTestimonial = styled(Testimonial)`
   grid-column: 2 / 3;
   grid-row: 3 / 4;
   margin: 8% 2% 0% 2%;
@@ -124,25 +123,8 @@ const GriefImgSummary = styled.img`
     max-width: 85%;
   }
 `;
-// const GriefImgSummary = styled.img`
-//   grid-column: 2 / 3;
-//   grid-row: 2 / 3;
-//   align-self: center;
-//   justify-self: center;
-//   max-width: 90%;
-//   border-radius: 5px;
-//   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 
-//   @media(max-width: 900px) {
-//     grid-column: 1 / -1;
-//     grid-row: 3 / 4;
-//     margin: 0;
-//     margin-top: 4%;
-//     max-width: 80%;
-//   }
-// `;
-
-const GriefImgWrapper = ImageWrapper.extend`
+const GriefImgWrapper = styled(ImageWrapper)`
   background: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607993/PASCALE-VERMONT/ravi-roshan-383162-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -161,4 +143,4 @@ const GriefImgWrapper = ImageWrapper.extend`
   }
 `;
 
-export default { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefTitleWrapper, GriefTestimonial, GriefImgWrapper, GriefCopy, GriefImgSummary, SecondGriefTestimonial };
+export { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefTitleWrapper, GriefTestimonial, GriefImgWrapper, GriefCopy, GriefImgSummary, SecondGriefTestimonial };

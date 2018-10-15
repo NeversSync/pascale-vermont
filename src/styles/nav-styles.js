@@ -105,7 +105,7 @@ const NavSvg = styled.svg`
   }
 `;
 
-const NavItemDropContainer = NavItem.extend`
+const NavItemDropContainer = styled(NavItem)`
   grid-template-columns: 62px auto;
   align-items: center;
   cursor: pointer;
@@ -147,7 +147,7 @@ const NavDropDownItem = styled.li`
   }
 `;
 
-const LongNavSvg = NavSvg.extend`
+const LongNavSvg = styled(NavSvg)`
   width: 140px;
 `;
 
@@ -156,7 +156,7 @@ const NavLine = styled.line`
   opacity: 0.9;
 `;
 
-export default {
+export {
   NavLine,
   NavSvg,
   LongNavSvg,
