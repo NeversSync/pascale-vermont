@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const NavContainer = styled.ul`
   display: grid;
@@ -13,7 +13,7 @@ const NavContainer = styled.ul`
   color: white;
   text-shadow: 0 1px 5px rgba(47, 47, 47, 0.25);
   padding-top: 20px;
-  transition: background .5s ease-in-out;
+  transition: background .5s ease-in-out, height .5s ease-in-out;
 
   @media(max-width: 1325px) {
     display: block;
