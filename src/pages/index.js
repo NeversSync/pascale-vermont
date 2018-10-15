@@ -17,9 +17,7 @@ import { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, C
 // TODO: 
 // Add back to top arrow
 // Fix favicon
-// Fix arrow directions on buttons
-// fix nav menu size/styling on mobile
-// Fix image width in about section on summary view
+// Add obama article
 // Check browsers and landscape on mobile/tablet
 // add GA to site
 // Find red cross articles
@@ -177,7 +175,6 @@ const DisasterSummary = () => (
     </TallSummaryWrapper>
     <LandingSummaryCopy>
       For 10 years Pascale served as a disaster mental health volunteer and lead of the San Francisco mental health team for the American Red Cross.  She provided crisis and grief counseling to survivors of tornadoes, hurricanes and floods in Alabama, Mississippi, Oklahoma, Arkansas and Texas and to the victims and families of the Asiana Airlines plane crash at San Francisco International Airport.
-
     </LandingSummaryCopy>
     <WithImageSummaryTestimonial>
       <Card style={{ padding: '35px' }}>"I want to thank you for your amazing emotional support.  What impressed me was not only your professional expertise but, more importantly, your natural care, attention and compassion."<br /> - K

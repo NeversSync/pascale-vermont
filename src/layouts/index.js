@@ -3,9 +3,10 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import 'reset-css';
 import "./boss.css";
-// import './index.css'
 import styled from 'styled-components';
 import 'typeface-fira-sans';
+import { EntypoHeart } from 'react-entypo';
+import { heartFavicon} from '../../public/assets/img/heart.svg';
 
 
 const Content = styled.div`
@@ -23,6 +24,9 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'Pascale Vermont', content: 'Grief Counselor' },
         { name: 'keywords', content: 'sample, something' },
+      ]}
+      link={[
+        { rel: 'shortcut icon', type: 'image/png', href: `${heartFavicon}`, sizes: '16x16' }
       ]}
     />
       <Content>
