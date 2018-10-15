@@ -24,11 +24,9 @@ const NavContainer = styled.ul`
   }
 
   @media(max-width: 1100px) {
-    grid-column: 4 / -1;
-  }
-
-  @media(max-width: 900px) {
+    /* grid-column: 4 / -1; */
     grid-column: 1 / -1;
+    height: 100vh;
   }
 `;
 
@@ -41,11 +39,20 @@ const MenuIcon = styled.div`
   transform: rotate(0deg);
   transition: .5s ease-in-out;
 
-   @media(max-width: 1325px) {
+  @media(max-width: 1325px) {
     display: block;
     margin-left: 75%;
     margin-bottom: 10px;
     opacity: 1;
+  }
+  @media(max-width: 1100px) {
+    margin-left: 85%;
+  }
+  @media(max-width: 900px) {
+    margin-left: 90%;
+  }
+  @media(max-width: 500px) {
+    margin-left: 80%;
   }
 `;
 
@@ -72,6 +79,7 @@ const NavItem = styled.li`
     padding: 0;
     opacity: 0;
     visibility: hidden;
+    height: 9%;
   }
 
   @media(max-width: 900px) {
@@ -79,6 +87,7 @@ const NavItem = styled.li`
     font-size: 16px;
     line-height: 18px;
     margin: 0 auto;
+    height: 11%;
   }
 `;
 
@@ -100,6 +109,10 @@ const NavItemDropContainer = NavItem.extend`
   grid-template-columns: 62px auto;
   align-items: center;
   cursor: pointer;
+
+  @media(max-width: 900px) {
+    height: 11%;
+  }
 `;
 
 const NavDropDown = styled.ul`
@@ -129,9 +142,8 @@ const NavDropDownItem = styled.li`
   }
 
   @media(max-width: 900px) {
-    line-height: 18px;
     font-size: 16px;
-    margin: 0 auto;
+    line-height: 18px;
   }
 `;
 
