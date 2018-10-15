@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { EntypoDotSingle } from 'react-entypo';
 
 import { PalliativeWrapper, PalliativeTitleWrapper, PalliativeTitle, PalliativeSvg, PalliativeLine, PalliativeTestimonial, PalliativeImageWrapper, PalliativeCopy } from '../styles/palliative-styles';
 import { HomeButton, Copy, Card } from '../components/Helpers';
@@ -18,9 +19,9 @@ const IndexPage = () => (
     <PalliativeImageWrapper />
     <PalliativeCopy>
       Some highlights of Pascale's work in Palliative Care:<br/><br/>
-      <li>Volunteer with No One Dies Alone program at Laguna Honda Rehabilitation Center, San Francisco. Led bereavement groups and sat with actively dying patients.</li><br/>
-      <li>Palliative care counselor at Kaiser Permanente Hospitals in Vallejo and San Francisco.</li><br/>
-      <li>Volunteer and instructor for San Francisco Crisis Care working in partnership with law enforcement officials and providing emotional and practical assistance to families after a sudden death.</li><br/>
+      <EntypoDotSingle/> Volunteer with No One Dies Alone program at Laguna Honda Rehabilitation Center, San Francisco. Led bereavement groups and sat with actively dying patients.<br/>
+      <EntypoDotSingle/>Palliative care counselor at Kaiser Permanente Hospitals in Vallejo and San Francisco.<br/>
+      <EntypoDotSingle/>Volunteer and instructor for San Francisco Crisis Care working in partnership with law enforcement officials and providing emotional and practical assistance to families after a sudden death.<br/>
       <br/><Copy style={{textAlign: 'center'}}><Link to="/contact/" className='custom-link' >Contact her</Link> for more information.</Copy>
     </PalliativeCopy>
     <PalliativeTestimonial>

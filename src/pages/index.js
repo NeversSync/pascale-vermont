@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { EntypoDotSingle } from 'react-entypo';
 
 import Nav from '../components/Nav';
 import { Card, LandingSummaryWrapper, Title, SVGArrowRight, SVGArrowLeft, LandingSummaryCopy, ImageWrapper, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper } from '../components/Helpers';
@@ -152,8 +153,8 @@ const NGOSummary = () => (
       </Link>
     </RightLandingSummaryWrapper>
     <RightLandingSummaryCopy>
-      Pascale offers crisis counseling to expatriate staff of Relief International based in 22 countries over Skype when they experience a traumatic experience while in the field or suffer a personal crisis.  She was also deployed to Haiti after the 2010 earthquake to provide grief counseling to civilians and hospital staff who had lost many family members and friends.
-        Article on Haiti earthquake…
+      Pascale offers crisis counseling to expatriate staff of Relief International based in 22 countries over Skype when they experience a traumatic experience while in the field or suffer a personal crisis.  She was also deployed to Haiti after the 2010 earthquake to provide grief counseling to civilians and hospital staff who had lost many family members and friends.<br/>
+      <a className='custom-link' href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048646/" target="_blank">Read more</a> about Pascale's grief counseling work for the 2010 Haiti earthquake.
     </RightLandingSummaryCopy>
     <SummaryTestimonial>
       <Card style={{ padding: '35px' }}>"Acute grief is a thunderstorm, a monsoonal downpour, a sudden flood that submerges almost everything in its path."<br /> - Steven Levine
@@ -199,9 +200,9 @@ const PalliativeSummary = () => (
     </RightTallSummaryWrapper>
     <RightLandingSummaryCopy>
       Some highlights of Pascale's work in Palliative Care:<br /><br />
-      - Volunteer with No One Dies Alone program at Laguna Honda Rehabilitation Center, San Francisco. Led bereavement groups and sat with actively dying patients.<br />
-      - Palliative care counselor at Kaiser Permanente Hospitals in Vallejo and San Francisco.<br />
-      - Volunteer and instructor for San Francisco Crisis Care working in partnership with law enforcement officials and providing emotional support and practical assistance to families after a sudden death.
+      <EntypoDotSingle/> Volunteer with No One Dies Alone program at Laguna Honda Rehabilitation Center, San Francisco. Led bereavement groups and sat with actively dying patients.<br />
+      <EntypoDotSingle/> Palliative care counselor at Kaiser Permanente Hospitals in Vallejo and San Francisco.<br />
+      <EntypoDotSingle/> Volunteer and instructor for San Francisco Crisis Care working in partnership with law enforcement officials and providing emotional support and practical assistance to families after a sudden death.
     </RightLandingSummaryCopy>
     <SummaryTestimonial>
       <Card style={{ padding: '35px' }}>"Having my father die so suddenly was a big shock. The volunteer helped me figure out what to do with my dad's body. We had never gone through a death in this country and had no idea about anything. She made sure my kids were OK, that my mom was OK, and that I was OK too. At a time like this, you kind of lose your mind. You need people to support you and guide you. That's what the volunteer for San Francisco Crisis Care gave us."<br /> - A daughter following the death of her father"

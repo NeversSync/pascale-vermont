@@ -323,13 +323,6 @@ ul {
   border-radius: 4px; 
 }
 
-@media (max-width: 900px) {
-  .left-button, .right-button, .home-button {
-    grid-column: 2 / 4;
-    grid-row: 2 / span 1;
-    justify-self: center;
-  }
-}
 
 .custom-link {
   color: black; 
@@ -353,4 +346,22 @@ input:focus, textarea:focus {
 
 .contact button {
   margin: 0;
+}
+
+.contact-for-more {
+  margin: 0 auto; 
+  width: 50%;
+}
+
+@media (max-width: 900px) {
+  .left-button, .right-button, .home-button {
+    grid-column: 2 / 4;
+    grid-row: 2 / span 1;
+    justify-self: center;
+  }
+
+  .contact-for-more {
+    margin: 0 auto; 
+    width: 100%;
+  }
 }
