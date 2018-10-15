@@ -21,9 +21,9 @@ const IndexPage = () => (
       What Pascale provides in her grief counseling practice:<br/><br/>
       <EntypoDotSingle/> A safe place to express the multitude of feelings experienced by the bereaved - sadness, doubts, guilt, anger, moodiness...<br/>
       <EntypoDotSingle/> A patient, compassionate presence who understands that grief does not progress in a linear fashion but that it goes through many cycles. Family and friends sometimes put pressure on the bereaved to "return to normal". In grief counseling, there is no need to appear strong, rush the process, or to protect family from one's pain. Instead, the grief counselor is someone to talk to whose agenda is to support and respect the bereaved's own timetable without extra pressure.<br/>
-      <EntypoDotSingle/> A place to learn about the nature and the varied stages of grief to facilitate the understanding of intense emotions and reactions.<br/>
+      <EntypoDotSingle/> A place to learn about the nature and the various stages of grief to facilitate the understanding of intense emotions and reactions.<br/>
       <EntypoDotSingle/> A place to be reminded of the bereaved's strengths and to learn how to use them to cope and start to heal.<br/>
-      <EntypoDotSingle/> A place to explore how to learn basic, practical and financial skills if necessary and to receive support in doing so.<br/>
+      <EntypoDotSingle/> A place to explore how to learn practical if necessary and to receive support in doing so.<br/>
       Over time small victories build upon each other until they tend to dominate, and the moments of respite between the waves of pain lengthen.
       Pascale meets clients in her home office in San Francisco and has worked over Skype with people as far away as India, Pakistan and South Sudan. 
       <br/>

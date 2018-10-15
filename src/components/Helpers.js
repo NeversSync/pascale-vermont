@@ -192,7 +192,7 @@ const SummaryTestimonial = Testimonial.extend`
   @media(max-width: 900px) {
     grid-column: 1 / -1;
     margin: 40px 0;
-    max-width: 80%;
+    max-width: 85%;
   }
 `;
 
@@ -255,7 +255,7 @@ const SVGArrowRight = () => (
 
 const HomeButton = () => (
   <CTAButton className="arrow"> 
-    <svg className="svg-left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270"  transform='rotate(180deg)'>
+    <svg className="svg-left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
       <g id="Layer_2" data-name="Layer 2">
         <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
         <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />

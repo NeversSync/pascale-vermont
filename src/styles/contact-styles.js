@@ -10,7 +10,7 @@ const ContactWrapper = Wrapper.extend`
 
    @media (max-width: 900px) {
     grid-template-columns: 1fr 400px 1fr;
-    height: 650px;
+    height: 750px;
   }
 `
 

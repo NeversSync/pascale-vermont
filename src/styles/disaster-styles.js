@@ -112,7 +112,7 @@ const DisasterTestimonial = Testimonial.extend`
     grid-column: 1 / -1;
     grid-row: 4 / 5;
     margin: 20px 0;
-    max-width: 80%;
+    max-width: 85%;
   }
 `;
 
@@ -149,7 +149,7 @@ const DisasterImg = styled.img`
     grid-row: 3 / 4;
     margin: 0;
     margin-top: 4%;
-    max-width: 80%;
+    max-width: 85%;
   }
 `;
 
