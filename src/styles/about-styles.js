@@ -113,7 +113,7 @@ const SoundcloudWrapperSummary = Card.extend`
 
   @media (max-width: 900px) {
     grid-column: 1 / -1;
-    max-width: 80%;
+    max-width: 85%;
     margin: 0;
   }
 `;
@@ -164,7 +164,7 @@ const AboutSummaryImg = ImageWrapper.extend`
     grid-column: 1 / -1;
     grid-row: 3 / 4;
     margin: 4% 0;
-    max-width: 80%;
+    max-width: 85%;
     height: 400px;
   }
 `;
@@ -197,7 +197,7 @@ const AboutTestimonial = Testimonial.extend`
   @media (max-width: 900px) {
     grid-column: 1 / -1;
     margin: 40px 0;
-    max-width: 80%;
+    max-width: 85%;
   }
 `;
 

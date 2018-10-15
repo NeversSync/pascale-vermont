@@ -101,7 +101,7 @@ const PalliativeTestimonial = Testimonial.extend`
     grid-column: 1 / -1;
     grid-row: 4 / 5;
     margin: 20px 0;
-    max-width: 80%;
+    max-width: 85%;
   }
 `;
 
