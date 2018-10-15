@@ -18,7 +18,7 @@ const AboutWrapper = Wrapper.extend`
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto 525px;
   }
 `;
 
@@ -114,7 +114,7 @@ const SoundcloudWrapperSummary = Card.extend`
   @media (max-width: 900px) {
     grid-column: 1 / -1;
     max-width: 80%;
-    height: 400px;
+    margin: 0;
   }
 `;
 

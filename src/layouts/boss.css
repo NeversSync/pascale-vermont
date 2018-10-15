@@ -353,6 +353,13 @@ input:focus, textarea:focus {
   width: 50%;
 }
 
+.svg-left-arrow {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  width: 30px; 
+  height: 30px;
+}
+
 @media (max-width: 900px) {
   .left-button, .right-button, .home-button {
     grid-column: 2 / 4;
