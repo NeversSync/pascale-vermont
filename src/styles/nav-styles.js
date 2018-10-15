@@ -87,7 +87,7 @@ const NavItem = styled.li`
     font-size: 16px;
     line-height: 18px;
     margin: 0 auto;
-    height: 11%;
+    height: 9%;
   }
 `;
 
@@ -111,7 +111,7 @@ const NavItemDropContainer = styled(NavItem)`
   cursor: pointer;
 
   @media(max-width: 900px) {
-    height: 11%;
+    height: 9%;
   }
 `;
 

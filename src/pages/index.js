@@ -17,13 +17,11 @@ import { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, C
 
 // TODO: 
 // Add back to top arrow
-// Fix favicon
-// Add obama article
+// Add more animations/ page transitions, fade in animations, etc. 
+// fix GA
 // Check browsers and landscape on mobile/tablet
-// add GA to site
 // Find red cross articles
 // Animate arrows in learn more btn 
-// Add more animations/ page transitions, fade in animations, etc. 
 
 const IndexPage = () => (
   <Layout>
