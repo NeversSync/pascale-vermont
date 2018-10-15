@@ -361,13 +361,13 @@ input:focus, textarea:focus {
 }
 
 @media (max-width: 900px) {
-  .left-button, .right-button {
+  .left-button, .right-button, .home-button {
     grid-column: 2 / 4;
     grid-row: 2 / span 1;
     justify-self: center;
   }
 
-  .home-button {
+  .home-button .contact{
     grid-column: 2 / 3;
     grid-row: 2 / span 1;
     justify-self: center;
