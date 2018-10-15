@@ -1,12 +1,11 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import { Image, Transformation } from 'cloudinary-react';
 
 import Nav from '../components/Nav';
-import { Card, LandingSummaryWrapper, Title, SVGArrowRight, SVGArrowLeft, LandingSummaryCopy, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper } from '../components/Helpers';
+import { Card, LandingSummaryWrapper, Title, SVGArrowRight, SVGArrowLeft, LandingSummaryCopy, ImageWrapper, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper } from '../components/Helpers';
 
 import { HeroContainer, HeroImg, Heading, LandingSubtitle } from '../styles/landing-styles';
-import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, SoundcloudWrapperSummary } from '../styles/about-styles';
+import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, SoundcloudWrapperSummary, AboutSummaryImg } from '../styles/about-styles';
 import { PerinatalWrapper, PerinatalLine, PerinatalSvgSummary } from '../styles/perinatal-styles';
 import { NGOWrapperSummary, NGOSvgSummary, NGOLine } from '../styles/ngo-styles';
 import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefImgSummary } from '../styles/grief-styles';
@@ -15,8 +14,12 @@ import { PalliativeWrapperSummary, PalliativeSvgSummary, PalliativeLine } from '
 import { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, ContactSvg, ContactLine, ContactSummaryTitleWrapper, LeftHalfInputs, RightHalfInputs, RightTextArea, LeftInput } from '../styles/contact-styles';
 
 // TODO: 
-// Fix nav clickable dropdown items
 // Add back to top arrow
+// Fix arrow directions on buttons
+// fix contact form height on contact page for mobile
+// Fix image width in about section on summary view
+// Check browsers and landscape on mobile/tablet
+// add GA to site
 // Find red cross articles
 // Animate arrows in learn more btn 
 // Add more animations/ page transitions, fade in animations, etc. 
@@ -61,14 +64,9 @@ const AboutSummary = () => (
     <br /><br />
       She provides emotional support in various settings, such as in a private grief counseling practice, in-home counseling to bereaved parents, in large scale disasters, and to expatriate staff of an international disaster organization.
   </LandingSummaryCopy>
-    <Spacer />
-    <ImageWrapper>
-      <Image style={{ gridColumn: '1 / 2', borderRadius: '4px' }} cloudName="nicky-cloudinary" publicId="PASCALE-VERMONT/Edited_Image_2013-11-24-15_15_22.jpg" width="399">
-        <Transformation quality="jpegmini" />
-      </Image>
-    </ImageWrapper>
+    <AboutSummaryImg />
     <SoundcloudWrapperSummary>
-      <iframe style={{ borderRadius: '4px' }} width="100%" height="400px" scrolling="no" frameBorder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <iframe style={{ borderRadius: '4px' }} width="100%" height="500px" scrolling="no" frameBorder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
     </SoundcloudWrapperSummary>
     <SummaryTestimonial style={{ marginTop: '4%' }}>
       <Card style={{ padding: '35px' }}>Those first days, sorrow's pain<br />

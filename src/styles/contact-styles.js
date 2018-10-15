@@ -6,11 +6,11 @@ const ContactWrapper = Wrapper.extend`
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
   padding: 3% 2% 6% 2%;
-  border-bottom: 1px solid rgba(100, 100, 100, .1);
   height: 100vh;
 
    @media (max-width: 900px) {
     grid-template-columns: 1fr 400px 1fr;
+    height: 650px;
   }
 `
 
@@ -156,10 +156,11 @@ const RightHalfInputs = styled.div`
 
 const LeftInput = styled.input`
   border: none;
-  box-shadow: 0px 2px 4px rgba(50, 50, 93, 0.1), 0 3px 8px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 2px 4px rgba(50, 50, 93, 0.1), 0 3px 8px rgba(0, 0, 0, 0.07)!important;
   font-size: 16px;
   border-radius: 8px;
   padding: 10px;
+  -webkit-appearance: none;
 
   &:focus {
     box-shadow: 0px 0px 2px hsla(276, 70%, 59%, .8);
@@ -179,6 +180,7 @@ const RightTextArea = styled.textarea`
   padding: 10px;
   width: 100%;
   height: 100%;
+  -webkit-appearance: none;
 
   &:focus {
     box-shadow: 0px 0px 2px hsla(276, 70%, 59%, .8);

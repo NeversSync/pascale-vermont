@@ -107,11 +107,13 @@ const SoundcloudWrapperSummary = Card.extend`
   border-radius: 4px;
   grid-column: 2 / 3;
   align-self: center;
-  width: 400px;
-  height: 400px;
+  width: 90%;
+  height: 500px;
+  margin-top: 6%;
 
   @media (max-width: 900px) {
     grid-column: 1 / -1;
+    max-width: 80%;
   }
 `;
 
@@ -140,6 +142,29 @@ const AboutCTA = CTAButton.extend`
   justify-content: center;
   color: white;
   font-size: 16px;
+`;
+
+const AboutSummaryImg = ImageWrapper.extend`
+ background: url("https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607659/PASCALE-VERMONT/Edited_Image_2013-11-24-15_15_22.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  align-self: center;
+  justify-self: center;
+  width: 90%;
+  height: 500px;
+  border-radius: 5px;
+  margin-top: 6%;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+
+  @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    margin: 4% 0;
+    max-width: 80%;
+  }
 `;
 
 const AboutImageWrapper = ImageWrapper.extend`
@@ -187,5 +212,6 @@ export default {
   AboutTestimonial,
   AboutTitle,
   AboutSvg,
-  SoundcloudWrapperSummary
+  SoundcloudWrapperSummary,
+  AboutSummaryImg
 };
