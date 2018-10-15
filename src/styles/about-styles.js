@@ -114,6 +114,7 @@ const SoundcloudWrapperSummary = Card.extend`
   @media (max-width: 900px) {
     grid-column: 1 / -1;
     max-width: 80%;
+    height: 400px;
   }
 `;
 
@@ -164,6 +165,7 @@ const AboutSummaryImg = ImageWrapper.extend`
     grid-row: 3 / 4;
     margin: 4% 0;
     max-width: 80%;
+    height: 400px;
   }
 `;
 

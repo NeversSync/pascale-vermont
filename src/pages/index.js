@@ -16,7 +16,7 @@ import { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, C
 // TODO: 
 // Add back to top arrow
 // Fix arrow directions on buttons
-// fix contact form height on contact page for mobile
+// fix nav menu size/styling on mobile
 // Fix image width in about section on summary view
 // Check browsers and landscape on mobile/tablet
 // add GA to site

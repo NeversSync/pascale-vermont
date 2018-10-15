@@ -106,7 +106,7 @@ const PalliativeTestimonial = Testimonial.extend`
 `;
 
 const PalliativeImageWrapper = ImageWrapper.extend`
-  background: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/c_crop,f_auto,h_260,q_auto:best,w_439,x_169/v1538607948/PASCALE-VERMONT/m34240199_pascale763.jpg');
+  background: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607973/PASCALE-VERMONT/aleksandr-ledogorov-310150-unsplash.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center; 
