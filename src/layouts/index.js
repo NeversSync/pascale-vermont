@@ -6,7 +6,7 @@ import "./boss.css";
 import styled from 'styled-components';
 import 'typeface-fira-sans';
 import { EntypoHeart } from 'react-entypo';
-import { heartFavicon} from '../../public/assets/img/heart.svg';
+import { heartFavicon} from '../../public/assets/img/heart.png';
 
 
 const Content = styled.div`
