@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Wrapper, Title, Copy, Card, CTAButton, Testimonial, ImageWrapper } from '../components/Helpers';
 
-const DisasterWrapper = Wrapper.extend`
+const DisasterWrapper = styled(Wrapper)`
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   padding: 3% 2% 6% 2%;
@@ -22,7 +22,7 @@ const DisasterTitleWrapper = styled.div`
   }
 `;
 
-const DisasterTitle = Title.extend`
+const DisasterTitle = styled(Title)`
   grid-column: 4 / 5;
   grid-row: 2 / 3;
   justify-self: end;
@@ -55,7 +55,7 @@ const DisasterSvgSummary = styled.svg`
   }
 `;
 
-const DisasterSvg = DisasterSvgSummary.extend`
+const DisasterSvg = styled(DisasterSvgSummary)`
   width: 100%;
   grid-column: 4 / 5;
 
@@ -72,7 +72,7 @@ const DisasterLine = styled.line`
   opacity: .9;
 `;
 
-const DisasterCTA = CTAButton.extend`
+const DisasterCTA = styled(CTAButton)`
   display: grid;
   grid-column: 3 / 4;
   grid-row: 2 / 3;
@@ -86,7 +86,7 @@ const DisasterCTA = CTAButton.extend`
   font-size: 16px;
 `;
 
-const DisasterCopy = Copy.extend`
+const DisasterCopy = styled(Copy)`
   grid-column: 1 / -1;
   grid-row: 2 / 3;
   width: 55%;
@@ -102,7 +102,7 @@ const DisasterCopy = Copy.extend`
   }
 `
 
-const DisasterTestimonial = Testimonial.extend`
+const DisasterTestimonial = styled(Testimonial)`
   grid-column: 1 / -1;
   max-width: 50%;
   margin: 5% 2% 0% 2%;
@@ -116,7 +116,7 @@ const DisasterTestimonial = Testimonial.extend`
   }
 `;
 
-const DisasterImageWrapper = ImageWrapper.extend`
+const DisasterImageWrapper = styled(ImageWrapper)`
   background: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/c_crop,f_auto,h_260,q_auto:best,w_439,x_169/v1538607948/PASCALE-VERMONT/m34240199_pascale763.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -153,4 +153,4 @@ const DisasterImg = styled.img`
   }
 `;
 
-export default { DisasterWrapper, DisasterTitle, DisasterSvg, DisasterLine, DisasterCTA, DisasterTestimonial, DisasterImg, DisasterTitleWrapper, DisasterCopy, DisasterImageWrapper, DisasterSvgSummary };
+export { DisasterWrapper, DisasterTitle, DisasterSvg, DisasterLine, DisasterCTA, DisasterTestimonial, DisasterImg, DisasterTitleWrapper, DisasterCopy, DisasterImageWrapper, DisasterSvgSummary };

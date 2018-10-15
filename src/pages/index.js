@@ -1,5 +1,6 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+import Layout from '../components/layout';
 import { EntypoDotSingle } from 'react-entypo';
 
 import Nav from '../components/Nav';
@@ -25,17 +26,19 @@ import { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, C
 // Add more animations/ page transitions, fade in animations, etc. 
 
 const IndexPage = () => (
-  <div>
-    <Landing />
-    <AboutSummary />
-    <PerinatalSummary />
-    <GriefSummary />
-    <NGOSummary />
-    <DisasterSummary />
-    <PalliativeSummary />
-    <Contact />
-  </div>
-)
+  <Layout>
+    <div>
+      <Landing />
+      <AboutSummary />
+      <PerinatalSummary />
+      <GriefSummary />
+      <NGOSummary />
+      <DisasterSummary />
+      <PalliativeSummary />
+      <Contact />
+    </div>
+  </Layout>
+);
 
 const Landing = () => (
   <HeroContainer>
@@ -61,9 +64,9 @@ const AboutSummary = () => (
     </LandingSummaryWrapper>
     <LandingSummaryCopy>
       Pascale Vermont is a licensed clinical psychologist based in San Francisco, CA. She is passionate about providing support to people in times of intense pain and grief. Her main professional occupation centers around grief counseling and disaster mental health.
-    <br /><br />
+      <br /><br />
       She provides emotional support in various settings, such as in a private grief counseling practice, in-home counseling to bereaved parents, in large scale disasters, and to expatriate staff of an international disaster organization.
-  </LandingSummaryCopy>
+    </LandingSummaryCopy>
     <AboutSummaryImg />
     <SoundcloudWrapperSummary>
       <iframe style={{ borderRadius: '4px' }} width="100%" height="500px" scrolling="no" frameBorder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
@@ -88,7 +91,7 @@ const AboutSummary = () => (
       </Card>
     </SummaryTestimonial>
   </AboutWrapper>
-)
+);
 
 const PerinatalSummary = () => (
   <PerinatalWrapper>
@@ -152,12 +155,12 @@ const NGOSummary = () => (
       </Link>
     </RightLandingSummaryWrapper>
     <RightLandingSummaryCopy>
-      Pascale offers crisis counseling to expatriate staff of Relief International based in 22 countries over Skype when they experience a traumatic experience while in the field or suffer a personal crisis.  She was also deployed to Haiti after the 2010 earthquake to provide grief counseling to civilians and hospital staff who had lost many family members and friends.<br/>
+      Pascale offers crisis counseling to expatriate staff of Relief International based in 22 countries over Skype when they experience a traumatic experience while in the field or suffer a personal crisis.  She was also deployed to Haiti after the 2010 earthquake to provide grief counseling to civilians and hospital staff who had lost many family members and friends.<br />
       <a className='custom-link' href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048646/" target="_blank">Read more</a> about Pascale's grief counseling work for the 2010 Haiti earthquake.
     </RightLandingSummaryCopy>
     <SummaryTestimonial>
       <Card style={{ padding: '35px' }}>"Acute grief is a thunderstorm, a monsoonal downpour, a sudden flood that submerges almost everything in its path."<br /> - Steven Levine
-    </Card>
+      </Card>
     </SummaryTestimonial>
   </NGOWrapperSummary>
 );
@@ -197,9 +200,9 @@ const PalliativeSummary = () => (
     </RightTallSummaryWrapper>
     <RightLandingSummaryCopy>
       Some highlights of Pascale's work in Palliative Care:<br /><br />
-      <EntypoDotSingle/> Volunteer with No One Dies Alone program at Laguna Honda Rehabilitation Center, San Francisco. Led bereavement groups and sat with actively dying patients.<br />
-      <EntypoDotSingle/> Palliative care counselor at Kaiser Permanente Hospitals in Vallejo and San Francisco.<br />
-      <EntypoDotSingle/> Volunteer and instructor for San Francisco Crisis Care working in partnership with law enforcement officials and providing emotional support and practical assistance to families after a sudden death.
+      <EntypoDotSingle /> Volunteer with No One Dies Alone program at Laguna Honda Rehabilitation Center, San Francisco. Led bereavement groups and sat with actively dying patients.<br />
+      <EntypoDotSingle /> Palliative care counselor at Kaiser Permanente Hospitals in Vallejo and San Francisco.<br />
+      <EntypoDotSingle /> Volunteer and instructor for San Francisco Crisis Care working in partnership with law enforcement officials and providing emotional support and practical assistance to families after a sudden death.
     </RightLandingSummaryCopy>
     <SummaryTestimonial>
       <Card style={{ padding: '35px' }}>"Having my father die so suddenly was a big shock. The volunteer helped me figure out what to do with my dad's body. We had never gone through a death in this country and had no idea about anything. She made sure my kids were OK, that my mom was OK, and that I was OK too. At a time like this, you kind of lose your mind. You need people to support you and guide you. That's what the volunteer for San Francisco Crisis Care gave us."<br /> - A daughter following the death of her father"
@@ -217,14 +220,14 @@ const Contact = () => (
       </ContactSvg>
     </ContactSummaryTitleWrapper>
     <ContactCard>
-    <ContactForm
+      <ContactForm
         netlify="true"
         data-netlify="true"
         method="POST"
         data-netlify-honeypot="bot-field"
         name="contact-homepage"
         action="./thanks"
-        >
+      >
         <LeftHalfInputs>
           <LeftInput name="name" type="text" placeholder="Name" />
           <LeftInput name="email" type="email" placeholder="Email address" />

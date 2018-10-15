@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import {
   Wrapper,
   Title,
@@ -7,9 +7,9 @@ import {
   CTAButton,
   Testimonial,
   ImageWrapper
-} from "../components/Helpers";
+} from '../components/Helpers';
 
-const AboutWrapper = Wrapper.extend`
+const AboutWrapper = styled(Wrapper)`
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   padding: 1.5% 2% 6% 2%;
@@ -36,7 +36,7 @@ const AboutTitleWrapper = styled.div`
   }
 `;
 
-const AboutSummaryTitle = Title.extend`
+const AboutSummaryTitle = styled(Title)`
   grid-column: 4 / 5;
   grid-row: 1 / 2;
   justify-self: end;
@@ -53,7 +53,7 @@ const AboutSummaryTitle = Title.extend`
   }
 `;
 
-const AboutTitle = AboutSummaryTitle.extend`
+const AboutTitle = styled(AboutSummaryTitle)`
   grid-row: 2 / 3;
 `;
 
@@ -73,7 +73,7 @@ const AboutSummarySvg = styled.svg`
   }
 `;
 
-const AboutSvg = AboutSummarySvg.extend`
+const AboutSvg = styled(AboutSummarySvg)`
   grid-row: 2 / 3;
 
   @media (max-width: 900px) {
@@ -86,7 +86,7 @@ const AboutLine = styled.line`
   opacity: 0.9;
 `;
 
-const AboutCopy = Copy.extend`
+const AboutCopy = styled(Copy)`
   grid-column: 1 / -1;
   grid-row: 2 / 3;
   width: 55%;
@@ -102,7 +102,7 @@ const AboutCopy = Copy.extend`
   }
 `;
 
-const SoundcloudWrapperSummary = Card.extend`
+const SoundcloudWrapperSummary = styled(Card)`
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
   border-radius: 4px;
   grid-column: 2 / 3;
@@ -118,7 +118,7 @@ const SoundcloudWrapperSummary = Card.extend`
   }
 `;
 
-const SoundcloudWrapper = SoundcloudWrapperSummary.extend`
+const SoundcloudWrapper = styled(SoundcloudWrapperSummary)`
   grid-column: 1 / -1;
   height: fit-content;
   width: 60%;
@@ -131,7 +131,7 @@ const SoundcloudWrapper = SoundcloudWrapperSummary.extend`
   }
 `;
 
-const AboutCTA = CTAButton.extend`
+const AboutCTA = styled(CTAButton)`
   display: grid;
   grid-column: 3 / 4;
   grid-row: 2 / 3;
@@ -145,7 +145,7 @@ const AboutCTA = CTAButton.extend`
   font-size: 16px;
 `;
 
-const AboutSummaryImg = ImageWrapper.extend`
+const AboutSummaryImg = styled(ImageWrapper)`
  background: url("https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607659/PASCALE-VERMONT/Edited_Image_2013-11-24-15_15_22.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -169,7 +169,7 @@ const AboutSummaryImg = ImageWrapper.extend`
   }
 `;
 
-const AboutImageWrapper = ImageWrapper.extend`
+const AboutImageWrapper = styled(ImageWrapper)`
   background: url("https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607659/PASCALE-VERMONT/Edited_Image_2013-11-24-15_15_22.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -188,7 +188,7 @@ const AboutImageWrapper = ImageWrapper.extend`
   }
 `;
 
-const AboutTestimonial = Testimonial.extend`
+const AboutTestimonial = styled(Testimonial)`
   grid-column: 1 / -1;
   max-width: 50%;
   margin: 4% 2% 0% 2%;
@@ -201,7 +201,7 @@ const AboutTestimonial = Testimonial.extend`
   }
 `;
 
-export default {
+export {
   AboutWrapper,
   AboutTitleWrapper,
   AboutImageWrapper,

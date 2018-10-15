@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Wrapper, Title, Card} from '../components/Helpers';
 
-const ContactWrapper = Wrapper.extend`
+const ContactWrapper = styled(Wrapper)`
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
@@ -12,7 +12,7 @@ const ContactWrapper = Wrapper.extend`
     grid-template-columns: 1fr 400px 1fr;
     height: 750px;
   }
-`
+`;
 
 const ContactTitleWrapper = styled.div`
   display: grid;
@@ -23,12 +23,12 @@ const ContactTitleWrapper = styled.div`
   padding: 20px;
 `;
 
-const ContactSummaryTitleWrapper = ContactTitleWrapper.extend`
+const ContactSummaryTitleWrapper = styled(ContactTitleWrapper)`
   grid-template-rows: 1fr;
   padding: 10px 0px 40px 0px;
 `;
 
-const ContactTitle = Title.extend`
+const ContactTitle = styled(Title)`
   grid-row: 1 / 2;
   grid-column: 2 / 3;
   justify-self: center;
@@ -68,7 +68,7 @@ const ContactLine = styled.line`
   opacity: 0.9;
 `;
 
-const ContactCard = Card.extend`
+const ContactCard = styled(Card)`
   padding: 35px;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
@@ -101,7 +101,6 @@ const SubmitButton = styled.button`
   justify-content: space-evenly;
   align-items: center; 
   align-self: flex-start;
-  height: 55px;
   color: white;
   background: linear-gradient(to left, hsla(348, 86%, 59%, .9), hsla(39, 100%, 63%, 0.9));
   border: none;
@@ -193,4 +192,4 @@ const RightTextArea = styled.textarea`
   }
 `;
 
-export default { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, ContactSvg, ContactLine, ContactTitleWrapper, LeftHalfInputs, RightHalfInputs, RightTextArea, LeftInput, ContactSummaryTitleWrapper };
+export { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, ContactSvg, ContactLine, ContactTitleWrapper, LeftHalfInputs, RightHalfInputs, RightTextArea, LeftInput, ContactSummaryTitleWrapper };

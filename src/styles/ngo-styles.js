@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import { Wrapper, Title, Copy, Card, CTAButton, Testimonial, ImageWrapper } from '../components/Helpers';
 
-const NGOWrapperSummary = Wrapper.extend`
+const NGOWrapperSummary = styled(Wrapper)`
   background: rgba(215, 212, 217, .3);
   grid-template-columns: 1fr 1fr;
   padding: 3% 2% 6% 2%;
   border-bottom: 1px solid rgba(100, 100, 100, .1);
 `;
 
-const NGOWrapper = NGOWrapperSummary.extend`
+const NGOWrapper = styled(NGOWrapperSummary)`
   background: white;
 `;
 
@@ -26,7 +26,7 @@ const NGOTitleWrapper = styled.div`
   }
 `;
 
-const NGOTitle = Title.extend`
+const NGOTitle = styled(Title)`
   grid-column: 4 / 5;
   grid-row: 2 / 3;
   justify-self: end;
@@ -41,7 +41,7 @@ const NGOTitle = Title.extend`
     justify-self: center;
     align-self: end;
   }
-`
+`;
 
 const NGOSvgSummary = styled.svg`
   display: grid;
@@ -58,7 +58,7 @@ const NGOSvgSummary = styled.svg`
   }
 `;
 
-const NGOSvg = NGOSvgSummary.extend`
+const NGOSvg = styled(NGOSvgSummary)`
   width: 100%;
   grid-column: 4 / 5;
 
@@ -76,7 +76,7 @@ const NGOLine = styled.line`
   opacity: .9;
 `;
 
-const NGOCopy = Copy.extend`
+const NGOCopy = styled(Copy)`
  grid-column: 1 / -1;
   grid-row: 2 / 3;
   width: 55%;
@@ -90,9 +90,9 @@ const NGOCopy = Copy.extend`
       margin-top: 4%;
       width: 85%;
   }
-`
+`;
 
-const NGOTestimonial = Testimonial.extend`
+const NGOTestimonial = styled(Testimonial)`
   grid-column: 1 / -1;
   max-width: 50%;
   margin: 5% 2% 0% 2%;
@@ -106,7 +106,7 @@ const NGOTestimonial = Testimonial.extend`
   }
 `;
 
-const NGOImageWrapper = ImageWrapper.extend`
+const NGOImageWrapper = styled(ImageWrapper)`
   background: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607944/PASCALE-VERMONT/Haiti_ertaquake_Bonet008.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -125,4 +125,4 @@ const NGOImageWrapper = ImageWrapper.extend`
   }
 `;
 
-export default { NGOWrapper, NGOWrapperSummary, NGOTitleWrapper, NGOTitle, NGOSvg, NGOSvgSummary, NGOLine, NGOCopy, NGOTestimonial, NGOImageWrapper };
+export { NGOWrapper, NGOWrapperSummary, NGOTitleWrapper, NGOTitle, NGOSvg, NGOSvgSummary, NGOLine, NGOCopy, NGOTestimonial, NGOImageWrapper };
