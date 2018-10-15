@@ -6,9 +6,7 @@ module.exports = {
     resolve: 'gatsby-plugin-google-analytics',
     options: {
       trackingId: 'UA-127500009-1',
-      head: true,
-      sampleRate: 5,
-      siteSpeedSampleRate: 10
+      head: true
     }}, 
   {resolve: 'gatsby-plugin-styled-components'},
   {

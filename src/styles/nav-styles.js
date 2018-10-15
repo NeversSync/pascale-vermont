@@ -41,12 +41,12 @@ const MenuIcon = styled.div`
 
   @media(max-width: 1325px) {
     display: block;
-    margin-left: 75%;
+    margin-left: 70%;
     margin-bottom: 10px;
     opacity: 1;
   }
   @media(max-width: 1100px) {
-    margin-left: 85%;
+    margin-left: 93%;
   }
   @media(max-width: 900px) {
     margin-left: 90%;
