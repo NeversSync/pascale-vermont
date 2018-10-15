@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 import { EntypoDotSingle } from 'react-entypo';
 
 import Nav from '../components/Nav';
-import { Card, LandingSummaryWrapper, Title, SVGArrowRight, SVGArrowLeft, LandingSummaryCopy, ImageWrapper, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper } from '../components/Helpers';
+import { Card, LandingSummaryWrapper, Title, SVGArrowRight, SVGArrowLeft, LandingSummaryCopy, Copy, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper } from '../components/Helpers';
 
 import { HeroContainer, HeroImg, Heading, LandingSubtitle } from '../styles/landing-styles';
 import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, SoundcloudWrapperSummary, AboutSummaryImg } from '../styles/about-styles';
@@ -17,6 +17,7 @@ import { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, C
 
 // TODO: 
 // Add back to top arrow
+// Add hover styles for menu-icon
 // Add more animations/ page transitions, fade in animations, etc. 
 // fix GA
 // Check browsers and landscape on mobile/tablet
@@ -34,6 +35,8 @@ const IndexPage = () => (
       <DisasterSummary />
       <PalliativeSummary />
       <Contact />
+      <Copy style={{margin: '0 auto 2% auto', width: 'fit-content'}}>Site made by <a className='custom-link' href='http://nickyevers.com/' target='_blank'>Nicky Evers Design</a>
+      </Copy>
     </div>
   </Layout>
 );
