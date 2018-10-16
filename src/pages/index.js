@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 import { EntypoDotSingle } from 'react-entypo';
 
 import Nav from '../components/Nav';
-import { Card, LandingSummaryWrapper, Title, SVGArrowRight, SVGArrowLeft, LandingSummaryCopy, Copy, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper } from '../components/Helpers';
+import { Card, LandingSummaryWrapper, Title, SVGArrowRight, LandingSummaryCopy, Copy, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper } from '../components/Helpers';
 
 import { HeroContainer, HeroImg, Heading, LandingSubtitle } from '../styles/landing-styles';
 import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, SoundcloudWrapperSummary, AboutSummaryImg } from '../styles/about-styles';
@@ -60,7 +60,7 @@ const AboutSummary = () => (
         <AboutLine x1="85" y1="5" x2="195" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6" />
       </AboutSummarySvg>
       <Link to="/about/" className='left-button first-button'>
-        <SVGArrowLeft />
+        <SVGArrowRight />
       </Link>
     </LandingSummaryWrapper>
     <LandingSummaryCopy>
@@ -125,7 +125,7 @@ const GriefSummary = () => (
         <GriefLine x1="115" y1="5" x2="335" y2="5" stroke="rgb(255, 189, 66)" strokeWidth="6" />
       </GriefSvg>
       <Link to="/grief-counseling/" className='left-button'>
-        <SVGArrowLeft />
+        <SVGArrowRight />
       </Link>
     </LandingSummaryWrapper>
     <LandingSummaryCopy>
@@ -174,7 +174,7 @@ const DisasterSummary = () => (
         <DisasterLine x1="100" y1="5" x2="248" y2="5" stroke="rgb(229, 69, 117)" strokeWidth="6" />
       </DisasterSvgSummary>
       <Link to="/disaster-mental-health/" className='left-button'>
-        <SVGArrowLeft />
+        <SVGArrowRight />
       </Link>
     </TallSummaryWrapper>
     <LandingSummaryCopy>

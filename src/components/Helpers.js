@@ -230,18 +230,6 @@ const Spacer = styled.div`
 
 // HELPER COMPONENTS
 
-const SVGArrowLeft = () => (
-  <CTAButton className="arrow">
-    <svg className="svg-left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270" >
-      <g id="Layer_2" data-name="Layer 2">
-        <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
-        <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
-      </g>
-    </svg>
-    <CTAButtonText>LEARN MORE</CTAButtonText>
-  </CTAButton>
-);
-
 const SVGArrowRight = () => (
   <CTAButton className="arrow"><CTAButtonText>LEARN MORE</CTAButtonText>
     <svg style={{ width: '30px', height: '30px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
@@ -255,14 +243,14 @@ const SVGArrowRight = () => (
 
 const HomeButton = () => (
   <CTAButton className="arrow">
+    <CTAButtonText>HOME</CTAButtonText>
     <svg className="svg-left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
       <g id="Layer_2" data-name="Layer 2">
         <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
         <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
       </g>
     </svg>
-    <CTAButtonText>HOME</CTAButtonText>
   </CTAButton>
 );
 
-export { Wrapper, LandingSummaryWrapper, Title, SubTitle, Copy, LandingSummaryCopy, Card, CTAButton, Testimonial, SVGArrowRight, SVGArrowLeft, HomeButton, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper };
+export { Wrapper, LandingSummaryWrapper, Title, SubTitle, Copy, LandingSummaryCopy, Card, CTAButton, Testimonial, SVGArrowRight, HomeButton, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper };

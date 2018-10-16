@@ -290,6 +290,7 @@ ul {
 }
 .first-button {
  grid-row: 2 / span 1;
+ margin-top: 15px;
 }
 
 .first-button > button {
@@ -353,8 +354,8 @@ input:focus, textarea:focus {
 }
 
 .svg-left-arrow {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+  /* -webkit-transform: rotate(180deg);
+  transform: rotate(180deg); */
   width: 30px; 
   height: 30px;
 }
@@ -368,6 +369,12 @@ input:focus, textarea:focus {
 }
 .obama button {
   margin: 0;
+}
+
+@media (max-width: 1325px) {
+  .first-button {
+    margin-top: 0px;
+  }
 }
 
 @media (max-width: 900px) {
