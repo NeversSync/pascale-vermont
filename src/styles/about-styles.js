@@ -106,10 +106,11 @@ const SoundcloudWrapperSummary = styled(Card)`
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
   border-radius: 4px;
   grid-column: 2 / 3;
-  align-self: center;
-  width: 90%;
-  height: 500px;
-  margin-top: 6%;
+  grid-row: 2 / 3;
+  align-self: flex-end;
+  width: 70%;
+  height: 150px;
+  /* margin-top: 6%; */
 
   @media (max-width: 900px) {
     grid-column: 1 / -1;
@@ -150,14 +151,14 @@ const AboutSummaryImg = styled(ImageWrapper)`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  grid-column: 1 / 2;
+  grid-column: 2 / 3;
   grid-row: 2 / 3;
-  align-self: center;
+  align-self: flex-start;
   justify-self: center;
-  width: 90%;
-  height: 500px;
+  width: 70%;
+  height: 400px;
   border-radius: 5px;
-  margin-top: 6%;
+  margin-top: 4%;
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 
   @media(max-width: 900px) {
@@ -188,6 +189,20 @@ const AboutImageWrapper = styled(ImageWrapper)`
   }
 `;
 
+const AboutTestimonialSummary = styled(Testimonial)`
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    max-width: 80%;
+    margin: 1% 2% 0% 2%;
+    justify-self: center;
+
+  @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    margin: 40px 0;
+    max-width: 85%;
+  }
+`;
+
 const AboutTestimonial = styled(Testimonial)`
   grid-column: 1 / -1;
   max-width: 50%;
@@ -215,5 +230,6 @@ export {
   AboutTitle,
   AboutSvg,
   SoundcloudWrapperSummary,
-  AboutSummaryImg
+  AboutSummaryImg, 
+  AboutTestimonialSummary
 };

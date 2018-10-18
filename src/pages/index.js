@@ -7,13 +7,14 @@ import Nav from '../components/Nav';
 import { Card, LandingSummaryWrapper, Title, SVGArrowRight, LandingSummaryCopy, Copy, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper } from '../components/Helpers';
 
 import { HeroContainer, HeroImg, Heading, LandingSubtitle } from '../styles/landing-styles';
-import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, SoundcloudWrapperSummary, AboutSummaryImg } from '../styles/about-styles';
+import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, SoundcloudWrapperSummary, AboutTestimonialSummary, SoundcloudWrapper, AboutSummaryImg } from '../styles/about-styles';
 import { PerinatalWrapper, PerinatalLine, PerinatalSvgSummary } from '../styles/perinatal-styles';
 import { NGOWrapperSummary, NGOSvgSummary, NGOLine } from '../styles/ngo-styles';
 import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefImgSummary } from '../styles/grief-styles';
 import { DisasterWrapper, DisasterTitle, DisasterSvgSummary, DisasterLine, DisasterImg } from '../styles/disaster-styles';
 import { PalliativeWrapperSummary, PalliativeSvgSummary, PalliativeLine } from '../styles/palliative-styles';
 import { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, ContactSvg, ContactLine, ContactSummaryTitleWrapper, LeftHalfInputs, RightHalfInputs, RightTextArea, LeftInput } from '../styles/contact-styles';
+import podcastAudio from '../assets/audio/grief-counselor-podcast.mp3';
 
 // TODO: 
 // Add back to top arrow
@@ -67,10 +68,12 @@ const AboutSummary = () => (
       She provides emotional support in various settings, such as in a private grief counseling practice, in-home counseling to bereaved parents, in large scale disasters, and to expatriate staff of an international disaster organization.
     </LandingSummaryCopy>
     <AboutSummaryImg />
+    
     <SoundcloudWrapperSummary>
-      <iframe style={{ borderRadius: '4px' }} width="100%" height="500px" scrolling="no" frameBorder="yes" title="soundcloud-home" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_artwork=false&show_teaser=true&visual=true"></iframe>
+      {/* TODO: CREATE RESPONSIVE STYLES */}
+      <iframe style={{ borderRadius: '4px' }} width="100%" height="150px" scrolling="no" frameBorder="yes" title="soundcloud-home" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_artwork=false&show_teaser=true&visual=false"></iframe>
     </SoundcloudWrapperSummary>
-    <SummaryTestimonial style={{ marginTop: '4%' }}>
+    <AboutTestimonialSummary style={{ marginTop: '4%' }}>
       <Card style={{ padding: '35px' }}>Those first days, sorrow's pain<br />
         was tangible:<br />
         an amputation, a dismemberment,<br />
@@ -88,7 +91,7 @@ const AboutSummary = () => (
         now look ahead...<br />
         -Lois Lake Church
       </Card>
-    </SummaryTestimonial>
+    </AboutTestimonialSummary>
   </AboutWrapper>
 );
 
