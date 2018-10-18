@@ -149,7 +149,7 @@ const AboutSummaryImg = styled(ImageWrapper)`
  background: url("https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607659/PASCALE-VERMONT/Edited_Image_2013-11-24-15_15_22.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   align-self: center;
@@ -173,7 +173,7 @@ const AboutImageWrapper = styled(ImageWrapper)`
   background: url("https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607659/PASCALE-VERMONT/Edited_Image_2013-11-24-15_15_22.png");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   justify-self: center;

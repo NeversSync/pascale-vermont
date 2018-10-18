@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import { Wrapper, Title, Copy, Card, CTAButton, Testimonial, ImageWrapper } from '../components/Helpers';
+import { Wrapper, Title, Copy, CTAButton, Testimonial, ImageWrapper } from '../components/Helpers';
 
 const DisasterWrapper = styled(Wrapper)`
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   padding: 3% 2% 6% 2%;
   border-bottom: 1px solid rgba(100, 100, 100, .1);
-`
+`;
 
 const DisasterTitleWrapper = styled.div`
   display: grid;
@@ -37,7 +37,7 @@ const DisasterTitle = styled(Title)`
     align-self: end;
     text-align: center;
   }
-`
+`;
 
 const DisasterSvgSummary = styled.svg`
   display: grid;
@@ -100,7 +100,7 @@ const DisasterCopy = styled(Copy)`
     margin-top: 4%;
     width: 85%;
   }
-`
+`;
 
 const DisasterTestimonial = styled(Testimonial)`
   grid-column: 1 / -1;
@@ -120,7 +120,7 @@ const DisasterImageWrapper = styled(ImageWrapper)`
   background: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/c_crop,f_auto,h_260,q_auto:best,w_439,x_169/v1538607948/PASCALE-VERMONT/m34240199_pascale763.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: right; 
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   justify-self: center;

@@ -19,8 +19,6 @@ import { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, C
 // Add back to top arrow
 // Add hover styles for menu-icon
 // Add more animations/ page transitions, fade in animations, etc. 
-// fix GA
-// Check browsers and landscape on mobile/tablet
 // Find red cross articles
 // Animate arrows in learn more btn 
 
@@ -70,7 +68,7 @@ const AboutSummary = () => (
     </LandingSummaryCopy>
     <AboutSummaryImg />
     <SoundcloudWrapperSummary>
-      <iframe style={{ borderRadius: '4px' }} width="100%" height="500px" scrolling="no" frameBorder="yes" title="soundcloud-home" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+      <iframe style={{ borderRadius: '4px' }} width="100%" height="500px" scrolling="no" frameBorder="yes" title="soundcloud-home" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_artwork=false&show_teaser=true&visual=true"></iframe>
     </SoundcloudWrapperSummary>
     <SummaryTestimonial style={{ marginTop: '4%' }}>
       <Card style={{ padding: '35px' }}>Those first days, sorrow's pain<br />
