@@ -14,7 +14,6 @@ import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefImgSummary } from '
 import { DisasterWrapper, DisasterTitle, DisasterSvgSummary, DisasterLine, DisasterImg } from '../styles/disaster-styles';
 import { PalliativeWrapperSummary, PalliativeSvgSummary, PalliativeLine } from '../styles/palliative-styles';
 import { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, ContactSvg, ContactLine, ContactSummaryTitleWrapper, LeftHalfInputs, RightHalfInputs, RightTextArea, LeftInput } from '../styles/contact-styles';
-import podcastAudio from '../assets/audio/grief-counselor-podcast.mp3';
 
 // TODO: 
 // Add back to top arrow

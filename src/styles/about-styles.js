@@ -110,10 +110,10 @@ const SoundcloudWrapperSummary = styled(Card)`
   align-self: flex-end;
   width: 70%;
   height: 150px;
-  /* margin-top: 6%; */
 
   @media (max-width: 900px) {
     grid-column: 1 / -1;
+    grid-row: 4 / 5;
     max-width: 85%;
     margin: 0;
   }
@@ -163,7 +163,7 @@ const AboutSummaryImg = styled(ImageWrapper)`
 
   @media(max-width: 900px) {
     grid-column: 1 / -1;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
     margin: 4% 0;
     max-width: 85%;
     height: 400px;
@@ -200,6 +200,7 @@ const AboutTestimonialSummary = styled(Testimonial)`
     grid-column: 1 / -1;
     margin: 40px 0;
     max-width: 85%;
+    grid-row: 5 / 6;
   }
 `;
 
