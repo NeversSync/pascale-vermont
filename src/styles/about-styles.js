@@ -107,8 +107,8 @@ const SoundcloudWrapperSummary = styled(Card)`
   border-radius: 4px;
   grid-column: 2 / 3;
   align-self: center;
-  width: 90%;
-  height: 500px;
+  width: 80%;
+  height: 400px;
   margin-top: 6%;
 
   @media (max-width: 900px) {
@@ -154,8 +154,8 @@ const AboutSummaryImg = styled(ImageWrapper)`
   grid-row: 2 / 3;
   align-self: center;
   justify-self: center;
-  width: 90%;
-  height: 500px;
+  width: 80%;
+  height: 400px;
   border-radius: 5px;
   margin-top: 6%;
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
