@@ -16,7 +16,7 @@ import { PalliativeWrapperSummary, PalliativeSvgSummary, PalliativeLine } from '
 import { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, ContactSvg, ContactLine, ContactSummaryTitleWrapper, LeftHalfInputs, RightHalfInputs, RightTextArea, LeftInput } from '../styles/contact-styles';
 
 // TODO: 
-// Add back to top arrow
+// Add scroll animation library from portfolio to home button
 // Add hover styles for menu-icon
 // Add more animations/ page transitions, fade in animations, etc. 
 // Find red cross articles

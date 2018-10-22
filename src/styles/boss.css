@@ -198,25 +198,39 @@ ul {
   list-style-position: inside;
 }
 
-.arrow #arrow-head{
+.arrow #arrow-head {
 	transform-origin: right;
 	transform: scale(1, 1);
 	transition: all 200ms ease;
 }
-.arrow:hover #arrow-head{
+.arrow:hover #arrow-head {
 	transform: scale(1, 0.9);
 	transition: all 200ms ease;
 }
-.arrow #arrow-body{
+.arrow #arrow-body {
 	transform-origin: right;
 	transform: scale(0.9, 1);
 	transition: all 200ms ease;
 }
-.arrow:hover #arrow-body{
+.arrow:hover #arrow-body {
 	transform: scale(1, 1);
 	transition: all 200ms ease;
 }
 
+.up-button {
+  display: flex;
+  margin: 30px auto 22px auto;
+  height: 50px;
+  width: 50px;
+  justify-content: center;
+  align-items: center;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.up-arrow {
+  transform: rotate(-90deg) scale(1.4);
+}
 
 /* HAMBURGER MENU STYLES */
 
