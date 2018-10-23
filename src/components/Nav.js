@@ -21,7 +21,9 @@ class Nav extends Component {
       navItemVisibility: 'hidden',
       mobileNavItemVisibility: 'hidden',
       navItemOpacity: '0',
-      navHeight: '30vh'
+      navHeight: '30vh',
+      desktopNavItemVisibility: 'visible',
+      desktopNavItemOpacity: '1'
     };
 
     this.hoverToggle = this.hoverToggle.bind(this);
@@ -105,7 +107,9 @@ const DesktopNav = ({
   hoverSvgToggleThree, 
   subMenuToggle, 
   toggleSidenav, 
-  navItemVisibility
+  navItemVisibility,
+  desktopNavItemVisibility,
+  desktopNavItemOpacity
 }) => (
   <NavContainer>
     <MenuIcon id="nav-icon3" onClick={toggleSidenav} className={showHideSidenav}>
@@ -114,35 +118,35 @@ const DesktopNav = ({
       <span></span>
       <span></span>
     </MenuIcon>
-    <NavItem style={{visibility: 'visible', opacity: '1'}}>
+    <NavItem style={{visibility: {desktopNavItemVisibility}, opacity: {desktopNavItemOpacity}}}>
       <Link to="/">HOME
         <NavSvg>
           <NavLine x1="4" y1="5" x2="74" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
         </NavSvg>
       </Link>
     </NavItem>
-    <NavItem style={{visibility: 'visible', opacity: '1'}} >
+    <NavItem style={{visibility: {desktopNavItemVisibility}, opacity: {desktopNavItemOpacity}}} >
       <Link to="/about">ABOUT
         <NavSvg>
           <NavLine x1="4" y1="5" x2="74" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
         </NavSvg>
       </Link>
     </NavItem>
-    <NavItem style={{visibility: 'visible', opacity: '1'}}>
+    <NavItem style={{visibility: {desktopNavItemVisibility}, opacity: {desktopNavItemOpacity}}}>
       <Link to="/perinatal-loss">PERINATAL<br /> LOSS
         <LongNavSvg>
           <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
         </LongNavSvg>
       </Link>
     </NavItem>
-    <NavItem style={{visibility: 'visible', opacity: '1'}}>
+    <NavItem style={{visibility: {desktopNavItemVisibility}, opacity: {desktopNavItemOpacity}}}>
       <Link to="/grief-counseling">GRIEF<br /> COUNSELING
         <LongNavSvg>
           <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
         </LongNavSvg>
       </Link>
     </NavItem>
-    <NavItem style={{visibility: 'visible', opacity: '1'}}>
+    <NavItem style={{visibility: {desktopNavItemVisibility}, opacity: {desktopNavItemOpacity}}}>
       <Link to="/ngo-crisis-counseling">NGO CRISIS<br /> COUNSELING
         <LongNavSvg>
           <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
@@ -174,7 +178,7 @@ const DesktopNav = ({
       </NavDropDownItem>
     </NavDropDown>
          
-    <NavItem style={{ width: '85px', visibility: 'visible', opacity: '1' }}>
+    <NavItem style={{ width: '85px', visibility: {desktopNavItemVisibility}, opacity: {desktopNavItemOpacity} }}>
       <Link to="/contact">CONTACT
         <NavSvg style={{ width: '110px' }}>
           <NavLine x1="4" y1="5" x2="104" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
