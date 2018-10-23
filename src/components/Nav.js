@@ -107,7 +107,6 @@ const DesktopNav = ({
   toggleSidenav, 
   navItemVisibility
 }) => (
-
   <NavContainer>
     <MenuIcon id="nav-icon3" onClick={toggleSidenav} className={showHideSidenav}>
       <span></span>
@@ -115,35 +114,35 @@ const DesktopNav = ({
       <span></span>
       <span></span>
     </MenuIcon>
-    <NavItem>
+    <NavItem style={{visibility: 'visible', opacity: '1'}}>
       <Link to="/">HOME
         <NavSvg>
           <NavLine x1="4" y1="5" x2="74" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
         </NavSvg>
       </Link>
     </NavItem>
-    <NavItem >
+    <NavItem style={{visibility: 'visible', opacity: '1'}} >
       <Link to="/about">ABOUT
         <NavSvg>
           <NavLine x1="4" y1="5" x2="74" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
         </NavSvg>
       </Link>
     </NavItem>
-    <NavItem>
+    <NavItem style={{visibility: 'visible', opacity: '1'}}>
       <Link to="/perinatal-loss">PERINATAL<br /> LOSS
         <LongNavSvg>
           <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
         </LongNavSvg>
       </Link>
     </NavItem>
-    <NavItem>
+    <NavItem style={{visibility: 'visible', opacity: '1'}}>
       <Link to="/grief-counseling">GRIEF<br /> COUNSELING
         <LongNavSvg>
           <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
         </LongNavSvg>
       </Link>
     </NavItem>
-    <NavItem>
+    <NavItem style={{visibility: 'visible', opacity: '1'}}>
       <Link to="/ngo-crisis-counseling">NGO CRISIS<br /> COUNSELING
         <LongNavSvg>
           <NavLine x1="4" y1="5" x2="134" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
@@ -175,7 +174,7 @@ const DesktopNav = ({
       </NavDropDownItem>
     </NavDropDown>
          
-    <NavItem style={{ width: '85px' }}>
+    <NavItem style={{ width: '85px', visibility: 'visible', opacity: '1' }}>
       <Link to="/contact">CONTACT
         <NavSvg style={{ width: '110px' }}>
           <NavLine x1="4" y1="5" x2="104" y2="5" stroke="white" strokeWidth="4" strokeLinecap="round" />
