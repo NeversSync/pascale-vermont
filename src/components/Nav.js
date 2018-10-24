@@ -36,13 +36,20 @@ class Nav extends Component {
     this.mobileSubMenuToggle = this.mobileSubMenuToggle.bind(this);
   }
 
+  componentWillMount(){
+    this.setState({width: windowGlobal.innerWidth + 'px'})
+  }
+
   componentDidMount() {
-    this.handleWindowSizeChange();
     window.addEventListener('resize', this.handleWindowSizeChange);
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowSizeChange);
+  }
+
   handleWindowSizeChange = () => {
-    this.setState({ width: window.innerWidth });
+    this.setState({ width: window.innerWidth + 'px' });
   }
 
   subMenuToggle() {
@@ -92,8 +99,8 @@ class Nav extends Component {
     };
 
     return (
-      // this.state.width >= 1325 ? <DesktopNav {...this.state} {...methods} /> : <MobileNav {...this.state} {...methods}/>
-      <DesktopNav {...this.state} {...methods} />
+      this.state.width >= 1325 ? <DesktopNav {...this.state} {...methods} /> : <MobileNav {...this.state} {...methods}/>
+      // <DesktopNav {...this.state} {...methods} />
     );
   }
 }
