@@ -92,7 +92,8 @@ class Nav extends Component {
     };
 
     return (
-      this.state.width >= 1325 ? <DesktopNav {...this.state} {...methods} /> : <MobileNav {...this.state} {...methods}/>
+      // this.state.width >= 1325 ? <DesktopNav {...this.state} {...methods} /> : <MobileNav {...this.state} {...methods}/>
+      <DesktopNav {...this.state} {...methods} />
     );
   }
 }
