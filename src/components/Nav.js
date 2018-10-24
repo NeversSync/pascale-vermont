@@ -4,14 +4,14 @@ import { EntypoChevronSmallDown } from 'react-entypo';
 
 import { NavLine, NavSvg, NavItem, NavContainer, LongNavSvg, NavDropDown, NavDropDownItem, NavItemDropContainer, MenuIcon } from '../styles/nav-styles';
 
-// const windowGlobal = typeof window !== 'undefined' && window;
+const windowGlobal = typeof window !== 'undefined' && window;
 
 class Nav extends Component {
   constructor(props) {
     super(props);
     this.state = {
       height: '0px',
-      width: window.innerWidth,
+      width: windowGlobal.innerWidth,
       dropOpacity: '0',
       svgOpacity: '0',
       svgOpacityTwo: '0',
@@ -37,7 +37,7 @@ class Nav extends Component {
   }
 
   componentWillMount(){
-    this.setState({width: window.innerWidth + 'px'});
+    this.setState({width: windowGlobal.innerWidth + 'px'})
   }
 
   componentDidMount() {
@@ -49,7 +49,7 @@ class Nav extends Component {
   }
 
   handleWindowSizeChange = () => {
-    this.setState({ width: window.innerWidth + 'px' });
+    this.setState({ width: windowGlobal.innerWidth + 'px' });
   }
 
   subMenuToggle() {
