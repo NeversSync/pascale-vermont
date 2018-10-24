@@ -37,6 +37,7 @@ class Nav extends Component {
   }
 
   componentDidMount() {
+    this.handleWindowSizeChange();
     window.addEventListener('resize', this.handleWindowSizeChange);
   }
 
