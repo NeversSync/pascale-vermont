@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
+import windowSize from 'react-window-size';
 import { EntypoChevronSmallDown } from 'react-entypo';
 
 import { NavLine, NavSvg, NavItem, NavContainer, LongNavSvg, NavDropDown, NavDropDownItem, NavItemDropContainer, MenuIcon } from '../styles/nav-styles';
@@ -11,7 +12,7 @@ class Nav extends Component {
     super(props);
     this.state = {
       height: '0px',
-      width: windowGlobal.innerWidth,
+      width: props.windowSize,
       dropOpacity: '0',
       svgOpacity: '0',
       svgOpacityTwo: '0',
@@ -36,11 +37,8 @@ class Nav extends Component {
     this.mobileSubMenuToggle = this.mobileSubMenuToggle.bind(this);
   }
 
-  componentWillMount(){
-    this.setState({width: windowGlobal.innerWidth + 'px'})
-  }
-
   componentDidMount() {
+    console.log(this.state.width);
     window.addEventListener('resize', this.handleWindowSizeChange);
   }
 
@@ -49,7 +47,7 @@ class Nav extends Component {
   }
 
   handleWindowSizeChange = () => {
-    this.setState({ width: windowGlobal.innerWidth + 'px' });
+    this.setState({ width: this.props.windowSize + 'px' });
   }
 
   subMenuToggle() {
@@ -99,7 +97,7 @@ class Nav extends Component {
     };
 
     return (
-      this.state.width >= 1325 ? <DesktopNav {...this.state} {...methods} /> : <MobileNav {...this.state} {...methods}/>
+      this.props.windowSize >= 1325 ? <DesktopNav {...this.state} {...methods} /> : <MobileNav {...this.state} {...methods}/>
       // <DesktopNav {...this.state} {...methods} />
     );
   }
