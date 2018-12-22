@@ -18,7 +18,7 @@ const AboutWrapper = styled(Wrapper)`
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto 525px;
+    grid-template-rows: auto;
   }
 `;
 
@@ -106,15 +106,17 @@ const SoundcloudWrapperSummary = styled(Card)`
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
   border-radius: 4px;
   grid-column: 2 / 3;
-  align-self: center;
-  width: 80%;
-  height: 500px;
-  margin-top: 6%;
+  grid-row: 2 / 3;
+  align-self: flex-end;
+  width: 70%;
+  height: 150px;
+
 
   @media (max-width: 900px) {
     grid-column: 1 / -1;
+    grid-row: 4 / 5;
     max-width: 85%;
-    margin: 0;
+    margin: 5%;
   }
 `;
 
@@ -123,6 +125,7 @@ const SoundcloudWrapper = styled(SoundcloudWrapperSummary)`
   height: fit-content;
   width: 60%;
   margin: 2% 0;
+  grid-row: 3;
 
   @media (max-width: 900px) {
     grid-column: 1 / -1;
@@ -150,19 +153,20 @@ const AboutSummaryImg = styled(ImageWrapper)`
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  grid-column: 1 / 2;
+  grid-column: 2 / 3;
   grid-row: 2 / 3;
-  align-self: center;
+  align-self: flex-start;
   justify-self: center;
-  width: 80%;
-  height: 500px;
+  width: 70%;
+  height: 400px;
+
   border-radius: 5px;
-  margin-top: 6%;
+  margin-top: 4%;
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 
   @media(max-width: 900px) {
     grid-column: 1 / -1;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
     margin: 4% 0;
     max-width: 85%;
     height: 400px;
@@ -185,6 +189,21 @@ const AboutImageWrapper = styled(ImageWrapper)`
     grid-row: 2 / 3;
     width: 80%;
     justify-self: center;
+  }
+`;
+
+const AboutTestimonialSummary = styled(Testimonial)`
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    max-width: 80%;
+    margin: 1% 2% 0% 2%;
+    justify-self: center;
+
+  @media(max-width: 900px) {
+    grid-column: 1 / -1;
+    margin: 40px 0;
+    max-width: 85%;
+    grid-row: 5 / 6;
   }
 `;
 
@@ -215,5 +234,6 @@ export {
   AboutTitle,
   AboutSvg,
   SoundcloudWrapperSummary,
-  AboutSummaryImg
+  AboutSummaryImg, 
+  AboutTestimonialSummary
 };

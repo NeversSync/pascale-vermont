@@ -26,7 +26,7 @@ const IndexPage = () => (
       <Spacer />
       <AboutImageWrapper />
       <SoundcloudWrapper>
-        <iframe width="100%" title="soundcloud" height="200px" scrolling="no" frameBorder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <iframe width="100%" title="soundcloud" height="200px" scrolling="no" frameBorder="yes" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_artwork=false&show_user=true&show_reposts=false&show_teaser=true&visual=false"></iframe>
         <Copy style={{ width: '80%', justifySelf: 'center', padding: '10px 10px 15px 10px', margin: '0 auto' }}>Learn more about Pascale's grief counseling work through this podcast interview with <a className='custom-link' href="http://www.halfhourintern.com/" target="_blank">The Half Hour Intern</a></Copy>
       </SoundcloudWrapper>
       <AboutTestimonial>
