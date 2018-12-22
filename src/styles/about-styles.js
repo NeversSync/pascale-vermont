@@ -124,6 +124,7 @@ const SoundcloudWrapper = styled(SoundcloudWrapperSummary)`
   height: fit-content;
   width: 60%;
   margin: 2% 0;
+  grid-row: 3;
 
   @media (max-width: 900px) {
     grid-column: 1 / -1;
