@@ -5,6 +5,7 @@ import 'reset-css';
 import '../styles/boss.css';
 import styled from 'styled-components';
 import 'typeface-fira-sans';
+import { UpArrow } from './Helpers';
 
 const Content = styled.div`
   font-family: fira sans, sans-serif;
@@ -37,7 +38,8 @@ const Layout = ({ children }) => (
       />     
       <Content>
         {children}
-      </Content></>
+      </Content>
+      <UpArrow/></>
     )}
   />
 );
