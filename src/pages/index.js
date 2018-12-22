@@ -236,11 +236,12 @@ const Contact = () => (
           <LeftInput name="subject" type="text" placeholder="Subject" />
           <input type="hidden" name="form-name" value="contact-homepage" />
           {/* action="https://formspree.io/prema.calou@gmail.com */}
-          {/* <input type="hidden" name="_next" value="./thanks" style={{display: 'none'}}/> */}
+          <input type="hidden" name="_next" value="./thanks" style={{display: 'none'}}/>
         </LeftHalfInputs>
         <RightHalfInputs>
           <RightTextArea name="message" type="text" placeholder="Message"></RightTextArea>
         </RightHalfInputs>
+        <div data-netlify-recaptcha="true"></div>
         <SubmitButton type="submit" value="submit">SUBMIT</SubmitButton>
       </ContactForm>
     </ContactCard>
