@@ -18,7 +18,7 @@ const AboutWrapper = styled(Wrapper)`
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto 525px;
+    grid-template-rows: auto;
   }
 `;
 
@@ -115,7 +115,7 @@ const SoundcloudWrapperSummary = styled(Card)`
     grid-column: 1 / -1;
     grid-row: 4 / 5;
     max-width: 85%;
-    margin: 0;
+    margin: 5%;
   }
 `;
 
