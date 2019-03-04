@@ -134,6 +134,7 @@ const GriefSummary = () => (
       Over time small victories build upon each other until they tend to dominate, and the moments of respite between the waves of pain lengthen.
       Pascale meets clients in her home office in San Francisco and has worked over Skype with people as far away as India, Pakistan and South Sudan.
       <br />
+      <br />
       <a className='custom-link' href="https://blogs.psychcentral.com/nlp/2017/05/blake-fletcher-half-hour-intern-podcast/" target="_blank">Read a summary</a> of highlights from an interview with Pascale by the <a className='custom-link' href="http://www.halfhourintern.com/" target="_blank">Half Hour Intern podcast</a>.
     </LandingSummaryCopy>
     <WithImageSummaryTestimonial>
@@ -156,7 +157,9 @@ const NGOSummary = () => (
       </Link>
     </RightLandingSummaryWrapper>
     <RightLandingSummaryCopy>
-      Pascale offers crisis counseling to expatriate staff of Relief International based in 22 countries over Skype when they experience a traumatic experience while in the field or suffer a personal crisis.  She was also deployed to Haiti after the 2010 earthquake to provide grief counseling to civilians and hospital staff who had lost many family members and friends.<br />
+      Pascale offers crisis counseling to expatriate staff of Relief International based in 16 countries over Skype when they experience a traumatic experience while in the field or suffer a personal crisis. She served as a psychologist  to West African refugees on Samos Island, Greece, who had fled their home countries because of extreme violence and threats of death. She also trained local staff in Bangladesh who work with Rohingya refugees in Stress Management, Resilience and Self-Care, and met with them individually for counseling. In addition, she was deployed to Haiti after the 2010 earthquake to provide grief counseling to civilians and hospital staff who had lost many family members and friends.
+      <br />
+      <br />
       <a className='custom-link' href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048646/" target="_blank">Read more</a> about Pascale's grief counseling work for the 2010 Haiti earthquake.
     </RightLandingSummaryCopy>
     <SummaryTestimonial>
@@ -178,7 +181,9 @@ const DisasterSummary = () => (
       </Link>
     </TallSummaryWrapper>
     <LandingSummaryCopy>
-      For 10 years Pascale served as a disaster mental health volunteer and lead of the San Francisco mental health team for the American Red Cross.  She provided crisis and grief counseling to survivors of tornadoes, hurricanes and floods in Alabama, Mississippi, Oklahoma, Arkansas and Texas and to the victims and families of the Asiana Airlines plane crash at San Francisco International Airport.<br/>
+      For 10 years Pascale served as a disaster mental health volunteer and lead of the San Francisco mental health team for the American Red Cross.  She provided crisis and grief counseling to survivors of tornadoes, hurricanes and floods in Alabama, Mississippi, Oklahoma, Arkansas and Texas and to the victims and families of the Asiana Airlines plane crash at San Francisco International Airport.
+      <br />
+      <br/>
       <Link to='./obama-letter' className='custom-link'>Read</Link> about Pascale's experience helping a young boy during the aftermath of a tornado in Arkansas.
     </LandingSummaryCopy>
     <WithImageSummaryTestimonial>

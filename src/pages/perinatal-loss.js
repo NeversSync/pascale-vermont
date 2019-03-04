@@ -25,7 +25,7 @@ const PerinatalLoss = () => (
         She meets with parents and other family members as long as support is needed, and at other times when the grief is triggered by anniversaries or subsequent pregnancies.
       </PerinatalCopy>
       <PerinatalTestimonial>
-        <Card style={{ padding: '35px' }}>"The compassion, sympathy, and assurance she gave my husband and I helped us to move through the stages of our grief and realize that we were going to be ok. Her heartfelt questions and warm nature made it easy to open up and share our tragedy, our fears of trying again, our relationship struggles, our guilty thoughts, our happy moments, and so much more."<br /> - Anonymous client
+        <Card style={{ padding: '35px' }}>"Pascale helped me process the loss of my son during pregnancy and helped me through a subsequent pregnancy filled with worry.  Her support and guidance were key to managing my grief and healing. Techniques that she helped me learn have also expanded my ability to live in the present. Our time together continues to ripple through my life at home and work in such a positive way."<br /> - Anonymous client
         </Card>
       </PerinatalTestimonial>
       <SecondPerinatalTestimonial>
