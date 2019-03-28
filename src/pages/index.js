@@ -108,7 +108,8 @@ const PerinatalSummary = () => (
     <RightLandingSummaryCopy>
       Pascale offers bereavement counseling to parents who lose a child during pregnancy, at birth or in early infancy.
       At a time of great pain and loneliness, she provides emotional support in the home, as well as education about the grief process and how to handle the many consequences of the loss.
-      She meets with parents and other family members as long as support is needed, and at other times when the grief is triggered by anniversaries or subsequent pregnancies.
+      She meets with parents and other family members as long as support is needed, and at other times when the grief is triggered by anniversaries or subsequent pregnancies.<br/><br/>
+      <a className='custom-link' href='https://kwmr.org/broadcasts/19012?fbclid=IwAR2m2tQfyICJ5VJMFExbF3ogM3ZuPfJ53Y3xUF7rx2g9MQ-I9g3h7cZEkbk' target='_blank'>Listen to a recent interview with Pascale</a> about her work with perinatal loss.
     </RightLandingSummaryCopy>
     <SummaryTestimonial>
       <Card style={{ padding: '35px' }}>"Truly our conversations over time scraped me off the emotional depth of despair and helped me start to look up."<br /> - Anonymous client

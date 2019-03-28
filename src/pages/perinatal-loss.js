@@ -3,7 +3,7 @@ import Link from 'gatsby-link';
 import Layout from '../components/layout';
 
 import { PerinatalWrapper, PerinatalTitleWrapper, PerinatalTitle, PerinatalSvg, PerinatalLine, PerinatalCopy, PerinatalTestimonial, PerinatalImageWrapper, SecondPerinatalTestimonial } from '../styles/perinatal-styles';
-import { HomeButton, Card } from '../components/Helpers';
+import { HomeButton, Card, Copy } from '../components/Helpers';
 
 
 const PerinatalLoss = () => (
@@ -17,12 +17,16 @@ const PerinatalLoss = () => (
         <Link to="/" className='home-button'>
           <HomeButton />
         </Link>
+        {/* <div style={{ width: '500px', height: '500px', overflow: 'hidden' }}> */}
+        {/* </div> */}
       </PerinatalTitleWrapper>
       <PerinatalImageWrapper />
+      {/* <Copy></Copy> */}
       <PerinatalCopy>
         Pascale offers bereavement counseling to parents who lose a child during pregnancy, at birth or in early infancy.
         At a time of great pain and loneliness, she provides emotional support in the home, as well as education about the grief process and how to handle the many consequences of the loss.
-        She meets with parents and other family members as long as support is needed, and at other times when the grief is triggered by anniversaries or subsequent pregnancies.
+        She meets with parents and other family members as long as support is needed, and at other times when the grief is triggered by anniversaries or subsequent pregnancies. <br/><br/>
+        <a className='custom-link' href='https://kwmr.org/broadcasts/19012?fbclid=IwAR2m2tQfyICJ5VJMFExbF3ogM3ZuPfJ53Y3xUF7rx2g9MQ-I9g3h7cZEkbk' target='_blank'>Listen to a recent interview with Pascale</a> about her work with perinatal loss.
       </PerinatalCopy>
       <PerinatalTestimonial>
         <Card style={{ padding: '35px' }}>"Pascale helped me process the loss of my son during pregnancy and helped me through a subsequent pregnancy filled with worry.  Her support and guidance were key to managing my grief and healing. Techniques that she helped me learn have also expanded my ability to live in the present. Our time together continues to ripple through my life at home and work in such a positive way."<br /> - Anonymous client

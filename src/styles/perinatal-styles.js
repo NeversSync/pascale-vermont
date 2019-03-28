@@ -71,6 +71,10 @@ const PerinatalLine = styled.line`
   opacity: .9;
 `;
 
+const InterviewLink = styled.a`
+  color: 
+`;
+
 const PerinatalCopy = styled(Copy)`
   grid-column: 1 / -1;
   grid-row: 2 / 3;
