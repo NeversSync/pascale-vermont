@@ -28,21 +28,19 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-      <Helmet
-        titleTemplate={`%s | ${data.site.siteMetadata.title}`}
-        defaultTitle={data.site.siteMetadata.title}
-        meta={[
-          { name: 'Pascale Vermont', content: 'Grief Counselor' },
-          { name: 'keywords', content: 'sample, something' }
-        ]}
-      />     
-      <Content>
-        {children}
-      </Content>
-      <UpArrow/></>
+        <Helmet
+          titleTemplate={`%s | ${data.site.siteMetadata.title}`}
+          defaultTitle={data.site.siteMetadata.title}
+          meta={[
+            { name: 'Pascale Vermont', content: 'Grief Counselor' },
+            { name: 'keywords', content: 'sample, something' }
+          ]}
+        />
+        <Content>{children}</Content>
+        <UpArrow />
+      </>
     )}
   />
 );
 
 export default Layout;
-

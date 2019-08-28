@@ -15,12 +15,12 @@ import { DisasterWrapper, DisasterTitle, DisasterSvgSummary, DisasterLine, Disas
 import { PalliativeWrapperSummary, PalliativeSvgSummary, PalliativeLine } from '../styles/palliative-styles';
 import { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, ContactSvg, ContactLine, ContactSummaryTitleWrapper, LeftHalfInputs, RightHalfInputs, RightTextArea, LeftInput } from '../styles/contact-styles';
 
-// TODO: 
+// TODO:
 // Add scroll animation library from portfolio to home button
 // Add hover styles for menu-icon
-// Add more animations/ page transitions, fade in animations, etc. 
+// Add more animations/ page transitions, fade in animations, etc.
 // Find red cross articles
-// Animate arrows in learn more btn 
+// Animate arrows in learn more btn
 
 const IndexPage = () => (
   <Layout>
@@ -67,7 +67,7 @@ const AboutSummary = () => (
       She provides emotional support in various settings, such as in a private grief counseling practice, in-home counseling to bereaved parents, in large scale disasters, and to expatriate staff of an international disaster organization.
     </LandingSummaryCopy>
     <AboutSummaryImg />
-    
+
     <SoundcloudWrapperSummary>
       {/* TODO: CREATE RESPONSIVE STYLES */}
       <iframe style={{ borderRadius: '4px' }} width="100%" height="150px" scrolling="no" frameBorder="yes" title="soundcloud-home" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_artwork=false&show_teaser=true&visual=false"></iframe>
@@ -158,7 +158,7 @@ const NGOSummary = () => (
       </Link>
     </RightLandingSummaryWrapper>
     <RightLandingSummaryCopy>
-      Pascale offers crisis counseling to expatriate staff of Relief International based in 16 countries over Skype when they experience a traumatic experience while in the field or suffer a personal crisis. She served as a psychologist  to West African refugees on Samos Island, Greece, who had fled their home countries because of extreme violence and threats of death. She also trained local staff in Bangladesh who work with Rohingya refugees in Stress Management, Resilience and Self-Care, and met with them individually for counseling. In addition, she was deployed to Haiti after the 2010 earthquake to provide grief counseling to civilians and hospital staff who had lost many family members and friends.
+      Pascale offers crisis counseling to expatriate staff of Relief International based in 16 countries over Skype when they experience a traumatic experience while in the field or suffer a personal crisis. She served as a psychologist  to West African refugees on Samos Island, Greece, who had fled their home countries because of extreme violence and threats of death. She also trained local staff in Bangladesh who work with Rohingya refugees in Stress Management, Resilience and Self-Care, and met with them individually for counseling. She provided similar training and counseling to local staff in Juba and Maban, South Sudan, and in Nairobi Kenya. In addition, she was deployed to Haiti after the 2010 earthquake to provide grief counseling to civilians and hospital staff who had lost many family members and friends.
       <br />
       <br />
       <a className='custom-link' href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048646/" target="_blank">Read more</a> about Pascale's grief counseling work for the 2010 Haiti earthquake.
