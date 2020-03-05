@@ -24,6 +24,7 @@ const IndexPage = () => (
           data-netlify-honeypot="bot-field"
           name="contact-form-1"
           action="./thanks"
+          data-netlify-recaptcha="true"
         >
           <LeftHalfInputs>
             <LeftInput name="name" type="text" placeholder="Name" />

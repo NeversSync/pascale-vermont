@@ -7,7 +7,7 @@ import Nav from '../components/Nav';
 import { Card, LandingSummaryWrapper, Title, SVGArrowRight, LandingSummaryCopy, Copy, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper } from '../components/Helpers';
 
 import { HeroContainer, HeroImg, Heading, LandingSubtitle } from '../styles/landing-styles';
-import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, SoundcloudWrapperSummary, AboutTestimonialSummary, SoundcloudWrapper, AboutSummaryImg } from '../styles/about-styles';
+import { AboutWrapper, AboutSummaryTitle, AboutSummarySvg, AboutLine, AboutTestimonialSummary,  AboutSummaryImg } from '../styles/about-styles';
 import { PerinatalWrapper, PerinatalLine, PerinatalSvgSummary } from '../styles/perinatal-styles';
 import { NGOWrapperSummary, NGOSvgSummary, NGOLine } from '../styles/ngo-styles';
 import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefImgSummary } from '../styles/grief-styles';
@@ -68,10 +68,6 @@ const AboutSummary = () => (
     </LandingSummaryCopy>
     <AboutSummaryImg />
 
-    <SoundcloudWrapperSummary>
-      {/* TODO: CREATE RESPONSIVE STYLES */}
-      <iframe style={{ borderRadius: '4px' }} width="100%" height="150px" scrolling="no" frameBorder="yes" title="soundcloud-home" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/273730486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=false&show_user=true&show_reposts=false&show_artwork=false&show_teaser=true&visual=false"></iframe>
-    </SoundcloudWrapperSummary>
     <AboutTestimonialSummary style={{ marginTop: '4%' }}>
       <Card style={{ padding: '35px' }}>Those first days, sorrow's pain<br />
         was tangible:<br />
@@ -235,6 +231,7 @@ const Contact = () => (
         data-netlify-honeypot="bot-field"
         name="contact-homepage"
         action="./thanks"
+        data-netlify-recaptcha="true"
       >
         <LeftHalfInputs>
           <LeftInput name="name" type="text" placeholder="Name" />

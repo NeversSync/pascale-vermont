@@ -102,37 +102,7 @@ const AboutCopy = styled(Copy)`
   }
 `;
 
-const SoundcloudWrapperSummary = styled(Card)`
-  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
-  border-radius: 4px;
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  align-self: flex-end;
-  width: 70%;
-  height: 150px;
 
-
-  @media (max-width: 900px) {
-    grid-column: 1 / -1;
-    grid-row: 4 / 5;
-    max-width: 85%;
-    margin: 5%;
-  }
-`;
-
-const SoundcloudWrapper = styled(SoundcloudWrapperSummary)`
-  grid-column: 1 / -1;
-  height: fit-content;
-  width: 60%;
-  margin: 2% 0;
-  grid-row: 3;
-
-  @media (max-width: 900px) {
-    grid-column: 1 / -1;
-    width: 80%;
-    margin: 6% 0 0 0;
-  }
-`;
 
 const AboutCTA = styled(CTAButton)`
   display: grid;
@@ -228,12 +198,10 @@ export {
   AboutSummarySvg,
   AboutLine,
   AboutCopy,
-  SoundcloudWrapper,
   AboutCTA,
   AboutTestimonial,
   AboutTitle,
   AboutSvg,
-  SoundcloudWrapperSummary,
-  AboutSummaryImg, 
+  AboutSummaryImg,
   AboutTestimonialSummary
 };
