@@ -10,9 +10,9 @@ const Wrapper = styled.div`
 const LandingSummaryWrapper = styled(Wrapper)`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px auto auto 100px;
+  align-content: center;
   grid-column: 1 / 2;
-  
+
   @media(max-width: 900px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column: 1 / -1;
@@ -136,7 +136,7 @@ const CTAButton = styled.button`
   margin-top: 30px;
   display: flex;
   justify-content: space-evenly;
-  align-items: center; 
+  align-items: center;
   width: 200px;
   height: 55px;
   background: linear-gradient(to left, hsla(348, 86%, 59%, .9), hsla(39, 100%, 63%, 0.9));

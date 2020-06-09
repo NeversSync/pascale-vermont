@@ -6,10 +6,10 @@ const ContactWrapper = styled(Wrapper)`
   rid-template-rows: 5fr 5fr .5fr;
   justify-items: center;
   padding: 3% 2% 6% 2%;
-  height: 100vh;
+  min-height: 50vh;
 
    @media (max-width: 900px) {
-    rid-template-rows: 1fr 1fr 1fr; 
+    rid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 400px 1fr;
     height: 750px;
   }
@@ -18,10 +18,10 @@ const ContactWrapper = styled(Wrapper)`
 const ContactTitleWrapper = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 10px;
+  /* grid-template-rows: 1fr 1fr;  */
+  /* grid-gap: 10px; */
   grid-column: 2 / 3;
-  padding: 20px;
+  padding-bottom: 20px;
 `;
 
 const ContactSummaryTitleWrapper = styled(ContactTitleWrapper)`
@@ -71,6 +71,7 @@ const ContactLine = styled.line`
 
 const ContactCard = styled(Card)`
   padding: 35px;
+  margin-top: 1em;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
 
@@ -90,7 +91,7 @@ const ContactForm = styled.form`
 
    @media (max-width: 900px) {
     width: unset;
-    height: 400px;
+    /* height: 400px; */
   }
 `;
 
@@ -100,7 +101,7 @@ const SubmitButton = styled.button`
   height: 55px;
   font-size: 20px;
   justify-content: space-evenly;
-  align-items: center; 
+  align-items: center;
   align-self: flex-start;
   color: white;
   background: linear-gradient(to left, hsla(348, 86%, 59%, .9), hsla(39, 100%, 63%, 0.9));
@@ -138,7 +139,7 @@ const LeftHalfInputs = styled.div`
   grid-column: 1 / 2;
   grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 10px;
-  
+
   @media (max-width: 900px) {
     grid-row: 1 / 2;
     grid-column: 1 / -1;
@@ -167,7 +168,7 @@ const LeftInput = styled.input`
   }
 
   @media (max-width: 900px) {
-    width: 80%;
+    width: 90%;
     justify-self: center;
   }
 `;
@@ -187,7 +188,7 @@ const RightTextArea = styled.textarea`
   }
 
   @media (max-width: 900px) {
-    width: 80%;
+    width: 90%;
     justify-self: center;
     height: 150px;
   }

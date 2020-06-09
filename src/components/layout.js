@@ -5,7 +5,6 @@ import 'reset-css';
 import '../styles/boss.css';
 import styled from 'styled-components';
 import 'typeface-fira-sans';
-import { UpArrow } from './Helpers';
 
 const Content = styled.div`
   font-family: fira sans, sans-serif;
@@ -33,11 +32,10 @@ const Layout = ({ children }) => (
           defaultTitle={data.site.siteMetadata.title}
           meta={[
             { name: 'Pascale Vermont', content: 'Grief Counselor' },
-            { name: 'keywords', content: 'sample, something' }
+            { name: 'keywords', content: 'Pascale Vermont, grief counselor, therapy, grief' }
           ]}
         />
         <Content>{children}</Content>
-        <UpArrow />
       </>
     )}
   />

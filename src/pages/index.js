@@ -1,9 +1,11 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Layout from '../components/layout';
+import { UpArrow } from '../components/Helpers';
 import { EntypoDotSingle } from 'react-entypo';
 
 import Nav from '../components/Nav';
+import Contact from '../components/Contact';
 import { Card, LandingSummaryWrapper, Title, SVGArrowRight, LandingSummaryCopy, Copy, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper } from '../components/Helpers';
 
 import { HeroContainer, HeroImg, Heading, LandingSubtitle } from '../styles/landing-styles';
@@ -13,13 +15,11 @@ import { NGOWrapperSummary, NGOSvgSummary, NGOLine } from '../styles/ngo-styles'
 import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefImgSummary } from '../styles/grief-styles';
 import { DisasterWrapper, DisasterTitle, DisasterSvgSummary, DisasterLine, DisasterImg } from '../styles/disaster-styles';
 import { PalliativeWrapperSummary, PalliativeSvgSummary, PalliativeLine } from '../styles/palliative-styles';
-import { ContactWrapper, ContactForm, SubmitButton, ContactCard, ContactTitle, ContactSvg, ContactLine, ContactSummaryTitleWrapper, LeftHalfInputs, RightHalfInputs, RightTextArea, LeftInput } from '../styles/contact-styles';
 
 // TODO:
 // Add scroll animation library from portfolio to home button
 // Add hover styles for menu-icon
 // Add more animations/ page transitions, fade in animations, etc.
-// Find red cross articles
 // Animate arrows in learn more btn
 
 const IndexPage = () => (
@@ -33,7 +33,8 @@ const IndexPage = () => (
       <DisasterSummary />
       <PalliativeSummary />
       <Contact />
-      <Copy style={{margin: '0 auto 2% auto', width: 'fit-content'}}>Site made by <a className='custom-link' href='http://nickyevers.com/' target='_blank'>Nicky Evers Design</a>
+      <UpArrow />
+      <Copy style={{margin: '0 auto 2% auto', width: 'fit-content'}}>Site made by <a className='custom-link' href='http://nickyeversdesign.com/' target='_blank'>Nicky Evers Design</a>
       </Copy>
     </div>
   </Layout>
@@ -181,7 +182,7 @@ const DisasterSummary = () => (
       For 10 years Pascale served as a disaster mental health volunteer and lead of the San Francisco mental health team for the American Red Cross.  She provided crisis and grief counseling to survivors of tornadoes, hurricanes and floods in Alabama, Mississippi, Oklahoma, Arkansas and Texas and to the victims and families of the Asiana Airlines plane crash at San Francisco International Airport.
       <br />
       <br/>
-      <Link to='./obama-letter' className='custom-link'>Read</Link> about Pascale's experience helping a young boy during the aftermath of a tornado in Arkansas.
+      <Link to='/obama-letter' className='custom-link'>Read</Link> about Pascale's experience helping a young boy during the aftermath of a tornado in Arkansas.
     </LandingSummaryCopy>
     <WithImageSummaryTestimonial>
       <Card style={{ padding: '35px' }}>"I want to thank you for your amazing emotional support.  What impressed me was not only your professional expertise but, more importantly, your natural care, attention and compassion."<br /> - K
@@ -213,42 +214,6 @@ const PalliativeSummary = () => (
       </Card>
     </SummaryTestimonial>
   </PalliativeWrapperSummary>
-);
-
-const Contact = () => (
-  <ContactWrapper>
-    <ContactSummaryTitleWrapper>
-      <ContactTitle>CONTACT</ContactTitle>
-      <ContactSvg>
-        <ContactLine x1="7" y1="5" x2="228" y2="5" stroke="rgb(166, 76, 224)" strokeWidth="6" />
-      </ContactSvg>
-    </ContactSummaryTitleWrapper>
-    <ContactCard>
-      <ContactForm
-        netlify="true"
-        data-netlify="true"
-        method="POST"
-        data-netlify-honeypot="bot-field"
-        name="contact-homepage"
-        action="./thanks"
-        data-netlify-recaptcha="true"
-      >
-        <LeftHalfInputs>
-          <LeftInput name="name" type="text" placeholder="Name" />
-          <LeftInput name="email" type="email" placeholder="Email address" />
-          <LeftInput name="subject" type="text" placeholder="Subject" />
-          <input type="hidden" name="form-name" value="contact-homepage" />
-          {/* action="https://formspree.io/prema.calou@gmail.com */}
-          <input type="hidden" name="_next" value="./thanks" style={{display: 'none'}}/>
-        </LeftHalfInputs>
-        <RightHalfInputs>
-          <RightTextArea name="message" type="text" placeholder="Message"></RightTextArea>
-        </RightHalfInputs>
-        <div data-netlify-recaptcha="true"></div>
-        <SubmitButton type="submit" value="submit">SUBMIT</SubmitButton>
-      </ContactForm>
-    </ContactCard>
-  </ContactWrapper>
 );
 
 export default IndexPage;
