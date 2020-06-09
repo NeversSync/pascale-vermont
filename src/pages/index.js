@@ -16,12 +16,6 @@ import { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefImgSummary } from '
 import { DisasterWrapper, DisasterTitle, DisasterSvgSummary, DisasterLine, DisasterImg } from '../styles/disaster-styles';
 import { PalliativeWrapperSummary, PalliativeSvgSummary, PalliativeLine } from '../styles/palliative-styles';
 
-// TODO:
-// Add scroll animation library from portfolio to home button
-// Add hover styles for menu-icon
-// Add more animations/ page transitions, fade in animations, etc.
-// Animate arrows in learn more btn
-
 const IndexPage = () => (
   <Layout>
     <div>
