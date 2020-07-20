@@ -13,7 +13,7 @@ const LandingSummaryWrapper = styled(Wrapper)`
   align-content: center;
   grid-column: 1 / 2;
 
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
@@ -25,24 +25,23 @@ const RightLandingSummaryWrapper = styled(LandingSummaryWrapper)`
   grid-column: 2 / 3;
   background: initial;
 
-@media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-column: 1 / -1;
     grid-row: 1 / 2;
   }
 `;
 
 const TallSummaryWrapper = styled(LandingSummaryWrapper)`
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-template-rows: 140px 80px;
   }
 `;
 
 const RightTallSummaryWrapper = styled(RightLandingSummaryWrapper)`
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-template-rows: 140px 80px;
   }
 `;
-
 
 const Copy = styled.p`
   font-size: 20px;
@@ -60,12 +59,12 @@ const LandingSummaryCopy = styled(Copy)`
   grid-column: 2 / 3;
   margin-right: 10%;
 
-    @media(max-width: 900px) {
-      grid-column: 1 / -1;
-      margin: 0;
-      margin-top: 4%;
-      width: 85%;
-    }
+  @media (max-width: 900px) {
+    grid-column: 1 / -1;
+    margin: 0;
+    margin-top: 4%;
+    width: 85%;
+  }
 `;
 
 const RightLandingSummaryCopy = styled(LandingSummaryCopy)`
@@ -76,7 +75,7 @@ const RightLandingSummaryCopy = styled(LandingSummaryCopy)`
   margin-right: 0;
   justify-self: start;
 
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     justify-self: center;
     grid-column: 1 / -1;
     grid-row: 2 / 3;
@@ -108,7 +107,7 @@ const RightSummaryTitle = styled(Title)`
   font-weight: 500;
   padding-bottom: 10px;
 
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-column: 2 / 4;
     text-align: center;
     grid-row: 1 / 2;
@@ -139,46 +138,62 @@ const CTAButton = styled.button`
   align-items: center;
   width: 200px;
   height: 55px;
-  background: linear-gradient(to left, hsla(348, 86%, 59%, .9), hsla(39, 100%, 63%, 0.9));
+  background: linear-gradient(
+    to left,
+    hsla(348, 86%, 59%, 0.9),
+    hsla(39, 100%, 63%, 0.9)
+  );
   border: none;
   border-radius: 7px;
-  border-bottom: 3px solid hsla(348, 2%, 10%, .5);
+  border-bottom: 3px solid hsla(348, 2%, 10%, 0.5);
   box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
-  transition: .3s ease;
+  transition: 0.3s ease;
   letter-spacing: 1.8px;
   cursor: pointer;
 
   &:hover {
-    background: linear-gradient(to left, hsla(348, 96%, 69%, .9), hsla(39, 100%, 63%, 0.9));
-    box-shadow: 0 4px 4px rgba(0,0,0,.25);
+    background: linear-gradient(
+      to left,
+      hsla(348, 96%, 69%, 0.9),
+      hsla(39, 100%, 63%, 0.9)
+    );
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
   &:active {
-    background: linear-gradient(to left, hsla(348, 86%, 49%, .9), hsla(39, 90%, 43%, 0.9));
+    background: linear-gradient(
+      to left,
+      hsla(348, 86%, 49%, 0.9),
+      hsla(39, 90%, 43%, 0.9)
+    );
     -webkit-transform: translate(0px, 2px);
     transform: translate(0px, 2px);
     border-bottom: none;
     box-shadow: none;
   }
 
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     margin: 0;
     font-size: 16px;
     &:hover {
-      background: linear-gradient(to left, hsla(348, 86%, 59%, .9), hsla(39, 100%, 63%, 0.9));
+      background: linear-gradient(
+        to left,
+        hsla(348, 86%, 59%, 0.9),
+        hsla(39, 100%, 63%, 0.9)
+      );
       box-shadow: 0px 2px 3px -1px rgba(0, 0, 0, 0.3);
     }
   }
 `;
 
 const Testimonial = styled.div`
-font-style: italic;
-font-size: 22px;
-font-weight: 200;
-line-height: 32px;
-letter-spacing: 1.55px;
-text-align: center;
+  font-style: italic;
+  font-size: 22px;
+  font-weight: 200;
+  line-height: 32px;
+  letter-spacing: 1.55px;
+  text-align: center;
 
-@media (max-width: 1100px) {
+  @media (max-width: 1100px) {
     font-size: 18px;
   }
 `;
@@ -189,7 +204,7 @@ const SummaryTestimonial = styled(Testimonial)`
   margin: 1% 2% 0% 2%;
   justify-self: center;
 
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-column: 1 / -1;
     margin: 40px 0;
     max-width: 85%;
@@ -202,7 +217,7 @@ const WithImageSummaryTestimonial = styled(SummaryTestimonial)`
   max-width: 65%;
   align-self: center;
 
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-column: 1 / -1;
     grid-row: 4 / 5;
   }
@@ -211,7 +226,7 @@ const WithImageSummaryTestimonial = styled(SummaryTestimonial)`
 const ImageWrapper = styled(Card)`
   height: 400px;
 
-   @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-column: 1 / -1;
     margin: 40px 0;
   }
@@ -222,20 +237,39 @@ const Spacer = styled.div`
   width: 100%;
   margin: 1%;
 
-   @media(max-width: 900px) {
-     display: none;
+  @media (max-width: 900px) {
+    display: none;
   }
 `;
-
 
 // HELPER COMPONENTS
 
 const SVGArrowRight = () => (
-  <CTAButton className="arrow"><CTAButtonText>LEARN MORE</CTAButtonText>
-    <svg style={{ width: '30px', height: '30px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
+  <CTAButton className="arrow">
+    <CTAButtonText>LEARN MORE</CTAButtonText>
+    <svg
+      style={{ width: '30px', height: '30px' }}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 453.5 270"
+    >
       <g id="Layer_2" data-name="Layer 2">
-        <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
-        <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
+        <path
+          id="arrow-head"
+          fill="none"
+          stroke="#fff"
+          strokeWidth="20"
+          d="M318.5 10l125 125-125 125"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          id="arrow-body"
+          fill="white"
+          stroke="white"
+          strokeWidth=""
+          strokeMiterlimit="0"
+          d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z"
+        />
       </g>
     </svg>
   </CTAButton>
@@ -244,24 +278,85 @@ const SVGArrowRight = () => (
 const HomeButton = () => (
   <CTAButton className="arrow">
     <CTAButtonText>HOME</CTAButtonText>
-    <svg className="svg-left-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
+    <svg
+      className="svg-left-arrow"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 453.5 270"
+    >
       <g id="Layer_2" data-name="Layer 2">
-        <path id="arrow-head" fill="none" stroke="#fff" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
-        <path id="arrow-body" fill="white" stroke="white" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
+        <path
+          id="arrow-head"
+          fill="none"
+          stroke="#fff"
+          strokeWidth="20"
+          d="M318.5 10l125 125-125 125"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          id="arrow-body"
+          fill="white"
+          stroke="white"
+          strokeWidth=""
+          strokeMiterlimit="0"
+          d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z"
+        />
       </g>
     </svg>
   </CTAButton>
 );
 
 const UpArrow = () => (
-  <Scrollchor to="#" animate={{ duration: 1250 }} className='arrow up-button'>
-    <svg className='up-arrow' style={{ width: '30px', height: '30px' }} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 453.5 270">
+  <Scrollchor to="#" animate={{ duration: 1250 }} className="arrow up-button">
+    <svg
+      className="up-arrow"
+      style={{ width: '30px', height: '30px' }}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 453.5 270"
+    >
       <g id="Layer_2" data-name="Layer 2">
-        <path id="arrow-head" fill="none" stroke="#000" strokeWidth="20" d="M318.5 10l125 125-125 125" strokeLinecap="round" strokeLinejoin="round" />
-        <path id="arrow-body" fill="black" stroke="black" strokeWidth="" strokeMiterlimit="0" d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z" />
+        <path
+          id="arrow-head"
+          fill="none"
+          stroke="#000"
+          strokeWidth="20"
+          d="M318.5 10l125 125-125 125"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          id="arrow-body"
+          fill="black"
+          stroke="black"
+          strokeWidth=""
+          strokeMiterlimit="0"
+          d="M433 144.5H10a10 10 0 0 1 0-20h423a10 10 0 0 1 0 20z"
+        />
       </g>
     </svg>
   </Scrollchor>
 );
 
-export { Wrapper, LandingSummaryWrapper, Title, SubTitle, Copy, LandingSummaryCopy, Card, CTAButton, Testimonial, SVGArrowRight, HomeButton, ImageWrapper, Spacer, RightLandingSummaryWrapper, RightLandingSummaryCopy, SummaryTestimonial, WithImageSummaryTestimonial, RightSummaryTitle, TallSummaryWrapper, RightTallSummaryWrapper, UpArrow };
+export {
+  Wrapper,
+  LandingSummaryWrapper,
+  Title,
+  SubTitle,
+  Copy,
+  LandingSummaryCopy,
+  Card,
+  CTAButton,
+  Testimonial,
+  SVGArrowRight,
+  HomeButton,
+  ImageWrapper,
+  Spacer,
+  RightLandingSummaryWrapper,
+  RightLandingSummaryCopy,
+  SummaryTestimonial,
+  WithImageSummaryTestimonial,
+  RightSummaryTitle,
+  TallSummaryWrapper,
+  RightTallSummaryWrapper,
+  UpArrow
+};

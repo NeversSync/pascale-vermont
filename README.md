@@ -1,2 +1,2 @@
 # pascale-vermont
-WIP website for Grief Counselor Pascale Vermont
+Website for Grief Counselor Pascale Vermont

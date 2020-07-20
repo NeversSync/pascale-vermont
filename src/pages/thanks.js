@@ -4,13 +4,12 @@ import Layout from '../components/layout';
 import { HomeButton, Copy } from '../components/Helpers';
 import { ThanksWrapper, ContentWrapper } from '../styles/thanks-styles';
 
-
 const IndexPage = () => (
   <Layout>
     <ThanksWrapper>
       <ContentWrapper>
         <Copy>Thank you!</Copy>
-        <Link to="/" >
+        <Link to="/">
           <HomeButton>HOME</HomeButton>
         </Link>
       </ContentWrapper>

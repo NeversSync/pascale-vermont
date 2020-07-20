@@ -1,11 +1,19 @@
 import styled from 'styled-components';
-import { Wrapper, Title, Copy, Card, CTAButton, Testimonial, ImageWrapper } from '../components/Helpers';
+import {
+  Wrapper,
+  Title,
+  Copy,
+  Card,
+  CTAButton,
+  Testimonial,
+  ImageWrapper
+} from '../components/Helpers';
 
 const GriefWrapper = styled(Wrapper)`
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   padding: 3% 2% 6% 2%;
-  border-bottom: 1px solid rgba(100, 100, 100, .1);
+  border-bottom: 1px solid rgba(100, 100, 100, 0.1);
 `;
 
 const GriefTitleWrapper = styled.div`
@@ -14,7 +22,7 @@ const GriefTitleWrapper = styled.div`
   grid-template-rows: 100px auto 1fr 1fr;
   grid-column: 1 / 2;
 
-   @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
@@ -30,7 +38,7 @@ const GriefTitle = styled(Title)`
   padding-bottom: 10px;
   text-align: right;
 
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-column: 2 / 4;
     text-align: center;
     grid-row: 1 / 2;
@@ -47,7 +55,7 @@ const GriefSvg = styled.svg`
   grid-row: 2 / 3;
   align-self: end;
 
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-column: 2 / 4;
     width: 453px;
     grid-row: 1 / 2;
@@ -57,7 +65,7 @@ const GriefSvg = styled.svg`
 
 const GriefLine = styled.line`
   stroke-linecap: round;
-  opacity: .9;
+  opacity: 0.9;
 `;
 
 const GriefCopy = styled(Copy)`
@@ -67,12 +75,12 @@ const GriefCopy = styled(Copy)`
   justify-self: center;
   margin-top: 5%;
 
-  @media(max-width: 900px) {
-      grid-column: 1 / -1;
-      margin: 0;
-      grid-row: 3 / 4;
-      margin-top: 4%;
-      width: 85%;
+  @media (max-width: 900px) {
+    grid-column: 1 / -1;
+    margin: 0;
+    grid-row: 3 / 4;
+    margin-top: 4%;
+    width: 85%;
   }
 `;
 
@@ -83,7 +91,7 @@ const GriefTestimonial = styled(Testimonial)`
   margin: 8% 2% 0% 2%;
   justify-self: center;
 
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-column: 1 / -1;
     grid-row: 4 / 5;
     margin: 20px 0;
@@ -98,7 +106,7 @@ const SecondGriefTestimonial = styled(Testimonial)`
   justify-self: center;
   max-width: 80%;
 
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-column: 1 / -1;
     grid-row: 5 / 6;
     margin: 20px 0;
@@ -115,7 +123,7 @@ const GriefImgSummary = styled.img`
   border-radius: 5px;
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
     margin: 0;
@@ -125,17 +133,17 @@ const GriefImgSummary = styled.img`
 `;
 
 const GriefImgWrapper = styled(ImageWrapper)`
-  background: url('https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607993/PASCALE-VERMONT/ravi-roshan-383162-unsplash.jpg');
+  background: url("https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607993/PASCALE-VERMONT/ravi-roshan-383162-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center; 
+  background-position: center;
   grid-column: 2 / 3;
   grid-row: 1 / 2;
   justify-self: center;
   align-self: center;
   width: 80%;
 
-   @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     width: 85%;
@@ -143,4 +151,15 @@ const GriefImgWrapper = styled(ImageWrapper)`
   }
 `;
 
-export { GriefWrapper, GriefTitle, GriefSvg, GriefLine, GriefTitleWrapper, GriefTestimonial, GriefImgWrapper, GriefCopy, GriefImgSummary, SecondGriefTestimonial };
+export {
+  GriefWrapper,
+  GriefTitle,
+  GriefSvg,
+  GriefLine,
+  GriefTitleWrapper,
+  GriefTestimonial,
+  GriefImgWrapper,
+  GriefCopy,
+  GriefImgSummary,
+  SecondGriefTestimonial
+};

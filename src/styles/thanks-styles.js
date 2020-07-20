@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Wrapper, Card} from '../components/Helpers';
+import { Wrapper, Card } from '../components/Helpers';
 
 const ThanksWrapper = styled(Wrapper)`
   grid-template-columns: 1fr 1fr 1fr;
@@ -8,13 +8,13 @@ const ThanksWrapper = styled(Wrapper)`
   align-content: center;
   height: 100vh;
 
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-template-columns: 1fr;
   }
 `;
 
 const ContentWrapper = styled(Card)`
-  grid-column: 2 / 3; 
+  grid-column: 2 / 3;
   grid-row: 2 / 3;
   display: grid;
   grid-template-rows: 1fr 1fr;
@@ -22,7 +22,7 @@ const ContentWrapper = styled(Card)`
   align-items: center;
   padding: 45px 0;
 
-   @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-column: 1 / -1;
     width: 70%;
     justify-self: center;

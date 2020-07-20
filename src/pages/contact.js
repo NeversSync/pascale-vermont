@@ -6,7 +6,7 @@ import { HomeButton } from '../components/Helpers';
 const ContactPage = () => (
   <React.Fragment>
     <Contact />
-    <Link to="/" className='home-button contact' id='contact-home-button'>
+    <Link to="/" className="home-button contact" id="contact-home-button">
       <HomeButton />
     </Link>
   </React.Fragment>

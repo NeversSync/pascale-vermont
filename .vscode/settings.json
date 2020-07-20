@@ -1,5 +1,9 @@
 {
   "cSpell.words": [
     "Sidenav"
+  ],
+  "prettier.singleQuote": true,
+  "eslint.workingDirectories": [
+
   ]
 }

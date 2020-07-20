@@ -102,8 +102,6 @@ const AboutCopy = styled(Copy)`
   }
 `;
 
-
-
 const AboutCTA = styled(CTAButton)`
   display: grid;
   grid-column: 3 / 4;
@@ -119,7 +117,7 @@ const AboutCTA = styled(CTAButton)`
 `;
 
 const AboutSummaryImg = styled(ImageWrapper)`
- background: url("https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607659/PASCALE-VERMONT/Edited_Image_2013-11-24-15_15_22.png");
+  background: url("https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607659/PASCALE-VERMONT/Edited_Image_2013-11-24-15_15_22.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -134,7 +132,7 @@ const AboutSummaryImg = styled(ImageWrapper)`
   margin-top: 4%;
   box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
 
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     margin: 4% 0;
@@ -163,13 +161,13 @@ const AboutImageWrapper = styled(ImageWrapper)`
 `;
 
 const AboutTestimonialSummary = styled(Testimonial)`
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-    max-width: 80%;
-    margin: 1% 2% 0% 2%;
-    justify-self: center;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+  max-width: 80%;
+  margin: 1% 2% 0% 2%;
+  justify-self: center;
 
-  @media(max-width: 900px) {
+  @media (max-width: 900px) {
     grid-column: 1 / -1;
     margin: 40px 0;
     max-width: 85%;
