@@ -12,7 +12,7 @@ import {
 const AboutWrapper = styled(Wrapper)`
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  padding: 1.5% 2% 6% 2%;
+  /* padding: 1.5% 2% 6% 2%; */
   border-top: 1px solid rgba(100, 100, 100, 0.1);
   border-bottom: 1px solid rgba(100, 100, 100, 0.1);
 
@@ -143,7 +143,7 @@ const AboutSummaryImg = styled(ImageWrapper)`
 `;
 
 const AboutImageWrapper = styled(ImageWrapper)`
-  background: url("https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607659/PASCALE-VERMONT/Edited_Image_2013-11-24-15_15_22.png");
+  background: url("https://res.cloudinary.com/nicky-cloudinary/image/upload/v1595222674/PASCALE-VERMONT/Pascale-Vermont-Headshot.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -151,14 +151,20 @@ const AboutImageWrapper = styled(ImageWrapper)`
   grid-row: 1 / 2;
   justify-self: center;
   align-self: center;
-  width: 60%;
+  width: 40%;
+
+  @media (max-width: 1200px) {
+    width: 75%;
+  }
 
   @media (max-width: 900px) {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
-    width: 80%;
+    width: 75%;
+    height: 450px;
     justify-self: center;
   }
+
 `;
 
 const AboutTestimonialSummary = styled(Testimonial)`

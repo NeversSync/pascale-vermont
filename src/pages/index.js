@@ -70,6 +70,16 @@ const IndexPage = () => (
   <Layout>
     <div>
       <Landing />
+      {/* <div>
+        <a
+          className="custom-link"
+          href="https://kwmr.org/broadcasts/19012?fbclid=IwAR2m2tQfyICJ5VJMFExbF3ogM3ZuPfJ53Y3xUF7rx2g9MQ-I9g3h7cZEkbk"
+          target="_blank"
+        >
+        Listen to a recent interview with Pascale
+        </a>{' '}
+      about her work with pregnancy and infant loss.
+      </div> */}
       <AboutSummary />
       <PerinatalSummary />
       <GriefSummary />
@@ -181,7 +191,7 @@ const AboutSummary = () => (
 const PerinatalSummary = () => (
   <PerinatalWrapper>
     <RightLandingSummaryWrapper>
-      <RightSummaryTitle>PERINATAL LOSS</RightSummaryTitle>
+      <RightSummaryTitle>PREGNANCY & INFANCY LOSS</RightSummaryTitle>
       <PerinatalSvgSummary>
         <PerinatalLine
           x1="5"
@@ -192,7 +202,7 @@ const PerinatalSummary = () => (
           strokeWidth="6"
         />
       </PerinatalSvgSummary>
-      <Link to="/perinatal-loss/" className="right-button">
+      <Link to="/pregnancy-&-infancy-loss/" className="right-button">
         <SVGArrowRight />
       </Link>
     </RightLandingSummaryWrapper>
@@ -213,7 +223,7 @@ const PerinatalSummary = () => (
       >
         Listen to a recent interview with Pascale
       </a>{' '}
-      about her work with perinatal loss.
+      about her work with pregnancy and infant loss.
     </RightLandingSummaryCopy>
     <SummaryTestimonial>
       <Card style={{ padding: '35px' }}>

@@ -19,7 +19,7 @@ const PerinatalLoss = () => (
   <Layout>
     <PerinatalWrapper>
       <PerinatalTitleWrapper>
-        <PerinatalTitle>PERINATAL LOSS</PerinatalTitle>
+        <PerinatalTitle>PREGNANCY & INFANCY LOSS</PerinatalTitle>
         <PerinatalSvg>
           <PerinatalLine
             x1="90"
@@ -54,7 +54,7 @@ const PerinatalLoss = () => (
         >
           Listen to a recent interview with Pascale
         </a>{' '}
-        about her work with perinatal loss.
+        about her work with pregnancy and infancy loss.
       </PerinatalCopy>
       <PerinatalTestimonial>
         <Card style={{ padding: '35px' }}>
