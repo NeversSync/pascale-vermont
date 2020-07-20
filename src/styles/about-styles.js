@@ -117,7 +117,7 @@ const AboutCTA = styled(CTAButton)`
 `;
 
 const AboutSummaryImg = styled(ImageWrapper)`
-  background: url("https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607659/PASCALE-VERMONT/Edited_Image_2013-11-24-15_15_22.png");
+  background: url("https://res.cloudinary.com/nicky-cloudinary/image/upload/v1595222674/PASCALE-VERMONT/Pascale-Vermont-Headshot.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -126,7 +126,8 @@ const AboutSummaryImg = styled(ImageWrapper)`
   align-self: flex-start;
   justify-self: center;
   width: 70%;
-  height: 400px;
+  /* height: 400px; */
+  height: calc(100% - 4%);
 
   border-radius: 5px;
   margin-top: 4%;
@@ -136,8 +137,8 @@ const AboutSummaryImg = styled(ImageWrapper)`
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     margin: 4% 0;
-    max-width: 85%;
-    height: 400px;
+    max-width: 75%;
+    height: 450px;
   }
 `;
 
