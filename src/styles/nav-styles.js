@@ -3,12 +3,12 @@ import styled from 'styled-components';
 const NavContainer = styled.ul`
   display: grid;
   height: 100px;
-  grid-column: 3 / 12;
+  grid-column: 2 / 11;
   grid-row: 1 / 2;
   z-index: 1;
   row-gap: 0px;
-  column-gap: 25px;
-  grid-template-columns: repeat(10, 1fr);
+  /* column-gap: 25px; */
+  /* grid-template-columns: repeat(10, 1fr); */
   grid-template-rows: auto auto;
   color: white;
   text-shadow: 0 1px 5px rgba(47, 47, 47, 0.25);
@@ -19,12 +19,10 @@ const NavContainer = styled.ul`
     display: block;
     grid-column: 11 / 13;
     height: fit-content;
-    background: rgba(215, 212, 217, 0);
     border-radius: 5px;
   }
 
   @media (max-width: 1100px) {
-    /* grid-column: 4 / -1; */
     grid-column: 1 / -1;
     height: 100vh;
   }
@@ -59,10 +57,10 @@ const MenuIcon = styled.div`
 const NavItem = styled.li`
   display: grid;
   grid-row: 1 / 2;
-  width: 140px;
+  width: 160px;
   text-align: center;
   font-size: 18px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   align-self: center;
   justify-content: center;
   line-height: 23px;

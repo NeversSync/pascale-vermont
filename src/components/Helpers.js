@@ -5,6 +5,7 @@ import Scrollchor from 'react-scrollchor';
 const Wrapper = styled.div`
   display: grid;
   background: white;
+  padding: 1.5% 4% 6% 4%;
 `;
 
 const LandingSummaryWrapper = styled(Wrapper)`

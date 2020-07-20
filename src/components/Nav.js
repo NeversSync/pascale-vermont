@@ -106,7 +106,7 @@ class Nav extends Component {
       ? this.setState({ showHideSidenav: 'closed' })
       : this.setState({ showHideSidenav: 'open' });
     this.state.navBackgroundVisible === 'rgba(215, 212, 217, 0)'
-      ? this.setState({ navBackgroundVisible: 'rgba(215, 212, 217, 1)' })
+      ? this.setState({ navBackgroundVisible: 'linear-gradient(to right, rgba(72, 33, 97, 1) 0%,rgba(189, 68, 92, 1) 50%,rgba(204, 133, 0, 1) 100%)' })
       : this.setState({ navBackgroundVisible: 'rgba(215, 212, 217, 0)' });
     this.state.navItemVisibility === 'hidden'
       ? this.setState({ navItemVisibility: 'visible' })
@@ -219,9 +219,9 @@ const DesktopNav = ({
         opacity: { desktopNavItemOpacity }
       }}
     >
-      <Link to="/perinatal-loss">
-        PERINATAL
-        <br /> LOSS
+      <Link to="/pregnancy-&-infancy-loss">
+        PREGNANCY &
+        <br /> INFANCY LOSS
         <LongNavSvg>
           <NavLine
             x1="4"
@@ -431,9 +431,9 @@ const MobileNav = ({
       </Link>
     </NavItem>
     <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
-      <Link to="/perinatal-loss">
-        PERINATAL
-        <br /> LOSS
+      <Link to="/pregnancy-&-infancy-loss">
+        PREGNANCY &
+        <br /> INFANT LOSS
         <LongNavSvg>
           <NavLine
             x1="4"
