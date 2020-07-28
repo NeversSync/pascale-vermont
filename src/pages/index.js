@@ -144,10 +144,7 @@ const AboutSummary = () => (
       around grief counseling and disaster mental health.
       <br />
       <br />
-      She provides emotional support in various settings, such as in a private
-      grief counseling practice, in-home counseling to bereaved parents, in
-      large scale disasters, and to expatriate staff of an international
-      disaster organization.
+      Pascale's main professional activity is as a grief counselor to bereaved parents after a pregnancy or infancy loss. She also provides crisis counseling and stress management training to staff of an international NGO based in 17 countries such as Bangladesh, South Sudan, Iran and Afghanistan, either remotely and or in person.
     </LandingSummaryCopy>
     <AboutSummaryImg />
 
@@ -185,6 +182,9 @@ const AboutSummary = () => (
         -Lois Lake Church
       </Card>
     </AboutTestimonialSummary>
+    <h3 style={{textAlign: 'center', gridColumn: '1 / -1', marginTop: '6%', fontStyle: 'italic', lineHeight: '1.25'}}>
+      'We did not want to have his loss define<br/> us as broken people for the rest of our lives.' - S
+    </h3>
   </AboutWrapper>
 );
 
