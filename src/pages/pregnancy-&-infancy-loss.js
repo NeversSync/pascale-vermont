@@ -11,7 +11,9 @@ import {
   PerinatalCopy,
   PerinatalTestimonial,
   PerinatalImageWrapper,
-  SecondPerinatalTestimonial
+  SecondPerinatalTestimonial,
+  ThirdPerinatalTestimonial,
+  FourthPerinatalTestimonial,
 } from '../styles/perinatal-styles';
 import { HomeButton, Card, Copy } from '../components/Helpers';
 
@@ -43,9 +45,15 @@ const PerinatalLoss = () => (
         pregnancy, at birth or in early infancy. At a time of great pain and
         loneliness, she provides emotional support in the home, as well as
         education about the grief process and how to handle the many
-        consequences of the loss. She meets with parents and other family
-        members as long as support is needed, and at other times when the grief
-        is triggered by anniversaries or subsequent pregnancies. <br />
+        consequences of the loss, such as:
+        <br />
+        <br />
+        <ul>
+          <li>How to guide family and friends to support the couple.</li>
+          <li>How to cope with different grieving styles.</li>
+          <li>How to manage the anxiety of a pregnancy after a loss.</li>
+          <li>How to memorialize the baby.</li>
+        </ul>
         <br />
         <a
           className="custom-link"
@@ -58,6 +66,20 @@ const PerinatalLoss = () => (
       </PerinatalCopy>
       <PerinatalTestimonial>
         <Card style={{ padding: '35px' }}>
+          "The greatest lesson our son taught us was that you wake up every day
+          and you live it like there is no tomorrow."
+          <br /> - A
+        </Card>
+      </PerinatalTestimonial>
+      <SecondPerinatalTestimonial>
+        <Card style={{ padding: '35px' }}>
+          "We are making new memories in our son\'s name. It\'s not the same as
+          making memories with him but it\'s all we have."
+          <br />- N & V
+        </Card>
+      </SecondPerinatalTestimonial>
+      <ThirdPerinatalTestimonial>
+        <Card style={{ padding: '35px' }}>
           "Pascale helped me process the loss of my son during pregnancy and
           helped me through a subsequent pregnancy filled with worry. Her
           support and guidance were key to managing my grief and healing.
@@ -66,8 +88,8 @@ const PerinatalLoss = () => (
           life at home and work in such a positive way."
           <br /> - Anonymous client
         </Card>
-      </PerinatalTestimonial>
-      <SecondPerinatalTestimonial>
+      </ThirdPerinatalTestimonial>
+      <FourthPerinatalTestimonial>
         <Card style={{ padding: '35px' }}>
           "When our baby died, Pascale helped us to know that our feelings were
           normal, and she gave us practical tips on how to navigate them. She
@@ -79,7 +101,7 @@ const PerinatalLoss = () => (
           increasing hope."
           <br />- K and L
         </Card>
-      </SecondPerinatalTestimonial>
+      </FourthPerinatalTestimonial>
     </PerinatalWrapper>
   </Layout>
 );

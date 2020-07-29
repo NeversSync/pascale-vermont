@@ -126,6 +126,22 @@ const SecondPerinatalTestimonial = styled(Testimonial)`
   }
 `;
 
+const ThirdPerinatalTestimonial = styled(PerinatalTestimonial)`
+  grid-row: 4 / 5;
+  @media (max-width: 900px) {
+    grid-row: 6 / 7;
+  }
+`;
+
+
+const FourthPerinatalTestimonial = styled(SecondPerinatalTestimonial)`
+  grid-row: 4 / 5;
+  @media (max-width: 900px) {
+    grid-row: 7 / 8;
+  }
+`;
+
+
 const PerinatalImageWrapper = styled(ImageWrapper)`
   background: url("https://res.cloudinary.com/nicky-cloudinary/image/upload/f_auto,q_auto:best/v1538607950/PASCALE-VERMONT/Parents.jpg");
   background-size: cover;
@@ -155,5 +171,7 @@ export {
   PerinatalTestimonial,
   PerinatalImageWrapper,
   SecondPerinatalTestimonial,
+  ThirdPerinatalTestimonial,
+  FourthPerinatalTestimonial,
   PerinatalSvgSummary
 };
