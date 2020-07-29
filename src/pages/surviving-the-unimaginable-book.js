@@ -39,6 +39,7 @@ const Book = () => (
         <img style={{ width: '60%', height: 'auto',     boxShadow: '0 5px 15px rgba(50,50,93,0.1), 0 3px 8px rgba(0,0,0,0.07)', borderRadius: '4px'}} alt="" src="https://res.cloudinary.com/nicky-cloudinary/image/upload/v1595963508/PASCALE-VERMONT/PV_survivingunimaginable_ebook.jpg"/>
       </BookImageWrapper>
       <CopySubscribeWrapper>
+        {/* TODO: single columN! */}
         <BookCopyWrapper>
           <BookCopy>
         How do you survive the unimaginable loss of a baby during pregnancy or
@@ -61,18 +62,15 @@ const Book = () => (
           <BookCopy>
         Vermont has listened closely to these voices of grief, presenting them
         alongside her practical expertise. In this book for bereaved parents,
-        family and friends, you will learn: How to navigate the first few weeks
-        or months.
+        family and friends, you will learn:
           </BookCopy>
           <BookCopy>
             <ul>
+              <li>How to navigate the first few weeks
+        or months.</li>
               <li>How to respect different grieving styles and normalize
         grief reactions.</li>
               <li>How to guide family and friends to support the couple.</li>
-              <li>
-            How to honor their baby through various rituals and examples of
-            legacy.
-              </li>
               <li>
             How to honor their baby through various rituals and examples of
             legacy.

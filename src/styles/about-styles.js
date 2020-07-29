@@ -42,7 +42,7 @@ const AboutSummaryTitle = styled(Title)`
   justify-self: end;
   font-weight: 500;
   align-self: end;
-  padding-bottom: 6px;
+  padding-bottom: 10px;
 
   @media (max-width: 900px) {
     grid-column: 2 / 4;

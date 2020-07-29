@@ -35,7 +35,7 @@ const ContactTitle = styled(Title)`
   justify-self: center;
   font-weight: 500;
   align-self: end;
-  padding-bottom: 6px;
+  padding-bottom: 10px;
 
   @media (max-width: 900px) {
     grid-row: 1 / 2;

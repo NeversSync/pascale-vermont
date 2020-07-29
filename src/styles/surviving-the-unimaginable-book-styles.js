@@ -19,6 +19,7 @@ const BookWrapper = styled(Wrapper)`
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
+      padding: 3% 0px 0px 0px;
   }
 `;
 
@@ -99,8 +100,8 @@ const BookImageWrapper = styled(ImageWrapper)`
 const CopySubscribeWrapper = styled.div`
   grid-column: 1 / -1;
   display: grid;
-  grid-gap: 2em;
-  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  grid-template-columns: 1fr;
   width: 100vw;
   background-color: white;
   margin-left: -2%;
@@ -109,7 +110,7 @@ const CopySubscribeWrapper = styled.div`
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
-    grid-gap: 1em;
+    grid-gap: 16px;
     width: 100%;
     margin-left: 0px;
     padding: 40px 0px;
@@ -118,12 +119,14 @@ const CopySubscribeWrapper = styled.div`
 
 const BookCopyWrapper = styled.div`
   display: grid;
-  grid-column: 2 / 3;
+  grid-column: 1 / -1;
   width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 
   @media (max-width: 900px) {
     grid-column: 1 / -1;
-    padding: 0px 16px;
+    padding: 0px 40px;
   }
 `;
 

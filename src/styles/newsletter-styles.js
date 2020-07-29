@@ -17,7 +17,7 @@ const NewsletterWrapper = styled.div`
 
 const NewsletterTitle = styled.h2`
   grid-column: 2 / 3;
-  width: 80%;
+  width: 100%;
   font-size: 1em;
   line-height: 1.25;
   font-weight: 500;

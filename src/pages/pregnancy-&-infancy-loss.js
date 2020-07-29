@@ -73,8 +73,8 @@ const PerinatalLoss = () => (
       </PerinatalTestimonial>
       <SecondPerinatalTestimonial>
         <Card style={{ padding: '35px' }}>
-          "We are making new memories in our son\'s name. It\'s not the same as
-          making memories with him but it\'s all we have."
+          "We are making new memories in our son's name. It's not the same as
+          making memories with him but it's all we have."
           <br />- N & V
         </Card>
       </SecondPerinatalTestimonial>
