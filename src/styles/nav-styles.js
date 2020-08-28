@@ -3,12 +3,13 @@ import styled from 'styled-components';
 const NavContainer = styled.ul`
   display: grid;
   height: 100px;
-  grid-column: 2 / 11;
+  grid-column: 1 / -1;
   grid-row: 1 / 2;
   z-index: 1;
   row-gap: 0px;
-  /* column-gap: 25px; */
-  /* grid-template-columns: repeat(10, 1fr); */
+  padding: 0px 1em;
+  grid-template-columns: repeat(9, 160px);
+  justify-content: center;
   grid-template-rows: auto auto;
   color: white;
   text-shadow: 0 1px 5px rgba(47, 47, 47, 0.25);

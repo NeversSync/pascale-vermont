@@ -219,6 +219,49 @@ const DesktopNav = ({
         opacity: { desktopNavItemOpacity }
       }}
     >
+      <Link to="/surviving-the-unimaginable-book">
+    MY BOOK
+        <NavSvg>
+          <NavLine
+            x1="4"
+            y1="5"
+            x2="134"
+            y2="5"
+            stroke="white"
+            strokeWidth="4"
+            strokeLinecap="round"
+          />
+        </NavSvg>
+      </Link>
+    </NavItem>
+    <NavItem
+      style={{
+        visibility: { desktopNavItemVisibility },
+        opacity: { desktopNavItemOpacity }
+      }}
+    >
+      <Link to="/pregnancy-&-infancy-loss">
+        PREGNANCY &
+        <br /> INFANCY LOSS
+        <LongNavSvg>
+          <NavLine
+            x1="4"
+            y1="5"
+            x2="134"
+            y2="5"
+            stroke="white"
+            strokeWidth="4"
+            strokeLinecap="round"
+          />
+        </LongNavSvg>
+      </Link>
+    </NavItem>
+    <NavItem
+      style={{
+        visibility: { desktopNavItemVisibility },
+        opacity: { desktopNavItemOpacity }
+      }}
+    >
       <Link to="/pregnancy-&-infancy-loss">
         PREGNANCY &
         <br /> INFANCY LOSS
@@ -417,6 +460,22 @@ const MobileNav = ({
     <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
       <Link to="/about">
         ABOUT
+        <NavSvg style={{ width: '120px' }}>
+          <NavLine
+            x1="32"
+            y1="5"
+            x2="100"
+            y2="5"
+            stroke="white"
+            strokeWidth="4"
+            strokeLinecap="round"
+          />
+        </NavSvg>
+      </Link>
+    </NavItem>
+    <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
+      <Link to="/surviving-the-unimaginable-book">
+    MY BOOK
         <NavSvg style={{ width: '120px' }}>
           <NavLine
             x1="32"
