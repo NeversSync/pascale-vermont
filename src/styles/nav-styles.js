@@ -8,8 +8,9 @@ const NavContainer = styled.ul`
   z-index: 1;
   row-gap: 0px;
   padding: 0px 1em;
-  grid-template-columns: repeat(9, 160px);
+  grid-template-columns: repeat(9, 140px);
   justify-content: center;
+  justify-items: center;
   grid-template-rows: auto auto;
   color: white;
   text-shadow: 0 1px 5px rgba(47, 47, 47, 0.25);
@@ -58,9 +59,9 @@ const MenuIcon = styled.div`
 const NavItem = styled.li`
   display: grid;
   grid-row: 1 / 2;
-  width: 160px;
+  width: 100%;
   text-align: center;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: 1px;
   align-self: center;
   justify-content: center;

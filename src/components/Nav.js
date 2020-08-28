@@ -444,100 +444,34 @@ const MobileNav = ({
     <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
       <Link to="/">
         HOME
-        <NavSvg style={{ width: '120px' }}>
-          <NavLine
-            x1="32"
-            y1="5"
-            x2="100"
-            y2="5"
-            stroke="white"
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
-        </NavSvg>
       </Link>
     </NavItem>
     <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
       <Link to="/about">
         ABOUT
-        <NavSvg style={{ width: '120px' }}>
-          <NavLine
-            x1="32"
-            y1="5"
-            x2="100"
-            y2="5"
-            stroke="white"
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
-        </NavSvg>
       </Link>
     </NavItem>
     <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
       <Link to="/surviving-the-unimaginable-book">
     MY BOOK
-        <NavSvg style={{ width: '120px' }}>
-          <NavLine
-            x1="32"
-            y1="5"
-            x2="100"
-            y2="5"
-            stroke="white"
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
-        </NavSvg>
       </Link>
     </NavItem>
     <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
       <Link to="/pregnancy-&-infancy-loss">
         PREGNANCY &
         <br /> INFANT LOSS
-        <LongNavSvg>
-          <NavLine
-            x1="4"
-            y1="5"
-            x2="134"
-            y2="5"
-            stroke="white"
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
-        </LongNavSvg>
       </Link>
     </NavItem>
     <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
       <Link to="/grief-counseling">
         GRIEF
         <br /> COUNSELING
-        <LongNavSvg>
-          <NavLine
-            x1="4"
-            y1="5"
-            x2="134"
-            y2="5"
-            stroke="white"
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
-        </LongNavSvg>
       </Link>
     </NavItem>
     <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
       <Link to="/ngo-crisis-counseling">
         NGO CRISIS
         <br /> COUNSELING
-        <LongNavSvg>
-          <NavLine
-            x1="4"
-            y1="5"
-            x2="134"
-            y2="5"
-            stroke="white"
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
-        </LongNavSvg>
       </Link>
     </NavItem>
     <NavItemDropContainer
@@ -550,17 +484,6 @@ const MobileNav = ({
       <span>
         <EntypoChevronSmallDown />
       </span>
-      <NavSvg style={{ opacity: svgOpacity, width: '150px' }}>
-        <NavLine
-          x1="8"
-          y1="0"
-          x2="126"
-          y2="0"
-          stroke="white"
-          strokeWidth="4"
-          strokeLinecap="round"
-        />
-      </NavSvg>
     </NavItemDropContainer>
     <NavDropDown
       style={{
@@ -576,23 +499,6 @@ const MobileNav = ({
       >
         <Link to="/disaster-mental-health">
           DISASTER MENTAL HEALTH
-          <NavSvg
-            style={{
-              visibility: mobileNavItemVisibility,
-              opacity: svgOpacityTwo,
-              width: '150px'
-            }}
-          >
-            <NavLine
-              x1="27"
-              y1="3"
-              x2="112"
-              y2="3"
-              stroke="white"
-              strokeWidth="4"
-              strokeLinecap="round"
-            />
-          </NavSvg>
         </Link>
       </NavDropDownItem>
       <NavDropDownItem
@@ -602,34 +508,12 @@ const MobileNav = ({
       >
         <Link to="/palliative-care-support">
           PALLIATIVE CARE
-          <NavSvg style={{ opacity: svgOpacityThree, width: '150px' }}>
-            <NavLine
-              x1="27"
-              y1="3"
-              x2="112"
-              y2="3"
-              stroke="white"
-              strokeWidth="4"
-              strokeLinecap="round"
-            />
-          </NavSvg>
         </Link>
       </NavDropDownItem>
     </NavDropDown>
     <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
       <Link to="/contact">
         CONTACT
-        <NavSvg style={{ width: '130px' }}>
-          <NavLine
-            x1="23"
-            y1="5"
-            x2="111"
-            y2="5"
-            stroke="white"
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
-        </NavSvg>
       </Link>
     </NavItem>
   </NavContainer>
