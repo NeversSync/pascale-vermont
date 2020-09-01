@@ -220,7 +220,7 @@ const DesktopNav = ({
       }}
     >
       <Link to="/surviving-the-unimaginable-book">
-        INFANCY LOSS BOOK
+        BABY LOSS BOOK
         <LongNavSvg>
           <NavLine
             x1="4"
@@ -431,7 +431,7 @@ const MobileNav = ({
     </NavItem>
     <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
       <Link to="/surviving-the-unimaginable-book">
-    INFANCY LOSS BOOK
+    BABY LOSS BOOK
       </Link>
     </NavItem>
     <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
