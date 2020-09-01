@@ -65,8 +65,9 @@ const LandingSummaryCopy = styled(Copy)`
 
   @media (max-width: 900px) {
     grid-column: 1 / -1;
-    margin: 0;
+    margin: 0 auto;
     margin-top: 4%;
+
     width: 85%;
   }
 `;

@@ -19,7 +19,8 @@ const BookWrapper = styled(Wrapper)`
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
-      padding: 3% 0px 0px 0px;
+    padding: ${p => p.isHome ? '3% 2% 6% 2%' : '3% 0px 0px 0px'};
+    grid-template-rows: auto;
   }
 `;
 
@@ -59,7 +60,7 @@ const BookLine = styled.div`
   height: 6px;
 
   @media (max-width: 900px) {
-    width: 50%;
+    width: 60%;
     margin: 0px auto;
     margin-bottom: 0.5em;
   }

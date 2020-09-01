@@ -90,7 +90,6 @@ const ContactForm = styled.form`
 
   @media (max-width: 900px) {
     width: unset;
-    /* height: 400px; */
   }
 `;
 
@@ -137,6 +136,7 @@ const SubmitButton = styled.button`
 
   @media (max-width: 900px) {
     margin: 0;
+    margin-top: 1em;
     font-size: 16px;
     &:hover {
       background: linear-gradient(

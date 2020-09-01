@@ -135,7 +135,7 @@ const AboutSummaryImg = styled(ImageWrapper)`
 
   @media (max-width: 900px) {
     grid-column: 1 / -1;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     margin: 4% 0;
     max-width: 75%;
     height: 450px;

@@ -14,6 +14,10 @@ const PerinatalWrapper = styled(Wrapper)`
   grid-template-columns: 1fr 1fr;
   padding: 3% 2% 6% 2%;
   border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+
+  @media (max-width: 900px) {
+    padding: ${p => p.isHome ? '12% 2% 6% 2%' : '3% 2% 6% 2%'};
+  }
 `;
 
 const PerinatalTitleWrapper = styled.div`
