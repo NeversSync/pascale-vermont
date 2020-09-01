@@ -8,7 +8,7 @@ const NavContainer = styled.ul`
   z-index: 1;
   row-gap: 0px;
   padding: 0px 1em;
-  grid-template-columns: repeat(9, 140px);
+  grid-template-columns: repeat(8, 140px);
   justify-content: center;
   justify-items: center;
   grid-template-rows: auto auto;

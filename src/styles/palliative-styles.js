@@ -3,14 +3,12 @@ import {
   Wrapper,
   Title,
   Copy,
-  Card,
-  CTAButton,
   Testimonial,
   ImageWrapper
 } from '../components/Helpers';
 
 const PalliativeWrapperSummary = styled(Wrapper)`
-  background: rgba(215, 212, 217, 0.3);
+  background: ${p => p.isHome ? 'rgba(255,255,255)' : 'rgba(215, 212, 217, 0.3)'};
   grid-template-columns: 1fr 1fr;
   padding: 3% 2% 6% 2%;
   border-bottom: 1px solid rgba(100, 100, 100, 0.1);

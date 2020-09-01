@@ -22,7 +22,7 @@ function encode(data) {
     .join('&');
 }
 
-export default function Contact() {
+export default function Contact({isHome}) {
   const [state, setState] = React.useState({});
 
   const handleChange = e => {
@@ -45,7 +45,7 @@ export default function Contact() {
   };
   return (
     <Layout>
-      <ContactWrapper>
+      <ContactWrapper isHome={isHome}>
         <ContactTitleWrapper>
           <ContactTitle>CONTACT</ContactTitle>
           <ContactSvg>

@@ -3,13 +3,13 @@ import { Wrapper, Title, Card } from '../components/Helpers';
 
 const ContactWrapper = styled(Wrapper)`
   grid-template-columns: 1fr 1fr 1fr;
-  rid-template-rows: 5fr 5fr 0.5fr;
   justify-items: center;
   padding: 3% 2% 6% 2%;
   min-height: 50vh;
+  background: ${p => p.isHome ? 'rgba(215, 212, 217, 0.3)' : 'rgba(255, 255, 255)'};
 
   @media (max-width: 900px) {
-    rid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 400px 1fr;
     height: 750px;
   }

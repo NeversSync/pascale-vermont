@@ -10,7 +10,7 @@ import {
 } from '../components/Helpers';
 
 const NGOWrapperSummary = styled(Wrapper)`
-  background: rgba(215, 212, 217, 0.3);
+  background: rgb(255, 255, 255);
   grid-template-columns: 1fr 1fr;
   padding: 3% 2% 6% 2%;
   border-bottom: 1px solid rgba(100, 100, 100, 0.1);

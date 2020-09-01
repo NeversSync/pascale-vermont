@@ -10,6 +10,7 @@ import {
 } from '../components/Helpers';
 
 const GriefWrapper = styled(Wrapper)`
+  background: ${p => p.isHome ? 'rgba(215, 212, 217, 0.3)' : 'rgba(255, 255, 255)'};
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   padding: 3% 2% 6% 2%;

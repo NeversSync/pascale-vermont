@@ -307,6 +307,12 @@ ul {
  margin-top: 15px;
 }
 
+.left-button.flex-button {
+  grid-column: unset;
+  display: flex;
+  margin-left: auto;
+}
+
 .first-button > button {
  margin-top: 0;
 }
@@ -383,6 +389,12 @@ input:focus, textarea:focus {
 }
 .obama button {
   margin: 0;
+}
+
+.center {
+  display: grid;
+  margin: 0 auto;
+  text-align: center;
 }
 
 #contact-home-button {

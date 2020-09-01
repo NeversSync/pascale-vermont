@@ -37,6 +37,17 @@ import {
   AboutSummaryImg
 } from '../styles/about-styles';
 import {
+  BookWrapper,
+  BookTitleWrapper,
+  BookTitle,
+  BookLine,
+  CopySubscribeWrapper,
+  BookCopyWrapper,
+  BookCopy,
+  BookImageWrapper,
+} from '../styles/surviving-the-unimaginable-book-styles';
+
+import {
   PerinatalWrapper,
   PerinatalLine,
   PerinatalSvgSummary
@@ -81,12 +92,13 @@ const IndexPage = () => (
       about her work with pregnancy and infant loss.
       </div> */}
       <AboutSummary />
+      <BookSummary/>
       <PerinatalSummary />
       <GriefSummary />
       <NGOSummary />
       <DisasterSummary />
       <PalliativeSummary />
-      <Contact />
+      <Contact isHome />
       <UpArrow />
       <Copy style={{ margin: '0 auto 2% auto', width: 'fit-content' }}>
         Site made by{' '}
@@ -121,23 +133,23 @@ const Landing = () => (
 
 const AboutSummary = () => (
   <AboutWrapper>
-    <LandingSummaryWrapper>
-      <AboutSummaryTitle>ABOUT</AboutSummaryTitle>
-      <AboutSummarySvg>
-        <AboutLine
-          x1="85"
+    <RightLandingSummaryWrapper>
+      <RightSummaryTitle>ABOUT</RightSummaryTitle>
+      <PerinatalSvgSummary>
+        <PerinatalLine
+          x1="5"
           y1="5"
-          x2="195"
+          x2="175"
           y2="5"
           stroke="rgb(166, 76, 224)"
           strokeWidth="6"
         />
-      </AboutSummarySvg>
-      <Link to="/about/" className="left-button first-button">
+      </PerinatalSvgSummary>
+      <Link to="/about/" className="right-button first-button">
         <SVGArrowRight />
       </Link>
-    </LandingSummaryWrapper>
-    <LandingSummaryCopy>
+    </RightLandingSummaryWrapper>
+    <RightLandingSummaryCopy>
       Pascale Vermont is a licensed clinical psychologist based in San
       Francisco, CA. She is passionate about providing support to people in
       times of intense pain and grief. Her main professional occupation centers
@@ -145,7 +157,7 @@ const AboutSummary = () => (
       <br />
       <br />
       Pascale's main professional activity is as a grief counselor to bereaved parents after a pregnancy or infancy loss. She also provides crisis counseling and stress management training to staff of an international NGO based in 17 countries such as Bangladesh, South Sudan, Iran and Afghanistan, either remotely and or in person.
-    </LandingSummaryCopy>
+    </RightLandingSummaryCopy>
     <AboutSummaryImg />
 
     <AboutTestimonialSummary style={{ marginTop: '4%' }}>
@@ -188,8 +200,56 @@ const AboutSummary = () => (
   </AboutWrapper>
 );
 
+const BookSummary = () => (
+  <BookWrapper isHome>
+    <BookTitleWrapper isHome>
+      <BookTitle>SURVIVING THE UNIMAGINABLE BOOK</BookTitle>
+      <BookLine/>
+      <Link to="/surviving-the-unimaginable-book" className="left-button flex-button">
+        <SVGArrowRight />
+      </Link>
+    </BookTitleWrapper>
+    <BookImageWrapper>
+      <img
+        style={{
+          width: '50%',
+          height: 'auto',
+          boxShadow: '0 5px 15px rgba(50,50,93,0.1), 0 3px 8px rgba(0,0,0,0.07)',
+          borderRadius: '4px'
+        }}
+        alt=""
+        src="https://res.cloudinary.com/nicky-cloudinary/image/upload/v1595963508/PASCALE-VERMONT/PV_survivingunimaginable_ebook.jpg"
+      />
+    </BookImageWrapper>
+    <LandingSummaryCopy fullWidth>
+        How do you survive the unimaginable loss of a baby during pregnancy or
+        infancy? From the early days of shock and devastation through the
+        following phases of grief over time, Pascale Vermont, PhD, offers
+        insight and recommendations for bereaved parents, their family and
+        friends, as well as medical providers. Vermont, a clinical psychologist
+        with a specialty in grief counseling, has guided over a hundred couples
+        who have lost a baby during pregnancy by termination or fetal demise, by
+        stillbirth, or by death in the first few weeks or months of life.{' '}
+      <Link
+        to='/surviving-the-unimaginable-book'
+        className="custom-link">
+          Read more...
+      </Link>
+      <br />
+      <br />
+      <a
+        className="custom-link center"
+        href="https://www.amazon.com/gp/product/B08GS4HDF1/ref=dbs_a_def_rwt_bibl_vppi_i0"
+        target="_blank"
+      >
+        Pre-order a copy on Amazon
+      </a>
+    </LandingSummaryCopy>
+  </BookWrapper>
+);
+
 const PerinatalSummary = () => (
-  <PerinatalWrapper>
+  <PerinatalWrapper isHome >
     <RightLandingSummaryWrapper>
       <RightSummaryTitle>PREGNANCY & INFANCY LOSS</RightSummaryTitle>
       <PerinatalSvgSummary>
@@ -241,7 +301,7 @@ const PerinatalSummary = () => (
 );
 
 const GriefSummary = () => (
-  <GriefWrapper>
+  <GriefWrapper isHome>
     <LandingSummaryWrapper>
       <GriefTitle>GRIEF COUNSELING</GriefTitle>
       <GriefSvg>
@@ -359,7 +419,7 @@ const NGOSummary = () => (
 );
 
 const DisasterSummary = () => (
-  <DisasterWrapper>
+  <DisasterWrapper isHome>
     <TallSummaryWrapper>
       <DisasterTitle>DISASTER MENTAL HEALTH</DisasterTitle>
       <DisasterSvgSummary>
@@ -410,7 +470,7 @@ const DisasterSummary = () => (
 );
 
 const PalliativeSummary = () => (
-  <PalliativeWrapperSummary>
+  <PalliativeWrapperSummary isHome>
     <RightTallSummaryWrapper>
       <RightSummaryTitle>PALLIATIVE CARE SUPPORT</RightSummaryTitle>
       <PalliativeSvgSummary>

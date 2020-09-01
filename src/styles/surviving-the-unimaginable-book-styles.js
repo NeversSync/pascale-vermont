@@ -11,10 +11,10 @@ import {
 } from '../components/Helpers';
 
 const BookWrapper = styled(Wrapper)`
-  background: rgba(215, 212, 217, 0.3);
+  background:rgba(215, 212, 217, 0.3);
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  padding: 3% 2% 0px 2%;
+  padding: ${p => p.isHome ? '3% 2%' : '3% 2% 0px 2%'};
   border-bottom: 1px solid rgba(100, 100, 100, 0.1);
 
   @media (max-width: 900px) {
@@ -26,7 +26,7 @@ const BookWrapper = styled(Wrapper)`
 const BookTitleWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
+  align-content: ${p => p.isHome ? 'center' : 'flex-start'};
   padding: 40px 80px;
   justify-items: end;
 

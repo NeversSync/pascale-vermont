@@ -12,9 +12,9 @@ import {
 const AboutWrapper = styled(Wrapper)`
   grid-template-columns: 1fr 1fr;
   justify-items: center;
-  /* padding: 1.5% 2% 6% 2%; */
   border-top: 1px solid rgba(100, 100, 100, 0.1);
   border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+  padding: 2% 4% 6% 4%;
 
   @media (max-width: 900px) {
     grid-template-columns: 1fr;
@@ -37,19 +37,19 @@ const AboutTitleWrapper = styled.div`
 `;
 
 const AboutSummaryTitle = styled(Title)`
-  grid-column: 4 / 5;
-  grid-row: 1 / 2;
+ grid-column: 4 / 5;
+  grid-row: 2 / 3;
   justify-self: end;
   font-weight: 500;
-  align-self: end;
   padding-bottom: 10px;
+  text-align: right;
 
   @media (max-width: 900px) {
     grid-column: 2 / 4;
+    text-align: center;
     grid-row: 1 / 2;
     justify-self: center;
     align-self: end;
-    text-align: center;
   }
 `;
 

@@ -10,6 +10,7 @@ const Wrapper = styled.div`
 
 const LandingSummaryWrapper = styled(Wrapper)`
   display: grid;
+  background: rgba(0,0,0,0);
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   align-content: center;
   grid-column: 1 / 2;
@@ -57,8 +58,10 @@ const Copy = styled.p`
 
 const LandingSummaryCopy = styled(Copy)`
   align-self: center;
-  grid-column: 2 / 3;
-  margin-right: 10%;
+  grid-column: ${p => p.fullWidth ? '1 / -1' : '2 / 3'};
+  width: ${p => p.fullWidth ? '60vw' : '100%'};
+  margin: ${p => p.fullWidth ? '0  auto' : '0px 10% 0px 0px'};
+  max-width: 800px;
 
   @media (max-width: 900px) {
     grid-column: 1 / -1;

@@ -3,9 +3,9 @@ import Contact from '../components/Contact';
 import Link from 'gatsby-link';
 import { HomeButton } from '../components/Helpers';
 
-const ContactPage = () => (
+const ContactPage = ({isHome}) => (
   <React.Fragment>
-    <Contact />
+    <Contact isHome={isHome}/>
     <Link to="/" className="home-button contact" id="contact-home-button">
       <HomeButton />
     </Link>
