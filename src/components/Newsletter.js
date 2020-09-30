@@ -44,7 +44,7 @@ class Newsletter extends Component {
     return (
       <NewsletterWrapper id='newsletter'>
         <NewsletterTitle>
-            Sign up to be notified when <br />Advance Review Copies become available
+          Sign Up to Request an ARC
         </NewsletterTitle>
         <NewsletterForm
           method='POST'
