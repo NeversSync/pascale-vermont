@@ -150,13 +150,10 @@ const AboutSummary = () => (
       </Link>
     </RightLandingSummaryWrapper>
     <RightLandingSummaryCopy>
-      Pascale Vermont is a licensed clinical psychologist based in San
-      Francisco, CA. She is passionate about providing support to people in
-      times of intense pain and grief. Her main professional occupation centers
-      around grief counseling and disaster mental health.
+    Pascale Vermont is a licensed clinical psychologist based in San Francisco, CA. Pascale's main professional activity is as a grief counselor to bereaved parents after a pregnancy or infancy loss. She is also the psychologist at George Mark Children’s House, a pediatric palliative care home in San Leandro, CA.
       <br />
       <br />
-      Pascale's main professional activity is as a grief counselor to bereaved parents after a pregnancy or infancy loss. She also provides crisis counseling and stress management training to staff of an international NGO based in 17 countries such as Bangladesh, South Sudan, Iran and Afghanistan, either remotely and or in person.
+      In addition, she provides crisis counseling and stress management training to staff of an international NGO based in 17 countries such as Bangladesh, South Sudan, Iran and Afghanistan, either remotely and or in person.
     </RightLandingSummaryCopy>
     <AboutSummaryImg />
 
