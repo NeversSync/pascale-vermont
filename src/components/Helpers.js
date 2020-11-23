@@ -245,7 +245,47 @@ const Spacer = styled.div`
   @media (max-width: 900px) {
     display: none;
   }
-`;
+  `;
+
+const VideoWrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2em;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+   padding: 0px 10px;
+  }
+
+`
+
+const Video = styled.div`
+  display: grid;
+  box-shadow: 5px 5px 15px rgba(255, 255, 255, 0.2);
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+`
+
+const VideoCopyWrapper = styled.div`
+  /* display: flex; */
+  /* justify-content: center; */
+  p {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: .75em;
+  }
+`
+
+const Iframe = styled.iframe`
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+`
 
 // HELPER COMPONENTS
 
@@ -363,5 +403,6 @@ export {
   RightSummaryTitle,
   TallSummaryWrapper,
   RightTallSummaryWrapper,
-  UpArrow
+  UpArrow,
+  Video, VideoWrapper, Iframe, VideoCopyWrapper
 };

@@ -1,176 +1,169 @@
 import styled from 'styled-components';
+import Link from 'gatsby-link';
 import {
   Wrapper,
   Title,
   Copy,
+  Card,
   CTAButton,
   Testimonial,
   ImageWrapper
 } from '../components/Helpers';
 
 const MediaWrapper = styled(Wrapper)`
-  background: ${p => p.isHome ? 'rgba(215, 212, 217, 0.3)' : 'rgba(255, 255, 255)'};
+  background:rgba(215, 212, 217, 0.3);
   grid-template-columns: 1fr 1fr;
-  justify-items: center;
-  padding: 3% 2% 6% 2%;
+  grid-template-rows: auto;
+  padding: ${p => p.isHome ? '3% 2%' : '3% 2% 0px 2%'};
   border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    padding: ${p => p.isHome ? '3% 2% 6% 2%' : '3% 0px 0px 0px'};
+    grid-template-rows: auto;
+  }
 `;
 
 const MediaTitleWrapper = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 100px auto 1fr 1fr;
-  grid-column: 1 / 2;
+  grid-column: 1 / -1;
+  width: 400px;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  /* align-content: ${p => p.isHome ? 'center' : 'flex-start'}; */
+  align-content: center;
+  padding: 40px 80px;
+  justify-items: center;
+  align-items: center;
 
   @media (max-width: 900px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column: 1 / -1;
-    grid-row: 1 / 2;
-    grid-template-rows: 140px 80px;
+    padding: 40px 0px;
+    justify-self: center;
+    justify-items: center;
+    width: 100%;
   }
 `;
 
 const MediaTitle = styled(Title)`
-  grid-column: 4 / 5;
-  grid-row: 2 / 3;
   justify-self: end;
   font-weight: 500;
   padding-bottom: 10px;
   text-align: right;
 
   @media (max-width: 900px) {
-    grid-column: 2 / 4;
-    grid-row: 1 / 2;
-    justify-self: center;
-    align-self: end;
     text-align: center;
+    width: 100%;
+    margin: 0 auto;
   }
 `;
 
-const MediaSvgSummary = styled.svg`
-  display: grid;
-  height: 10px;
-  width: 100%;
-  grid-column: 4 / 5;
-  grid-row: 2 / 3;
-  align-self: end;
+const MediaLine = styled.div`
+  height: 6px;
+  background-color: rgb(229, 69, 117);
+  width: 70%;
+  border-radius: 10px;
+  /* margin-left: auto; */
+  margin: 0 auto;
+  height: 6px;
 
   @media (max-width: 900px) {
-    grid-column: 2 / 4;
-    width: 355px;
-    grid-row: 1 / 2;
-    justify-self: center;
+    width: 40%;
+    margin: 0px auto;
+    margin-bottom: 0.5em;
   }
 `;
 
-const MediaSvg = styled(MediaSvgSummary)`
-  width: 100%;
-  grid-column: 4 / 5;
+const MediaHomeButton = styled(Link)`
+  /* margin-left: auto; */
 
   @media (max-width: 900px) {
-    grid-column: 2 / 4;
-    width: 348px;
-    grid-row: 1 / 2;
-    justify-self: center;
+    width: 60%;
+    display: grid;
+    margin: 0px auto;
+    justify-content: center;
   }
 `;
 
-const MediaLine = styled.line`
-  stroke-linecap: round;
-  opacity: 0.9;
+const MediaCopyTitle = styled.h2`
+  text-align: center;
+`
+
+const MediaImageWrapper = styled(ImageWrapper)`
+  display: grid;
+  height: unset;
+  padding: 40px 80px;
+  background: none;
+  box-shadow: none;
+  width: 100%;
+  grid-column: 2 / 3;
+  grid-column: 2 / 3;
+
+  @media (max-width: 900px) {
+    padding: 0px;
+    margin: 0px;
+    img {
+      width: 50%!important;
+      margin: 0 auto;
+    }
+    justify-items: center;
+  }
 `;
 
-const MediaCTA = styled(CTAButton)`
+const ContentWrapper = styled.div`
+  grid-column: 1 / -1;
   display: grid;
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  align-self: center;
-  justify-self: center;
-  align-content: center;
-  justify-content: center;
-  color: white;
-  font-size: 16px;
+  grid-gap: 40px;
+  grid-template-columns: 1fr;
+  width: 100vw;
+  background-color: white;
+  margin-left: -2%;
+  margin-top: 40px;
+  padding: 80px 150px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+    /* width: 100%; */
+    margin-left: 0px;
+    padding: 40px 0px;
+  }
+`;
+
+const MediaCopyWrapper = styled.div`
+  display: grid;
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+
+  @media (max-width: 900px) {
+    grid-column: 1 / -1;
+    padding: 0px 40px;
+  }
 `;
 
 const MediaCopy = styled(Copy)`
-  grid-column: 1 / -1;
-  grid-row: 2 / 3;
-  width: 55%;
+  width: 100%;
   justify-self: center;
-  margin-top: 5%;
+  margin-top: 4%;
+  text-align: center;
 
   @media (max-width: 900px) {
-    grid-column: 1 / -1;
-    margin: 0;
-    grid-row: 3 / 4;
-    margin-top: 4%;
-    width: 85%;
-  }
-`;
-
-const MediaTestimonial = styled(Testimonial)`
-  grid-column: 1 / -1;
-  max-width: 50%;
-  margin: 5% 2% 0% 2%;
-  justify-self: center;
-
-  @media (max-width: 900px) {
-    grid-column: 1 / -1;
-    grid-row: 4 / 5;
-    margin: 20px 0;
-    max-width: 85%;
-  }
-`;
-
-const MediaImageWrapper = styled(ImageWrapper)`
-  background: url("https://res.cloudinary.com/nicky-cloudinary/image/upload/c_crop,f_auto,h_260,q_auto:best,w_439,x_169/v1538607948/PASCALE-VERMONT/m34240199_pascale763.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: right;
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-  justify-self: center;
-  align-self: center;
-  width: 80%;
-
-  @media (max-width: 900px) {
-    grid-column: 1 / -1;
-    grid-row: 2 / 3;
-    width: 85%;
-    justify-self: center;
-  }
-`;
-
-const MediaImg = styled.img`
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-  align-self: center;
-  justify-self: center;
-  max-width: 70%;
-  border-radius: 5px;
-  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
-
-  @media (max-width: 900px) {
-    grid-column: 1 / -1;
-    grid-row: 3 / 4;
     margin: 0;
     margin-top: 4%;
-    max-width: 85%;
   }
 `;
+
+
 
 export {
   MediaWrapper,
-  MediaTitle,
-  MediaSvg,
-  MediaLine,
-  MediaCTA,
-  MediaTestimonial,
-  MediaImg,
   MediaTitleWrapper,
+  MediaTitle,
+  MediaLine,
+  ContentWrapper,
+  MediaCopyWrapper,
   MediaCopy,
-  MediaImageWrapper,
-  MediaSvgSummary
+  MediaHomeButton,
+  MediaImageWrapper, MediaCopyTitle
 };

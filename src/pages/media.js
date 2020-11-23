@@ -1,77 +1,111 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import Layout from '../components/layout';
 
 import {
   MediaWrapper,
   MediaTitleWrapper,
   MediaTitle,
-  MediaSvg,
   MediaLine,
-  MediaTestimonial,
+  ContentWrapper,
+  MediaCopyWrapper,
+  MediaCopy, MediaCopyTitle,
   MediaImageWrapper,
-  MediaCopy
+  MediaHomeButton,
 } from '../styles/media-styles';
-import { HomeButton, Copy, Card } from '../components/Helpers';
+import { HomeButton, VideoWrapper, Video, Iframe, Card, Copy, VideoCopyWrapper } from '../components/Helpers';
 
 const Media = () => (
   <Layout>
-    <MediaWrapper style={{ borderBottom: 'none' }}>
+    <MediaWrapper>
       <MediaTitleWrapper>
         <MediaTitle>Media</MediaTitle>
-        <MediaSvg>
-          <MediaLine
-            x1="115"
-            y1="5"
-            x2="335"
-            y2="5"
-            stroke="rgb(255, 189, 66)"
-            strokeWidth="6"
-          />
-        </MediaSvg>
-        <Link to="/" className="home-button">
-          <HomeButton />
-        </Link>
+        <div
+          style={{
+            display: 'flex',
+            marginLeft: 'auto',
+            width: '100%',
+            flexWrap: 'wrap',
+            flexDirection: 'column'
+          }}
+        >
+          <MediaLine />
+          <MediaHomeButton to="/" className="home-button">
+            <HomeButton />
+          </MediaHomeButton>
+        </div>
       </MediaTitleWrapper>
-      <MediaImageWrapper />
-      <MediaCopy>
-        Some highlights of Pascale's work in Media Care:
-        <br />
-        <br />
-        {/* <EntypoDotSingle />  */}
-        Volunteer with No One Dies Alone program at Laguna
-        Honda Rehabilitation Center, San Francisco. Led bereavement groups and
-        sat with actively dying patients.
-        <br />
-        {/* <EntypoDotSingle /> */}
-        Media care counselor at Kaiser Permanente Hospitals in Vallejo and
-        San Francisco.
-        <br />
-        {/* <EntypoDotSingle /> */}
-        Volunteer and instructor for San Francisco Crisis Care working in
-        partnership with law enforcement officials and providing emotional and
-        practical assistance to families after a sudden death.
-        <br />
-        <br />
-        <Copy className="contact-for-more">
-          <Link to="/contact/" className="custom-link">
-            Contact her
-          </Link>{' '}
-          for more information.
-        </Copy>
-      </MediaCopy>
-      <MediaTestimonial>
-        <Card style={{ padding: '35px' }}>
-          "The individual who came to our home was a profoundly compassionate,
-          supportive, skillful listener, and she offered us some guidance for
-          how we might navigate the shock and complex emotions we were
-          experiencing. She was deeply caring, truly sensitive and generous with
-          her time in speaking with several people impacted by this traumatic,
-          violent act and our impending loss."
-          <br /> - A witness to a neighbor's violent death
-        </Card>
-      </MediaTestimonial>
+      <ContentWrapper>
+        <MediaCopyWrapper>
+
+          <MediaCopyTitle>
+        Featured videos and interviews with Pascale Vermont
+          </MediaCopyTitle>
+          <MediaCopy>
+            <a
+              className="custom-link"
+              href="https://kwmr.org/broadcasts/28809"
+              target="_blank"
+            >
+          Listen to a recent radio interview with Pascale
+            </a>{' '}
+            on KMWR about her work with pregnancy and infancy loss.
+          </MediaCopy>
+        </MediaCopyWrapper>
+
+        <VideoWrapper>
+          <VideoCopyWrapper>
+            <Video>
+              <Iframe
+                src='https://www.youtube.com/embed/c8JAVuObca8'
+                frameBorder='0'
+                allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+                allowFullScreen
+                title='Grandparents Grief'
+              />
+            </Video>
+            <Copy>Grandparents Grief</Copy>
+          </VideoCopyWrapper>
+          <VideoCopyWrapper>
+            <Video>
+              <Iframe
+                src='https://www.youtube.com/embed/-aP1IsS3sFU'
+                frameBorder='0'
+                allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+                allowFullScreen
+                title='Siblings Grief'
+              />
+            </Video>
+            <Copy>Siblings Grief</Copy>
+          </VideoCopyWrapper>
+          <VideoCopyWrapper>
+            <Video>
+              <Iframe
+                src='https://www.youtube.com/embed/IAcBx-SgaZk'
+                frameBorder='0'
+                allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+                allowFullScreen
+                title='Managing a future pregnancy'
+              />
+            </Video>
+            <Copy>Managing a future pregnancy</Copy>
+          </VideoCopyWrapper>
+          <VideoCopyWrapper>
+            <Video>
+              <Iframe
+                src='https://www.youtube.com/embed/6yRThF_bHRg'
+                frameBorder='0'
+                allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture'
+                allowFullScreen
+                title='Grieving differences'
+              />
+            </Video>
+            <Copy>Grieving differences</Copy>
+          </VideoCopyWrapper>
+        </VideoWrapper>
+
+      </ContentWrapper>
     </MediaWrapper>
+
   </Layout>
 );
 

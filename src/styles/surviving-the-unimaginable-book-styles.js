@@ -27,6 +27,7 @@ const BookWrapper = styled(Wrapper)`
 const BookTitleWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   align-content: ${p => p.isHome ? 'center' : 'flex-start'};
   padding: 40px 80px;
   justify-items: end;
