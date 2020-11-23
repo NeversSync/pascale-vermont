@@ -17,6 +17,10 @@ import {
 
 const windowGlobal = typeof window !== 'undefined' && window;
 
+
+// TODO: fix dropdown state reactions
+// TODO: Ensure mobile links are correct as well
+
 class Nav extends Component {
   constructor(props) {
     super(props);
