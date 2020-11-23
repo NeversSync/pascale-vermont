@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/layout';
+import Layout from '../../components/layout';
 
 import {
   ResourcesWrapper,
@@ -11,8 +11,8 @@ import {
   ResourcesCopy,
   ResourcesButton,
   BlogWrapper, BlogCopy, BlogLink, BlogCard
-} from '../styles/resources-styles';
-import { Button } from '../components/Helpers';
+} from '../../styles/resources-styles';
+import { Button } from '../../components/Helpers';
 
 const Resources = () => (
   <Layout>

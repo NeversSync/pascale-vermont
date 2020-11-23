@@ -234,28 +234,85 @@ const DesktopNav = ({
         </LongNavSvg>
       </Link>
     </NavItem> */}
-    <NavItem
-      style={{
-        visibility: { desktopNavItemVisibility },
-        opacity: { desktopNavItemOpacity }
-      }}
+    <NavItemDropContainer
+      onClick={subMenuToggle}
+      onMouseEnter={hoverSvgToggle}
+      onMouseLeave={hoverSvgToggle}
     >
-      <Link to="/pregnancy-&-infancy-loss">
-        PREGNANCY &
-        <br /> INFANCY LOSS
-        <LongNavSvg>
-          <NavLine
-            x1="4"
-            y1="5"
-            x2="134"
-            y2="5"
-            stroke="white"
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
-        </LongNavSvg>
-      </Link>
-    </NavItem>
+      <p>PREGNANCY &
+        <br /> INFANCY LOSS</p>
+      <span>
+        <EntypoChevronSmallDown />
+      </span>
+      <NavSvg style={{ opacity: svgOpacity }}>
+        <NavLine
+          x1="2"
+          y1="5"
+          x2="70"
+          y2="5"
+          stroke="white"
+          strokeWidth="4"
+          strokeLinecap="round"
+        />
+      </NavSvg>
+    </NavItemDropContainer>
+
+    <NavDropDown
+      style={{ visibility: navItemVisibility, opacity: dropOpacity }}
+    >
+      <NavDropDownItem
+        onMouseEnter={hoverSvgToggleTwo}
+        onMouseLeave={hoverSvgToggleTwo}
+      >
+          Grief Counseling
+        <Link to="/pregnancy-&-infancy-loss/grief-counseling">
+          {/* PREGNANCY &
+        <br /> INFANCY LOSS */}
+          <LongNavSvg>
+            <NavLine
+              x1="4"
+              y1="5"
+              x2="134"
+              y2="5"
+              stroke="white"
+              strokeWidth="4"
+              strokeLinecap="round"
+            />
+          </LongNavSvg>
+        </Link>
+        {/* <NavSvg style={{ opacity: svgOpacityTwo, width: '150px' }}>
+            <NavLine
+              x1="27"
+              y1="3"
+              x2="112"
+              y2="3"
+              stroke="white"
+              strokeWidth="4"
+              strokeLinecap="round"
+            />
+          </NavSvg>
+        </Link> */}
+      </NavDropDownItem>
+      <NavDropDownItem
+        onMouseEnter={hoverSvgToggleThree}
+        onMouseLeave={hoverSvgToggleThree}
+      >
+        <Link to="/palliative-care-support">
+          PALLIATIVE CARE
+          <NavSvg style={{ opacity: svgOpacityThree, width: '150px' }}>
+            <NavLine
+              x1="27"
+              y1="3"
+              x2="112"
+              y2="3"
+              stroke="white"
+              strokeWidth="4"
+              strokeLinecap="round"
+            />
+          </NavSvg>
+        </Link>
+      </NavDropDownItem>
+    </NavDropDown>
     <NavItem
       style={{
         visibility: { desktopNavItemVisibility },
@@ -435,7 +492,7 @@ const MobileNav = ({
       </Link>
     </NavItem>
     <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
-      <Link to="/pregnancy-&-infancy-loss">
+      <Link to="/pregnancy-&-infancy-loss/grief-counseling">
         PREGNANCY &
         <br /> INFANT LOSS
       </Link>

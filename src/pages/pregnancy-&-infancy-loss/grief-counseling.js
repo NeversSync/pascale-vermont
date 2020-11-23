@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import Layout from '../components/layout';
+import Layout from '../../components/layout';
 
 import {
   PerinatalWrapper,
@@ -14,8 +14,8 @@ import {
   SecondPerinatalTestimonial,
   ThirdPerinatalTestimonial,
   FourthPerinatalTestimonial,
-} from '../styles/perinatal-styles';
-import { Button, Card, Copy } from '../components/Helpers';
+} from '../../styles/perinatal-styles';
+import { Button, Card, Copy } from '../../components/Helpers';
 
 const PerinatalLoss = () => (
   <Layout>

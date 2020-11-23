@@ -11,7 +11,7 @@ import {
   BookCopy,
   BookImageWrapper,
   BookButton, HomeButton
-} from '../styles/surviving-the-unimaginable-book-styles';
+} from '../styles/surviving-the-unimaginable-book-styles.js'
 import Newsletter from '../components/Newsletter'
 import { Contact } from '../components/Contact'
 import { Button, Card, Copy } from '../components/Helpers';
@@ -83,10 +83,10 @@ const Book = () => (
               </li>
             </ul>
             <div style={{display: 'flex', flexDirecton: 'column', justifyContent: 'space-evenly' }}>
-              <BookButton to="/media" className="home-button">
+              <BookButton to="pregnancy-&-infancy-loss/media" className="home-button">
                 <Button text="MEDIA" />
               </BookButton>
-              <BookButton to="/resources" className="home-button">
+              <BookButton to="pregnancy-&-infancy-loss/resources" className="home-button">
                 <Button text="RESOURCES" />
               </BookButton>
             </div>

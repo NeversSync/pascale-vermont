@@ -248,7 +248,7 @@ const BookSummary = () => (
 const PerinatalSummary = () => (
   <PerinatalWrapper isHome >
     <RightLandingSummaryWrapper>
-      <RightSummaryTitle>PREGNANCY & INFANCY LOSS</RightSummaryTitle>
+      <RightSummaryTitle>PREGNANCY & INFANCY LOSS GRIEF COUNSELING</RightSummaryTitle>
       <PerinatalSvgSummary>
         <PerinatalLine
           x1="5"
@@ -259,7 +259,7 @@ const PerinatalSummary = () => (
           strokeWidth="6"
         />
       </PerinatalSvgSummary>
-      <Link to="/pregnancy-&-infancy-loss/" className="right-button">
+      <Link to="/pregnancy-&-infancy-loss/grief-counseling" className="right-button">
         <SVGArrowRight />
       </Link>
     </RightLandingSummaryWrapper>
@@ -300,7 +300,7 @@ const PerinatalSummary = () => (
 const GriefSummary = () => (
   <GriefWrapper isHome>
     <LandingSummaryWrapper>
-      <GriefTitle>GRIEF COUNSELING</GriefTitle>
+      <GriefTitle>ADULT GRIEF COUNSELING</GriefTitle>
       <GriefSvg>
         <GriefLine
           x1="115"

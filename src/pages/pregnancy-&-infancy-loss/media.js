@@ -1,5 +1,5 @@
 import React from 'react';
-import Layout from '../components/layout';
+import Layout from '../../components/layout';
 
 import {
   MediaWrapper,
@@ -11,8 +11,8 @@ import {
   MediaCopy, MediaCopyTitle,
   MediaImageWrapper,
   MediaButton,
-} from '../styles/media-styles';
-import { Button, VideoWrapper, Video, Iframe, Card, Copy, VideoCopyWrapper } from '../components/Helpers';
+} from '../../styles/media-styles'
+import { Button, VideoWrapper, Video, Iframe, Card, Copy, VideoCopyWrapper } from '../../components/Helpers';
 
 const Media = () => (
   <Layout>
