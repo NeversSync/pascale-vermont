@@ -26,7 +26,7 @@ const IndexPage = () => (
   <Layout>
     <GriefWrapper style={{ borderBottom: 'none' }}>
       <GriefTitleWrapper>
-        <GriefTitle>GRIEF COUNSELING</GriefTitle>
+        <GriefTitle>ADULT GRIEF COUNSELING</GriefTitle>
         <GriefSvg>
           <GriefLine
             x1="115"

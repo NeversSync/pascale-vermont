@@ -262,7 +262,7 @@ const DesktopNav = ({
         opacity: { desktopNavItemOpacity }
       }}
     >
-      <Link to="/grief-counseling">
+      <Link to="/adult-grief-counseling">
         ADULT GRIEF
         <br /> COUNSELING
         <LongNavSvg>
@@ -441,7 +441,7 @@ const MobileNav = ({
       </Link>
     </NavItem>
     <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
-      <Link to="/grief-counseling">
+      <Link to="/adult-grief-counseling">
         GRIEF
         <br /> COUNSELING
       </Link>

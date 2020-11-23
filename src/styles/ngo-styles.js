@@ -30,7 +30,9 @@ const NGOTitleWrapper = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column: 1 / -1;
     grid-row: 1 / 2;
-    grid-template-rows: 80px 80px;
+    grid-template-rows: auto;
+    grid-gap: 1em;
+    padding: 40px 0px;
   }
 `;
 

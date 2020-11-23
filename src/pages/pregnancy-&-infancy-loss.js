@@ -21,7 +21,7 @@ const PerinatalLoss = () => (
   <Layout>
     <PerinatalWrapper>
       <PerinatalTitleWrapper>
-        <PerinatalTitle>PREGNANCY & INFANCY LOSS</PerinatalTitle>
+        <PerinatalTitle>PREGNANCY & INFANCY LOSS GRIEF COUNSELING</PerinatalTitle>
         <PerinatalSvg>
           <PerinatalLine
             x1="90"

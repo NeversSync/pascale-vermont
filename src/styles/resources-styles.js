@@ -116,7 +116,9 @@ const ResourcesCopyWrapper = styled.div`
 
   @media (max-width: 900px) {
     grid-column: 1 / -1;
-    padding: 0px 40px;
+    grid-template-columns: 1fr;
+    padding: 0px 10px;
+    padding-bottom: 80px;
   }
 `;
 
@@ -124,6 +126,10 @@ const ResourcesCopy = styled(Copy)`
   width: 100%;
   justify-self: center;
   text-align: center;
+
+  li {
+    margin-bottom: .5em;
+  }
 
   @media (max-width: 900px) {
     margin: 0;
@@ -138,7 +144,7 @@ const BlogWrapper = styled.div`
 
   @media (max-width: 900px) {
     margin: 0;
-    margin-top: 4%;
+    margin-top: 6%;
   }
 `
 

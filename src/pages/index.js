@@ -311,7 +311,7 @@ const GriefSummary = () => (
           strokeWidth="6"
         />
       </GriefSvg>
-      <Link to="/grief-counseling/" className="left-button">
+      <Link to="/adult-grief-counseling/" className="left-button">
         <SVGArrowRight />
       </Link>
     </LandingSummaryWrapper>

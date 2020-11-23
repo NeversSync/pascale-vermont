@@ -285,6 +285,108 @@ const Iframe = styled.iframe`
     height: 100%;
 `
 
+const PageWrapper = styled(Wrapper)`
+  background:rgba(215, 212, 217, 0.3);
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding: 3% 2% 0px 2%;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.1);
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    padding: ${p => p.isHome ? '3% 2% 6% 2%' : '3% 0px 0px 0px'};
+    grid-template-rows: auto;
+  }
+`;
+
+const PageTitleWrapper = styled.div`
+  grid-column: 1 / -1;
+  max-width: 900px;
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  align-content: center;
+  /* padding: 40px 80px; */
+  justify-items: center;
+  align-items: center;
+
+  @media (max-width: 900px) {
+    padding: 40px 10px;
+    justify-self: center;
+    justify-items: center;
+    width: 100%;
+  }
+`;
+
+const PageTitle = styled(Title)`
+  /* justify-self: end; */
+  font-weight: 500;
+  padding-bottom: 10px;
+  text-align: center;
+
+  @media (max-width: 900px) {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
+`;
+
+const PageLine = styled.div`
+  height: 6px;
+  background-color: rgb(229, 69, 117);
+  width: 70%;
+  border-radius: 10px;
+  margin: 0 auto;
+  height: 6px;
+
+  @media (max-width: 900px) {
+    width: 40%;
+    margin: 0px auto;
+    margin-bottom: 0.5em;
+  }
+`;
+
+
+const ContentWrapper = styled.div`
+  grid-column: 1 / -1;
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: 1fr;
+  width: calc(100vw + 2%);
+  background-color: white;
+  margin-left: -2%;
+  margin-top: 40px;
+  padding: 80px 150px;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+    width: 100%;
+    margin-left: 0px;
+    padding: 40px 10px;
+  }
+`;
+
+const BlogCopyWrapper = styled.div`
+  max-width: 900px;
+  margin: 0 auto;
+
+  p {
+    margin-bottom: 1.5em;
+  }
+  h2, h3 {
+    text-align: center;
+    margin-bottom: .75em;
+    margin-top: 1.5em;
+
+  }
+  h3 {
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-size: 1.25em;
+  }
+`
+
 // HELPER COMPONENTS
 
 const SVGArrowRight = () => (
@@ -402,5 +504,6 @@ export {
   TallSummaryWrapper,
   RightTallSummaryWrapper,
   UpArrow,
-  Video, VideoWrapper, Iframe, VideoCopyWrapper
+  Video, VideoWrapper, Iframe, VideoCopyWrapper,
+  PageWrapper, ContentWrapper, PageTitleWrapper, PageTitle, PageLine, BlogCopyWrapper
 };
