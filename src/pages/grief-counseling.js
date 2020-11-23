@@ -15,7 +15,7 @@ import {
   SecondGriefTestimonial
 } from '../styles/grief-styles';
 import {
-  HomeButton,
+  Button,
   Spacer,
   ImageWrapper,
   Copy,
@@ -38,7 +38,7 @@ const IndexPage = () => (
           />
         </GriefSvg>
         <Link to="/" className="home-button">
-          <HomeButton />
+          <Button />
         </Link>
       </GriefTitleWrapper>
       <GriefImgWrapper />

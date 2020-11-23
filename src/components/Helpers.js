@@ -269,8 +269,6 @@ const Video = styled.div`
 `
 
 const VideoCopyWrapper = styled.div`
-  /* display: flex; */
-  /* justify-content: center; */
   p {
     text-align: center;
     font-size: 2.5rem;
@@ -320,9 +318,9 @@ const SVGArrowRight = () => (
   </CTAButton>
 );
 
-const HomeButton = () => (
+const Button = ({text}) => (
   <CTAButton className="arrow">
-    <CTAButtonText>HOME</CTAButtonText>
+    <CTAButtonText>{text || 'HOME'}</CTAButtonText>
     <svg
       className="svg-left-arrow"
       xmlns="http://www.w3.org/2000/svg"
@@ -393,7 +391,7 @@ export {
   CTAButton,
   Testimonial,
   SVGArrowRight,
-  HomeButton,
+  Button,
   ImageWrapper,
   Spacer,
   RightLandingSummaryWrapper,

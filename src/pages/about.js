@@ -12,7 +12,7 @@ import {
   AboutTestimonial,
   AboutImageWrapper
 } from '../styles/about-styles';
-import { HomeButton, Spacer, Card, Copy } from '../components/Helpers';
+import { Button, Spacer, Card, Copy } from '../components/Helpers';
 
 const IndexPage = () => (
   <Layout>
@@ -30,7 +30,7 @@ const IndexPage = () => (
           />
         </AboutSvg>
         <Link to="/" className="home-button">
-          <HomeButton />
+          <Button />
         </Link>
       </AboutTitleWrapper>
       <AboutCopy>

@@ -10,9 +10,9 @@ import {
   MediaCopyWrapper,
   MediaCopy, MediaCopyTitle,
   MediaImageWrapper,
-  MediaHomeButton,
+  MediaButton,
 } from '../styles/media-styles';
-import { HomeButton, VideoWrapper, Video, Iframe, Card, Copy, VideoCopyWrapper } from '../components/Helpers';
+import { Button, VideoWrapper, Video, Iframe, Card, Copy, VideoCopyWrapper } from '../components/Helpers';
 
 const Media = () => (
   <Layout>
@@ -29,9 +29,9 @@ const Media = () => (
           }}
         >
           <MediaLine />
-          <MediaHomeButton to="/" className="home-button">
-            <HomeButton />
-          </MediaHomeButton>
+          <MediaButton to="/" className="home-button">
+            <Button />
+          </MediaButton>
         </div>
       </MediaTitleWrapper>
       <ContentWrapper>
@@ -48,7 +48,7 @@ const Media = () => (
             >
           Listen to a recent radio interview with Pascale
             </a>{' '}
-            on KMWR about her work with pregnancy and infancy loss.
+            on KMWR about her book on pregnancy and infancy loss.
           </MediaCopy>
         </MediaCopyWrapper>
 

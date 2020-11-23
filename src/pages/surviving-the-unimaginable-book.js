@@ -10,11 +10,11 @@ import {
   BookCopyWrapper,
   BookCopy,
   BookImageWrapper,
-  BookHomeButton
+  BookButton, HomeButton
 } from '../styles/surviving-the-unimaginable-book-styles';
 import Newsletter from '../components/Newsletter'
 import { Contact } from '../components/Contact'
-import { HomeButton, Card, Copy } from '../components/Helpers';
+import { Button, Card, Copy } from '../components/Helpers';
 
 const Book = () => (
   <Layout>
@@ -31,16 +31,16 @@ const Book = () => (
           }}
         >
           <BookLine />
-          <BookHomeButton to="/" className="home-button">
-            <HomeButton />
-          </BookHomeButton>
+          <HomeButton to="/" className="home-button">
+            <Button text="HOME" />
+          </HomeButton>
+
         </div>
       </BookTitleWrapper>
       <BookImageWrapper>
         <img style={{ width: '60%', height: 'auto',     boxShadow: '0 5px 15px rgba(50,50,93,0.1), 0 3px 8px rgba(0,0,0,0.07)', borderRadius: '4px'}} alt="" src="https://res.cloudinary.com/nicky-cloudinary/image/upload/v1595963508/PASCALE-VERMONT/PV_survivingunimaginable_ebook.jpg"/>
       </BookImageWrapper>
       <CopySubscribeWrapper>
-        {/* TODO: single columN! */}
         <BookCopyWrapper>
           <BookCopy>
         How do you survive the unimaginable loss of a baby during pregnancy or
@@ -82,14 +82,14 @@ const Book = () => (
             survive.
               </li>
             </ul>
-            {/* <a
-          className="custom-link"
-          href="/"
-          // target="_blank"
-        >
-          Listen to a recent interview with Pascale
-        </a>{' '}
-        about her work with pregnancy and infancy loss. */}
+            <div style={{display: 'flex', flexDirecton: 'column', justifyContent: 'space-evenly' }}>
+              <BookButton to="/media" className="home-button">
+                <Button text="MEDIA" />
+              </BookButton>
+              <BookButton to="/resources" className="home-button">
+                <Button text="RESOURCES" />
+              </BookButton>
+            </div>
           </BookCopy>
         </BookCopyWrapper>
         <Newsletter/>

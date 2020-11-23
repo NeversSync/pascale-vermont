@@ -13,7 +13,7 @@ import {
   PalliativeImageWrapper,
   PalliativeCopy
 } from '../styles/palliative-styles';
-import { HomeButton, Copy, Card } from '../components/Helpers';
+import { Button, Copy, Card } from '../components/Helpers';
 
 const IndexPage = () => (
   <Layout>
@@ -31,7 +31,7 @@ const IndexPage = () => (
           />
         </PalliativeSvg>
         <Link to="/" className="home-button">
-          <HomeButton />
+          <Button />
         </Link>
       </PalliativeTitleWrapper>
       <PalliativeImageWrapper />

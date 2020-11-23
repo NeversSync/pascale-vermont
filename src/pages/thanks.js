@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Layout from '../components/layout';
-import { HomeButton, Copy } from '../components/Helpers';
+import { Button, Copy } from '../components/Helpers';
 import { ThanksWrapper, ContentWrapper } from '../styles/thanks-styles';
 
 const IndexPage = () => (
@@ -10,7 +10,7 @@ const IndexPage = () => (
       <ContentWrapper>
         <Copy>Thank you!</Copy>
         <Link to="/">
-          <HomeButton>HOME</HomeButton>
+          <Button>HOME</Button>
         </Link>
       </ContentWrapper>
     </ThanksWrapper>

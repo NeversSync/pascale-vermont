@@ -67,7 +67,11 @@ const BookLine = styled.div`
   }
 `;
 
-const BookHomeButton = styled(Link)`
+const BookButton = styled(Link)`
+
+`
+
+const HomeButton = styled(BookButton)`
   margin-left: auto;
 
   @media (max-width: 900px) {
@@ -151,8 +155,8 @@ export {
   CopySubscribeWrapper,
   BookCopyWrapper,
   BookCopy,
-  BookHomeButton,
-  BookImageWrapper
+  BookButton,
+  BookImageWrapper, HomeButton
 };
 
 // const BookTestimonial = styled(Testimonial)`

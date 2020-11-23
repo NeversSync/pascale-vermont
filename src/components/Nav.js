@@ -213,7 +213,7 @@ const DesktopNav = ({
         </NavSvg>
       </Link>
     </NavItem>
-    <NavItem
+    {/* <NavItem
       style={{
         visibility: { desktopNavItemVisibility },
         opacity: { desktopNavItemOpacity }
@@ -233,7 +233,7 @@ const DesktopNav = ({
           />
         </LongNavSvg>
       </Link>
-    </NavItem>
+    </NavItem> */}
     <NavItem
       style={{
         visibility: { desktopNavItemVisibility },
@@ -263,7 +263,7 @@ const DesktopNav = ({
       }}
     >
       <Link to="/grief-counseling">
-        GRIEF
+        ADULT GRIEF
         <br /> COUNSELING
         <LongNavSvg>
           <NavLine

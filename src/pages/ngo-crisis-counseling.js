@@ -12,7 +12,7 @@ import {
   NGOImageWrapper
 } from '../styles/ngo-styles';
 import {
-  HomeButton,
+  Button,
   Spacer,
   ImageWrapper,
   Copy,
@@ -35,7 +35,7 @@ const IndexPage = () => (
           />
         </NGOSvg>
         <Link to="/" className="home-button">
-          <HomeButton />
+          <Button />
         </Link>
       </NGOTitleWrapper>
       <NGOImageWrapper />

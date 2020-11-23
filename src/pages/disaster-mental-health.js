@@ -12,7 +12,7 @@ import {
   DisasterImageWrapper
 } from '../styles/disaster-styles';
 import {
-  HomeButton,
+  Button,
   Spacer,
   ImageWrapper,
   Copy,
@@ -35,7 +35,7 @@ const IndexPage = () => (
           />
         </DisasterSvg>
         <Link to="/" className="home-button">
-          <HomeButton />
+          <Button />
         </Link>
       </DisasterTitleWrapper>
       <DisasterImageWrapper />

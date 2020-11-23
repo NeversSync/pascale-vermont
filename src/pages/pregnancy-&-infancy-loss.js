@@ -15,7 +15,7 @@ import {
   ThirdPerinatalTestimonial,
   FourthPerinatalTestimonial,
 } from '../styles/perinatal-styles';
-import { HomeButton, Card, Copy } from '../components/Helpers';
+import { Button, Card, Copy } from '../components/Helpers';
 
 const PerinatalLoss = () => (
   <Layout>
@@ -33,7 +33,7 @@ const PerinatalLoss = () => (
           />
         </PerinatalSvg>
         <Link to="/" className="home-button">
-          <HomeButton />
+          <Button />
         </Link>
         {/* <div style={{ width: '500px', height: '500px', overflow: 'hidden' }}> */}
         {/* </div> */}

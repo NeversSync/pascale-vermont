@@ -2,14 +2,14 @@ import React from 'react';
 import Link from 'gatsby-link';
 import Layout from '../components/layout';
 import { ObamaWrapper, ObamaCopy, ObamaTitle } from '../styles/obama-styles';
-import { HomeButton, ImageWrapper, Title } from '../components/Helpers';
+import { Button, ImageWrapper, Title } from '../components/Helpers';
 
 const IndexPage = () => (
   <Layout>
     <ObamaWrapper>
       <ObamaTitle>A SIGN FOR OBAMA</ObamaTitle>
       <Link to="/" className="home-button obama">
-        <HomeButton>HOME</HomeButton>
+        <Button>HOME</Button>
       </Link>
       <ObamaCopy>
         “Can you help me make a sign for Obama?” asked a young Mexican boy,

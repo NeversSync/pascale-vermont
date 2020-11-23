@@ -4,10 +4,10 @@ import {
   Wrapper,
   Title,
   Copy,
-  ImageWrapper
+  Card
 } from '../components/Helpers';
 
-const MediaWrapper = styled(Wrapper)`
+const ResourcesWrapper = styled(Wrapper)`
   background:rgba(215, 212, 217, 0.3);
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
@@ -21,7 +21,7 @@ const MediaWrapper = styled(Wrapper)`
   }
 `;
 
-const MediaTitleWrapper = styled.div`
+const ResourcesTitleWrapper = styled.div`
   grid-column: 1 / -1;
   width: 400px;
   display: flex;
@@ -41,7 +41,7 @@ const MediaTitleWrapper = styled.div`
   }
 `;
 
-const MediaTitle = styled(Title)`
+const ResourcesTitle = styled(Title)`
   justify-self: end;
   font-weight: 500;
   padding-bottom: 10px;
@@ -54,7 +54,7 @@ const MediaTitle = styled(Title)`
   }
 `;
 
-const MediaLine = styled.div`
+const ResourcesLine = styled.div`
   height: 6px;
   background-color: rgb(229, 69, 117);
   width: 70%;
@@ -69,7 +69,7 @@ const MediaLine = styled.div`
   }
 `;
 
-const MediaButton = styled(Link)`
+const ResourcesButton = styled(Link)`
 
   @media (max-width: 900px) {
     width: 60%;
@@ -79,30 +79,9 @@ const MediaButton = styled(Link)`
   }
 `;
 
-const MediaCopyTitle = styled.h2`
+const ResourcesCopyTitle = styled.h2`
   text-align: center;
 `
-
-const MediaImageWrapper = styled(ImageWrapper)`
-  display: grid;
-  height: unset;
-  padding: 40px 80px;
-  background: none;
-  box-shadow: none;
-  width: 100%;
-  grid-column: 2 / 3;
-  grid-column: 2 / 3;
-
-  @media (max-width: 900px) {
-    padding: 0px;
-    margin: 0px;
-    img {
-      width: 50%!important;
-      margin: 0 auto;
-    }
-    justify-items: center;
-  }
-`;
 
 const ContentWrapper = styled.div`
   grid-column: 1 / -1;
@@ -124,11 +103,15 @@ const ContentWrapper = styled.div`
   }
 `;
 
-const MediaCopyWrapper = styled.div`
+const ResourcesCopyWrapper = styled.div`
   display: grid;
   grid-column: 1 / -1;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 2em;
   width: 100%;
-  max-width: 800px;
+  justify-items: center;
+  justify-content: center;
+  /* max-width: 800px; */
   margin: 0 auto;
 
   @media (max-width: 900px) {
@@ -137,10 +120,9 @@ const MediaCopyWrapper = styled.div`
   }
 `;
 
-const MediaCopy = styled(Copy)`
+const ResourcesCopy = styled(Copy)`
   width: 100%;
   justify-self: center;
-  margin-top: 4%;
   text-align: center;
 
   @media (max-width: 900px) {
@@ -149,14 +131,45 @@ const MediaCopy = styled(Copy)`
   }
 `;
 
+const BlogWrapper = styled.div`
+  width: 100%;
+  justify-self: center;
+  text-align: center;
+
+  @media (max-width: 900px) {
+    margin: 0;
+    margin-top: 4%;
+  }
+`
+
+const BlogCopy = styled(Copy)`
+`
+
+const BlogLink = styled(Link)`
+  font-size: 1.15em;
+  font-weight: 400;
+`
+
+const BlogCard = styled(Card)`
+  padding: 32px;
+  background-color: rgba(166, 76, 224, .9);
+  transition: all 200ms ease-in-out;
+
+  &:hover {
+    transform: scale(1.025);
+    background-color: rgba(255, 255, 255, 1);
+    color: #221c26;
+  }
+`
+
 export {
-  MediaWrapper,
-  MediaTitleWrapper,
-  MediaTitle,
-  MediaLine,
+  ResourcesWrapper,
+  ResourcesTitleWrapper,
+  ResourcesTitle,
+  ResourcesLine,
   ContentWrapper,
-  MediaCopyWrapper,
-  MediaCopy,
-  MediaButton,
-  MediaImageWrapper, MediaCopyTitle
+  ResourcesCopyWrapper,
+  ResourcesCopy,
+  ResourcesButton,
+  ResourcesCopyTitle, BlogWrapper, BlogCopy, BlogLink, BlogCard
 };
