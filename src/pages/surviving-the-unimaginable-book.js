@@ -26,7 +26,8 @@ const Book = () => (
             display: 'flex',
             marginLeft: 'auto',
             width: '100%',
-            flexWrap: 'wrap'
+            flexWrap: 'wrap',
+            flexDirection: 'column'
           }}
         >
           <BookLine />
