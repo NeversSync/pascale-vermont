@@ -19,8 +19,8 @@ import {
 const windowGlobal = typeof window !== 'undefined' && window;
 
 
-// TODO: fix dropdown state reactions
-// TODO: Ensure mobile links are correct as well
+// TODO: add homepage summary sectiosn for media/resources
+
 
 class Nav extends Component {
   constructor(props) {
