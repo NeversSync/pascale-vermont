@@ -10,6 +10,7 @@ import {
   NavContainer,
   LongNavSvg,
   NavDropDown,
+  NavDropDown2,
   NavDropDownItem,
   NavItemDropContainer,
   MenuIcon
@@ -28,9 +29,15 @@ class Nav extends Component {
       height: '0px',
       width: props.windowSize,
       dropOpacity: '0',
+      drop2Opacity: '0',
       svgOpacity: '0',
       svgOpacityTwo: '0',
       svgOpacityThree: '0',
+      svgOpacityFour: '0',
+      svgOpacityFive: '0',
+      svgOpacitySix: '0',
+      svgOpacitySeven: '0',
+      svgOpacityEight: '0',
       showHideSidenav: 'closed',
       navBackgroundVisible: 'rgba(215, 212, 217, 0)',
       navItemVisibility: 'hidden',
@@ -45,7 +52,13 @@ class Nav extends Component {
     this.hoverSvgToggle = this.hoverSvgToggle.bind(this);
     this.hoverSvgToggleTwo = this.hoverSvgToggleTwo.bind(this);
     this.hoverSvgToggleThree = this.hoverSvgToggleThree.bind(this);
+    this.hoverSvgToggleFour = this.hoverSvgToggleFour.bind(this);
+    this.hoverSvgToggleFive = this.hoverSvgToggleFive.bind(this);
+    this.hoverSvgToggleSix = this.hoverSvgToggleSix.bind(this);
+    this.hoverSvgToggleSeven = this.hoverSvgToggleSeven.bind(this);
+    this.hoverSvgToggleEight = this.hoverSvgToggleEight.bind(this);
     this.subMenuToggle = this.subMenuToggle.bind(this);
+    this.subMenu2Toggle = this.subMenu2Toggle.bind(this);
     this.toggleSidenav = this.toggleSidenav.bind(this);
     this.handleWindowSizeChange = this.handleWindowSizeChange.bind(this);
     this.mobileSubMenuToggle = this.mobileSubMenuToggle.bind(this);
@@ -67,6 +80,15 @@ class Nav extends Component {
     this.state.height === '0px'
       ? this.setState({ height: '150px', dropOpacity: '1' })
       : this.setState({ height: '0px', dropOpacity: '0' });
+    this.state.navItemVisibility === 'hidden'
+      ? this.setState({ navItemVisibility: 'visible' })
+      : this.setState({ navItemVisibility: 'hidden' });
+  }
+
+  subMenu2Toggle() {
+    this.state.height === '0px'
+      ? this.setState({ height: '150px', drop2Opacity: '1' })
+      : this.setState({ height: '0px', drop2Opacity: '0' });
     this.state.navItemVisibility === 'hidden'
       ? this.setState({ navItemVisibility: 'visible' })
       : this.setState({ navItemVisibility: 'hidden' });
@@ -105,6 +127,32 @@ class Nav extends Component {
       : this.setState({ svgOpacityThree: '0' });
   }
 
+  hoverSvgToggleFour() {
+    this.state.svgOpacityFour === '0'
+      ? this.setState({ svgOpacityFour: '1' })
+      : this.setState({ svgOpacityFour: '0' });
+  }
+  hoverSvgToggleFive() {
+    this.state.svgOpacityFive === '0'
+      ? this.setState({ svgOpacityFive: '1' })
+      : this.setState({ svgOpacityFive: '0' });
+  }
+  hoverSvgToggleSix() {
+    this.state.svgOpacitySix === '0'
+      ? this.setState({ svgOpacitySix: '1' })
+      : this.setState({ svgOpacitySix: '0' });
+  }
+  hoverSvgToggleSeven() {
+    this.state.svgOpacitySeven === '0'
+      ? this.setState({ svgOpacitySeven: '1' })
+      : this.setState({ svgOpacitySeven: '0' });
+  }
+  hoverSvgToggleEight() {
+    this.state.svgOpacityEight === '0'
+      ? this.setState({ svgOpacityEight: '1' })
+      : this.setState({ svgOpacityEight: '0' });
+  }
+
   toggleSidenav() {
     this.state.showHideSidenav === 'open'
       ? this.setState({ showHideSidenav: 'closed' })
@@ -129,7 +177,13 @@ class Nav extends Component {
       hoverSvgToggle: this.hoverSvgToggle,
       hoverSvgToggleTwo: this.hoverSvgToggleTwo,
       hoverSvgToggleThree: this.hoverSvgToggleThree,
+      hoverSvgToggleFour: this.hoverSvgToggleFour,
+      hoverSvgToggleFive: this.hoverSvgToggleFive,
+      hoverSvgToggleSix: this.hoverSvgToggleSix,
+      hoverSvgToggleSeven: this.hoverSvgToggleSeven,
+      hoverSvgToggleEight: this.hoverSvgToggleEight,
       subMenuToggle: this.subMenuToggle,
+      subMenu2Toggle: this.subMenu2Toggle,
       mobileNavToggle: this.mobileNavToggle,
       toggleSidenav: this.toggleSidenav,
       mobileSubMenuToggle: this.mobileSubMenuToggle
@@ -151,14 +205,26 @@ class Nav extends Component {
 
 const DesktopNav = ({
   dropOpacity,
+  drop2Opacity,
   svgOpacity,
   svgOpacityTwo,
   svgOpacityThree,
+  svgOpacityFour,
+  svgOpacityFive,
+  svgOpacitySix,
+  svgOpacitySeven,
+  svgOpacityEight,
   showHideSidenav,
   hoverSvgToggle,
   hoverSvgToggleTwo,
   hoverSvgToggleThree,
+  hoverSvgToggleFour,
+  hoverSvgToggleFive,
+  hoverSvgToggleSix,
+  hoverSvgToggleSeven,
+  hoverSvgToggleEight,
   subMenuToggle,
+  subMenu2Toggle,
   toggleSidenav,
   navItemVisibility,
   desktopNavItemVisibility,
@@ -217,38 +283,18 @@ const DesktopNav = ({
         </NavSvg>
       </Link>
     </NavItem>
-    {/* <NavItem
-      style={{
-        visibility: { desktopNavItemVisibility },
-        opacity: { desktopNavItemOpacity }
-      }}
-    >
-      <Link to="/surviving-the-unimaginable-book">
-        BABY LOSS BOOK
-        <LongNavSvg>
-          <NavLine
-            x1="4"
-            y1="5"
-            x2="135"
-            y2="5"
-            stroke="white"
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
-        </LongNavSvg>
-      </Link>
-    </NavItem> */}
+
     <NavItemDropContainer
-      onClick={subMenuToggle}
-      onMouseEnter={hoverSvgToggle}
-      onMouseLeave={hoverSvgToggle}
+      onClick={subMenu2Toggle}
+      onMouseEnter={hoverSvgToggleFour}
+      onMouseLeave={hoverSvgToggleFour}
     >
       <p>PREGNANCY &
         <br /> INFANCY LOSS</p>
       <span>
         <EntypoChevronSmallDown />
       </span>
-      <NavSvg style={{ opacity: svgOpacity }}>
+      <NavSvg style={{ opacity: svgOpacityFour }}>
         <NavLine
           x1="2"
           y1="5"
@@ -261,62 +307,88 @@ const DesktopNav = ({
       </NavSvg>
     </NavItemDropContainer>
 
-    <NavDropDown
-      style={{ visibility: navItemVisibility, opacity: dropOpacity }}
+    <NavDropDown2
+      style={{ visibility: navItemVisibility, opacity: drop2Opacity }}
     >
       <NavDropDownItem
-        onMouseEnter={hoverSvgToggleTwo}
-        onMouseLeave={hoverSvgToggleTwo}
+        onMouseEnter={hoverSvgToggleFive}
+        onMouseLeave={hoverSvgToggleFive}
       >
-          Grief Counseling
         <Link to="/pregnancy-&-infancy-loss/grief-counseling">
-          {/* PREGNANCY &
-        <br /> INFANCY LOSS */}
-          <LongNavSvg>
+          Grief Counseling
+          <LongNavSvg style={{ opacity: svgOpacityFive, width: '150px' }}>
             <NavLine
               x1="4"
               y1="5"
               x2="134"
               y2="5"
-              stroke="white"
+              stroke="#221C26"
               strokeWidth="4"
               strokeLinecap="round"
             />
           </LongNavSvg>
         </Link>
-        {/* <NavSvg style={{ opacity: svgOpacityTwo, width: '150px' }}>
-            <NavLine
-              x1="27"
-              y1="3"
-              x2="112"
-              y2="3"
-              stroke="white"
-              strokeWidth="4"
-              strokeLinecap="round"
-            />
-          </NavSvg>
-        </Link> */}
       </NavDropDownItem>
       <NavDropDownItem
-        onMouseEnter={hoverSvgToggleThree}
-        onMouseLeave={hoverSvgToggleThree}
+        onMouseEnter={hoverSvgToggleSix}
+        onMouseLeave={hoverSvgToggleSix}
       >
-        <Link to="/palliative-care-support">
-          PALLIATIVE CARE
-          <NavSvg style={{ opacity: svgOpacityThree, width: '150px' }}>
+        <Link to="/surviving-the-unimaginable-book">
+          Book
+          <NavSvg style={{ opacity: svgOpacitySix, width: '150px' }}>
             <NavLine
-              x1="27"
-              y1="3"
-              x2="112"
-              y2="3"
-              stroke="white"
+              x1="4"
+              y1="5"
+              x2="134"
+              y2="5"
+              stroke="#221C26"
               strokeWidth="4"
               strokeLinecap="round"
             />
           </NavSvg>
         </Link>
       </NavDropDownItem>
-    </NavDropDown>
+      <NavDropDownItem
+        onMouseEnter={hoverSvgToggleSeven}
+        onMouseLeave={hoverSvgToggleSeven}
+      >
+        <Link to="/pregnancy-&-infancy-loss/media">
+          Media
+          <NavSvg style={{ opacity: svgOpacitySeven, width: '150px' }}>
+            <NavLine
+              x1="4"
+              y1="5"
+              x2="134"
+              y2="5"
+              stroke="#221C26"
+              strokeWidth="4"
+              strokeLinecap="round"
+            />
+          </NavSvg>
+        </Link>
+      </NavDropDownItem>
+      <NavDropDownItem
+        onMouseEnter={hoverSvgToggleEight}
+        onMouseLeave={hoverSvgToggleEight}
+      >
+        <Link to="/pregnancy-&-infancy-loss/resources">
+          Resources
+          <NavSvg style={{ opacity: svgOpacityEight, width: '150px' }}>
+            <NavLine
+              x1="4"
+              y1="5"
+              x2="134"
+              y2="5"
+              stroke="#221C26"
+              strokeWidth="4"
+              strokeLinecap="round"
+            />
+          </NavSvg>
+        </Link>
+      </NavDropDownItem>
+    </NavDropDown2>
+
+
     <NavItem
       style={{
         visibility: { desktopNavItemVisibility },
@@ -398,7 +470,7 @@ const DesktopNav = ({
               y1="3"
               x2="112"
               y2="3"
-              stroke="white"
+              stroke="#221C26"
               strokeWidth="4"
               strokeLinecap="round"
             />
@@ -417,7 +489,7 @@ const DesktopNav = ({
               y1="3"
               x2="112"
               y2="3"
-              stroke="white"
+              stroke="#221C26"
               strokeWidth="4"
               strokeLinecap="round"
             />

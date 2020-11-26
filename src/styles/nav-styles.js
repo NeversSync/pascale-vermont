@@ -7,8 +7,8 @@ const NavContainer = styled.ul`
   grid-row: 1 / 2;
   z-index: 1;
   row-gap: 0px;
-  padding: 0px 1em;
-  grid-template-columns: repeat(8, 140px);
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0px 10%;
   justify-content: center;
   justify-items: center;
   grid-template-rows: auto auto;
@@ -106,7 +106,8 @@ const NavSvg = styled.svg`
 `;
 
 const NavItemDropContainer = styled(NavItem)`
-  grid-template-columns: 62px auto;
+  grid-template-columns: auto auto;
+  grid-column-gap: 8px;
   align-items: center;
   cursor: pointer;
 
@@ -118,8 +119,21 @@ const NavItemDropContainer = styled(NavItem)`
 const NavDropDown = styled.ul`
   grid-row: 2 / 3;
   grid-column: 6 / 7;
-  transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background-color: rgba(250, 250, 250, 1);
+  border-radius: 6px;
+  padding: 8px;
 `;
+
+const NavDropDown2 = styled.ul`
+  background-color: rgba(250, 250, 250, 1);
+  border-radius: 6px;
+  grid-row: 2 / 3;
+  grid-column: 3 / 4;
+  transition: all 0.5s ease-in-out;
+  padding: 8px;
+`;
+
 
 const NavDropDownItem = styled.li`
   width: 140px;
@@ -134,6 +148,11 @@ const NavDropDownItem = styled.li`
   transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
   padding: 0;
   cursor: pointer;
+  text-shadow: none;
+
+  a {
+    color: #221C26;
+  }
 
   @media (max-width: 1325px) {
     margin: 7px auto;
@@ -163,6 +182,7 @@ export {
   NavItem,
   NavContainer,
   NavDropDown,
+  NavDropDown2,
   NavDropDownItem,
   NavItemDropContainer,
   MenuIcon
