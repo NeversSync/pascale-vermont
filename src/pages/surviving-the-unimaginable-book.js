@@ -92,7 +92,6 @@ const Book = () => (
             </div>
           </BookCopy>
         </BookCopyWrapper>
-        <Newsletter/>
       </CopySubscribeWrapper>
     </BookWrapper>
 
