@@ -27,6 +27,7 @@ class Nav extends Component {
     super(props);
     this.state = {
       height: '0px',
+      height2: '0px',
       width: props.windowSize,
       dropOpacity: '0',
       drop2Opacity: '0',
@@ -42,6 +43,7 @@ class Nav extends Component {
       navBackgroundVisible: 'rgba(215, 212, 217, 0)',
       navItemVisibility: 'hidden',
       mobileNavItemVisibility: 'hidden',
+      mobileNavItemVisibility2: 'hidden',
       navItemOpacity: '0',
       navHeight: '30vh',
       desktopNavItemVisibility: 'visible',
@@ -62,6 +64,7 @@ class Nav extends Component {
     this.toggleSidenav = this.toggleSidenav.bind(this);
     this.handleWindowSizeChange = this.handleWindowSizeChange.bind(this);
     this.mobileSubMenuToggle = this.mobileSubMenuToggle.bind(this);
+    this.mobileSubMenuToggle2 = this.mobileSubMenuToggle2.bind(this);
   }
 
   componentDidMount() {
@@ -101,6 +104,15 @@ class Nav extends Component {
     this.state.mobileNavItemVisibility === 'hidden'
       ? this.setState({ mobileNavItemVisibility: 'visible' })
       : this.setState({ mobileNavItemVisibility: 'hidden' });
+  }
+
+  mobileSubMenuToggle2() {
+    this.state.height2 === '0px'
+      ? this.setState({ height2: '200px', drop2Opacity: '1' })
+      : this.setState({ height2: '0px', drop2Opacity: '0' });
+    this.state.mobileNavItemVisibility === 'hidden'
+      ? this.setState({ mobileNavItemVisibility2: 'visible' })
+      : this.setState({ mobileNavItemVisibility2: 'hidden' });
   }
 
   hoverToggle() {
@@ -186,7 +198,8 @@ class Nav extends Component {
       subMenu2Toggle: this.subMenu2Toggle,
       mobileNavToggle: this.mobileNavToggle,
       toggleSidenav: this.toggleSidenav,
-      mobileSubMenuToggle: this.mobileSubMenuToggle
+      mobileSubMenuToggle: this.mobileSubMenuToggle,
+      mobileSubMenuToggle2: this.mobileSubMenuToggle2
     };
 
     return (
@@ -249,17 +262,6 @@ const DesktopNav = ({
     >
       <Link to="/">
         HOME
-        <NavSvg>
-          <NavLine
-            x1="40"
-            y1="5"
-            x2="100"
-            y2="5"
-            stroke="white"
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
-        </NavSvg>
       </Link>
     </NavItem>
     <NavItem
@@ -270,17 +272,6 @@ const DesktopNav = ({
     >
       <Link to="/about">
         ABOUT
-        <NavSvg>
-          <NavLine
-            x1="35"
-            y1="5"
-            x2="100"
-            y2="5"
-            stroke="white"
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
-        </NavSvg>
       </Link>
     </NavItem>
 
@@ -294,17 +285,6 @@ const DesktopNav = ({
       <span>
         <EntypoChevronSmallDown />
       </span>
-      <NavSvg style={{ opacity: svgOpacityFour }}>
-        <NavLine
-          x1="2"
-          y1="5"
-          x2="70"
-          y2="5"
-          stroke="white"
-          strokeWidth="4"
-          strokeLinecap="round"
-        />
-      </NavSvg>
     </NavItemDropContainer>
 
     <NavDropDown2
@@ -315,7 +295,7 @@ const DesktopNav = ({
         onMouseLeave={hoverSvgToggleFive}
       >
         <Link to="/pregnancy-&-infancy-loss/grief-counseling">
-          Grief Counseling
+          GRIEF COUNSELING
           <LongNavSvg style={{ opacity: svgOpacityFive, width: '150px' }}>
             <NavLine
               x1="4"
@@ -334,7 +314,7 @@ const DesktopNav = ({
         onMouseLeave={hoverSvgToggleSix}
       >
         <Link to="/surviving-the-unimaginable-book">
-          Book
+          BOOK
           <NavSvg style={{ opacity: svgOpacitySix, width: '150px' }}>
             <NavLine
               x1="4"
@@ -353,7 +333,7 @@ const DesktopNav = ({
         onMouseLeave={hoverSvgToggleSeven}
       >
         <Link to="/pregnancy-&-infancy-loss/media">
-          Media
+          MEDIA
           <NavSvg style={{ opacity: svgOpacitySeven, width: '150px' }}>
             <NavLine
               x1="4"
@@ -372,7 +352,7 @@ const DesktopNav = ({
         onMouseLeave={hoverSvgToggleEight}
       >
         <Link to="/pregnancy-&-infancy-loss/resources">
-          Resources
+          RESOURCES
           <NavSvg style={{ opacity: svgOpacityEight, width: '150px' }}>
             <NavLine
               x1="4"
@@ -398,17 +378,6 @@ const DesktopNav = ({
       <Link to="/adult-grief-counseling">
         ADULT GRIEF
         <br /> COUNSELING
-        <LongNavSvg>
-          <NavLine
-            x1="4"
-            y1="5"
-            x2="134"
-            y2="5"
-            stroke="white"
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
-        </LongNavSvg>
       </Link>
     </NavItem>
     <NavItem
@@ -420,17 +389,6 @@ const DesktopNav = ({
       <Link to="/ngo-crisis-counseling">
         NGO CRISIS
         <br /> COUNSELING
-        <LongNavSvg>
-          <NavLine
-            x1="4"
-            y1="5"
-            x2="134"
-            y2="5"
-            stroke="white"
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
-        </LongNavSvg>
       </Link>
     </NavItem>
     <NavItemDropContainer
@@ -442,17 +400,6 @@ const DesktopNav = ({
       <span>
         <EntypoChevronSmallDown />
       </span>
-      <NavSvg style={{ opacity: svgOpacity }}>
-        <NavLine
-          x1="2"
-          y1="5"
-          x2="70"
-          y2="5"
-          stroke="white"
-          strokeWidth="4"
-          strokeLinecap="round"
-        />
-      </NavSvg>
     </NavItemDropContainer>
 
     <NavDropDown
@@ -507,17 +454,6 @@ const DesktopNav = ({
     >
       <Link to="/contact">
         CONTACT
-        <NavSvg style={{ width: '110px' }}>
-          <NavLine
-            x1="4"
-            y1="5"
-            x2="104"
-            y2="5"
-            stroke="white"
-            strokeWidth="4"
-            strokeLinecap="round"
-          />
-        </NavSvg>
       </Link>
     </NavItem>
   </NavContainer>
@@ -525,7 +461,9 @@ const DesktopNav = ({
 
 const MobileNav = ({
   height,
+  height2,
   dropOpacity,
+  drop2Opacity,
   svgOpacity,
   svgOpacityTwo,
   svgOpacityThree,
@@ -533,11 +471,13 @@ const MobileNav = ({
   navBackgroundVisible,
   navItemVisibility,
   mobileNavItemVisibility,
+  mobileNavItemVisibility2,
   navItemOpacity,
   hoverSvgToggle,
   hoverSvgToggleTwo,
   hoverSvgToggleThree,
   mobileSubMenuToggle,
+  mobileSubMenuToggle2,
   toggleSidenav,
   navHeight
 }) => (
@@ -562,20 +502,59 @@ const MobileNav = ({
         ABOUT
       </Link>
     </NavItem>
-    <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
-      <Link to="/surviving-the-unimaginable-book">
-    BABY LOSS BOOK
-      </Link>
-    </NavItem>
-    <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
-      <Link to="/pregnancy-&-infancy-loss/grief-counseling">
-        PREGNANCY &
-        <br /> INFANT LOSS
-      </Link>
-    </NavItem>
+
+
+    <NavItemDropContainer
+      onClick={mobileSubMenuToggle2}
+      style={{ visibility: navItemVisibility, opacity: navItemOpacity }}
+    >
+      <p>PREGNANCY &
+        <br /> INFANCY LOSS</p>
+      <span>
+        <EntypoChevronSmallDown />
+      </span>
+    </NavItemDropContainer>
+
+    <NavDropDown2
+      style={{
+        visibility: mobileNavItemVisibility2,
+        opacity: drop2Opacity,
+        height: height2
+      }}
+    >
+      <NavDropDownItem
+        style={{ visibility: mobileNavItemVisibility2, opacity: navItemOpacity }}>
+        <Link to="/pregnancy-&-infancy-loss/grief-counseling">
+          GRIEF COUNSELING
+        </Link>
+      </NavDropDownItem>
+
+      <NavDropDownItem
+        style={{ visibility: mobileNavItemVisibility2, opacity: navItemOpacity }}>
+        <Link to="/surviving-the-unimaginable-book">
+          BOOK
+        </Link>
+      </NavDropDownItem>
+
+      <NavDropDownItem
+        style={{ visibility: mobileNavItemVisibility2, opacity: navItemOpacity }}>
+        <Link to="/pregnancy-&-infancy-loss/media">
+          MEDIA
+        </Link>
+      </NavDropDownItem>
+
+      <NavDropDownItem
+        style={{ visibility: mobileNavItemVisibility2, opacity: navItemOpacity }}>
+        <Link to="/pregnancy-&-infancy-loss/resources">
+          RESOURCES
+        </Link>
+      </NavDropDownItem>
+    </NavDropDown2>
+
+
     <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
       <Link to="/adult-grief-counseling">
-        GRIEF
+        ADULT GRIEF
         <br /> COUNSELING
       </Link>
     </NavItem>
@@ -587,8 +566,6 @@ const MobileNav = ({
     </NavItem>
     <NavItemDropContainer
       onClick={mobileSubMenuToggle}
-      onMouseEnter={hoverSvgToggle}
-      onMouseLeave={hoverSvgToggle}
       style={{ visibility: navItemVisibility, opacity: navItemOpacity }}
     >
       <p>PAST WORK</p>
@@ -596,6 +573,7 @@ const MobileNav = ({
         <EntypoChevronSmallDown />
       </span>
     </NavItemDropContainer>
+
     <NavDropDown
       style={{
         visibility: mobileNavItemVisibility,
@@ -604,8 +582,7 @@ const MobileNav = ({
       }}
     >
       <NavDropDownItem
-        onMouseEnter={hoverSvgToggleTwo}
-        onMouseLeave={hoverSvgToggleTwo}
+
         style={{ visibility: mobileNavItemVisibility, opacity: navItemOpacity }}
       >
         <Link to="/disaster-mental-health">
@@ -613,8 +590,6 @@ const MobileNav = ({
         </Link>
       </NavDropDownItem>
       <NavDropDownItem
-        onMouseEnter={hoverSvgToggleThree}
-        onMouseLeave={hoverSvgToggleThree}
         style={{ visibility: mobileNavItemVisibility, opacity: navItemOpacity }}
       >
         <Link to="/palliative-care-support">

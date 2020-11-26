@@ -123,6 +123,15 @@ const NavDropDown = styled.ul`
   background-color: rgba(250, 250, 250, 1);
   border-radius: 6px;
   padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (max-width: 1325px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 `;
 
 const NavDropDown2 = styled.ul`
@@ -132,6 +141,12 @@ const NavDropDown2 = styled.ul`
   grid-column: 3 / 4;
   transition: all 0.5s ease-in-out;
   padding: 8px;
+
+  @media (max-width: 1325px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 `;
 
 
@@ -155,7 +170,7 @@ const NavDropDownItem = styled.li`
   }
 
   @media (max-width: 1325px) {
-    margin: 7px auto;
+    margin: 8px auto;
     padding: 0;
     opacity: 0;
   }
