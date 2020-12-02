@@ -223,7 +223,7 @@ const BookSummary = () => (
       <div style={{display: 'flex', margin: '0px auto', flexDirection: 'column', marginBottom: '16px'}}>
         <BookCopy style={{margin: '0 auto', width: '350px',
           textAlign: 'center',
-          marginBottom: '8px'}}>Now Available on Amazon and Wherever Books are Sold</BookCopy>
+          marginBottom: '8px'}}>Now available on Amazon and wherever books are sold</BookCopy>
         <a href="https://www.amazon.com/Surviving-Unimaginable-Stories-Pregnancy-Infancy-ebook/dp/B08GS4HDF1" target="_blank" style={{display: 'flex', margin: '0 auto'}}>
           <Button text="Buy on Amazon" />
         </a>
