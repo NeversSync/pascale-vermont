@@ -12,8 +12,6 @@ import {
   BookImageWrapper,
   BookButton, HomeButton
 } from '../styles/surviving-the-unimaginable-book-styles.js'
-import Newsletter from '../components/Newsletter'
-import { Contact } from '../components/Contact'
 import { Button, Card, Copy } from '../components/Helpers';
 
 const Book = () => (
@@ -41,6 +39,14 @@ const Book = () => (
         <img style={{ width: '60%', height: 'auto',     boxShadow: '0 5px 15px rgba(50,50,93,0.1), 0 3px 8px rgba(0,0,0,0.07)', borderRadius: '4px'}} alt="" src="https://res.cloudinary.com/nicky-cloudinary/image/upload/v1595963508/PASCALE-VERMONT/PV_survivingunimaginable_ebook.jpg"/>
       </BookImageWrapper>
       <CopySubscribeWrapper>
+        <div style={{display: 'flex', margin: '0 auto', flexDirection: 'column'}}>
+          <BookCopy style={{margin: '0 auto', width: '350px',
+            textAlign: 'center',
+            marginBottom: '8px'}}>Now Available on Amazon and Wherever Books are Sold</BookCopy>
+          <a href="https://www.amazon.com/Surviving-Unimaginable-Stories-Pregnancy-Infancy-ebook/dp/B08GS4HDF1" target="_blank" style={{display: 'flex', margin: '0 auto'}}>
+            <Button text="Buy on Amazon" />
+          </a>
+        </div>
         <BookCopyWrapper>
           <BookCopy>
         How do you survive the unimaginable loss of a baby during pregnancy or
@@ -82,8 +88,8 @@ const Book = () => (
             survive.
               </li>
             </ul>
-            <div style={{display: 'flex', flexDirecton: 'column', justifyContent: 'space-evenly' }}>
-              <BookButton to="pregnancy-&-infancy-loss/media" className="home-button">
+            <div style={{display: 'flex', flexDirection: 'column', justifyContent: 'space-evenly' }}>
+              <BookButton to="pregnancy-&-infancy-loss/media" className="home-button" style={{margin: '1em' }}>
                 <Button text="MEDIA" />
               </BookButton>
               <BookButton to="pregnancy-&-infancy-loss/resources" className="home-button">

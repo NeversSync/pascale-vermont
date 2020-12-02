@@ -19,7 +19,7 @@ import {
   WithImageSummaryTestimonial,
   RightSummaryTitle,
   TallSummaryWrapper,
-  RightTallSummaryWrapper
+  RightTallSummaryWrapper, Button
 } from '../components/Helpers';
 
 import {
@@ -205,6 +205,7 @@ const BookSummary = () => (
       <Link to="/surviving-the-unimaginable-book" className="left-button flex-button">
         <SVGArrowRight />
       </Link>
+
     </BookTitleWrapper>
     <BookImageWrapper>
       <img
@@ -219,6 +220,14 @@ const BookSummary = () => (
       />
     </BookImageWrapper>
     <LandingSummaryCopy fullWidth>
+      <div style={{display: 'flex', margin: '0px auto', flexDirection: 'column', marginBottom: '16px'}}>
+        <BookCopy style={{margin: '0 auto', width: '350px',
+          textAlign: 'center',
+          marginBottom: '8px'}}>Now Available on Amazon and Wherever Books are Sold</BookCopy>
+        <a href="https://www.amazon.com/Surviving-Unimaginable-Stories-Pregnancy-Infancy-ebook/dp/B08GS4HDF1" target="_blank" style={{display: 'flex', margin: '0 auto'}}>
+          <Button text="Buy on Amazon" />
+        </a>
+      </div>
         How do you survive the unimaginable loss of a baby during pregnancy or
         infancy? From the early days of shock and devastation through the
         following phases of grief over time, Pascale Vermont, PhD, offers
