@@ -160,6 +160,11 @@ const BlogCard = styled(Card)`
   padding: 32px;
   background-color: rgba(166, 76, 224, .9);
   transition: all 200ms ease-in-out;
+  margin-bottom: 32px;
+  min-height: 128px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 
   &:hover {
     transform: scale(1.025);

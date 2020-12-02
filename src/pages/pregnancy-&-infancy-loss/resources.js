@@ -224,6 +224,7 @@ const Resources = () => (
             <h2 style={{marginBottom: '.75em'}}>Blog</h2>
             <BlogCopy>
               <BlogLink to="blog/grandparents-experience-of-pregnancy-loss"><BlogCard>Grandparents' experience of pregnancy loss and subsequent pregnancy during Covid</BlogCard></BlogLink>
+              <BlogLink to="blog/a-nurse-midwife's-experience-of-perinatal-loss"><BlogCard>A nurse midwife's experience of perinatal loss</BlogCard></BlogLink>
             </BlogCopy>
           </BlogWrapper>
         </ResourcesCopyWrapper>

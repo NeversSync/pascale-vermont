@@ -385,6 +385,11 @@ const BlogCopyWrapper = styled.div`
     margin-bottom: .5em;
     font-size: 1.25em;
   }
+
+  i {
+    font-style: italic;
+    margin-right: 1em;
+  }
 `
 
 // HELPER COMPONENTS
