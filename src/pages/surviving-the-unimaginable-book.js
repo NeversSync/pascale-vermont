@@ -13,6 +13,7 @@ import {
   BookButton, HomeButton
 } from '../styles/surviving-the-unimaginable-book-styles.js'
 import { Button, Card, Copy } from '../components/Helpers';
+import Newsletter from '../components/Newsletter';
 
 const Book = () => (
   <Layout>
@@ -38,6 +39,7 @@ const Book = () => (
       <BookImageWrapper>
         <img style={{ width: '60%', height: 'auto',     boxShadow: '0 5px 15px rgba(50,50,93,0.1), 0 3px 8px rgba(0,0,0,0.07)', borderRadius: '4px'}} alt="" src="https://res.cloudinary.com/nicky-cloudinary/image/upload/v1595963508/PASCALE-VERMONT/PV_survivingunimaginable_ebook.jpg"/>
       </BookImageWrapper>
+
       <CopySubscribeWrapper>
         <div style={{display: 'flex', margin: '0 auto', flexDirection: 'column'}}>
           <BookCopy style={{margin: '0 auto', width: '350px',
@@ -47,6 +49,8 @@ const Book = () => (
             <Button text="Buy on Amazon" />
           </a>
         </div>
+        <Newsletter/>
+
         <BookCopyWrapper>
           <BookCopy>
         How do you survive the unimaginable loss of a baby during pregnancy or

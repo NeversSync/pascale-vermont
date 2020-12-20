@@ -40,7 +40,7 @@ const NewsletterForm = styled.form`
 
   @media (min-width: 1200px) {
     grid-gap: 0.75em;
-    width: 350px;
+    width: 400px;
   }
 `;
 
@@ -66,10 +66,23 @@ const SubmitButton = styled(CTAButton)`
   margin: 0px;
 `;
 
+const List = styled.ul`
+  list-style: none;
+  text-align: left;
+  margin-top: 8px;
+  li {
+    margin-bottom: 16px;
+  }
+  label {
+    margin-left: 8px;
+  }
+`
+
 export {
   NewsletterWrapper,
   NewsletterForm,
   SubmitButton,
   NewsletterTitle,
   FormInput,
+  List
 };

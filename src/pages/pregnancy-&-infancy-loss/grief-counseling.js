@@ -16,6 +16,7 @@ import {
   FourthPerinatalTestimonial,
 } from '../../styles/perinatal-styles';
 import { Button, Card, Copy } from '../../components/Helpers';
+import Newsletter from '../../components/Newsletter'
 
 const PerinatalLoss = () => (
   <Layout>
@@ -63,8 +64,13 @@ const PerinatalLoss = () => (
           Listen to a recent interview with Pascale
         </a>{' '}
         about her work with pregnancy and infancy loss.
+        <div style={{marginTop: '48px'}}>
+          <Newsletter />
+        </div>
       </PerinatalCopy>
+
       <PerinatalTestimonial>
+
         <Card style={{ padding: '35px' }}>
           "The greatest lesson our son taught us was that you wake up every day
           and you live it like there is no tomorrow."
