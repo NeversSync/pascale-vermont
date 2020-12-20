@@ -21,22 +21,40 @@ class Newsletter extends Component {
     error: null
   };
 
-  _handleChange = e => {
-    if(e.target.name === 'group[18217][1]') {
+  _handleCheck = e => {
+    if(e.target.name === 'group[18217][1]' && e.target.checked) {
       this.setState({
         one: e.target.value
       });
     }
-    if(e.target.name === 'group[18217][2]') {
+    if(e.target.name === 'group[18217][1]' && !e.target.checked) {
+      this.setState({
+        one: null
+      });
+    }
+    if(e.target.name === 'group[18217][2]' && e.target.checked) {
       this.setState({
         two: e.target.value
       });
     }
-    if(e.target.name === 'group[18217][4]') {
+    if(e.target.name === 'group[18217][2]' && !e.target.checked) {
+      this.setState({
+        two: null
+      });
+    }
+    if(e.target.name === 'group[18217][4]' && e.target.checked) {
       this.setState({
         four: e.target.value
       });
     }
+    if(e.target.name === 'group[18217][4]' && !e.target.checked) {
+      this.setState({
+        four: null
+      });
+    }
+  }
+
+  _handleChange = e => {
     this.setState({
       [`${e.target.name}`]: e.target.value
     });
@@ -94,15 +112,15 @@ class Newsletter extends Component {
           />
           <List>
             <li>
-              <input type="checkbox" value="1" name="group[18217][1]" id="mce-group[18217]-18217-0" onChange={this._handleChange}/>
+              <input type="checkbox" value="1" name="group[18217][1]" id="mce-group[18217]-18217-0" onChange={this._handleCheck}/>
               <label for="mce-group[18217]-18217-0">Bereaved parent</label>
             </li>
             <li>
-              <input type="checkbox" value="2" name="group[18217][2]" id="mce-group[18217]-18217-1" onChange={this._handleChange}/>
+              <input type="checkbox" value="2" name="group[18217][2]" id="mce-group[18217]-18217-1" onChange={this._handleCheck}/>
               <label for="mce-group[18217]-18217-1">Friend or family of a bereaved parent</label>
             </li>
             <li>
-              <input type="checkbox" value="4" name="group[18217][4]" id="mce-group[18217]-18217-2" onChange={this._handleChange}/>
+              <input type="checkbox" value="4" name="group[18217][4]" id="mce-group[18217]-18217-2" onChange={this._handleCheck}/>
               <label for="mce-group[18217]-18217-2">Medical professional</label>
             </li>
           </List>
