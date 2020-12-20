@@ -14,44 +14,18 @@ class Newsletter extends Component {
     FNAME: null,
     LNAME: null,
     email: null,
-    one: null,
-    two: null,
-    four: null,
+    groupFields: null,
     success: null,
     error: null
   };
 
   _handleCheck = e => {
-    if(e.target.name === 'group[18217][1]' && e.target.checked) {
-      this.setState({
-        one: e.target.value
-      });
-    }
-    if(e.target.name === 'group[18217][1]' && !e.target.checked) {
-      this.setState({
-        one: null
-      });
-    }
-    if(e.target.name === 'group[18217][2]' && e.target.checked) {
-      this.setState({
-        two: e.target.value
-      });
-    }
-    if(e.target.name === 'group[18217][2]' && !e.target.checked) {
-      this.setState({
-        two: null
-      });
-    }
-    if(e.target.name === 'group[18217][4]' && e.target.checked) {
-      this.setState({
-        four: e.target.value
-      });
-    }
-    if(e.target.name === 'group[18217][4]' && !e.target.checked) {
-      this.setState({
-        four: null
-      });
-    }
+    this.setState({
+      groupFields: {
+        ...this.state.groupFields,
+        [`${e.target.name}`]: e.target.value
+      }
+    });
   }
 
   _handleChange = e => {
@@ -65,9 +39,7 @@ class Newsletter extends Component {
     addToMailchimp(this.state.email, {
       FNAME: this.state.FNAME,
       LNAME: this.state.LNAME,
-      'group[18217][1]': this.state.one,
-      'group[18217][2]': this.state.two,
-      'group[18217][4]': this.state.four,
+      ...this.state.groupFields
     })
       .then(({ msg, result }) => {
         if (result !== 'success') {
