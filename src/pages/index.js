@@ -248,7 +248,7 @@ const BookSummary = () => (
         href="https://www.amazon.com/gp/product/B08GS4HDF1/ref=dbs_a_def_rwt_bibl_vppi_i0"
         target="_blank"
       >
-        Pre-order a copy on Amazon
+        Order a copy on Amazon
       </a>
     </LandingSummaryCopy>
   </BookWrapper>
