@@ -3,9 +3,9 @@ import { Title, SubTitle } from '../components/Helpers';
 
 const HeroContainer = styled.div`
   display: grid;
-  height: 650px;
+  height: 800px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  grid-template-rows: repeat(8, 100px);
   background: linear-gradient(
     to right,
     rgba(72, 33, 97, 0.4) 0%,
@@ -13,10 +13,15 @@ const HeroContainer = styled.div`
     rgba(204, 133, 0, 0.4) 100%
   );
 
+  @media (max-width: 1500px) {
+  height: 750px;
+  }
+
   @media (max-width: 1100px) {
-    height: fit-content;
+    height: 600px;
     grid-template-columns: repeat(6, 1fr);
   }
+
   @media (max-width: 900px) {
     height: fit-content;
     grid-template-columns: repeat(6, 1fr);
@@ -40,7 +45,7 @@ const HeroImg = styled.img`
 const Heading = styled.div`
   display: grid;
   grid-column: 4 / 10;
-  grid-row: 2 / 6;
+  grid-row: 4 / 5;
   justify-content: center;
   align-content: center;
   text-align: center;

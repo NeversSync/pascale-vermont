@@ -30,9 +30,6 @@ import {
 } from '../styles/landing-styles';
 import {
   AboutWrapper,
-  AboutSummaryTitle,
-  AboutSummarySvg,
-  AboutLine,
   AboutTestimonialSummary,
   AboutSummaryImg
 } from '../styles/about-styles';
@@ -41,8 +38,6 @@ import {
   BookTitleWrapper,
   BookTitle,
   BookLine,
-  CopySubscribeWrapper,
-  BookCopyWrapper,
   BookCopy,
   BookImageWrapper,
 } from '../styles/surviving-the-unimaginable-book-styles';

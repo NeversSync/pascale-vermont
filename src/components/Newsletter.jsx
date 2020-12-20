@@ -26,19 +26,16 @@ class Newsletter extends Component {
       this.setState({
         one: e.target.value
       });
-      return
     }
     if(e.target.name === 'group[18217][2]') {
       this.setState({
         two: e.target.value
       });
-      return
     }
     if(e.target.name === 'group[18217][4]') {
       this.setState({
         four: e.target.value
       });
-      return
     }
     this.setState({
       [`${e.target.name}`]: e.target.value
