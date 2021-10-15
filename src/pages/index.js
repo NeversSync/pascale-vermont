@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Layout from '../components/layout';
-import { SubTitle, UpArrow } from '../components/Helpers';
+import { UpArrow } from '../components/Helpers';
 import { EntypoDotSingle } from 'react-entypo';
 
 import Nav from '../components/Nav';
@@ -9,7 +9,7 @@ import Contact from '../components/Contact';
 import {
   Card,
   LandingSummaryWrapper,
-  Title, HeadingTwo,
+  Title,
   SVGArrowRight,
   LandingSummaryCopy,
   Copy,

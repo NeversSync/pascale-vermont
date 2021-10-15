@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 
-import {BookLinkWrapper} from '../components/helpers'
+import {BookLinkWrapper} from '../components/Helpers'
 import {
   BookWrapper,
   BookTitleWrapper,
