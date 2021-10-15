@@ -12,6 +12,10 @@ const Content = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
+
+  i {
+    font-style: italic;
+  }
 `;
 
 const Layout = ({ children }) => (

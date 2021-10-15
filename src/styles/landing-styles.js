@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Title, SubTitle } from '../components/Helpers';
+import { SubTitle } from '../components/Helpers';
 
 const HeroContainer = styled.div`
   display: grid;
@@ -66,5 +66,7 @@ const Heading = styled.div`
 const LandingSubtitle = styled(SubTitle)`
   margin-left: 12px;
 `;
+
+
 
 export { HeroContainer, HeroImg, Heading, LandingSubtitle };

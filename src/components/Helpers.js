@@ -274,7 +274,7 @@ const VideoCopyWrapper = styled.div`
     font-size: 2.5rem;
     margin-top: .75em;
   }
-`
+`;
 
 const Iframe = styled.iframe`
     border-radius: 5px;
@@ -283,7 +283,7 @@ const Iframe = styled.iframe`
     left: 0;
     width: 100%;
     height: 100%;
-`
+`;
 
 const PageWrapper = styled(Wrapper)`
   background:rgba(215, 212, 217, 0.3);
@@ -390,7 +390,39 @@ const BlogCopyWrapper = styled.div`
     font-style: italic;
     margin-right: 1em;
   }
-`
+`;
+
+const BookLinkWrapper = styled.div`
+  margin: 32px 0px 16px 0px;
+  * {
+    display: inline-block;
+  }
+
+  h2, a {
+    font-size: 28px;
+    letter-spacing: 4px;
+    font-weight: 300;
+    line-height: 1.2;
+
+    @media (max-width: 1100px) {
+      font-size: 26px;
+    }
+  }
+  a {
+    margin: 0px 4px;
+  }
+
+  img {
+    margin: 24px auto 40px auto;
+    width: 33%;
+    height: auto;
+    display: block;
+
+    @media (max-width: 1100px) {
+      width: 50%;
+    }
+  }
+`;
 
 // HELPER COMPONENTS
 
@@ -510,5 +542,5 @@ export {
   RightTallSummaryWrapper,
   UpArrow,
   Video, VideoWrapper, Iframe, VideoCopyWrapper,
-  PageWrapper, ContentWrapper, PageTitleWrapper, PageTitle, PageLine, BlogCopyWrapper
+  PageWrapper, ContentWrapper, PageTitleWrapper, PageTitle, PageLine, BlogCopyWrapper, BookLinkWrapper
 };

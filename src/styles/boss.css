@@ -399,13 +399,14 @@ textarea:focus {
 }
 
 #contact-home-button {
-  /* grid-column: 2 / 3; */
-  /* grid-row: 2 / span 1; */
-  /* justify-self: center; */
   margin: 0 auto;
   width: fit-content;
   width: max-content;
   margin-bottom: 5em;
+}
+
+i {
+  font-style: italic;
 }
 
 @media (max-width: 1325px) {

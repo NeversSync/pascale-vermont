@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Layout from '../components/layout';
-import { UpArrow } from '../components/Helpers';
+import { SubTitle, UpArrow } from '../components/Helpers';
 import { EntypoDotSingle } from 'react-entypo';
 
 import Nav from '../components/Nav';
@@ -9,7 +9,7 @@ import Contact from '../components/Contact';
 import {
   Card,
   LandingSummaryWrapper,
-  Title,
+  Title, HeadingTwo,
   SVGArrowRight,
   LandingSummaryCopy,
   Copy,
@@ -19,7 +19,7 @@ import {
   WithImageSummaryTestimonial,
   RightSummaryTitle,
   TallSummaryWrapper,
-  RightTallSummaryWrapper, Button
+  RightTallSummaryWrapper, Button, BookLinkWrapper
 } from '../components/Helpers';
 
 import {
@@ -76,16 +76,6 @@ const IndexPage = () => (
   <Layout>
     <div>
       <Landing />
-      {/* <div>
-        <a
-          className="custom-link"
-          href="https://kwmr.org/broadcasts/19012?fbclid=IwAR2m2tQfyICJ5VJMFExbF3ogM3ZuPfJ53Y3xUF7rx2g9MQ-I9g3h7cZEkbk"
-          target="_blank"
-        >
-        Listen to a recent interview with Pascale
-        </a>{' '}
-      about her work with pregnancy and infant loss.
-      </div> */}
       <AboutSummary />
       <BookSummary/>
       <PerinatalSummary />
@@ -100,7 +90,7 @@ const IndexPage = () => (
         <a
           className="custom-link"
           href="http://nickyeversdesign.com/"
-          target="_blank"
+          target="_blank" rel="noreferrer"
         >
           Nicky Evers Design
         </a>
@@ -219,7 +209,7 @@ const BookSummary = () => (
         <BookCopy style={{margin: '0 auto', width: '350px',
           textAlign: 'center',
           marginBottom: '8px'}}>Now available on Amazon and wherever books are sold</BookCopy>
-        <a href="https://www.amazon.com/Surviving-Unimaginable-Stories-Pregnancy-Infancy-ebook/dp/B08GS4HDF1" target="_blank" style={{display: 'flex', margin: '0 auto'}}>
+        <a href="https://www.amazon.com/Surviving-Unimaginable-Stories-Pregnancy-Infancy-ebook/dp/B08GS4HDF1" target="_blank" style={{display: 'flex', margin: '0 auto'}} rel="noreferrer">
           <Button text="Buy on Amazon" />
         </a>
       </div>
@@ -241,10 +231,43 @@ const BookSummary = () => (
       <a
         className="custom-link center"
         href="https://www.amazon.com/gp/product/B08GS4HDF1/ref=dbs_a_def_rwt_bibl_vppi_i0"
-        target="_blank"
+        target="_blank" rel="noreferrer"
       >
         Order a copy on Amazon
       </a>
+      <BookLinkWrapper>
+        <h2 style={{fontWeight: '500'}}>
+      French translation: <i style={{fontWeight: '300'}}>Survivre á l'Inimaginable: Comment Affronter le Deuil Périnatal.</i>
+        </h2>
+        <h2>Available on</h2>
+        <a
+          className="custom-link "
+          href="https://www.amazon.com/Survivre-lInimaginable-Comment-affronter-p%C3%A9rinatal/dp/2957491524/ref=sr_1_2?dchild=1&qid=1634275414&refinements=p_27%3APascale+Vermont&s=books&sr=1-2"
+          target="_blank" rel="noreferrer"
+        >
+        Amazon.fr
+        </a>
+        <h2>and</h2>
+        <a
+          className="custom-link "
+          href="https://livre.fnac.com/a16270697/Pascale-Vermont-Survivre-a-l-Inimaginable"
+          target="_blank" rel="noreferrer"
+        >fnac.com</a>
+        <img src="https://res.cloudinary.com/nicky-cloudinary/image/upload/v1634277221/PASCALE-VERMONT/Survivre-a-l-Inimaginable.jpg" alt="french book cover" />
+      </BookLinkWrapper>
+      <BookLinkWrapper>
+        <h2 style={{fontWeight: '500'}}>
+      Spanish translation: <i style={{fontWeight: '300'}}>Sobreviviendo a lo Inimaginable: Historias de Cómo Afrontar la Pérdida del Embarazo & de Infantes.</i>
+        </h2>
+        <a
+          className="custom-link "
+          href="https://drive.google.com/file/d/1Gz6mJ0lyBwbrnlG2WEkCTL2FWL7dTzmu/view"
+          target="_blank" rel="noreferrer"
+        >
+        Available in pdf format here
+        </a>
+        <img src="https://res.cloudinary.com/nicky-cloudinary/image/upload/v1634277221/PASCALE-VERMONT/spanish-tranlation-cover.png" alt="Spanish book cover" />
+      </BookLinkWrapper>
     </LandingSummaryCopy>
   </BookWrapper>
 );
@@ -285,7 +308,7 @@ const PerinatalSummary = () => (
       <a
         className="custom-link"
         href="https://kwmr.org/broadcasts/19012?fbclid=IwAR2m2tQfyICJ5VJMFExbF3ogM3ZuPfJ53Y3xUF7rx2g9MQ-I9g3h7cZEkbk"
-        target="_blank"
+        target="_blank" rel="noreferrer"
       >
           Listen to a recent interview with Pascale
       </a>{' '}
@@ -333,7 +356,7 @@ const GriefSummary = () => (
       <a
         className="custom-link"
         href="https://blogs.psychcentral.com/nlp/2017/05/blake-fletcher-half-hour-intern-podcast/"
-        target="_blank"
+        target="_blank" rel="noreferrer"
       >
         Read a summary
       </a>{' '}
@@ -341,7 +364,7 @@ const GriefSummary = () => (
       <a
         className="custom-link"
         href="http://www.halfhourintern.com/"
-        target="_blank"
+        target="_blank" rel="noreferrer"
       >
         Half Hour Intern podcast
       </a>
@@ -403,7 +426,7 @@ const NGOSummary = () => (
       <a
         className="custom-link"
         href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048646/"
-        target="_blank"
+        target="_blank" rel="noreferrer"
       >
         Read more
       </a>{' '}
