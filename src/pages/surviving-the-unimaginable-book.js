@@ -104,7 +104,7 @@ const Book = () => (
           </BookCopy>
           <BookLinkWrapper>
             <h2 style={{fontWeight: '500'}}>
-      French translation: <i style={{fontWeight: '300'}}>Survivre á l'Inimaginable: Comment Affronter le Deuil Périnatal.</i>
+      French translation: <i style={{fontWeight: '300'}}>Survivre à l'Inimaginable: Comment Affronter le Deuil Périnatal.</i>
             </h2>
             <h2>Available on</h2>
             <a
