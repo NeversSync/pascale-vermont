@@ -135,10 +135,7 @@ const AboutSummary = () => (
       </Link>
     </RightLandingSummaryWrapper>
     <RightLandingSummaryCopy>
-    Pascale Vermont is a licensed clinical psychologist based in San Francisco, CA. Pascale's main professional activity is as a grief counselor to bereaved parents after a pregnancy or infancy loss. She is also the psychologist at George Mark Children’s House, a pediatric palliative care home in San Leandro, CA.
-      <br />
-      <br />
-      In addition, she provides crisis counseling and stress management training to staff of an international NGO based in 17 countries such as Bangladesh, South Sudan, Iran and Afghanistan, either remotely and or in person.
+    Pascale Vermont is a licensed clinical psychologist based in San Francisco, CA. Pascale's main professional activity is as a grief counselor to bereaved parents after a pregnancy or infancy loss.
     </RightLandingSummaryCopy>
     <AboutSummaryImg />
 
@@ -318,6 +315,12 @@ const PerinatalSummary = () => (
       <Card style={{ padding: '35px' }}>
         "Truly our conversations over time scraped me off the emotional depth of
         despair and helped me start to look up."
+        <br /> - Anonymous client
+      </Card>
+    </SummaryTestimonial>
+    <SummaryTestimonial>
+      <Card style={{ padding: '35px' }}>
+      "You have stood strongly next to J and me as we took baby steps forward, which then progressed into strides from one milestone to the next. Those steps were facilitated by your guidance and dedication to helping us find ourselves -- something that we had thought we had lost when we lost our baby girl. You gave us hope, allowed us to hear our own voices, and taught us that we are not alone during these painful and trying times. It is with your help that J and I stand tall, now holding D, into the light that we believed had vanished from our lives."
         <br /> - Anonymous client
       </Card>
     </SummaryTestimonial>

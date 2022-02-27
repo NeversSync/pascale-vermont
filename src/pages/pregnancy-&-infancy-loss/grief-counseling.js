@@ -36,11 +36,8 @@ const PerinatalLoss = () => (
         <Link to="/" className="home-button">
           <Button />
         </Link>
-        {/* <div style={{ width: '500px', height: '500px', overflow: 'hidden' }}> */}
-        {/* </div> */}
       </PerinatalTitleWrapper>
       <PerinatalImageWrapper />
-      {/* <Copy></Copy> */}
       <PerinatalCopy>
         Pascale offers bereavement counseling to parents who lose a child during
         pregnancy, at birth or in early infancy. At a time of great pain and

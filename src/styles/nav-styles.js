@@ -7,7 +7,7 @@ const NavContainer = styled.ul`
   grid-row: 1 / 2;
   z-index: 1;
   row-gap: 0px;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   padding: 0px 10%;
   justify-content: center;
   justify-items: center;
@@ -118,7 +118,7 @@ const NavItemDropContainer = styled(NavItem)`
 
 const NavDropDown = styled.ul`
   grid-row: 2 / 3;
-  grid-column: 6 / 7;
+  grid-column: 4 / 5;
   transition: all 0.5s ease-in-out;
   background-color: rgba(250, 250, 250, 1);
   border-radius: 6px;
