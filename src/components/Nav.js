@@ -103,7 +103,7 @@ class Nav extends Component {
 
   mobileSubMenuToggle() {
     this.state.height === '0px'
-      ? this.setState({ height: '150px', dropOpacity: '1' })
+      ? this.setState({ height: 'auto', dropOpacity: '1' })
       : this.setState({ height: '0px', dropOpacity: '0' });
     this.state.mobileNavItemVisibility === 'hidden'
       ? this.setState({ mobileNavItemVisibility: 'visible' })
@@ -112,7 +112,7 @@ class Nav extends Component {
 
   mobileSubMenuToggle2() {
     this.state.height2 === '0px'
-      ? this.setState({ height2: '200px', drop2Opacity: '1' })
+      ? this.setState({ height2: 'auto', drop2Opacity: '1' })
       : this.setState({ height2: '0px', drop2Opacity: '0' });
     this.state.mobileNavItemVisibility === 'hidden'
       ? this.setState({ mobileNavItemVisibility2: 'visible' })

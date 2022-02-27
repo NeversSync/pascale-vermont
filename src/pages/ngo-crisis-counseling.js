@@ -40,8 +40,8 @@ const IndexPage = () => (
       </NGOTitleWrapper>
       <NGOImageWrapper />
       <NGOCopy>
-        Pascale offers crisis counseling to expatriate staff of Relief
-        International based in 16 countries over Skype when they experience a
+        For 11 years Pascale offered crisis counseling to expatriate staff of Relief
+        International based in 16 countries over Skype when they experienced a
         traumatic experience while in the field or suffer a personal crisis. She
         served as a psychologist to West African refugees on Samos Island,
         Greece, who had fled their home countries because of extreme violence
@@ -57,7 +57,7 @@ const IndexPage = () => (
         <a
           className="custom-link"
           href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3048646/"
-          target="_blank"
+          target="_blank" rel="noreferrer"
         >
           Read more
         </a>{' '}

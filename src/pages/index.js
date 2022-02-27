@@ -346,7 +346,7 @@ const GriefSummary = () => (
       </Link>
     </LandingSummaryWrapper>
     <LandingSummaryCopy>
-      What Pascale provides in her grief counseling practice: A safe place to
+      What Pascale provided in her grief counseling practice to bereaved adults: A safe place to
       express the multitude of feelings experienced by the bereaved - sadness,
       doubts, guilt, anger, moodiness... <br />
       <br />
@@ -412,8 +412,8 @@ const NGOSummary = () => (
       </Link>
     </RightLandingSummaryWrapper>
     <RightLandingSummaryCopy>
-      Pascale offers crisis counseling to expatriate staff of Relief
-      International based in 16 countries over Skype when they experience a
+      For 11 years Pascale offered crisis counseling to expatriate staff of Relief
+      International based in 16 countries over Skype when they experienced a
       traumatic experience while in the field or suffer a personal crisis. She
       served as a psychologist to West African refugees on Samos Island, Greece,
       who had fled their home countries because of extreme violence and threats

@@ -16,8 +16,6 @@ import {
 } from '../styles/grief-styles';
 import {
   Button,
-  Spacer,
-  ImageWrapper,
   Copy,
   Card
 } from '../components/Helpers';
@@ -43,7 +41,7 @@ const IndexPage = () => (
       </GriefTitleWrapper>
       <GriefImgWrapper />
       <GriefCopy>
-        What Pascale provides in her grief counseling practice:
+        What Pascale provided in her grief counseling practice to bereaved adults:
         <br />
         <br />
         <EntypoDotSingle /> A safe place to express the multitude of feelings
@@ -77,7 +75,7 @@ const IndexPage = () => (
         <a
           className="custom-link"
           href="https://blogs.psychcentral.com/nlp/2017/05/blake-fletcher-half-hour-intern-podcast/"
-          target="_blank"
+          target="_blank" rel="noreferrer"
         >
           Read a summary
         </a>{' '}
@@ -85,18 +83,11 @@ const IndexPage = () => (
         <a
           className="custom-link"
           href="http://www.halfhourintern.com/"
-          target="_blank"
+          target="_blank" rel="noreferrer"
         >
           Half Hour Intern
         </a>
         .<br />
-        <br />
-        <Copy className="contact-for-more">
-          <Link to="/contact/" className="custom-link">
-            Contact her
-          </Link>{' '}
-          for more information.
-        </Copy>
       </GriefCopy>
       <GriefTestimonial>
         <Card style={{ padding: '35px' }}>
