@@ -39,6 +39,8 @@ class Nav extends Component {
       svgOpacitySix: '0',
       svgOpacitySeven: '0',
       svgOpacityEight: '0',
+      svgOpacityNine: '0',
+      svgOpacityTen: '0',
       showHideSidenav: 'closed',
       navBackgroundVisible: 'rgba(215, 212, 217, 0)',
       navItemVisibility: 'hidden',
@@ -59,6 +61,8 @@ class Nav extends Component {
     this.hoverSvgToggleSix = this.hoverSvgToggleSix.bind(this);
     this.hoverSvgToggleSeven = this.hoverSvgToggleSeven.bind(this);
     this.hoverSvgToggleEight = this.hoverSvgToggleEight.bind(this);
+    this.hoverSvgToggleNine = this.hoverSvgToggleNine.bind(this);
+    this.hoverSvgToggleTen = this.hoverSvgToggleTen.bind(this);
     this.subMenuToggle = this.subMenuToggle.bind(this);
     this.subMenu2Toggle = this.subMenu2Toggle.bind(this);
     this.toggleSidenav = this.toggleSidenav.bind(this);
@@ -138,7 +142,6 @@ class Nav extends Component {
       ? this.setState({ svgOpacityThree: '1' })
       : this.setState({ svgOpacityThree: '0' });
   }
-
   hoverSvgToggleFour() {
     this.state.svgOpacityFour === '0'
       ? this.setState({ svgOpacityFour: '1' })
@@ -163,6 +166,16 @@ class Nav extends Component {
     this.state.svgOpacityEight === '0'
       ? this.setState({ svgOpacityEight: '1' })
       : this.setState({ svgOpacityEight: '0' });
+  }
+  hoverSvgToggleNine() {
+    this.state.svgOpacityNine === '0'
+      ? this.setState({ svgOpacityNine: '1' })
+      : this.setState({ svgOpacityNine: '0' });
+  }
+  hoverSvgToggleTen() {
+    this.state.svgOpacityTen === '0'
+      ? this.setState({ svgOpacityTen: '1' })
+      : this.setState({ svgOpacityTen: '0' });
   }
 
   toggleSidenav() {
@@ -194,6 +207,8 @@ class Nav extends Component {
       hoverSvgToggleSix: this.hoverSvgToggleSix,
       hoverSvgToggleSeven: this.hoverSvgToggleSeven,
       hoverSvgToggleEight: this.hoverSvgToggleEight,
+      hoverSvgToggleNine: this.hoverSvgToggleNine,
+      hoverSvgToggleTen: this.hoverSvgToggleTen,
       subMenuToggle: this.subMenuToggle,
       subMenu2Toggle: this.subMenu2Toggle,
       mobileNavToggle: this.mobileNavToggle,
@@ -227,6 +242,8 @@ const DesktopNav = ({
   svgOpacitySix,
   svgOpacitySeven,
   svgOpacityEight,
+  svgOpacityNine,
+  svgOpacityTen,
   showHideSidenav,
   hoverSvgToggle,
   hoverSvgToggleTwo,
@@ -236,6 +253,8 @@ const DesktopNav = ({
   hoverSvgToggleSix,
   hoverSvgToggleSeven,
   hoverSvgToggleEight,
+  hoverSvgToggleNine,
+  hoverSvgToggleTen,
   subMenuToggle,
   subMenu2Toggle,
   toggleSidenav,
@@ -368,29 +387,6 @@ const DesktopNav = ({
       </NavDropDownItem>
     </NavDropDown2>
 
-
-    <NavItem
-      style={{
-        visibility: { desktopNavItemVisibility },
-        opacity: { desktopNavItemOpacity }
-      }}
-    >
-      <Link to="/adult-grief-counseling">
-        ADULT GRIEF
-        <br /> COUNSELING
-      </Link>
-    </NavItem>
-    <NavItem
-      style={{
-        visibility: { desktopNavItemVisibility },
-        opacity: { desktopNavItemOpacity }
-      }}
-    >
-      <Link to="/ngo-crisis-counseling">
-        NGO CRISIS
-        <br /> COUNSELING
-      </Link>
-    </NavItem>
     <NavItemDropContainer
       onClick={subMenuToggle}
       onMouseEnter={hoverSvgToggle}
@@ -431,6 +427,44 @@ const DesktopNav = ({
         <Link to="/palliative-care-support">
           PALLIATIVE CARE
           <NavSvg style={{ opacity: svgOpacityThree, width: '150px' }}>
+            <NavLine
+              x1="27"
+              y1="3"
+              x2="112"
+              y2="3"
+              stroke="#221C26"
+              strokeWidth="4"
+              strokeLinecap="round"
+            />
+          </NavSvg>
+        </Link>
+      </NavDropDownItem>
+      <NavDropDownItem
+        onMouseEnter={hoverSvgToggleNine}
+        onMouseLeave={hoverSvgToggleNine}
+      >
+        <Link to="/adult-grief-counseling">
+          ADULT GRIEF COUNSELING
+          <NavSvg style={{ opacity: svgOpacityNine, width: '150px' }}>
+            <NavLine
+              x1="27"
+              y1="3"
+              x2="112"
+              y2="3"
+              stroke="#221C26"
+              strokeWidth="4"
+              strokeLinecap="round"
+            />
+          </NavSvg>
+        </Link>
+      </NavDropDownItem>
+      <NavDropDownItem
+        onMouseEnter={hoverSvgToggleTen}
+        onMouseLeave={hoverSvgToggleTen}
+      >
+        <Link to="/ngo-crisis-counseling">
+          NGO CRISIS COUNSELING
+          <NavSvg style={{ opacity: svgOpacityTen, width: '150px' }}>
             <NavLine
               x1="27"
               y1="3"
@@ -550,20 +584,6 @@ const MobileNav = ({
         </Link>
       </NavDropDownItem>
     </NavDropDown2>
-
-
-    <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
-      <Link to="/adult-grief-counseling">
-        ADULT GRIEF
-        <br /> COUNSELING
-      </Link>
-    </NavItem>
-    <NavItem style={{ visibility: navItemVisibility, opacity: navItemOpacity }}>
-      <Link to="/ngo-crisis-counseling">
-        NGO CRISIS
-        <br /> COUNSELING
-      </Link>
-    </NavItem>
     <NavItemDropContainer
       onClick={mobileSubMenuToggle}
       style={{ visibility: navItemVisibility, opacity: navItemOpacity }}
@@ -582,7 +602,6 @@ const MobileNav = ({
       }}
     >
       <NavDropDownItem
-
         style={{ visibility: mobileNavItemVisibility, opacity: navItemOpacity }}
       >
         <Link to="/disaster-mental-health">
@@ -594,6 +613,21 @@ const MobileNav = ({
       >
         <Link to="/palliative-care-support">
           PALLIATIVE CARE
+        </Link>
+      </NavDropDownItem>
+      <NavDropDownItem
+
+        style={{ visibility: mobileNavItemVisibility, opacity: navItemOpacity }}
+      >
+        <Link to="/adult-grief-counseling">
+        ADULT GRIEF COUNSELING
+        </Link>
+      </NavDropDownItem>
+      <NavDropDownItem
+        style={{ visibility: mobileNavItemVisibility, opacity: navItemOpacity }}
+      >
+        <Link to="/ngo-crisis-counseling">
+        NGO CRISIS COUNSELING
         </Link>
       </NavDropDownItem>
     </NavDropDown>
