@@ -13,9 +13,6 @@ import {
 } from '../styles/ngo-styles';
 import {
   Button,
-  Spacer,
-  ImageWrapper,
-  Copy,
   Card
 } from '../components/Helpers';
 
