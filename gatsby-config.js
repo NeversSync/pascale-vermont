@@ -33,6 +33,5 @@ module.exports = {
         endpoint: 'https://pascalevermont.us10.list-manage.com/subscribe/post?u=b1315a604cf6371ced2e07475&amp;id=313fd4abc5'
       }
     },
-    'gatsby-plugin-offline'
   ],
 };
