@@ -3,8 +3,6 @@ import {
   Wrapper,
   Title,
   Copy,
-  Card,
-  CTAButton,
   Testimonial,
   ImageWrapper
 } from '../components/Helpers';
@@ -60,7 +58,7 @@ const GriefSvg = styled.svg`
 
   @media (max-width: 900px) {
     grid-column: 2 / 4;
-    width: 453px;
+    width: 241px;
     grid-row: 1 / 2;
     justify-self: center;
   }

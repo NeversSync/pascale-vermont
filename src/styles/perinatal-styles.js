@@ -16,7 +16,7 @@ const PerinatalWrapper = styled(Wrapper)`
   border-bottom: 1px solid rgba(100, 100, 100, 0.1);
 
   @media (max-width: 900px) {
-    padding: ${p => p.isHome ? '12% 2% 6% 2%' : '3% 2% 6% 2%'};
+    padding: ${p => p.isHome ? '16% 2% 6% 2%' : '3% 2% 6% 2%'};
   }
 `;
 

@@ -333,9 +333,9 @@ const GriefSummary = () => (
       <GriefTitle>ADULT GRIEF COUNSELING</GriefTitle>
       <GriefSvg>
         <GriefLine
-          x1="115"
+          x1="5"
           y1="5"
-          x2="335"
+          x2="285"
           y2="5"
           stroke="rgb(255, 189, 66)"
           strokeWidth="6"
