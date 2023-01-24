@@ -3,8 +3,6 @@ import {
   Wrapper,
   Title,
   Copy,
-  Card,
-  CTAButton,
   Testimonial,
   ImageWrapper
 } from '../components/Helpers';

@@ -128,10 +128,10 @@ const Book = () => (
             </h2>
             <a
               className="custom-link "
-              href="https://drive.google.com/file/d/1Gz6mJ0lyBwbrnlG2WEkCTL2FWL7dTzmu/view"
+              href="https://www.amazon.com/Sobreviviendo-Inimaginable-Spanish-Pascale-Vermont/dp/B09S3RXQ42/ref=sr_1_1?crid=IGXCTMRYK43S&keywords=sobreviviendo+a+lo+inimaginable&qid=1674587777&sprefix=%2Caps%2C140&sr=8-1"
               target="_blank" rel="noreferrer"
             >
-        Available in pdf format here
+        Buy Spanish version on Amazon
             </a>
             <img src="https://res.cloudinary.com/nicky-cloudinary/image/upload/v1634277221/PASCALE-VERMONT/spanish-tranlation-cover.png" alt="Spanish book cover" />
           </BookLinkWrapper>
